@@ -112,7 +112,7 @@ namespace HuduAPI.Records
     /// Companies represents the list of companies returned from a call to the Companies Endpoint.
     /// </summary>
     /// <remarks>
-    /// Companies is a very simple object that basically contains a List&lt; <see cref="T:HuduAPI.Records.Company">Company</see>&gt;
+    /// Companies is a very simple object that basically contains a List of <see cref="T:HuduAPI.Records.Company">Company</see>.
     /// </remarks>
     public class Companies : IRecord
     {

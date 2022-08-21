@@ -1,0 +1,12 @@
+:root 
+{
+    /* General */
+
+    --base-font-size: 14px;
+    --smalldevice-base-font-size: 12px; /* Base font size for devices < 1024px */
+
+}
+
+[data-anchorjs-icon]::after {
+    content: none;
+}

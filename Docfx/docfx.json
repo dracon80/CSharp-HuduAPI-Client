@@ -1,0 +1,79 @@
+{
+  "metadata": [
+    {
+      "src": [
+        {
+          "cwd": "..",
+          "files": [
+            "HuduAPI/**.csproj"
+          ]
+        }
+      ],
+      "dest": "reference",
+      "disableGitFeatures": false,
+      "disableDefaultFilter": false,
+      "filter": "filter.yml"
+    }
+  ],
+  "build": {
+    "content": [
+      {
+        "files": [
+          "reference/**.yml",
+          "reference/index.md"
+        ]
+      },
+      {
+        "files": [
+          "tutorials/**.md",
+          "tutorials/**/toc.yml",
+          "toc.yml",
+          "*.md"
+        ]
+      }
+    ],
+    "resource": [
+      {
+        "files": [
+          "images/**"
+        ]
+      }
+    ],
+    "overwrite": [
+      {
+        "files": [
+          "referencedoc/**.md"
+        ],
+        "exclude": [
+          "obj/**",
+          "../docs/**"
+        ]
+      }
+    ],
+    "dest": "../docs",
+    "globalMetadataFiles": [],
+    "fileMetadataFiles": [],
+    "template": [
+      "default",
+      "templates/singulinkfx",
+      "templates/dracon80"
+    ],
+    "postProcessors": [],
+    "markdownEngineName": "markdig",
+    "noLangKeyword": false,
+    "keepFileLink": false,
+    "cleanupCacheHistory": false,
+    "disableGitFeatures": false,
+    "globalMetadata": {
+      "_appTitle": "HuduAPI",
+      "_appName": "dotnet HuduAPI Client",
+      "_appFooter": "<strong>DocFX</strong>",
+      "_copyrightFooter": "© Dracon80. All rights reserved.",
+      "_enableSearch": true,
+      "_disableSideFilter": false,
+      "_enableNewTab": true,
+      "_disableContribution": false,
+      "_disableBreadcrumb": false
+    }
+  }
+}

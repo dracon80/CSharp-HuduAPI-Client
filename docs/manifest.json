@@ -1,0 +1,339 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/Users/NathanDennis/source/repos/Hudu/Docfx",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "N6DU7Jon7JrytN8KDHtK29TxOg6rDkV/o3t0az3LCas="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.CompanyEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.CompanyEndpoint.html",
+          "hash": "VLu94kVp7DvCb/JMhzz10Ds798+W1w8vZU5ii9ChF/s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.Exceptions.RecordNotFoundException.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.Exceptions.RecordNotFoundException.html",
+          "hash": "ObNXFP6fEaWgYmudQknSqPWTBEF4ydss4SK0hyq80wk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.Exceptions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.Exceptions.html",
+          "hash": "EG0RrTMfbw4BYqBwjY0xbnWIhfqmne6UCEzYlwYH7CQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.Parameters.EndpointParameters-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.Parameters.EndpointParameters-1.html",
+          "hash": "ggRBy/eRkpMEMhsIXKqScfy/eMi0HkUs0F5nY3e01fE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.Parameters.GetCompaniesParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetCompaniesParameters.html",
+          "hash": "IVDw1nIjB6rkSIS8PAqxl3iYhn36Rqz3gEYtQSZmS6c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.Parameters.GetCompanyParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetCompanyParameters.html",
+          "hash": "kd0qTq8zlQeSrTW5RNRo2ixxQwtbhBj0CepxAL7EMLQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.Parameters.IParameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.Parameters.IParameters.html",
+          "hash": "iIob/c+6UORmKszScyN4ORPACU7CXJF1wKGBWTunZ7s="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.Parameters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.Parameters.html",
+          "hash": "BABIiJbJgzpl6E42LlzY80RSt4wAJ7kaE3T3EF645cU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.html",
+          "hash": "TBipWB/GG8olbnLVG1NfwVe9j4Pg1tSMDsNoYpHkNzM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.AssetLayout.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.AssetLayout.html",
+          "hash": "LR3XtAZKTaN3noXJXgxfVWIGV9V+x58euUyoGR3/oqM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.AssetLayoutField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.AssetLayoutField.html",
+          "hash": "niyVznO6gMzY+8Rm/8QB1EJ5JqLSNuJDxtDt7hoxKg8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.AssetLayouts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.AssetLayouts.html",
+          "hash": "XBxawKqRLhsKoivAZcVX04zYftwECSEG2+fNW74a7xg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Companies.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Companies.html",
+          "hash": "iXhrx/P9onpzLpg+snLIvcL6TjVxEAnQn/lCfS2VXyk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Company.Integration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Company.Integration.html",
+          "hash": "pPhC/3/bfhMwA1oTOQAj3QG21eK/u+adY0nkxPVxoPQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Company.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Company.html",
+          "hash": "q9ySgHeZn4Ce7zBYY3/U3/zrcZZvMXo71rdIfCyqKYo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.IRecord.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.IRecord.html",
+          "hash": "9xk0xtZ2lAIQdksk9HrZSk6UHjiBa9a3yU+sS/4Xy2c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.html",
+          "hash": "aa3aPo0BHhR2ttUHHXRGAI82dT2Auq3UnAoFknRukKU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "reference/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "reference/index.html",
+          "hash": "XmFh13ipQX7P9q+quGLT631YBtaubOv6VvWdq3kPh8o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "reference/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/toc.html",
+          "hash": "6SWPaIJjeXZuMgecXoa8/XQgWM4lMUXRCTPy/ZNXNRQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "p17lQjJlB1W48xIpkbE5Fxt7b09dJfoVs0x7yO2SGLI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/intro.html",
+          "hash": "EFVuIxN9wn9gHzXqNYd3tHBGmpiXYKDODIXm6Mb+8fg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "tutorials/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/toc.html",
+          "hash": "2+R3BVw2DruDdq1j3EyfULXlIy9FeSWVYhWuTS0Yo8c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 17,
+          "skipped_file_count": 6
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}
