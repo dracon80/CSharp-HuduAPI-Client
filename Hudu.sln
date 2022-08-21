@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HuduAPI", "HuduAPI\HuduAPI.csproj", "{8A0FA12C-73C0-4540-B5FA-F9D5E2CAAAAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuduAPITests", "HuduAPITests\HuduAPITests.csproj", "{A7F2B883-7ACB-4364-A707-81351284FA58}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8A0FA12C-73C0-4540-B5FA-F9D5E2CAAAAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A0FA12C-73C0-4540-B5FA-F9D5E2CAAAAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A0FA12C-73C0-4540-B5FA-F9D5E2CAAAAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A0FA12C-73C0-4540-B5FA-F9D5E2CAAAAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7F2B883-7ACB-4364-A707-81351284FA58}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7F2B883-7ACB-4364-A707-81351284FA58}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7F2B883-7ACB-4364-A707-81351284FA58}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7F2B883-7ACB-4364-A707-81351284FA58}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5ACC58FF-3160-4F91-BB5C-0A4BF155C72F}
+	EndGlobalSection
+EndGlobal
