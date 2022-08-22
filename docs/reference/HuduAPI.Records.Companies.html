@@ -115,7 +115,8 @@
     <pre><code class="lang-csharp hljs">public class Companies : IRecord</code></pre>
   </div>
   <h5 id="HuduAPI_Records_Companies_remarks"><strong>Remarks</strong></h5>
-  <div class="markdown level0 remarks"><p>Companies is a very simple object that basically contains a List of <a class="xref" href="HuduAPI.Records.Company.html">Company</a>.</p>
+  <div class="markdown level0 remarks"><p>Companies is a very simple object that contains a List of <a class="xref" href="HuduAPI.Records.Company.html">Company</a> objects. Along with a Indexer to allow easy
+access to individual companies based on Company ID.</p>
 </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -124,11 +125,12 @@
     <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/new/master/apiSpec/new?filename=HuduAPI_Records_Companies__ctor_IList_HuduAPI_Records_Company__.md&amp;value=---%0Auid%3A%20HuduAPI.Records.Companies.%23ctor(IList%7BHuduAPI.Records.Company%7D)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Records/Companies.cs/#L146">View Source</a>
+    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Records/Companies.cs/#L37">View Source</a>
   </span>
   <a id="HuduAPI_Records_Companies__ctor_" data-uid="HuduAPI.Records.Companies.#ctor*"></a>
   <h4 id="HuduAPI_Records_Companies__ctor_IList_HuduAPI_Records_Company__" data-uid="HuduAPI.Records.Companies.#ctor(IList{HuduAPI.Records.Company})">Companies(IList&lt;Company&gt;)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="HuduAPI.Records.Companies.html">Companies</a> class.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="HuduAPI.Records.Companies.html">Companies</a> class with the supplied list
+of <a class="xref" href="HuduAPI.Records.Company.html">Company</a> objects.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -148,7 +150,7 @@
       <tr>
         <td><span class="xref">IList</span>&lt;<a class="xref" href="HuduAPI.Records.Company.html">Company</a>&gt;</td>
         <td><span class="parametername">companyList</span></td>
-        <td><p>The company list.</p>
+        <td><p>The list of <a class="xref" href="HuduAPI.Records.Company.html">Company</a> objects.</p>
 </td>
       </tr>
     </tbody>
@@ -160,7 +162,7 @@
     <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/new/master/apiSpec/new?filename=HuduAPI_Records_Companies_CompanyList.md&amp;value=---%0Auid%3A%20HuduAPI.Records.Companies.CompanyList%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Records/Companies.cs/#L119">View Source</a>
+    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Records/Companies.cs/#L42">View Source</a>
   </span>
   <a id="HuduAPI_Records_Companies_CompanyList_" data-uid="HuduAPI.Records.Companies.CompanyList*"></a>
   <h4 id="HuduAPI_Records_Companies_CompanyList" data-uid="HuduAPI.Records.Companies.CompanyList">CompanyList</h4>
@@ -191,16 +193,17 @@ public IList&lt;Company&gt; CompanyList { get; set; }</code></pre>
     <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/new/master/apiSpec/new?filename=HuduAPI_Records_Companies_Item_System_Int32_.md&amp;value=---%0Auid%3A%20HuduAPI.Records.Companies.Item(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Records/Companies.cs/#L134">View Source</a>
+    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Records/Companies.cs/#L55">View Source</a>
   </span>
   <a id="HuduAPI_Records_Companies_Item_" data-uid="HuduAPI.Records.Companies.Item*"></a>
   <h4 id="HuduAPI_Records_Companies_Item_System_Int32_" data-uid="HuduAPI.Records.Companies.Item(System.Int32)">Item[Int32]</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the <a class="xref" href="HuduAPI.Records.Company.html">Company</a> at the specified index.</p>
+  <div class="markdown level1 summary"><p>Gets the <span class="xref">System.Nullable&lt;T&gt;</span> with the a company ID of value index.
+If a company does not existing with this ID, then null is returend.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public Company this[int index] { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public Company this[int id] { get; }</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -214,8 +217,8 @@ public IList&lt;Company&gt; CompanyList { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.Int32</span></td>
-        <td><span class="parametername">index</span></td>
-        <td><p>The index.</p>
+        <td><span class="parametername">id</span></td>
+        <td><p>The company ID of the required company</p>
 </td>
       </tr>
     </tbody>
@@ -231,7 +234,7 @@ public IList&lt;Company&gt; CompanyList { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><a class="xref" href="HuduAPI.Records.Company.html">Company</a></td>
-        <td><p>The <a class="xref" href="HuduAPI.Records.Company.html">Company</a>.</p>
+        <td><p>A <a class="xref" href="HuduAPI.Records.Company.html">Company</a> with the company id of the value supplied to index.</p>
 </td>
       </tr>
     </tbody>

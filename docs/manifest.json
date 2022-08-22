@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/NathanDennis/source/repos/Hudu/Docfx",
+  "source_base_path": "C:/Users/NathanDennis/source/repos/Hudu/docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -134,11 +134,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "reference/HuduAPI.Records.AssetLayout.yml",
+      "source_relative_path": "reference/HuduAPI.Records.AssetLayout.AssetLayoutField.yml",
       "output": {
         ".html": {
-          "relative_path": "reference/HuduAPI.Records.AssetLayout.html",
-          "hash": "LR3XtAZKTaN3noXJXgxfVWIGV9V+x58euUyoGR3/oqM="
+          "relative_path": "reference/HuduAPI.Records.AssetLayout.AssetLayoutField.html",
+          "hash": "1rNnnXlO1C8VItpuVZSJb+HFA+3Zq/IDT5ZRNqa3i0I="
         }
       },
       "is_incremental": false,
@@ -146,11 +146,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "reference/HuduAPI.Records.AssetLayoutField.yml",
+      "source_relative_path": "reference/HuduAPI.Records.AssetLayout.yml",
       "output": {
         ".html": {
-          "relative_path": "reference/HuduAPI.Records.AssetLayoutField.html",
-          "hash": "niyVznO6gMzY+8Rm/8QB1EJ5JqLSNuJDxtDt7hoxKg8="
+          "relative_path": "reference/HuduAPI.Records.AssetLayout.html",
+          "hash": "X2KgWHw3jDTg1t2AiCZAseZ73apTF/OgMP/4rrLszH0="
         }
       },
       "is_incremental": false,
@@ -162,7 +162,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.AssetLayouts.html",
-          "hash": "XBxawKqRLhsKoivAZcVX04zYftwECSEG2+fNW74a7xg="
+          "hash": "Bkq3AXkjifhDOoIUy9dl9hSLQpZOfA7F/UAM+sQQL1g="
         }
       },
       "is_incremental": false,
@@ -174,7 +174,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Companies.html",
-          "hash": "iXhrx/P9onpzLpg+snLIvcL6TjVxEAnQn/lCfS2VXyk="
+          "hash": "mA7uyCspE5lK3zw481NtWhBYibLji+avw1YjX3liDvY="
         }
       },
       "is_incremental": false,
@@ -186,7 +186,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Company.Integration.html",
-          "hash": "pPhC/3/bfhMwA1oTOQAj3QG21eK/u+adY0nkxPVxoPQ="
+          "hash": "lPrJCWgiz0jI5xrCLnK8Y+fimoeKSKDictRoU2gmF2U="
         }
       },
       "is_incremental": false,
@@ -198,7 +198,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Company.html",
-          "hash": "q9ySgHeZn4Ce7zBYY3/U3/zrcZZvMXo71rdIfCyqKYo="
+          "hash": "limxKrZ9dauaY2BVLVjWHdi+4R4PcXv39KcjC0DM8hw="
         }
       },
       "is_incremental": false,
@@ -222,7 +222,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.html",
-          "hash": "aa3aPo0BHhR2ttUHHXRGAI82dT2Auq3UnAoFknRukKU="
+          "hash": "6VcoESgAMUruAY4D34XLQUGb2p6+fxCI7y8XE/yn6aA="
         }
       },
       "is_incremental": false,
@@ -246,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/toc.html",
-          "hash": "6SWPaIJjeXZuMgecXoa8/XQgWM4lMUXRCTPy/ZNXNRQ="
+          "hash": "5GyRiWygSiK0zcR0jelgyXp7/eZxvkfIyw006DkWVrY="
         }
       },
       "is_incremental": false,
@@ -308,7 +308,7 @@
           "can_incremental": true,
           "incrementalPhase": "build",
           "total_file_count": 17,
-          "skipped_file_count": 6
+          "skipped_file_count": 10
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

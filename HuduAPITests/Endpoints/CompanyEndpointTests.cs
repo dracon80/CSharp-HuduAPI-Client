@@ -49,12 +49,31 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod()]
         public void GetFilteredCompanies()
         {
-            GetCompaniesParameters parameters = new GetCompaniesParameters(state: "QLD");
+            GetCompaniesParameters parameters = new(state: "QLD");
 
             //Get a list of companies from the endpoint and confirm that its not empy
             Companies companies = _endpoint.Get(parameters);
 
             Assert.AreNotEqual(0, companies.CompanyList.Count());
+
+            foreach (Company c in companies.CompanyList)
+            {
+                //Check that all returned records are for state QLD
+                Assert.AreEqual("QLD", c.State, "Results include companies with states other than QLD");
+            }
+
+            parameters = new(name: "Integrated Solutions QLD Pty Ltd");
+
+            //Get a list of companies from the endpoint and confirm that its not empy
+            companies = _endpoint.Get(parameters);
+
+            Assert.AreNotEqual(0, companies.CompanyList.Count());
+
+            foreach (Company c in companies.CompanyList)
+            {
+                //Check that all returned records are for state QLD
+                Assert.AreEqual("Integrated Solutions QLD Pty Ltd", c.Name, "Results include companies with invlid names");
+            }
         }
 
         [TestMethod()]
