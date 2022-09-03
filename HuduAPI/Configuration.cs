@@ -24,8 +24,12 @@ namespace HuduAPI
         { }
 
         /// <summary>
-        /// Configurations the furl serializer with a SnakeCaseNamingStrategy as is used by HuduAPI
+        /// Configurations the furl serializer with a SnakeCaseNamingStrategy as is used by HuduAPI.
         /// </summary>
+        /// <remarks>
+        /// It is safe to call this method multiple times as it acts like a singleton and will only
+        /// configure the seriarliser once for the current process.
+        /// </remarks>
         public static void ConfigFurlSerializer()
         {
             //If already configured then nothing to do here

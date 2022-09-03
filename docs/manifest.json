@@ -26,11 +26,23 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.ActivityLogsEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.ActivityLogsEndpoint.html",
+          "hash": "ot66BlPejX5yWvpoQpQ9C4TylpX9HEFpu7cUyczmjMU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "reference/HuduAPI.Endpoints.CompanyEndpoint.yml",
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.CompanyEndpoint.html",
-          "hash": "VLu94kVp7DvCb/JMhzz10Ds798+W1w8vZU5ii9ChF/s="
+          "hash": "Dz3CbuwIaGzOG7RWcd36R3tot1JsFsIyssWm7lkGwME="
         }
       },
       "is_incremental": false,
@@ -74,11 +86,11 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "reference/HuduAPI.Endpoints.Parameters.GetCompaniesParameters.yml",
+      "source_relative_path": "reference/HuduAPI.Endpoints.Parameters.GetActivityLogs.yml",
       "output": {
         ".html": {
-          "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetCompaniesParameters.html",
-          "hash": "IVDw1nIjB6rkSIS8PAqxl3iYhn36Rqz3gEYtQSZmS6c="
+          "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetActivityLogs.html",
+          "hash": "jAXyDZdr99tQmgGA7Ins96U2ty9ABPEXZZsupA7MxwQ="
         }
       },
       "is_incremental": false,
@@ -86,11 +98,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "reference/HuduAPI.Endpoints.Parameters.GetCompanyParameters.yml",
+      "source_relative_path": "reference/HuduAPI.Endpoints.Parameters.GetCompanies.yml",
       "output": {
         ".html": {
-          "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetCompanyParameters.html",
-          "hash": "kd0qTq8zlQeSrTW5RNRo2ixxQwtbhBj0CepxAL7EMLQ="
+          "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetCompanies.html",
+          "hash": "hm+vb/j5jlyEyGD1fobzIOuU5Ku3WkTL+xTr8TeDxBY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.Parameters.GetCompany.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetCompany.html",
+          "hash": "ZgkzOcjzEi8ymmT/0GsTXm2JKYPPEwkwIwQc7LmAZT4="
         }
       },
       "is_incremental": false,
@@ -102,7 +126,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.IParameters.html",
-          "hash": "iIob/c+6UORmKszScyN4ORPACU7CXJF1wKGBWTunZ7s="
+          "hash": "IFyJ7/Il+Qaqk+YLVS1PSU5on/vStScQ8ICnCsd7KfQ="
         }
       },
       "is_incremental": false,
@@ -114,7 +138,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.html",
-          "hash": "BABIiJbJgzpl6E42LlzY80RSt4wAJ7kaE3T3EF645cU="
+          "hash": "bqeJV+JQWyyGmyZSZ4r8oNHwfNlgub7uDNnKXdi9E3A="
         }
       },
       "is_incremental": false,
@@ -126,7 +150,79 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.html",
-          "hash": "TBipWB/GG8olbnLVG1NfwVe9j4Pg1tSMDsNoYpHkNzM="
+          "hash": "F19nPT5FuzzcpUQ236vGfR7lC7C80VypXQQTiAJB0EM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.APIInfo.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.APIInfo.html",
+          "hash": "HoAsit5qVOemEjUiv1xSEpRtCuVBj1rHduPkZAX++uE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.ActivityLog.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.ActivityLog.html",
+          "hash": "vdyZHYJJ0c+sPY/hTL93/ZnQVeZ/TpfJ7WImvFg/0fk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.ActivityLogs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.ActivityLogs.html",
+          "hash": "Pt+XqZJYRbwzi9lgGFd/ZP2Grzxf00B2r/8MfLY/w+8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Article.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Article.html",
+          "hash": "gzyZHeaZdh8CYl0VG1jFzE+E+t2x1dHT++ICxb5zbDk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Articles.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Articles.html",
+          "hash": "IB3XYGUgcuefRtp1VUYJI6XGfzbG3zeg5/YRnjAA8vA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Asset.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Asset.html",
+          "hash": "VTGcpmgphc03r4OsFzPYrVXFpdFkb/hRtAy2+KMoJos="
         }
       },
       "is_incremental": false,
@@ -138,7 +234,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.AssetLayout.AssetLayoutField.html",
-          "hash": "1rNnnXlO1C8VItpuVZSJb+HFA+3Zq/IDT5ZRNqa3i0I="
+          "hash": "y1/Ig8zBo9QOf1isRA0721ecr+7gziAdCq1hvqkGv7U="
         }
       },
       "is_incremental": false,
@@ -150,7 +246,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.AssetLayout.html",
-          "hash": "X2KgWHw3jDTg1t2AiCZAseZ73apTF/OgMP/4rrLszH0="
+          "hash": "uUg2P+YzKhf20r3cW6nqMQiNq0CJC9kY1RCNSLb1Sbc="
         }
       },
       "is_incremental": false,
@@ -162,7 +258,43 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.AssetLayouts.html",
-          "hash": "Bkq3AXkjifhDOoIUy9dl9hSLQpZOfA7F/UAM+sQQL1g="
+          "hash": "JWJN5lTIBNZDVupkSpFHooiYr6ejdc+w6rWx9IX8YPc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.AssetPassword.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.AssetPassword.html",
+          "hash": "BCZogWdgORl7g/TILXAiVm5D3GOht/8KKuz0I4ThBc4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.AssetPasswords.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.AssetPasswords.html",
+          "hash": "W23COn6XKWgiC5hqZYNCSmkCKfcnwQT7QnbSYIaC8sc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Assets.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Assets.html",
+          "hash": "XMgi0w2Wl5F8aNjo+PQfrHF+wxX/hYwlFnGBmRn/Ddw="
         }
       },
       "is_incremental": false,
@@ -206,6 +338,54 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Expiration.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Expiration.html",
+          "hash": "kljD67GzPOsvk9FWDYQB98tDui1xQbZ56QijRwmcPUY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Field.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Field.html",
+          "hash": "dX/xWDdCispbap0e0fOK/pg+YxaBPq+1psk6AhgP/G0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Folder.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Folder.html",
+          "hash": "5+64HbMPr8qsB7FpjNW7hYMf5UWdZv2Kh1l4it27iiU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Folders.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Folders.html",
+          "hash": "Z18V7Ag6PCQNM8FQxURTSQdnAZ5kmgBMCvYBG3MTBkA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "reference/HuduAPI.Records.IRecord.yml",
       "output": {
         ".html": {
@@ -218,11 +398,107 @@
     },
     {
       "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.MagicDash.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.MagicDash.html",
+          "hash": "VsJajuMoeVOJeqHvTCQhJSDQGOUz0tM8sqhySm8UC2w="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Procedure.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Procedure.html",
+          "hash": "UcJ1h6w9Z5wT9giIxRGfRjsA03kFgGXQewq639wsBiQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.ProcedureTasksAttribute.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.ProcedureTasksAttribute.html",
+          "hash": "gUOCGOHLiZ9/43YvtdYt1QdtNhFFF9g2GLjTZ8/YOf4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Procedures.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Procedures.html",
+          "hash": "FDW7Iy5n4zU5gKpsnFhHzqONB0QsO7ARIt9iXHsAyyI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.PublicPhoto.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.PublicPhoto.html",
+          "hash": "ZwYfrl/pQI0sv5wzVMWI5bNQ7FueTJFmVdgDAq3FmyY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Relation.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Relation.html",
+          "hash": "MMvy9RXRyQq0Vd0Eybeu0NVCPtFrWzr0sJ0Bcb0j7tI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Relations.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Relations.html",
+          "hash": "zEThlrbCqp3HrtvjK4T7jZaQ10naIdi33APqx6Cjz40="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Website.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Website.html",
+          "hash": "qFUaZP6curtrQX5vmtWkDtNaWzth1p2OwGgNwbSF+E0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
       "source_relative_path": "reference/HuduAPI.Records.yml",
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.html",
-          "hash": "6VcoESgAMUruAY4D34XLQUGb2p6+fxCI7y8XE/yn6aA="
+          "hash": "czuliaYH0YzeF05lg4ETEN22mTXir9VS3FA7/P7m11Q="
         }
       },
       "is_incremental": false,
@@ -246,7 +522,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/toc.html",
-          "hash": "5GyRiWygSiK0zcR0jelgyXp7/eZxvkfIyw006DkWVrY="
+          "hash": "bTj36pvM/HEZEWqeIIXnGuMIDSa20kJKt7QA6KqFanI="
         }
       },
       "is_incremental": false,
@@ -307,8 +583,8 @@
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 17,
-          "skipped_file_count": 10
+          "total_file_count": 40,
+          "skipped_file_count": 7
         },
         "TocDocumentProcessor": {
           "can_incremental": false,

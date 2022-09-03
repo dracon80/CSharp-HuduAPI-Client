@@ -10,17 +10,17 @@ namespace HuduAPI.Endpoints.Parameters
     /// Paramaters to Get a single Company from Hudu
     /// </summary>
     /// <seealso cref="HuduAPI.Endpoints.Parameters.IParameters" />
-    public class GetCompanyParameters : IParameters
+    public class GetCompany : IParameters
     {
         private int _id;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetCompanyParameters" /> class.
+        /// Initializes a new instance of the <see cref="GetCompany" /> class.
         /// </summary>
         /// <param name="id">
         /// The Company ID to use when calling the endpoint get method.
         /// </param>
-        public GetCompanyParameters(int id)
+        public GetCompany(int id)
         {
             this.ID = id;
         }

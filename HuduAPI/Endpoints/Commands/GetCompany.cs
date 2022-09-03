@@ -13,27 +13,27 @@ namespace HuduAPI.Endpoints.Commands
 {
     internal class GetCompany : ICommand<Company>
     {
-        private readonly EndpointParameters<GetCompanyParameters> _getParams;
+        private readonly Parameters.GetCompany _getParams;
         private readonly string _url;
+        private readonly string _apiKye;
 
-        public GetCompany(EndpointParameters<GetCompanyParameters> getParameters)
+        public GetCompany(String huduBaseURL, string huduAPIKey, Parameters.GetCompany parameters)
         {
-            _getParams = getParameters;
-            _url = getParameters.HuduBaseURL + "api/v1/companies/" + getParameters.Parameters.ID;
+            _getParams = parameters;
+            _url = huduBaseURL + "api/v1/companies/" + parameters.ID;
+            _apiKye = huduAPIKey;
         }
 
         public Company Execute()
         {
-            //Because the API returns a complex object with a Companies element wrapped arounnd the
-            //Company we need to retreive a companies object and then extract the first item.
-            var result = BaseReceiver<CompanyRoot, GetCompanyParameters>.Get(
+            var result = BaseReceiver<CompanyRoot, Parameters.GetCompany>.Get(
                 url: _url,
-                apiKey: _getParams.HuduAPIKey
+                apiKey: _apiKye
                 );
 
             if (result == null)
             {
-                throw new RecordNotFoundException("Company ID: " + _getParams.Parameters.ID + " was not found");
+                throw new RecordNotFoundException("Company ID: " + _getParams.ID + " was not found");
             }
 
             return result.Company;

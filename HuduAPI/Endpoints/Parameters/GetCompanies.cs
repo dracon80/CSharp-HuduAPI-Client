@@ -14,7 +14,7 @@ namespace HuduAPI.Endpoints.Parameters
     /// </summary>
     /// <seealso cref="HuduAPI.Endpoints.Parameters.IParameters" />
     [JsonObject(NamingStrategyType = typeof(SnakeCaseNamingStrategy))]
-    public class GetCompaniesParameters : IParameters
+    public class GetCompanies : IParameters
     {
         /// <summary>
         /// Gets or sets the current page of results.
@@ -25,7 +25,7 @@ namespace HuduAPI.Endpoints.Parameters
         public int? Page { get; set; }
 
         /// <summary>
-        /// Gets or sets the number of results to return.
+        /// Gets or sets the number of results to return from the Hudu API.
         /// </summary>
         /// <value>
         /// The size of the page.
@@ -92,7 +92,7 @@ namespace HuduAPI.Endpoints.Parameters
         public string? IntegrationID { get; set; }
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetCompaniesParameters" /> class.
+        /// Initializes a new instance of the <see cref="GetCompanies" /> class.
         /// </summary>
         /// <param name="page">
         /// The current page to return.
@@ -121,10 +121,10 @@ namespace HuduAPI.Endpoints.Parameters
         /// <param name="integrationID">
         /// the integration identifier in PSA/RMM/outside integration to filter companies by.
         /// </param>
-        public GetCompaniesParameters([Optional] int? page, [Optional] int? page_size,
-            [Optional] string name, [Optional] string phoneNumber, [Optional] string website,
-            [Optional] string city, [Optional] string iDNumber, [Optional] string state,
-            [Optional] string integrationID)
+        public GetCompanies([Optional] int? page, [Optional] int? page_size,
+            [Optional] string? name, [Optional] string? phoneNumber, [Optional] string? website,
+            [Optional] string? city, [Optional] string? iDNumber, [Optional] string? state,
+            [Optional] string? integrationID)
         {
             Page = page;
             PageSize = page_size;

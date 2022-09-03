@@ -1,4 +1,5 @@
-﻿using HuduAPI.Endpoints.Parameters;
+﻿using HuduAPI.Endpoints.Exceptions;
+using HuduAPI.Endpoints.Parameters;
 using HuduAPI.Endpoints.Receivers;
 using HuduAPI.Records;
 using System;
@@ -12,22 +13,31 @@ namespace HuduAPI.Endpoints.Commands
 {
     internal class GetCompanies : ICommand<Companies>
     {
-        private readonly EndpointParameters<GetCompaniesParameters> _getParams;
+        private readonly Parameters.GetCompanies _getParams;
         private readonly string _url;
+        private readonly string _apiKey;
 
-        public GetCompanies([Optional] EndpointParameters<GetCompaniesParameters> getParameters)
+        public GetCompanies(String huduBaseURL, string huduAPIKey, Parameters.GetCompanies parameters)
         {
-            _getParams = getParameters;
-            _url = _getParams.HuduBaseURL + "api/v1/companies";
+            _getParams = parameters ?? new Parameters.GetCompanies();
+            _url = huduBaseURL + "api/v1/companies";
+            _apiKey = huduAPIKey;
         }
 
         public Companies Execute()
         {
-            return BaseReceiver<Companies, GetCompaniesParameters>.Get(
+            var result = BaseReceiver<Companies, Parameters.GetCompanies>.Get(
                 url: _url,
-                apiKey: _getParams.HuduAPIKey,
-                _getParams.Parameters
+                apiKey: _apiKey,
+                _getParams
                 );
+
+            if (result == null)
+            {
+                throw new RecordNotFoundException("No companies were found that match the parameters");
+            }
+
+            return result;
         }
     }
 }

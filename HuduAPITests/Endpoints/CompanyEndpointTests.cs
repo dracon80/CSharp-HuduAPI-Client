@@ -1,10 +1,4 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using HuduAPI.Endpoints;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using HuduAPI.Records;
 using Microsoft.Extensions.Configuration;
 using HuduAPI.Endpoints.Parameters;
@@ -49,7 +43,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod()]
         public void GetFilteredCompanies()
         {
-            GetCompaniesParameters parameters = new(state: "QLD");
+            GetCompanies parameters = new GetCompaniesBuilder().WithState("QLD").Build();
 
             //Get a list of companies from the endpoint and confirm that its not empy
             Companies companies = _endpoint.Get(parameters);
@@ -79,7 +73,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod()]
         public void GetCompany()
         {
-            GetCompanyParameters myparams = new(id: _companyID);
+            GetCompany myparams = new(id: _companyID);
 
             Company result = _endpoint.Get(myparams);
 
@@ -90,7 +84,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod]
         public void GetInvalidCompany()
         {
-            GetCompanyParameters myparams = new(id: 4856734);
+            GetCompany myparams = new(id: 4856734);
 
             Assert.ThrowsException<RecordNotFoundException>(
                      () => _endpoint.Get(myparams)
@@ -100,7 +94,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod]
         public void GetNegativeCompanyID()
         {
-            GetCompanyParameters myparams;
+            GetCompany myparams;
 
             Assert.ThrowsException<ArgumentOutOfRangeException>(
                      () => myparams = new(id: -3)

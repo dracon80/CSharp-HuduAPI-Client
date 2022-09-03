@@ -1,19 +1,11 @@
-﻿using Flurl.Http;
-using HuduAPI.Endpoints.Commands;
-using HuduAPI.Endpoints.Parameters;
-using HuduAPI.Records;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using HuduAPI.Records;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HuduAPI.Endpoints
 {
     public class CompanyEndpoint : IEndpoint,
-        IEndpointGetMethod<Company, GetCompanyParameters>,
-        IEndpointGetMethod<Companies, GetCompaniesParameters>
+        IEndpointGetMethod<Company, Parameters.GetCompany>,
+        IEndpointGetMethod<Companies, Parameters.GetCompanies>
 
     {
         public string HuduAPIKey { get; set; }
@@ -26,22 +18,15 @@ namespace HuduAPI.Endpoints
             Configuration.ConfigFurlSerializer();
         }
 
-        public Company Get(GetCompanyParameters parameters)
+        public Company Get(Parameters.GetCompany parameters)
         {
-            EndpointParameters<GetCompanyParameters> endpointParameter = new EndpointParameters<GetCompanyParameters>(huduAPIKey: this.HuduAPIKey,
-                huduBaseURL: this.HuduBaseURL, parameters);
-
-            GetCompany myCommand = new GetCompany(endpointParameter);
-
+            Commands.GetCompany myCommand = new Commands.GetCompany(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
             return myCommand.Execute();
         }
 
-        public Companies Get([Optional] GetCompaniesParameters parameters)
+        public Companies Get([Optional] Parameters.GetCompanies parameters)
         {
-            EndpointParameters<GetCompaniesParameters> endpointParameter = new EndpointParameters<GetCompaniesParameters>(huduAPIKey: this.HuduAPIKey,
-                huduBaseURL: this.HuduBaseURL, parameters);
-
-            GetCompanies myCommand = new GetCompanies(endpointParameter);
+            Commands.GetCompanies myCommand = new Commands.GetCompanies(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
 
             return myCommand.Execute();
         }
