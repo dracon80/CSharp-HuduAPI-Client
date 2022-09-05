@@ -7,7 +7,7 @@ using Microsoft.Extensions.Configuration;
 using HuduAPI.Endpoints.Tests;
 using HuduAPI.Records;
 
-namespace HuduAPITests.Endpoints
+namespace HuduAPI.Endpoints.Tests
 {
     [TestClass]
     public class ActivityLogsEndpointTests

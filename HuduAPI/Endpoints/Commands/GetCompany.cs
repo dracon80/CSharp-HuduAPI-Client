@@ -24,6 +24,15 @@ namespace HuduAPI.Endpoints.Commands
             _apiKye = huduAPIKey;
         }
 
+        /// <summary>
+        /// Executes the command implemented in the implementor class.
+        /// </summary>
+        /// <returns>
+        /// Returns a generic object of type TResult
+        /// </returns>
+        /// <exception cref="HuduAPI.Endpoints.Exceptions.RecordNotFoundException">
+        /// Company ID: " + _getParams.ID + " was not found
+        /// </exception>
         public Company Execute()
         {
             var result = BaseReceiver<CompanyRoot, Parameters.GetCompany>.Get(
