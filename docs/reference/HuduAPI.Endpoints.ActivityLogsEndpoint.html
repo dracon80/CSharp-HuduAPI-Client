@@ -96,7 +96,8 @@
   
   <h1 id="HuduAPI_Endpoints_ActivityLogsEndpoint" data-uid="HuduAPI.Endpoints.ActivityLogsEndpoint" class="text-break">Class ActivityLogsEndpoint
   </h1>
-  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 summary"><p>Provides all the methods required to make calls to the activity_logs endpoint of the Hudu API.</p>
+</div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
@@ -109,6 +110,176 @@
   <div class="codewrapper">
     <pre><code class="lang-csharp hljs">public class ActivityLogsEndpoint</code></pre>
   </div>
+  <h5 id="HuduAPI_Endpoints_ActivityLogsEndpoint_remarks"><strong>Remarks</strong></h5>
+  <div class="markdown level0 remarks"><p>The activity_logs endpoint is a read only interface that retrives a list of acticity logs
+representing user activity on the Hudu server. Filtering can be applied to help narrow down
+the returned ActivityLog Objects.</p>
+</div>
+  <h3 id="constructors">Constructors
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/new/master/apiSpec/new?filename=HuduAPI_Endpoints_ActivityLogsEndpoint__ctor_System_String_System_String_.md&amp;value=---%0Auid%3A%20HuduAPI.Endpoints.ActivityLogsEndpoint.%23ctor(System.String%2CSystem.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Endpoints/ActivityLogsEndpoint.cs/#L43">View Source</a>
+  </span>
+  <a id="HuduAPI_Endpoints_ActivityLogsEndpoint__ctor_" data-uid="HuduAPI.Endpoints.ActivityLogsEndpoint.#ctor*"></a>
+  <h4 id="HuduAPI_Endpoints_ActivityLogsEndpoint__ctor_System_String_System_String_" data-uid="HuduAPI.Endpoints.ActivityLogsEndpoint.#ctor(System.String,System.String)">ActivityLogsEndpoint(String, String)</h4>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="HuduAPI.Endpoints.ActivityLogsEndpoint.html">ActivityLogsEndpoint</a> class with the
+requried API Key and the base URL of the Hudu Server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActivityLogsEndpoint(string huduAPIKey, string huduBaseURL)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">huduAPIKey</span></td>
+        <td><p>The hudu API key.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><span class="parametername">huduBaseURL</span></td>
+        <td><p>The hudu base URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/new/master/apiSpec/new?filename=HuduAPI_Endpoints_ActivityLogsEndpoint_HuduAPIKey.md&amp;value=---%0Auid%3A%20HuduAPI.Endpoints.ActivityLogsEndpoint.HuduAPIKey%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Endpoints/ActivityLogsEndpoint.cs/#L23">View Source</a>
+  </span>
+  <a id="HuduAPI_Endpoints_ActivityLogsEndpoint_HuduAPIKey_" data-uid="HuduAPI.Endpoints.ActivityLogsEndpoint.HuduAPIKey*"></a>
+  <h4 id="HuduAPI_Endpoints_ActivityLogsEndpoint_HuduAPIKey" data-uid="HuduAPI.Endpoints.ActivityLogsEndpoint.HuduAPIKey">HuduAPIKey</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the hudu API key that will be used for all calls to this Endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HuduAPIKey { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The hudu API key.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/new/master/apiSpec/new?filename=HuduAPI_Endpoints_ActivityLogsEndpoint_HuduBaseURL.md&amp;value=---%0Auid%3A%20HuduAPI.Endpoints.ActivityLogsEndpoint.HuduBaseURL%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Endpoints/ActivityLogsEndpoint.cs/#L31">View Source</a>
+  </span>
+  <a id="HuduAPI_Endpoints_ActivityLogsEndpoint_HuduBaseURL_" data-uid="HuduAPI.Endpoints.ActivityLogsEndpoint.HuduBaseURL*"></a>
+  <h4 id="HuduAPI_Endpoints_ActivityLogsEndpoint_HuduBaseURL" data-uid="HuduAPI.Endpoints.ActivityLogsEndpoint.HuduBaseURL">HuduBaseURL</h4>
+  <div class="markdown level1 summary"><p>Gets or sets the hudu base URL that will be used for all calls to the Endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string HuduBaseURL { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td><p>The hudu base URL.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/new/master/apiSpec/new?filename=HuduAPI_Endpoints_ActivityLogsEndpoint_Get_HuduAPI_Endpoints_Parameters_GetActivityLogs_.md&amp;value=---%0Auid%3A%20HuduAPI.Endpoints.ActivityLogsEndpoint.Get(HuduAPI.Endpoints.Parameters.GetActivityLogs)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Endpoints/ActivityLogsEndpoint.cs/#L65">View Source</a>
+  </span>
+  <a id="HuduAPI_Endpoints_ActivityLogsEndpoint_Get_" data-uid="HuduAPI.Endpoints.ActivityLogsEndpoint.Get*"></a>
+  <h4 id="HuduAPI_Endpoints_ActivityLogsEndpoint_Get_HuduAPI_Endpoints_Parameters_GetActivityLogs_" data-uid="HuduAPI.Endpoints.ActivityLogsEndpoint.Get(HuduAPI.Endpoints.Parameters.GetActivityLogs)">Get(GetActivityLogs)</h4>
+  <div class="markdown level1 summary"><p>Will make a call to the Hudu API activity_logs endpoint.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActivityLogs Get(GetActivityLogs parameters)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HuduAPI.Endpoints.Parameters.GetActivityLogs.html">GetActivityLogs</a></td>
+        <td><span class="parametername">parameters</span></td>
+        <td><p>The parameters to be used for filtering the activity logs that will be returned.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="HuduAPI.Records.ActivityLogs.html">ActivityLogs</a></td>
+        <td><p>Returns an ActivityLogs object with all the activities that matached the filtering paramaters.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 id="HuduAPI_Endpoints_ActivityLogsEndpoint_Get_HuduAPI_Endpoints_Parameters_GetActivityLogs__remarks">Remarks</h5>
+  <div class="markdown level1 remarks"><p>It is acceptable to cal the method with no paramaters, in which case all activity logs
+will be returnedd</p>
+</div>
 </article>
                 </div>
 

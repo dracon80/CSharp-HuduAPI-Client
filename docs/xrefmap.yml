@@ -13,6 +13,116 @@ references:
   commentId: T:HuduAPI.Endpoints.ActivityLogsEndpoint
   fullName: HuduAPI.Endpoints.ActivityLogsEndpoint
   nameWithType: ActivityLogsEndpoint
+- uid: HuduAPI.Endpoints.ActivityLogsEndpoint.#ctor(System.String,System.String)
+  name: ActivityLogsEndpoint(String, String)
+  href: reference/HuduAPI.Endpoints.ActivityLogsEndpoint.html#HuduAPI_Endpoints_ActivityLogsEndpoint__ctor_System_String_System_String_
+  commentId: M:HuduAPI.Endpoints.ActivityLogsEndpoint.#ctor(System.String,System.String)
+  fullName: HuduAPI.Endpoints.ActivityLogsEndpoint.ActivityLogsEndpoint(System.String, System.String)
+  nameWithType: ActivityLogsEndpoint.ActivityLogsEndpoint(String, String)
+- uid: HuduAPI.Endpoints.ActivityLogsEndpoint.#ctor*
+  name: ActivityLogsEndpoint
+  href: reference/HuduAPI.Endpoints.ActivityLogsEndpoint.html#HuduAPI_Endpoints_ActivityLogsEndpoint__ctor_
+  commentId: Overload:HuduAPI.Endpoints.ActivityLogsEndpoint.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.ActivityLogsEndpoint.ActivityLogsEndpoint
+  nameWithType: ActivityLogsEndpoint.ActivityLogsEndpoint
+- uid: HuduAPI.Endpoints.ActivityLogsEndpoint.Get(HuduAPI.Endpoints.Parameters.GetActivityLogs)
+  name: Get(GetActivityLogs)
+  href: reference/HuduAPI.Endpoints.ActivityLogsEndpoint.html#HuduAPI_Endpoints_ActivityLogsEndpoint_Get_HuduAPI_Endpoints_Parameters_GetActivityLogs_
+  commentId: M:HuduAPI.Endpoints.ActivityLogsEndpoint.Get(HuduAPI.Endpoints.Parameters.GetActivityLogs)
+  fullName: HuduAPI.Endpoints.ActivityLogsEndpoint.Get(HuduAPI.Endpoints.Parameters.GetActivityLogs)
+  nameWithType: ActivityLogsEndpoint.Get(GetActivityLogs)
+- uid: HuduAPI.Endpoints.ActivityLogsEndpoint.Get*
+  name: Get
+  href: reference/HuduAPI.Endpoints.ActivityLogsEndpoint.html#HuduAPI_Endpoints_ActivityLogsEndpoint_Get_
+  commentId: Overload:HuduAPI.Endpoints.ActivityLogsEndpoint.Get
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.ActivityLogsEndpoint.Get
+  nameWithType: ActivityLogsEndpoint.Get
+- uid: HuduAPI.Endpoints.ActivityLogsEndpoint.HuduAPIKey
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.ActivityLogsEndpoint.html#HuduAPI_Endpoints_ActivityLogsEndpoint_HuduAPIKey
+  commentId: P:HuduAPI.Endpoints.ActivityLogsEndpoint.HuduAPIKey
+  fullName: HuduAPI.Endpoints.ActivityLogsEndpoint.HuduAPIKey
+  nameWithType: ActivityLogsEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.ActivityLogsEndpoint.HuduAPIKey*
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.ActivityLogsEndpoint.html#HuduAPI_Endpoints_ActivityLogsEndpoint_HuduAPIKey_
+  commentId: Overload:HuduAPI.Endpoints.ActivityLogsEndpoint.HuduAPIKey
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.ActivityLogsEndpoint.HuduAPIKey
+  nameWithType: ActivityLogsEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.ActivityLogsEndpoint.HuduBaseURL
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.ActivityLogsEndpoint.html#HuduAPI_Endpoints_ActivityLogsEndpoint_HuduBaseURL
+  commentId: P:HuduAPI.Endpoints.ActivityLogsEndpoint.HuduBaseURL
+  fullName: HuduAPI.Endpoints.ActivityLogsEndpoint.HuduBaseURL
+  nameWithType: ActivityLogsEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.ActivityLogsEndpoint.HuduBaseURL*
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.ActivityLogsEndpoint.html#HuduAPI_Endpoints_ActivityLogsEndpoint_HuduBaseURL_
+  commentId: Overload:HuduAPI.Endpoints.ActivityLogsEndpoint.HuduBaseURL
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.ActivityLogsEndpoint.HuduBaseURL
+  nameWithType: ActivityLogsEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.APIInfoEndpoint
+  name: APIInfoEndpoint
+  href: reference/HuduAPI.Endpoints.APIInfoEndpoint.html
+  commentId: T:HuduAPI.Endpoints.APIInfoEndpoint
+  fullName: HuduAPI.Endpoints.APIInfoEndpoint
+  nameWithType: APIInfoEndpoint
+- uid: HuduAPI.Endpoints.APIInfoEndpoint.#ctor(System.String,System.String)
+  name: APIInfoEndpoint(String, String)
+  href: reference/HuduAPI.Endpoints.APIInfoEndpoint.html#HuduAPI_Endpoints_APIInfoEndpoint__ctor_System_String_System_String_
+  commentId: M:HuduAPI.Endpoints.APIInfoEndpoint.#ctor(System.String,System.String)
+  fullName: HuduAPI.Endpoints.APIInfoEndpoint.APIInfoEndpoint(System.String, System.String)
+  nameWithType: APIInfoEndpoint.APIInfoEndpoint(String, String)
+- uid: HuduAPI.Endpoints.APIInfoEndpoint.#ctor*
+  name: APIInfoEndpoint
+  href: reference/HuduAPI.Endpoints.APIInfoEndpoint.html#HuduAPI_Endpoints_APIInfoEndpoint__ctor_
+  commentId: Overload:HuduAPI.Endpoints.APIInfoEndpoint.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.APIInfoEndpoint.APIInfoEndpoint
+  nameWithType: APIInfoEndpoint.APIInfoEndpoint
+- uid: HuduAPI.Endpoints.APIInfoEndpoint.Get
+  name: Get()
+  href: reference/HuduAPI.Endpoints.APIInfoEndpoint.html#HuduAPI_Endpoints_APIInfoEndpoint_Get
+  commentId: M:HuduAPI.Endpoints.APIInfoEndpoint.Get
+  fullName: HuduAPI.Endpoints.APIInfoEndpoint.Get()
+  nameWithType: APIInfoEndpoint.Get()
+- uid: HuduAPI.Endpoints.APIInfoEndpoint.Get*
+  name: Get
+  href: reference/HuduAPI.Endpoints.APIInfoEndpoint.html#HuduAPI_Endpoints_APIInfoEndpoint_Get_
+  commentId: Overload:HuduAPI.Endpoints.APIInfoEndpoint.Get
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.APIInfoEndpoint.Get
+  nameWithType: APIInfoEndpoint.Get
+- uid: HuduAPI.Endpoints.APIInfoEndpoint.HuduAPIKey
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.APIInfoEndpoint.html#HuduAPI_Endpoints_APIInfoEndpoint_HuduAPIKey
+  commentId: P:HuduAPI.Endpoints.APIInfoEndpoint.HuduAPIKey
+  fullName: HuduAPI.Endpoints.APIInfoEndpoint.HuduAPIKey
+  nameWithType: APIInfoEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.APIInfoEndpoint.HuduAPIKey*
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.APIInfoEndpoint.html#HuduAPI_Endpoints_APIInfoEndpoint_HuduAPIKey_
+  commentId: Overload:HuduAPI.Endpoints.APIInfoEndpoint.HuduAPIKey
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.APIInfoEndpoint.HuduAPIKey
+  nameWithType: APIInfoEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.APIInfoEndpoint.HuduBaseURL
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.APIInfoEndpoint.html#HuduAPI_Endpoints_APIInfoEndpoint_HuduBaseURL
+  commentId: P:HuduAPI.Endpoints.APIInfoEndpoint.HuduBaseURL
+  fullName: HuduAPI.Endpoints.APIInfoEndpoint.HuduBaseURL
+  nameWithType: APIInfoEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.APIInfoEndpoint.HuduBaseURL*
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.APIInfoEndpoint.html#HuduAPI_Endpoints_APIInfoEndpoint_HuduBaseURL_
+  commentId: Overload:HuduAPI.Endpoints.APIInfoEndpoint.HuduBaseURL
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.APIInfoEndpoint.HuduBaseURL
+  nameWithType: APIInfoEndpoint.HuduBaseURL
 - uid: HuduAPI.Endpoints.CompanyEndpoint
   name: CompanyEndpoint
   href: reference/HuduAPI.Endpoints.CompanyEndpoint.html
@@ -120,83 +230,6 @@ references:
   commentId: N:HuduAPI.Endpoints.Parameters
   fullName: HuduAPI.Endpoints.Parameters
   nameWithType: HuduAPI.Endpoints.Parameters
-- uid: HuduAPI.Endpoints.Parameters.EndpointParameters`1
-  name: EndpointParameters<ParamType>
-  href: reference/HuduAPI.Endpoints.Parameters.EndpointParameters-1.html
-  commentId: T:HuduAPI.Endpoints.Parameters.EndpointParameters`1
-  name.vb: EndpointParameters(Of ParamType)
-  fullName: HuduAPI.Endpoints.Parameters.EndpointParameters<ParamType>
-  fullName.vb: HuduAPI.Endpoints.Parameters.EndpointParameters(Of ParamType)
-  nameWithType: EndpointParameters<ParamType>
-  nameWithType.vb: EndpointParameters(Of ParamType)
-- uid: HuduAPI.Endpoints.Parameters.EndpointParameters`1.#ctor(System.String,System.String,`0)
-  name: EndpointParameters(String, String, ParamType)
-  href: reference/HuduAPI.Endpoints.Parameters.EndpointParameters-1.html#HuduAPI_Endpoints_Parameters_EndpointParameters_1__ctor_System_String_System_String__0_
-  commentId: M:HuduAPI.Endpoints.Parameters.EndpointParameters`1.#ctor(System.String,System.String,`0)
-  fullName: HuduAPI.Endpoints.Parameters.EndpointParameters<ParamType>.EndpointParameters(System.String, System.String, ParamType)
-  fullName.vb: HuduAPI.Endpoints.Parameters.EndpointParameters(Of ParamType).EndpointParameters(System.String, System.String, ParamType)
-  nameWithType: EndpointParameters<ParamType>.EndpointParameters(String, String, ParamType)
-  nameWithType.vb: EndpointParameters(Of ParamType).EndpointParameters(String, String, ParamType)
-- uid: HuduAPI.Endpoints.Parameters.EndpointParameters`1.#ctor*
-  name: EndpointParameters
-  href: reference/HuduAPI.Endpoints.Parameters.EndpointParameters-1.html#HuduAPI_Endpoints_Parameters_EndpointParameters_1__ctor_
-  commentId: Overload:HuduAPI.Endpoints.Parameters.EndpointParameters`1.#ctor
-  isSpec: "True"
-  fullName: HuduAPI.Endpoints.Parameters.EndpointParameters<ParamType>.EndpointParameters
-  fullName.vb: HuduAPI.Endpoints.Parameters.EndpointParameters(Of ParamType).EndpointParameters
-  nameWithType: EndpointParameters<ParamType>.EndpointParameters
-  nameWithType.vb: EndpointParameters(Of ParamType).EndpointParameters
-- uid: HuduAPI.Endpoints.Parameters.EndpointParameters`1.HuduAPIKey
-  name: HuduAPIKey
-  href: reference/HuduAPI.Endpoints.Parameters.EndpointParameters-1.html#HuduAPI_Endpoints_Parameters_EndpointParameters_1_HuduAPIKey
-  commentId: P:HuduAPI.Endpoints.Parameters.EndpointParameters`1.HuduAPIKey
-  fullName: HuduAPI.Endpoints.Parameters.EndpointParameters<ParamType>.HuduAPIKey
-  fullName.vb: HuduAPI.Endpoints.Parameters.EndpointParameters(Of ParamType).HuduAPIKey
-  nameWithType: EndpointParameters<ParamType>.HuduAPIKey
-  nameWithType.vb: EndpointParameters(Of ParamType).HuduAPIKey
-- uid: HuduAPI.Endpoints.Parameters.EndpointParameters`1.HuduAPIKey*
-  name: HuduAPIKey
-  href: reference/HuduAPI.Endpoints.Parameters.EndpointParameters-1.html#HuduAPI_Endpoints_Parameters_EndpointParameters_1_HuduAPIKey_
-  commentId: Overload:HuduAPI.Endpoints.Parameters.EndpointParameters`1.HuduAPIKey
-  isSpec: "True"
-  fullName: HuduAPI.Endpoints.Parameters.EndpointParameters<ParamType>.HuduAPIKey
-  fullName.vb: HuduAPI.Endpoints.Parameters.EndpointParameters(Of ParamType).HuduAPIKey
-  nameWithType: EndpointParameters<ParamType>.HuduAPIKey
-  nameWithType.vb: EndpointParameters(Of ParamType).HuduAPIKey
-- uid: HuduAPI.Endpoints.Parameters.EndpointParameters`1.HuduBaseURL
-  name: HuduBaseURL
-  href: reference/HuduAPI.Endpoints.Parameters.EndpointParameters-1.html#HuduAPI_Endpoints_Parameters_EndpointParameters_1_HuduBaseURL
-  commentId: P:HuduAPI.Endpoints.Parameters.EndpointParameters`1.HuduBaseURL
-  fullName: HuduAPI.Endpoints.Parameters.EndpointParameters<ParamType>.HuduBaseURL
-  fullName.vb: HuduAPI.Endpoints.Parameters.EndpointParameters(Of ParamType).HuduBaseURL
-  nameWithType: EndpointParameters<ParamType>.HuduBaseURL
-  nameWithType.vb: EndpointParameters(Of ParamType).HuduBaseURL
-- uid: HuduAPI.Endpoints.Parameters.EndpointParameters`1.HuduBaseURL*
-  name: HuduBaseURL
-  href: reference/HuduAPI.Endpoints.Parameters.EndpointParameters-1.html#HuduAPI_Endpoints_Parameters_EndpointParameters_1_HuduBaseURL_
-  commentId: Overload:HuduAPI.Endpoints.Parameters.EndpointParameters`1.HuduBaseURL
-  isSpec: "True"
-  fullName: HuduAPI.Endpoints.Parameters.EndpointParameters<ParamType>.HuduBaseURL
-  fullName.vb: HuduAPI.Endpoints.Parameters.EndpointParameters(Of ParamType).HuduBaseURL
-  nameWithType: EndpointParameters<ParamType>.HuduBaseURL
-  nameWithType.vb: EndpointParameters(Of ParamType).HuduBaseURL
-- uid: HuduAPI.Endpoints.Parameters.EndpointParameters`1.Parameters
-  name: Parameters
-  href: reference/HuduAPI.Endpoints.Parameters.EndpointParameters-1.html#HuduAPI_Endpoints_Parameters_EndpointParameters_1_Parameters
-  commentId: P:HuduAPI.Endpoints.Parameters.EndpointParameters`1.Parameters
-  fullName: HuduAPI.Endpoints.Parameters.EndpointParameters<ParamType>.Parameters
-  fullName.vb: HuduAPI.Endpoints.Parameters.EndpointParameters(Of ParamType).Parameters
-  nameWithType: EndpointParameters<ParamType>.Parameters
-  nameWithType.vb: EndpointParameters(Of ParamType).Parameters
-- uid: HuduAPI.Endpoints.Parameters.EndpointParameters`1.Parameters*
-  name: Parameters
-  href: reference/HuduAPI.Endpoints.Parameters.EndpointParameters-1.html#HuduAPI_Endpoints_Parameters_EndpointParameters_1_Parameters_
-  commentId: Overload:HuduAPI.Endpoints.Parameters.EndpointParameters`1.Parameters
-  isSpec: "True"
-  fullName: HuduAPI.Endpoints.Parameters.EndpointParameters<ParamType>.Parameters
-  fullName.vb: HuduAPI.Endpoints.Parameters.EndpointParameters(Of ParamType).Parameters
-  nameWithType: EndpointParameters<ParamType>.Parameters
-  nameWithType.vb: EndpointParameters(Of ParamType).Parameters
 - uid: HuduAPI.Endpoints.Parameters.GetActivityLogs
   name: GetActivityLogs
   href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogs.html
@@ -258,19 +291,19 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Endpoints.Parameters.GetActivityLogs.PageSize
   nameWithType: GetActivityLogs.PageSize
-- uid: HuduAPI.Endpoints.Parameters.GetActivityLogs.ResourceId
-  name: ResourceId
-  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogs.html#HuduAPI_Endpoints_Parameters_GetActivityLogs_ResourceId
-  commentId: P:HuduAPI.Endpoints.Parameters.GetActivityLogs.ResourceId
-  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogs.ResourceId
-  nameWithType: GetActivityLogs.ResourceId
-- uid: HuduAPI.Endpoints.Parameters.GetActivityLogs.ResourceId*
-  name: ResourceId
-  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogs.html#HuduAPI_Endpoints_Parameters_GetActivityLogs_ResourceId_
-  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogs.ResourceId
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogs.ResourceID
+  name: ResourceID
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogs.html#HuduAPI_Endpoints_Parameters_GetActivityLogs_ResourceID
+  commentId: P:HuduAPI.Endpoints.Parameters.GetActivityLogs.ResourceID
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogs.ResourceID
+  nameWithType: GetActivityLogs.ResourceID
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogs.ResourceID*
+  name: ResourceID
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogs.html#HuduAPI_Endpoints_Parameters_GetActivityLogs_ResourceID_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogs.ResourceID
   isSpec: "True"
-  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogs.ResourceId
-  nameWithType: GetActivityLogs.ResourceId
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogs.ResourceID
+  nameWithType: GetActivityLogs.ResourceID
 - uid: HuduAPI.Endpoints.Parameters.GetActivityLogs.ResourceType
   name: ResourceType
   href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogs.html#HuduAPI_Endpoints_Parameters_GetActivityLogs_ResourceType
@@ -310,19 +343,168 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Endpoints.Parameters.GetActivityLogs.UserEmail
   nameWithType: GetActivityLogs.UserEmail
-- uid: HuduAPI.Endpoints.Parameters.GetActivityLogs.UserId
-  name: UserId
-  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogs.html#HuduAPI_Endpoints_Parameters_GetActivityLogs_UserId
-  commentId: P:HuduAPI.Endpoints.Parameters.GetActivityLogs.UserId
-  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogs.UserId
-  nameWithType: GetActivityLogs.UserId
-- uid: HuduAPI.Endpoints.Parameters.GetActivityLogs.UserId*
-  name: UserId
-  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogs.html#HuduAPI_Endpoints_Parameters_GetActivityLogs_UserId_
-  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogs.UserId
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogs.UserID
+  name: UserID
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogs.html#HuduAPI_Endpoints_Parameters_GetActivityLogs_UserID
+  commentId: P:HuduAPI.Endpoints.Parameters.GetActivityLogs.UserID
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogs.UserID
+  nameWithType: GetActivityLogs.UserID
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogs.UserID*
+  name: UserID
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogs.html#HuduAPI_Endpoints_Parameters_GetActivityLogs_UserID_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogs.UserID
   isSpec: "True"
-  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogs.UserId
-  nameWithType: GetActivityLogs.UserId
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogs.UserID
+  nameWithType: GetActivityLogs.UserID
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder
+  name: GetActivityLogsBuilder
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html
+  commentId: T:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder
+  nameWithType: GetActivityLogsBuilder
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.#ctor
+  name: GetActivityLogsBuilder()
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder__ctor
+  commentId: M:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.#ctor
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.GetActivityLogsBuilder()
+  nameWithType: GetActivityLogsBuilder.GetActivityLogsBuilder()
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.#ctor*
+  name: GetActivityLogsBuilder
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder__ctor_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.GetActivityLogsBuilder
+  nameWithType: GetActivityLogsBuilder.GetActivityLogsBuilder
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.Build
+  name: Build()
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_Build
+  commentId: M:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.Build
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.Build()
+  nameWithType: GetActivityLogsBuilder.Build()
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.Build*
+  name: Build
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_Build_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.Build
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.Build
+  nameWithType: GetActivityLogsBuilder.Build
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.Reset
+  name: Reset()
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_Reset
+  commentId: M:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.Reset
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.Reset()
+  nameWithType: GetActivityLogsBuilder.Reset()
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.Reset*
+  name: Reset
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_Reset_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.Reset
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.Reset
+  nameWithType: GetActivityLogsBuilder.Reset
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithActionMessage(System.String)
+  name: WithActionMessage(String)
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithActionMessage_System_String_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithActionMessage(System.String)
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithActionMessage(System.String)
+  nameWithType: GetActivityLogsBuilder.WithActionMessage(String)
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithActionMessage*
+  name: WithActionMessage
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithActionMessage_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithActionMessage
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithActionMessage
+  nameWithType: GetActivityLogsBuilder.WithActionMessage
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithPage(System.Int32)
+  name: WithPage(Int32)
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithPage_System_Int32_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithPage(System.Int32)
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithPage(System.Int32)
+  nameWithType: GetActivityLogsBuilder.WithPage(Int32)
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithPage*
+  name: WithPage
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithPage_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithPage
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithPage
+  nameWithType: GetActivityLogsBuilder.WithPage
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithPageSize(System.Int32)
+  name: WithPageSize(Int32)
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithPageSize_System_Int32_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithPageSize(System.Int32)
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithPageSize(System.Int32)
+  nameWithType: GetActivityLogsBuilder.WithPageSize(Int32)
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithPageSize*
+  name: WithPageSize
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithPageSize_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithPageSize
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithPageSize
+  nameWithType: GetActivityLogsBuilder.WithPageSize
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithResourceID(System.Int32)
+  name: WithResourceID(Int32)
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithResourceID_System_Int32_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithResourceID(System.Int32)
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithResourceID(System.Int32)
+  nameWithType: GetActivityLogsBuilder.WithResourceID(Int32)
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithResourceID*
+  name: WithResourceID
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithResourceID_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithResourceID
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithResourceID
+  nameWithType: GetActivityLogsBuilder.WithResourceID
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithResourceType(System.String)
+  name: WithResourceType(String)
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithResourceType_System_String_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithResourceType(System.String)
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithResourceType(System.String)
+  nameWithType: GetActivityLogsBuilder.WithResourceType(String)
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithResourceType*
+  name: WithResourceType
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithResourceType_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithResourceType
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithResourceType
+  nameWithType: GetActivityLogsBuilder.WithResourceType
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithStartDate(System.String)
+  name: WithStartDate(String)
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithStartDate_System_String_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithStartDate(System.String)
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithStartDate(System.String)
+  nameWithType: GetActivityLogsBuilder.WithStartDate(String)
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithStartDate*
+  name: WithStartDate
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithStartDate_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithStartDate
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithStartDate
+  nameWithType: GetActivityLogsBuilder.WithStartDate
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithUserEmail(System.String)
+  name: WithUserEmail(String)
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithUserEmail_System_String_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithUserEmail(System.String)
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithUserEmail(System.String)
+  nameWithType: GetActivityLogsBuilder.WithUserEmail(String)
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithUserEmail*
+  name: WithUserEmail
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithUserEmail_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithUserEmail
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithUserEmail
+  nameWithType: GetActivityLogsBuilder.WithUserEmail
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithUserID(System.Int32)
+  name: WithUserID(Int32)
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithUserID_System_Int32_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithUserID(System.Int32)
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithUserID(System.Int32)
+  nameWithType: GetActivityLogsBuilder.WithUserID(Int32)
+- uid: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithUserID*
+  name: WithUserID
+  href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html#HuduAPI_Endpoints_Parameters_GetActivityLogsBuilder_WithUserID_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithUserID
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.WithUserID
+  nameWithType: GetActivityLogsBuilder.WithUserID
 - uid: HuduAPI.Endpoints.Parameters.GetCompanies
   name: GetCompanies
   href: reference/HuduAPI.Endpoints.Parameters.GetCompanies.html
@@ -462,6 +644,168 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Endpoints.Parameters.GetCompanies.Website
   nameWithType: GetCompanies.Website
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder
+  name: GetCompaniesBuilder
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html
+  commentId: T:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder
+  nameWithType: GetCompaniesBuilder
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.#ctor
+  name: GetCompaniesBuilder()
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder__ctor
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.#ctor
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.GetCompaniesBuilder()
+  nameWithType: GetCompaniesBuilder.GetCompaniesBuilder()
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.#ctor*
+  name: GetCompaniesBuilder
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder__ctor_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.GetCompaniesBuilder
+  nameWithType: GetCompaniesBuilder.GetCompaniesBuilder
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.Build
+  name: Build()
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_Build
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.Build
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.Build()
+  nameWithType: GetCompaniesBuilder.Build()
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.Build*
+  name: Build
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_Build_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.Build
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.Build
+  nameWithType: GetCompaniesBuilder.Build
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.Reset
+  name: Reset()
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_Reset
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.Reset
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.Reset()
+  nameWithType: GetCompaniesBuilder.Reset()
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.Reset*
+  name: Reset
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_Reset_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.Reset
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.Reset
+  nameWithType: GetCompaniesBuilder.Reset
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithCity(System.String)
+  name: WithCity(String)
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithCity_System_String_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithCity(System.String)
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithCity(System.String)
+  nameWithType: GetCompaniesBuilder.WithCity(String)
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithCity*
+  name: WithCity
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithCity_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithCity
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithCity
+  nameWithType: GetCompaniesBuilder.WithCity
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithIDNumber(System.String)
+  name: WithIDNumber(String)
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithIDNumber_System_String_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithIDNumber(System.String)
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithIDNumber(System.String)
+  nameWithType: GetCompaniesBuilder.WithIDNumber(String)
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithIDNumber*
+  name: WithIDNumber
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithIDNumber_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithIDNumber
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithIDNumber
+  nameWithType: GetCompaniesBuilder.WithIDNumber
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithIntegrationID(System.String)
+  name: WithIntegrationID(String)
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithIntegrationID_System_String_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithIntegrationID(System.String)
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithIntegrationID(System.String)
+  nameWithType: GetCompaniesBuilder.WithIntegrationID(String)
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithIntegrationID*
+  name: WithIntegrationID
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithIntegrationID_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithIntegrationID
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithIntegrationID
+  nameWithType: GetCompaniesBuilder.WithIntegrationID
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithName(System.String)
+  name: WithName(String)
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithName_System_String_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithName(System.String)
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithName(System.String)
+  nameWithType: GetCompaniesBuilder.WithName(String)
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithName*
+  name: WithName
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithName_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithName
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithName
+  nameWithType: GetCompaniesBuilder.WithName
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPage(System.Int32)
+  name: WithPage(Int32)
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithPage_System_Int32_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPage(System.Int32)
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPage(System.Int32)
+  nameWithType: GetCompaniesBuilder.WithPage(Int32)
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPage*
+  name: WithPage
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithPage_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPage
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPage
+  nameWithType: GetCompaniesBuilder.WithPage
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPageSize(System.Int32)
+  name: WithPageSize(Int32)
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithPageSize_System_Int32_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPageSize(System.Int32)
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPageSize(System.Int32)
+  nameWithType: GetCompaniesBuilder.WithPageSize(Int32)
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPageSize*
+  name: WithPageSize
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithPageSize_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPageSize
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPageSize
+  nameWithType: GetCompaniesBuilder.WithPageSize
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPhoneNumber(System.String)
+  name: WithPhoneNumber(String)
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithPhoneNumber_System_String_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPhoneNumber(System.String)
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPhoneNumber(System.String)
+  nameWithType: GetCompaniesBuilder.WithPhoneNumber(String)
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPhoneNumber*
+  name: WithPhoneNumber
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithPhoneNumber_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPhoneNumber
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithPhoneNumber
+  nameWithType: GetCompaniesBuilder.WithPhoneNumber
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithState(System.String)
+  name: WithState(String)
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithState_System_String_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithState(System.String)
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithState(System.String)
+  nameWithType: GetCompaniesBuilder.WithState(String)
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithState*
+  name: WithState
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithState_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithState
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithState
+  nameWithType: GetCompaniesBuilder.WithState
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithWebsite(System.String)
+  name: WithWebsite(String)
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithWebsite_System_String_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithWebsite(System.String)
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithWebsite(System.String)
+  nameWithType: GetCompaniesBuilder.WithWebsite(String)
+- uid: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithWebsite*
+  name: WithWebsite
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html#HuduAPI_Endpoints_Parameters_GetCompaniesBuilder_WithWebsite_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithWebsite
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.WithWebsite
+  nameWithType: GetCompaniesBuilder.WithWebsite
 - uid: HuduAPI.Endpoints.Parameters.GetCompany
   name: GetCompany
   href: reference/HuduAPI.Endpoints.Parameters.GetCompany.html
@@ -494,6 +838,64 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Endpoints.Parameters.GetCompany.ID
   nameWithType: GetCompany.ID
+- uid: HuduAPI.Endpoints.Parameters.GetCompanyBuilder
+  name: GetCompanyBuilder
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompanyBuilder.html
+  commentId: T:HuduAPI.Endpoints.Parameters.GetCompanyBuilder
+  fullName: HuduAPI.Endpoints.Parameters.GetCompanyBuilder
+  nameWithType: GetCompanyBuilder
+- uid: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.#ctor
+  name: GetCompanyBuilder()
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompanyBuilder.html#HuduAPI_Endpoints_Parameters_GetCompanyBuilder__ctor
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompanyBuilder.#ctor
+  fullName: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.GetCompanyBuilder()
+  nameWithType: GetCompanyBuilder.GetCompanyBuilder()
+- uid: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.#ctor*
+  name: GetCompanyBuilder
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompanyBuilder.html#HuduAPI_Endpoints_Parameters_GetCompanyBuilder__ctor_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompanyBuilder.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.GetCompanyBuilder
+  nameWithType: GetCompanyBuilder.GetCompanyBuilder
+- uid: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.Build
+  name: Build()
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompanyBuilder.html#HuduAPI_Endpoints_Parameters_GetCompanyBuilder_Build
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompanyBuilder.Build
+  fullName: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.Build()
+  nameWithType: GetCompanyBuilder.Build()
+- uid: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.Build*
+  name: Build
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompanyBuilder.html#HuduAPI_Endpoints_Parameters_GetCompanyBuilder_Build_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompanyBuilder.Build
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.Build
+  nameWithType: GetCompanyBuilder.Build
+- uid: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.Reset
+  name: Reset()
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompanyBuilder.html#HuduAPI_Endpoints_Parameters_GetCompanyBuilder_Reset
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompanyBuilder.Reset
+  fullName: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.Reset()
+  nameWithType: GetCompanyBuilder.Reset()
+- uid: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.Reset*
+  name: Reset
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompanyBuilder.html#HuduAPI_Endpoints_Parameters_GetCompanyBuilder_Reset_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompanyBuilder.Reset
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.Reset
+  nameWithType: GetCompanyBuilder.Reset
+- uid: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.WithID(System.Int32)
+  name: WithID(Int32)
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompanyBuilder.html#HuduAPI_Endpoints_Parameters_GetCompanyBuilder_WithID_System_Int32_
+  commentId: M:HuduAPI.Endpoints.Parameters.GetCompanyBuilder.WithID(System.Int32)
+  fullName: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.WithID(System.Int32)
+  nameWithType: GetCompanyBuilder.WithID(Int32)
+- uid: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.WithID*
+  name: WithID
+  href: reference/HuduAPI.Endpoints.Parameters.GetCompanyBuilder.html#HuduAPI_Endpoints_Parameters_GetCompanyBuilder_WithID_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.GetCompanyBuilder.WithID
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.GetCompanyBuilder.WithID
+  nameWithType: GetCompanyBuilder.WithID
 - uid: HuduAPI.Endpoints.Parameters.IParameters
   name: IParameters
   href: reference/HuduAPI.Endpoints.Parameters.IParameters.html
@@ -752,6 +1154,28 @@ references:
   commentId: T:HuduAPI.Records.ActivityLogs
   fullName: HuduAPI.Records.ActivityLogs
   nameWithType: ActivityLogs
+- uid: HuduAPI.Records.ActivityLogs.#ctor
+  name: ActivityLogs()
+  href: reference/HuduAPI.Records.ActivityLogs.html#HuduAPI_Records_ActivityLogs__ctor
+  commentId: M:HuduAPI.Records.ActivityLogs.#ctor
+  fullName: HuduAPI.Records.ActivityLogs.ActivityLogs()
+  nameWithType: ActivityLogs.ActivityLogs()
+- uid: HuduAPI.Records.ActivityLogs.#ctor(List{HuduAPI.Records.ActivityLog})
+  name: ActivityLogs(List<ActivityLog>)
+  href: reference/HuduAPI.Records.ActivityLogs.html#HuduAPI_Records_ActivityLogs__ctor_List_HuduAPI_Records_ActivityLog__
+  commentId: M:HuduAPI.Records.ActivityLogs.#ctor(List{HuduAPI.Records.ActivityLog})
+  name.vb: ActivityLogs(List(Of ActivityLog))
+  fullName: HuduAPI.Records.ActivityLogs.ActivityLogs(List<HuduAPI.Records.ActivityLog>)
+  fullName.vb: HuduAPI.Records.ActivityLogs.ActivityLogs(List(Of HuduAPI.Records.ActivityLog))
+  nameWithType: ActivityLogs.ActivityLogs(List<ActivityLog>)
+  nameWithType.vb: ActivityLogs.ActivityLogs(List(Of ActivityLog))
+- uid: HuduAPI.Records.ActivityLogs.#ctor*
+  name: ActivityLogs
+  href: reference/HuduAPI.Records.ActivityLogs.html#HuduAPI_Records_ActivityLogs__ctor_
+  commentId: Overload:HuduAPI.Records.ActivityLogs.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Records.ActivityLogs.ActivityLogs
+  nameWithType: ActivityLogs.ActivityLogs
 - uid: HuduAPI.Records.ActivityLogs.ActivityList
   name: ActivityList
   href: reference/HuduAPI.Records.ActivityLogs.html#HuduAPI_Records_ActivityLogs_ActivityList
