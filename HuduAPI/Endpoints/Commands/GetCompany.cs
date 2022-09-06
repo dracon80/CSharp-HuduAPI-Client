@@ -19,7 +19,7 @@ namespace HuduAPI.Endpoints.Commands
 
         public GetCompany(String huduBaseURL, string huduAPIKey, Parameters.GetCompany parameters)
         {
-            _getParams = parameters;
+            _getParams = parameters ?? throw new ArgumentNullException("GetCompany parameters cannot be null"); ;
             _url = huduBaseURL + "api/v1/companies/" + parameters.ID;
             _apiKye = huduAPIKey;
         }
