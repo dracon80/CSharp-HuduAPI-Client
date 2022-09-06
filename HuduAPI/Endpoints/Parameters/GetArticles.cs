@@ -5,9 +5,8 @@ using System.Runtime.InteropServices;
 namespace HuduAPI.Endpoints.Parameters
 {
     /// <summary>
-    /// Paramaters to get a
+    /// Paramaters to get articles from the Hudu API endpoint /api/v1/articles
     /// </summary>
-    /// <seealso cref="HuduAPI.Endpoints.Parameters.IParameters" />
     [JsonObject(NamingStrategyType = typeof(SnakeCaseNamingStrategy))]
     public class GetArticles : IParameters
     {
