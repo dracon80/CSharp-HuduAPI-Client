@@ -16,6 +16,12 @@
     <Compile Update="Endpoints\Parameters\GetActivityLogsBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
+    <Compile Update="Endpoints\Parameters\GetArticleBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\GetArticlesBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
     <Compile Update="Endpoints\Parameters\GetCompaniesBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
