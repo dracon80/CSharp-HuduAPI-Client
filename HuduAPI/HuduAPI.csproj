@@ -22,6 +22,12 @@
     <Compile Update="Endpoints\Parameters\GetArticlesBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
+    <Compile Update="Endpoints\Parameters\GetAssetLayoutBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\GetAssetLayoutsBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
     <Compile Update="Endpoints\Parameters\GetCompaniesBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
