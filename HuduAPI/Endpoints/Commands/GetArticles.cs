@@ -26,7 +26,8 @@ namespace HuduAPI.Endpoints.Commands
         {
             var result = BaseReceiver<Articles, Parameters.GetArticles>.Get(
                 url: _url,
-                apiKey: _apiKey
+                apiKey: _apiKey,
+                _getParams
                 );
 
             if (result == null)

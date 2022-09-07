@@ -13,16 +13,16 @@ namespace HuduAPI.Endpoints.Commands
         /// <summary>
         /// Initializes a new instance of the <see cref="GetAPIInfo" /> class.
         /// </summary>
-        /// <param name="url">
+        /// <param name="huduBaseURL">
         /// The URL.
         /// </param>
-        /// <param name="apiKey">
+        /// <param name="huduAPIKey">
         /// The API key.
         /// </param>
-        public GetAPIInfo(string url, string apiKey)
+        public GetAPIInfo(String huduBaseURL, string huduAPIKey)
         {
-            _url = url + "api/v1/api_info";
-            _apiKey = apiKey;
+            _url = huduBaseURL + "api/v1/api_info";
+            _apiKey = huduAPIKey;
         }
 
         public APIInfo Execute()
