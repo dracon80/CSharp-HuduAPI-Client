@@ -28,6 +28,12 @@
     <Compile Update="Endpoints\Parameters\GetAssetLayoutsBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
+    <Compile Update="Endpoints\Parameters\GetAssetPasswordBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\GetAssetPasswordsBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
     <Compile Update="Endpoints\Parameters\GetCompaniesBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>

@@ -74,8 +74,13 @@ namespace HuduAPI.Records
     /// <seealso cref="HuduAPI.Records.IRecord" />
     public class AssetPasswords : IRecord
     {
+        public AssetPasswords()
+        {
+            this.AssetPasswordList = new List<AssetPassword>();
+        }
+
         [JsonProperty("asset_passwords")]
-        public IList<AssetPassword>? AssetPasswordList { get; set; }
+        public IList<AssetPassword> AssetPasswordList { get; set; }
 
         /// <summary>
         /// Gets the <see cref="System.Nullable{AssetPassword}" /> with the specified identifier.
