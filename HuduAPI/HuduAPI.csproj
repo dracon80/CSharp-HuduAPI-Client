@@ -13,42 +13,55 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Endpoints\Parameters\Builders\GetActivityLogsBuilder.cs">
+    <Compile Update="Endpoints\Parameters\CreateAssetLayoutFieldBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetArticlesBuilder.cs">
+    <Compile Update="Endpoints\Parameters\CreateAssetLayoutsBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetAssetLayoutsBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Get\GetActivityLogsBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetAssetPasswordsBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Get\GetArticlesBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetCompaniesBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Get\GetAssetLayoutsBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetAssetsBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Get\GetAssetPasswordsBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetExpirationsBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Get\GetCompaniesBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetFoldersBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Get\GetAssetsBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetMagicDashBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Get\GetExpirationsBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetProceduresBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Get\GetFoldersBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetRelationsBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Get\GetMagicDashBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetWebsitesBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Get\GetProceduresBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
+    <Compile Update="Endpoints\Parameters\Get\GetRelationsBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\Get\GetWebsitesBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\CreateArticleBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Endpoints\Parameters\Create\" />
   </ItemGroup>
 
 </Project>
