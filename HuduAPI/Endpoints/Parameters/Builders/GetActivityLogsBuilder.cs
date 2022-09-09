@@ -33,7 +33,17 @@ namespace HuduAPI.Endpoints.Parameters
         /// </returns>
         public GetActivityLogs Build()
         {
-            return new GetActivityLogs(_actionMessage, _page, _pageSize, _resourceID, _resourceType, _startDate, _userEmail, _userID);
+            return new GetActivityLogs
+            {
+                ActionMessage = _actionMessage,
+                Page = _page,
+                PageSize = _pageSize,
+                ResourceID = _resourceID,
+                ResourceType = _resourceType,
+                StartDate = _startDate,
+                UserEmail = _userEmail,
+                UserID = _userID
+            };
         }
 
         /// <summary>

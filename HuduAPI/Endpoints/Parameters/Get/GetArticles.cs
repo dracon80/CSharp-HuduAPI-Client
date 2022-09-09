@@ -11,30 +11,6 @@ namespace HuduAPI.Endpoints.Parameters
     public class GetArticles : IParameters
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetArticles" /> class used to filter
-        /// results on a call to the articles endpoint.
-        /// </summary>
-        /// <param name="name">
-        /// The name of the article to filter by.
-        /// </param>
-        /// <param name="companyID">
-        /// The company id identifier articles by.
-        /// </param>
-        /// <param name="page">
-        /// The page to retrive when using pagation.
-        /// </param>
-        /// <param name="pageSize">
-        /// The number of results on each page.
-        /// </param>
-        public GetArticles([Optional] string? name, [Optional] int? companyID, [Optional] int? page, [Optional] int? pageSize)
-        {
-            Name = name;
-            CompanyID = companyID;
-            Page = page;
-            PageSize = pageSize;
-        }
-
-        /// <summary>
         /// Filter by company_id
         /// </summary>
         [JsonProperty("company_id")]

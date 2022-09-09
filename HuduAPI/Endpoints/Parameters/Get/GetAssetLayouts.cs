@@ -9,21 +9,6 @@ namespace HuduAPI.Endpoints.Parameters
     public class GetAssetLayouts : IParameters
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetAssetLayouts" /> class.
-        /// </summary>
-        /// <param name="name">
-        /// The name of the Asset Layout to get.
-        /// </param>
-        /// <param name="page">
-        /// The page to get when paging throw results.
-        /// </param>
-        public GetAssetLayouts([Optional] string? name, [Optional] int? page)
-        {
-            Name = name;
-            Page = page;
-        }
-
-        /// <summary>
         /// Filter by name of asset_layout
         /// </summary>
         [JsonProperty("name")]

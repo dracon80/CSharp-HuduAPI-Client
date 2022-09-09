@@ -1,10 +1,4 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HuduAPI.Endpoints.Parameters
 {
@@ -15,16 +9,16 @@ namespace HuduAPI.Endpoints.Parameters
     public class GetAssetPasswords : IParameters
     {
         /// <summary>
-        /// filter by name of password.
-        /// </summary>
-        [JsonProperty("name")]
-        public string? Name { get; set; }
-
-        /// <summary>
         /// filter by company_id.
         /// </summary>
         [JsonProperty("company_id")]
         public int? CompanyID { get; set; }
+
+        /// <summary>
+        /// filter by name of password.
+        /// </summary>
+        [JsonProperty("name")]
+        public string? Name { get; set; }
 
         /// <summary>
         /// The gage number when paging through the results.
@@ -37,13 +31,5 @@ namespace HuduAPI.Endpoints.Parameters
         /// </summary>
         [JsonProperty("page_size")]
         public int? PageSize { get; set; }
-
-        public GetAssetPasswords([Optional] string? name, [Optional] int? companyID, [Optional] int? page, [Optional] int? pageSize)
-        {
-            Name = name;
-            CompanyID = companyID;
-            Page = page;
-            PageSize = pageSize;
-        }
     }
 }

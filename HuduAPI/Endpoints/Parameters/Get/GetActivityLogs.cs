@@ -14,50 +14,6 @@ namespace HuduAPI.Endpoints.Parameters
     public class GetActivityLogs : IParameters
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="GetActivityLogs" /> class.
-        /// </summary>
-        /// <remarks>
-        /// All parameters are optional as per the hudu interface.
-        /// </remarks>
-        /// <param name="actionMessage">
-        /// The action message to filter by.
-        /// </param>
-        /// <param name="page">
-        /// The page to retrieve.
-        /// </param>
-        /// <param name="pageSize">
-        /// Number of records to return.
-        /// </param>
-        /// <param name="resourceID">
-        /// The resource identifier to filter by.
-        /// </param>
-        /// <param name="resourceType">
-        /// Type of the resource to filter by.
-        /// </param>
-        /// <param name="startDate">
-        /// The date to filter by.
-        /// </param>
-        /// <param name="userEmail">
-        /// The user email to filter by.
-        /// </param>
-        /// <param name="userID">
-        /// The user identifier to filter by.
-        /// </param>
-        public GetActivityLogs(string? actionMessage = null, int? page = null, int? pageSize = null,
-            int? resourceID = null, string? resourceType = null, string? startDate = null,
-            string? userEmail = null, int? userID = null)
-        {
-            ActionMessage = actionMessage;
-            Page = page;
-            PageSize = pageSize;
-            ResourceID = resourceID;
-            ResourceType = resourceType;
-            StartDate = startDate;
-            UserEmail = userEmail;
-            UserID = userID;
-        }
-
-        /// <summary>
         /// Gets or sets the action message. Which is used to filter logs by action
         /// </summary>
         /// <value>

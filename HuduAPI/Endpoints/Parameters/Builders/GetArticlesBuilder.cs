@@ -26,7 +26,13 @@ namespace HuduAPI.Endpoints.Parameters
         /// </returns>
         public GetArticles Build()
         {
-            return new GetArticles(_name, _companyID, _page, _pageSize);
+            return new GetArticles
+            {
+                Name = _name,
+                Page = _page,
+                PageSize = _pageSize,
+                CompanyID = _companyID
+            };
         }
 
         /// <summary>

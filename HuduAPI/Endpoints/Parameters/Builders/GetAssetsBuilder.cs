@@ -30,7 +30,17 @@ namespace HuduAPI.Endpoints.Parameters
         /// </returns>
         public GetAssets Build()
         {
-            return new GetAssets(_companyId, _id, _name, _primarySerial, _assetLayoutId, _page, _archived, _pageSize);
+            return new GetAssets
+            {
+                Id = _id,
+                Name = _name,
+                Page = _page,
+                PageSize = _pageSize,
+                PrimarySerial = _primarySerial,
+                Archived = _archived,
+                AssetLayoutId = _assetLayoutId,
+                CompanyId = _companyId
+            };
         }
 
         /// <summary>
@@ -68,7 +78,7 @@ namespace HuduAPI.Endpoints.Parameters
         /// Returns the <see cref="GetAssetsBuilder">GetAssetsBuilder</see> with the property
         /// <paramref name="archived">archived</paramref> defined
         /// </returns>
-        public GetAssetsBuilder WithArchived(bool archived)
+        public GetAssetsBuilder WithArchived(Boolean archived)
         {
             _archived = archived;
             return this;

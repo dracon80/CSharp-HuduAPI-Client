@@ -16,19 +16,10 @@
     <Compile Update="Endpoints\Parameters\Builders\GetActivityLogsBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetArticleBuilder.cs">
-      <IsBuilderFile>True</IsBuilderFile>
-    </Compile>
     <Compile Update="Endpoints\Parameters\Builders\GetArticlesBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetAssetLayoutBuilder.cs">
-      <IsBuilderFile>True</IsBuilderFile>
-    </Compile>
     <Compile Update="Endpoints\Parameters\Builders\GetAssetLayoutsBuilder.cs">
-      <IsBuilderFile>True</IsBuilderFile>
-    </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetAssetPasswordBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
     <Compile Update="Endpoints\Parameters\Builders\GetAssetPasswordsBuilder.cs">
@@ -37,7 +28,25 @@
     <Compile Update="Endpoints\Parameters\Builders\GetCompaniesBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Builders\GetCompanyBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Builders\GetAssetsBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\Builders\GetExpirationsBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\Builders\GetFoldersBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\Builders\GetMagicDashBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\Builders\GetProceduresBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\Builders\GetRelationsBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\Builders\GetWebsitesBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
   </ItemGroup>

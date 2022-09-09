@@ -25,7 +25,11 @@ namespace HuduAPI.Endpoints.Parameters
         /// </returns>
         public GetAssetLayouts Build()
         {
-            return new GetAssetLayouts(_name, _page);
+            return new GetAssetLayouts
+            {
+                Name = _name,
+                Page = _page
+            };
         }
 
         /// <summary>
@@ -69,7 +73,7 @@ namespace HuduAPI.Endpoints.Parameters
         /// Returns the <see cref="GetAssetLayoutsBuilder">GetAssetLayoutsBuilder</see> with the
         /// property <paramref name="page">page</paramref> defined
         /// </returns>
-        public GetAssetLayoutsBuilder WithPage(int? page)
+        public GetAssetLayoutsBuilder WithPage(int page)
         {
             this._page = page;
             return this;

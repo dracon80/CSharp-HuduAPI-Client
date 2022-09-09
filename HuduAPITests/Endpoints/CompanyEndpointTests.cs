@@ -56,7 +56,7 @@ namespace HuduAPI.Endpoints.Tests
                 Assert.AreEqual("QLD", c.State, "Results include companies with states other than QLD");
             }
 
-            parameters = new(name: "Integrated Solutions QLD Pty Ltd");
+            parameters = new GetCompaniesBuilder().WithName("Integrated Solutions QLD Pty Ltd").Build();
 
             //Get a list of companies from the endpoint and confirm that its not empy
             companies = _endpoint.Get(parameters);

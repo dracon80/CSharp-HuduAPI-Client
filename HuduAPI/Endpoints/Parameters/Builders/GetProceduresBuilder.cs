@@ -1,38 +1,37 @@
 namespace HuduAPI.Endpoints.Parameters
 {
     /// <summary>
-    /// Builder for the class <see cref="GetAssetPasswords">GetAssetPasswords</see>
+    /// Builder for the class <see cref="GetProcedures">GetProcedures</see>
     /// </summary>
-    public class GetAssetPasswordsBuilder
+    public class GetProceduresBuilder
     {
-        private int? _companyID;
+        private int? _companyId;
         private string? _name;
         private int? _page;
         private int? _pageSize;
 
         /// <summary>
-        /// Create a new instance for the <see cref="GetAssetPasswordsBuilder">GetAssetPasswordsBuilder</see>
+        /// Create a new instance for the <see cref="GetProceduresBuilder">GetProceduresBuilder</see>
         /// </summary>
-        public GetAssetPasswordsBuilder()
+        public GetProceduresBuilder()
         {
             Reset();
         }
 
         /// <summary>
-        /// Build a class of type <see cref="GetAssetPasswords">GetAssetPasswords</see> with all the
-        /// defined values
+        /// Build a class of type <see cref="GetProcedures">GetProcedures</see> with all the defined values
         /// </summary>
         /// <returns>
-        /// Returns a <see cref="GetAssetPasswords">GetAssetPasswords</see> class
+        /// Returns a <see cref="GetProcedures">GetProcedures</see> class
         /// </returns>
-        public GetAssetPasswords Build()
+        public GetProcedures Build()
         {
-            return new GetAssetPasswords
+            return new GetProcedures
             {
-                CompanyID = _companyID,
+                CompanyId = _companyId,
                 Name = _name,
                 Page = _page,
-                PageSize = _pageSize
+                PageSize = _pageSize,
             };
         }
 
@@ -40,13 +39,13 @@ namespace HuduAPI.Endpoints.Parameters
         /// Reset all properties' to the default value
         /// </summary>
         /// <returns>
-        /// Returns the <see cref="GetAssetPasswordsBuilder">GetAssetPasswordsBuilder</see> with the
+        /// Returns the <see cref="GetProceduresBuilder">GetProceduresBuilder</see> with the
         /// properties reseted
         /// </returns>
-        public GetAssetPasswordsBuilder Reset()
+        public GetProceduresBuilder Reset()
         {
+            _companyId = default;
             _name = default;
-            _companyID = default;
             _page = default;
             _pageSize = default;
 
@@ -57,15 +56,15 @@ namespace HuduAPI.Endpoints.Parameters
         /// Set a value of type <typeparamref name="int" /> for the property <paramref name="companyId">companyId</paramref>
         /// </summary>
         /// <param name="companyId">
-        /// A value of type <typeparamref name="int" /> will the defined for the property
+        /// A value of type <typeparamref name="int?" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="GetAssetPasswordsBuilder">GetAssetPasswordsBuilder</see> with the
+        /// Returns the <see cref="GetProceduresBuilder">GetProceduresBuilder</see> with the
         /// property <paramref name="companyId">companyId</paramref> defined
         /// </returns>
-        public GetAssetPasswordsBuilder WithCompanyID(int companyId)
+        public GetProceduresBuilder WithCompanyId(int companyId)
         {
-            this._companyID = companyId;
+            _companyId = companyId;
             return this;
         }
 
@@ -76,44 +75,44 @@ namespace HuduAPI.Endpoints.Parameters
         /// A value of type <typeparamref name="string" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="GetAssetPasswordsBuilder">GetAssetPasswordsBuilder</see> with the
+        /// Returns the <see cref="GetProceduresBuilder">GetProceduresBuilder</see> with the
         /// property <paramref name="name">name</paramref> defined
         /// </returns>
-        public GetAssetPasswordsBuilder WithName(string name)
+        public GetProceduresBuilder WithName(string name)
         {
-            this._name = name;
+            _name = name;
             return this;
         }
 
         /// <summary>
-        /// Set a value of type <typeparamref name="int?" /> for the property <paramref name="page">page</paramref>
+        /// Set a value of type <typeparamref name="int" /> for the property <paramref name="page">page</paramref>
         /// </summary>
         /// <param name="page">
-        /// A value of type <typeparamref name="int" /> will the defined for the property
+        /// A value of type <typeparamref name="int?" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="GetAssetPasswordsBuilder">GetAssetPasswordsBuilder</see> with the
+        /// Returns the <see cref="GetProceduresBuilder">GetProceduresBuilder</see> with the
         /// property <paramref name="page">page</paramref> defined
         /// </returns>
-        public GetAssetPasswordsBuilder WithPage(int page)
+        public GetProceduresBuilder WithPage(int page)
         {
-            this._page = page;
+            _page = page;
             return this;
         }
 
         /// <summary>
-        /// Set a value of type <typeparamref name="int?" /> for the property <paramref name="pageSize">pageSize</paramref>
+        /// Set a value of type <typeparamref name="int" /> for the property <paramref name="pageSize">pageSize</paramref>
         /// </summary>
         /// <param name="pageSize">
         /// A value of type <typeparamref name="int?" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="GetAssetPasswordsBuilder">GetAssetPasswordsBuilder</see> with the
+        /// Returns the <see cref="GetProceduresBuilder">GetProceduresBuilder</see> with the
         /// property <paramref name="pageSize">pageSize</paramref> defined
         /// </returns>
-        public GetAssetPasswordsBuilder WithPageSize(int pageSize)
+        public GetProceduresBuilder WithPageSize(int pageSize)
         {
-            this._pageSize = pageSize;
+            _pageSize = pageSize;
             return this;
         }
     }
