@@ -46,7 +46,7 @@ namespace HuduAPI.Endpoints.Tests
 
         private Article GetArticle(int articleID)
         {
-            GetArticle parameters = new GetArticleBuilder().WithID(articleID).Build();
+            GetArticle parameters = new(articleID);
             return _endpoint.Get(parameters);
         }
 
