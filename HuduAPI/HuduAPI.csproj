@@ -13,31 +13,31 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Endpoints\Parameters\GetActivityLogsBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Builders\GetActivityLogsBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\GetArticleBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Builders\GetArticleBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\GetArticlesBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Builders\GetArticlesBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\GetAssetLayoutBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Builders\GetAssetLayoutBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\GetAssetLayoutsBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Builders\GetAssetLayoutsBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\GetAssetPasswordBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Builders\GetAssetPasswordBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\GetAssetPasswordsBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Builders\GetAssetPasswordsBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\GetCompaniesBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Builders\GetCompaniesBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\GetCompanyBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Builders\GetCompanyBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
   </ItemGroup>
