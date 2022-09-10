@@ -1,3 +1,5 @@
+using System.Drawing;
+
 namespace HuduAPI.Endpoints.Parameters
 {
     /// <summary>
@@ -5,10 +7,10 @@ namespace HuduAPI.Endpoints.Parameters
     /// </summary>
     public class CreateAssetLayoutsBuilder
     {
-        private string _color;
+        private Color _color;
         private List<CreateAssetLayoutField> _fields;
         private string _icon;
-        private string _iconColor;
+        private Color _iconColor;
         private bool _includeComments;
         private bool _includeFiles;
         private bool _includePasswords;
@@ -19,7 +21,7 @@ namespace HuduAPI.Endpoints.Parameters
         /// <summary>
         /// Create a new instance for the <see cref="CreateAssetLayoutsBuilder">CreateAssetLayoutsBuilder</see>
         /// </summary>
-        public CreateAssetLayoutsBuilder(string name, string icon, string color, string iconColor, List<CreateAssetLayoutField> assetLayoutFields)
+        public CreateAssetLayoutsBuilder(string name, string icon, Color color, Color iconColor, List<CreateAssetLayoutField> assetLayoutFields)
         {
             _name = name;
             _icon = icon;
@@ -70,7 +72,7 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value of type <typeparamref name="string" /> for the property <paramref name="color">color</paramref>
+        /// Set a color value for the property <paramref name="color">color</paramref>
         /// </summary>
         /// <param name="color">
         /// A value of type <typeparamref name="string" /> will the defined for the property
@@ -79,7 +81,7 @@ namespace HuduAPI.Endpoints.Parameters
         /// Returns the <see cref="CreateAssetLayoutsBuilder">CreateAssetLayoutsBuilder</see> with
         /// the property <paramref name="color">color</paramref> defined
         /// </returns>
-        public CreateAssetLayoutsBuilder WithColor(string color)
+        public CreateAssetLayoutsBuilder WithColor(Color color)
         {
             _color = color;
             return this;
@@ -131,7 +133,7 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value of type <typeparamref name="string" /> for the property <paramref name="iconColor">iconColor</paramref>
+        /// Set a colour value for the property <paramref name="iconColor">iconColor</paramref>
         /// </summary>
         /// <param name="iconColor">
         /// A value of type <typeparamref name="string" /> will the defined for the property
@@ -140,7 +142,7 @@ namespace HuduAPI.Endpoints.Parameters
         /// Returns the <see cref="CreateAssetLayoutsBuilder">CreateAssetLayoutsBuilder</see> with
         /// the property <paramref name="iconColor">iconColor</paramref> defined
         /// </returns>
-        public CreateAssetLayoutsBuilder WithIconColor(string iconColor)
+        public CreateAssetLayoutsBuilder WithIconColor(Color iconColor)
         {
             _iconColor = iconColor;
             return this;

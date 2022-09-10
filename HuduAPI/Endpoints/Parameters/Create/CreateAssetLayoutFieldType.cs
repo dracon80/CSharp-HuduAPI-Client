@@ -1,7 +1,7 @@
 ﻿namespace HuduAPI.Endpoints.Parameters
 {
     /// <summary>
-    /// The AssetLayout Field Type
+    /// The AssetLayout Field Types that can be created
     /// </summary>
     public enum CreateAssetLayoutFieldType
     {
