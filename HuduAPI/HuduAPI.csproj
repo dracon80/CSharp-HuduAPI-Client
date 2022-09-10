@@ -76,6 +76,14 @@
     <Compile Update="Endpoints\Parameters\Create\CreateArticleBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
+    <Compile Update="Endpoints\Parameters\UpdateArticleBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Endpoints\Parameters\Builders\" />
+    <Folder Include="Endpoints\Parameters\Update\" />
   </ItemGroup>
 
 </Project>
