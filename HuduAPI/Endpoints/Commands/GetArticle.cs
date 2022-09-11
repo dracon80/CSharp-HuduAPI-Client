@@ -14,11 +14,26 @@ namespace HuduAPI.Endpoints.Commands
     /// </summary>
     internal class GetArticle : ICommand<Article>
     {
-        private readonly Parameters.GetArticle _getParams;
+        private readonly Parameters.ItemById _getParams;
         private readonly string _url;
         private readonly string _apiKey;
 
-        public GetArticle(String huduBaseURL, string huduAPIKey, Parameters.GetArticle parameters)
+        /// <summary>
+        /// Initializes a new instance of the <see cref="GetArticle" /> class.
+        /// </summary>
+        /// <param name="huduBaseURL">
+        /// The hudu base URL.
+        /// </param>
+        /// <param name="huduAPIKey">
+        /// The hudu API key.
+        /// </param>
+        /// <param name="parameters">
+        /// The parameters used for the API call.
+        /// </param>
+        /// <exception cref="System.ArgumentNullException">
+        /// GetArticle parameters cannot be null
+        /// </exception>
+        public GetArticle(String huduBaseURL, string huduAPIKey, Parameters.ItemById parameters)
         {
             _getParams = parameters ?? throw new ArgumentNullException("GetArticle parameters cannot be null");
             _url = huduBaseURL + "api/v1/articles/" + _getParams.ID;
@@ -36,7 +51,7 @@ namespace HuduAPI.Endpoints.Commands
         /// </exception>
         public Article Execute()
         {
-            var result = BaseReceiver<ArticleRoot, Parameters.GetArticle>.Get(
+            var result = BaseReceiver<ArticleRoot, Parameters.ItemById>.Get(
                 url: _url,
                 apiKey: _apiKey
                 );

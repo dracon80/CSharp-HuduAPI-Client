@@ -13,11 +13,11 @@ namespace HuduAPI.Endpoints.Commands
 {
     internal class GetCompany : ICommand<Company>
     {
-        private readonly Parameters.GetCompany _getParams;
+        private readonly Parameters.ItemById _getParams;
         private readonly string _url;
         private readonly string _apiKye;
 
-        public GetCompany(String huduBaseURL, string huduAPIKey, Parameters.GetCompany parameters)
+        public GetCompany(String huduBaseURL, string huduAPIKey, Parameters.ItemById parameters)
         {
             _getParams = parameters ?? throw new ArgumentNullException("GetCompany parameters cannot be null"); ;
             _url = huduBaseURL + "api/v1/companies/" + parameters.ID;
@@ -35,7 +35,7 @@ namespace HuduAPI.Endpoints.Commands
         /// </exception>
         public Company Execute()
         {
-            var result = BaseReceiver<CompanyRoot, Parameters.GetCompany>.Get(
+            var result = BaseReceiver<CompanyRoot, Parameters.ItemById>.Get(
                 url: _url,
                 apiKey: _apiKye
                 );

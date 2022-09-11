@@ -11,7 +11,7 @@ namespace HuduAPI.Endpoints
     /// The articles endpoint is a full CRUD endpoint and provides all methods required to create,
     /// read, update delete and archive.
     /// </remarks>
-    public class ArticlesEndpoint : IEndpoint, IEndpointGetMethod<Article, GetArticle>, IEndpointGetMethod<Articles, GetArticles>
+    public class ArticlesEndpoint : IEndpoint, IEndpointGetMethod<Article, ItemById>, IEndpointGetMethod<Articles, GetArticles>
     {
         /// <summary>
         /// Gets or sets the hudu API key that will be used for all calls to this Endpoint.
@@ -56,7 +56,7 @@ namespace HuduAPI.Endpoints
         /// <exception cref="HuduAPI.Endpoints.Exceptions.RecordNotFoundException">
         /// If the article is not found than an exception is raised
         /// </exception>
-        public Article Get(GetArticle parameters)
+        public Article Get(ItemById parameters)
         {
             Commands.GetArticle myCommand = new Commands.GetArticle(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
             return myCommand.Execute();

@@ -46,7 +46,7 @@ namespace HuduAPI.Endpoints.Tests
 
         private Article GetArticle(int articleID)
         {
-            GetArticle parameters = new(articleID);
+            ItemById parameters = new(articleID);
             return _endpoint.Get(parameters);
         }
 
@@ -71,7 +71,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod]
         public void GetNegativeArticleID()
         {
-            GetArticle myparams;
+            ItemById myparams;
 
             Assert.ThrowsException<ArgumentOutOfRangeException>(
                      () => myparams = new(id: -3)

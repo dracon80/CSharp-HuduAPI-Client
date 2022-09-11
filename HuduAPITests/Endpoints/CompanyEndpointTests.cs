@@ -73,7 +73,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod()]
         public void GetCompany()
         {
-            GetCompany myparams = new(id: _companyID);
+            ItemById myparams = new(id: _companyID);
 
             Company result = _endpoint.Get(myparams);
 
@@ -84,7 +84,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod]
         public void GetInvalidCompany()
         {
-            GetCompany myparams = new(id: 4856734);
+            ItemById myparams = new(id: 4856734);
 
             Assert.ThrowsException<RecordNotFoundException>(
                      () => _endpoint.Get(myparams)
@@ -94,7 +94,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod]
         public void GetNegativeCompanyID()
         {
-            GetCompany myparams;
+            ItemById myparams;
 
             Assert.ThrowsException<ArgumentOutOfRangeException>(
                      () => myparams = new(id: -3)

@@ -7,10 +7,10 @@ namespace HuduAPI.Endpoints.Commands
     internal class GetAssetPassword : ICommand<AssetPassword>
     {
         private readonly string _apiKey;
-        private readonly Parameters.GetAssetPassword _getParams;
+        private readonly Parameters.ItemById _getParams;
         private readonly string _url;
 
-        public GetAssetPassword(String huduBaseURL, string huduAPIKey, Parameters.GetAssetPassword parameters)
+        public GetAssetPassword(String huduBaseURL, string huduAPIKey, Parameters.ItemById parameters)
         {
             _getParams = parameters;
             _url = huduBaseURL + "api/v1/asset_passwords/" + parameters.ID;
@@ -19,7 +19,7 @@ namespace HuduAPI.Endpoints.Commands
 
         public AssetPassword Execute()
         {
-            var result = BaseReceiver<AssetPasswordRoot, Parameters.GetAssetPassword>.Get(
+            var result = BaseReceiver<AssetPasswordRoot, Parameters.ItemById>.Get(
                 url: _url,
                 apiKey: _apiKey
                 );

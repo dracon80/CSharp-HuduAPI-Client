@@ -1,25 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HuduAPI.Endpoints.Parameters
+﻿namespace HuduAPI.Endpoints.Parameters
 {
     /// <summary>
-    /// Abstract base class to implement the common functions of setting and getting the ID of an
-    /// item to search for
+    /// A basic Parameter for all methods that can be called with a signle id parameter
     /// </summary>
-    public abstract class BaseGet
+    public class ItemById : IParameters
     {
         protected int _id;
 
         /// <summary>
         /// Initializes a new instance of the class.
         /// </summary>
-        public BaseGet(int id)
+        public ItemById(int id)
         {
-            this.ID = id;
+            ID = id;
         }
 
         /// <summary>

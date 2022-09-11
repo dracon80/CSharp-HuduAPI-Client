@@ -7,7 +7,7 @@ namespace HuduAPI.Endpoints
     /// Provides all the methods required to make calls to the company endpoint of the Hudu API.
     /// </summary>
     public class CompanyEndpoint : IEndpoint,
-        IEndpointGetMethod<Company, Parameters.GetCompany>,
+        IEndpointGetMethod<Company, Parameters.ItemById>,
         IEndpointGetMethod<Companies, Parameters.GetCompanies>
 
     {
@@ -56,7 +56,7 @@ namespace HuduAPI.Endpoints
         /// <exception cref="HuduAPI.Endpoints.Exceptions.RecordNotFoundException">
         /// If the company is not found than an exception is raised
         /// </exception>
-        public Company Get(Parameters.GetCompany parameters)
+        public Company Get(Parameters.ItemById parameters)
         {
             Commands.GetCompany myCommand = new Commands.GetCompany(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
             return myCommand.Execute();

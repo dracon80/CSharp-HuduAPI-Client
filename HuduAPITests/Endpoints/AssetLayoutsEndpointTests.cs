@@ -48,7 +48,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod]
         public void GetAssetLayout()
         {
-            Parameters.GetAssetLayout parameters = new(6);
+            Parameters.ItemById parameters = new(6);
             AssetLayout result = _endpoint.Get(parameters);
             Assert.AreEqual(6, result.ID);
         }
@@ -56,7 +56,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod]
         public void GetInvalidAssetLayout()
         {
-            Parameters.GetAssetLayout parameters = new(2348956);
+            Parameters.ItemById parameters = new(2348956);
 
             Assert.ThrowsException<RecordNotFoundException>(
                      () => _endpoint.Get(parameters)
@@ -66,7 +66,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod]
         public void GetNegativeAssetLayoutID()
         {
-            GetAssetLayout myparams;
+            ItemById myparams;
 
             Assert.ThrowsException<ArgumentOutOfRangeException>(
                      () => myparams = new(id: -3)

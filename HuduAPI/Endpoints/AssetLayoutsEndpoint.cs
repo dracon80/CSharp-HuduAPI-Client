@@ -12,7 +12,7 @@ namespace HuduAPI.Endpoints
     /// update delete and archive.
     /// </remarks>
     public class AssetLayoutsEndpoint : IEndpoint,
-        IEndpointGetMethod<AssetLayout, GetAssetLayout>,
+        IEndpointGetMethod<AssetLayout, ItemById>,
         IEndpointGetMethod<Records.AssetLayouts, GetAssetLayouts>
     {
         /// <summary>
@@ -58,7 +58,7 @@ namespace HuduAPI.Endpoints
         /// <exception cref="HuduAPI.Endpoints.Exceptions.RecordNotFoundException">
         /// If the asset_layout is not found than an exception is raised
         /// </exception>
-        public AssetLayout Get(GetAssetLayout parameters)
+        public AssetLayout Get(ItemById parameters)
         {
             Commands.GetAssetLayout myCommand = new Commands.GetAssetLayout(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
             return myCommand.Execute();

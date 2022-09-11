@@ -48,7 +48,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod]
         public void GetAssetPassword()
         {
-            Parameters.GetAssetPassword parameters = new(1152);
+            Parameters.ItemById parameters = new(1152);
             AssetPassword result = _endpoint.Get(parameters);
             Assert.AreEqual(1152, result.ID);
         }
@@ -56,7 +56,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod]
         public void GetInvalidAssetPassword()
         {
-            Parameters.GetAssetPassword parameters = new(2348956);
+            Parameters.ItemById parameters = new(2348956);
 
             Assert.ThrowsException<RecordNotFoundException>(
                      () => _endpoint.Get(parameters)
@@ -66,7 +66,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod]
         public void GetNegativeAssetLayoutID()
         {
-            GetAssetPassword myparams;
+            ItemById myparams;
 
             Assert.ThrowsException<ArgumentOutOfRangeException>(
                      () => myparams = new(id: -3)

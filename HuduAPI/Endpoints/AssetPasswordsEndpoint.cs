@@ -12,7 +12,7 @@ namespace HuduAPI.Endpoints
     /// update delete and archive.
     /// </remarks>
     public class AssetPasswordsEndpoint : IEndpoint,
-        IEndpointGetMethod<AssetPassword, GetAssetPassword>,
+        IEndpointGetMethod<AssetPassword, ItemById>,
         IEndpointGetMethod<AssetPasswords, GetAssetPasswords>
     {
         /// <summary>
@@ -58,7 +58,7 @@ namespace HuduAPI.Endpoints
         /// <exception cref="HuduAPI.Endpoints.Exceptions.RecordNotFoundException">
         /// If the asset_password is not found than an exception is raised
         /// </exception>
-        public AssetPassword Get(GetAssetPassword parameters)
+        public AssetPassword Get(ItemById parameters)
         {
             Commands.GetAssetPassword myCommand = new Commands.GetAssetPassword(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
             return myCommand.Execute();

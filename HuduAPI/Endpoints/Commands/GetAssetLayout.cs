@@ -7,10 +7,10 @@ namespace HuduAPI.Endpoints.Commands
     internal class GetAssetLayout : ICommand<AssetLayout>
     {
         private readonly string _apiKey;
-        private readonly Parameters.GetAssetLayout _getParams;
+        private readonly Parameters.ItemById _getParams;
         private readonly string _url;
 
-        public GetAssetLayout(String huduBaseURL, string huduAPIKey, Parameters.GetAssetLayout parameters)
+        public GetAssetLayout(String huduBaseURL, string huduAPIKey, Parameters.ItemById parameters)
         {
             _getParams = parameters;
             _url = huduBaseURL + "api/v1/asset_layouts/" + parameters.ID;
@@ -19,7 +19,7 @@ namespace HuduAPI.Endpoints.Commands
 
         public AssetLayout Execute()
         {
-            var result = BaseReceiver<AssetLayoutRoot, Parameters.GetAssetLayout>.Get(
+            var result = BaseReceiver<AssetLayoutRoot, Parameters.ItemById>.Get(
                 url: _url,
                 apiKey: _apiKey
                 );
