@@ -13,10 +13,25 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Endpoints\Parameters\Create\CreateAssetLayoutFieldBuilder.cs">
+    <Compile Update="Endpoints\Parameters\AbstractBases\AssetBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\Create\CreateAssetLayoutsBuilder.cs">
+    <Compile Update="Endpoints\Parameters\AbstractBases\AssetPasswordBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\AbstractBases\CompanyBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\AbstractBases\WebsiteBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\AbstractBases\FolderBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\AssetLayout\AssetLayoutFieldBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\AbstractBases\AssetLayoutBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
     <Compile Update="Endpoints\Parameters\Create\CreateAssetPasswordBuilder.cs">
@@ -76,14 +91,12 @@
     <Compile Update="Endpoints\Parameters\Create\CreateArticleBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-    <Compile Update="Endpoints\Parameters\UpdateArticleBuilder.cs">
+    <Compile Update="Endpoints\Parameters\Update\UpdateAssetLayoutBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Endpoints\Parameters\Builders\" />
-    <Folder Include="Endpoints\Parameters\Update\" />
+    <Compile Update="Endpoints\Parameters\Update\UpdateArticleBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
   </ItemGroup>
 
 </Project>

@@ -1,9 +1,11 @@
+using HuduAPI.Endpoints.Parameters.AbstractBases;
+
 namespace HuduAPI.Endpoints.Parameters
 {
     /// <summary>
     /// Builder for the class <see cref="CreateArticle">CreateArticle</see>
     /// </summary>
-    public class CreateArticleBuilder : CUArticleBuilder<CreateArticle, CreateArticleBuilder>
+    public class CreateArticleBuilder : ArticleBuilder<CreateArticle, CreateArticleBuilder>
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateArticleBuilder" /> class.

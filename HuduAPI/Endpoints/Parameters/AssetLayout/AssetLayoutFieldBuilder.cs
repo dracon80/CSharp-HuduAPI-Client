@@ -1,12 +1,12 @@
 namespace HuduAPI.Endpoints.Parameters
 {
     /// <summary>
-    /// Builder for the class <see cref="CreateAssetLayoutField">AssetLayoutField</see>
+    /// Builder for the class <see cref="AssetLayoutField">AssetLayoutField</see>
     /// </summary>
-    public class CreateAssetLayoutFieldBuilder
+    public class AssetLayoutFieldBuilder
     {
         private bool _expiration;
-        private CreateAssetLayoutFieldType _fieldType;
+        private AssetLayoutFieldType _fieldType;
         private string? _hint;
         private string _label;
         private int? _linkableId;
@@ -18,23 +18,23 @@ namespace HuduAPI.Endpoints.Parameters
         private bool _showInList;
 
         /// <summary>
-        /// Create a new instance for the <see cref="CreateAssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see>
+        /// Create a new instance for the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see>
         /// </summary>
-        public CreateAssetLayoutFieldBuilder(string label, CreateAssetLayoutFieldType fieldType)
+        public AssetLayoutFieldBuilder(string label, AssetLayoutFieldType fieldType)
         {
             Reset(label, fieldType);
         }
 
         /// <summary>
-        /// Build a class of type <see cref="CreateAssetLayoutField">AssetLayoutField</see> with all
-        /// the defined values
+        /// Build a class of type <see cref="AssetLayoutField">AssetLayoutField</see> with all the
+        /// defined values
         /// </summary>
         /// <returns>
-        /// Returns a <see cref="CreateAssetLayoutField">AssetLayoutField</see> class
+        /// Returns a <see cref="AssetLayoutField">AssetLayoutField</see> class
         /// </returns>
-        public CreateAssetLayoutField Build()
+        public AssetLayoutField Build()
         {
-            return new CreateAssetLayoutField(_label, _fieldType)
+            return new AssetLayoutField(_label, _fieldType)
             {
                 Expiration = _expiration,
                 Hint = _hint,
@@ -52,10 +52,10 @@ namespace HuduAPI.Endpoints.Parameters
         /// Reset all properties' to the default value
         /// </summary>
         /// <returns>
-        /// Returns the <see cref="CreateAssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with
-        /// the properties reseted
+        /// Returns the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with the
+        /// properties reseted
         /// </returns>
-        public CreateAssetLayoutFieldBuilder Reset(string label, CreateAssetLayoutFieldType fieldType)
+        public AssetLayoutFieldBuilder Reset(string label, AssetLayoutFieldType fieldType)
         {
             _label = label;
             _min = default;
@@ -80,10 +80,10 @@ namespace HuduAPI.Endpoints.Parameters
         /// A value of type <typeparamref name="bool" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="CreateAssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with
-        /// the property <paramref name="expiration">expiration</paramref> defined
+        /// Returns the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with the
+        /// property <paramref name="expiration">expiration</paramref> defined
         /// </returns>
-        public CreateAssetLayoutFieldBuilder WithExpiration(bool expiration)
+        public AssetLayoutFieldBuilder WithExpiration(bool expiration)
         {
             _expiration = expiration;
             return this;
@@ -97,10 +97,10 @@ namespace HuduAPI.Endpoints.Parameters
         /// A value of type <typeparamref name="AssetLayoutFieldType" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="CreateAssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with
-        /// the property <paramref name="fieldtype">fieldtype</paramref> defined
+        /// Returns the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with the
+        /// property <paramref name="fieldtype">fieldtype</paramref> defined
         /// </returns>
-        public CreateAssetLayoutFieldBuilder WithFieldtype(CreateAssetLayoutFieldType fieldtype)
+        public AssetLayoutFieldBuilder WithFieldtype(AssetLayoutFieldType fieldtype)
         {
             _fieldType = fieldtype;
             return this;
@@ -114,10 +114,10 @@ namespace HuduAPI.Endpoints.Parameters
         /// A value of type <typeparamref name="AssetLayoutFieldType" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="CreateAssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with
-        /// the property <paramref name="fieldType">fieldType</paramref> defined
+        /// Returns the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with the
+        /// property <paramref name="fieldType">fieldType</paramref> defined
         /// </returns>
-        public CreateAssetLayoutFieldBuilder WithFieldType(CreateAssetLayoutFieldType fieldType)
+        public AssetLayoutFieldBuilder WithFieldType(AssetLayoutFieldType fieldType)
         {
             _fieldType = fieldType;
             return this;
@@ -130,10 +130,10 @@ namespace HuduAPI.Endpoints.Parameters
         /// A value of type <typeparamref name="string" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="CreateAssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with
-        /// the property <paramref name="hint">hint</paramref> defined
+        /// Returns the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with the
+        /// property <paramref name="hint">hint</paramref> defined
         /// </returns>
-        public CreateAssetLayoutFieldBuilder WithHint(string hint)
+        public AssetLayoutFieldBuilder WithHint(string hint)
         {
             _hint = hint;
             return this;
@@ -146,10 +146,10 @@ namespace HuduAPI.Endpoints.Parameters
         /// A value of type <typeparamref name="string" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="CreateAssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with
-        /// the property <paramref name="label">label</paramref> defined
+        /// Returns the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with the
+        /// property <paramref name="label">label</paramref> defined
         /// </returns>
-        public CreateAssetLayoutFieldBuilder WithLabel(string label)
+        public AssetLayoutFieldBuilder WithLabel(string label)
         {
             _label = label;
             return this;
@@ -162,10 +162,10 @@ namespace HuduAPI.Endpoints.Parameters
         /// A value of type <typeparamref name="int?" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="CreateAssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with
-        /// the property <paramref name="linkableId">linkableId</paramref> defined
+        /// Returns the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with the
+        /// property <paramref name="linkableId">linkableId</paramref> defined
         /// </returns>
-        public CreateAssetLayoutFieldBuilder WithLinkableId(int? linkableId)
+        public AssetLayoutFieldBuilder WithLinkableId(int? linkableId)
         {
             _linkableId = linkableId;
             return this;
@@ -178,10 +178,10 @@ namespace HuduAPI.Endpoints.Parameters
         /// A value of type <typeparamref name="int?" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="CreateAssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with
-        /// the property <paramref name="max">max</paramref> defined
+        /// Returns the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with the
+        /// property <paramref name="max">max</paramref> defined
         /// </returns>
-        public CreateAssetLayoutFieldBuilder WithMax(int? max)
+        public AssetLayoutFieldBuilder WithMax(int? max)
         {
             _max = max;
             return this;
@@ -194,10 +194,10 @@ namespace HuduAPI.Endpoints.Parameters
         /// A value of type <typeparamref name="int?" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="CreateAssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with
-        /// the property <paramref name="min">min</paramref> defined
+        /// Returns the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with the
+        /// property <paramref name="min">min</paramref> defined
         /// </returns>
-        public CreateAssetLayoutFieldBuilder WithMin(int? min)
+        public AssetLayoutFieldBuilder WithMin(int? min)
         {
             _min = min;
             return this;
@@ -210,10 +210,10 @@ namespace HuduAPI.Endpoints.Parameters
         /// A value of type <typeparamref name="string" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="CreateAssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with
-        /// the property <paramref name="options">options</paramref> defined
+        /// Returns the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with the
+        /// property <paramref name="options">options</paramref> defined
         /// </returns>
-        public CreateAssetLayoutFieldBuilder WithOptions(string options)
+        public AssetLayoutFieldBuilder WithOptions(string options)
         {
             _options = options;
             return this;
@@ -226,10 +226,10 @@ namespace HuduAPI.Endpoints.Parameters
         /// A value of type <typeparamref name="int?" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="CreateAssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with
-        /// the property <paramref name="position">position</paramref> defined
+        /// Returns the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with the
+        /// property <paramref name="position">position</paramref> defined
         /// </returns>
-        public CreateAssetLayoutFieldBuilder WithPosition(int? position)
+        public AssetLayoutFieldBuilder WithPosition(int? position)
         {
             _position = position;
             return this;
@@ -242,10 +242,10 @@ namespace HuduAPI.Endpoints.Parameters
         /// A value of type <typeparamref name="bool" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="CreateAssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with
-        /// the property <paramref name="required">required</paramref> defined
+        /// Returns the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with the
+        /// property <paramref name="required">required</paramref> defined
         /// </returns>
-        public CreateAssetLayoutFieldBuilder WithRequired(bool required)
+        public AssetLayoutFieldBuilder WithRequired(bool required)
         {
             _required = required;
             return this;
@@ -258,10 +258,10 @@ namespace HuduAPI.Endpoints.Parameters
         /// A value of type <typeparamref name="bool" /> will the defined for the property
         /// </param>
         /// <returns>
-        /// Returns the <see cref="CreateAssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with
-        /// the property <paramref name="showInList">showInList</paramref> defined
+        /// Returns the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with the
+        /// property <paramref name="showInList">showInList</paramref> defined
         /// </returns>
-        public CreateAssetLayoutFieldBuilder WithShowInList(bool showInList)
+        public AssetLayoutFieldBuilder WithShowInList(bool showInList)
         {
             _showInList = showInList;
             return this;

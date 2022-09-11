@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace HuduAPI.Endpoints.Parameters.AbstractBases
 {
-    public abstract class CUArticle
+    public abstract class Article
     {
         /// <summary>
         /// An Abstract class that contains all the common properties for both the Create and Update
@@ -19,7 +19,7 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         /// <param name="content">
         /// The content to be displayed in the article.
         /// </param>
-        internal CUArticle(string name, string content)
+        internal Article(string name, string content)
         {
             Name = name;
             Content = content;

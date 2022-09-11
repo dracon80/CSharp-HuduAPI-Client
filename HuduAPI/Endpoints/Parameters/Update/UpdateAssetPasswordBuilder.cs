@@ -1,4 +1,4 @@
-using HuduAPI.Endpoints.Parameters.AbstractBases;
+﻿using HuduAPI.Endpoints.Parameters.AbstractBases;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,25 +8,30 @@ using System.Threading.Tasks;
 namespace HuduAPI.Endpoints.Parameters
 {
     /// <summary>
-    /// Builder for the class <see cref="CreateAssetPassword">CreateAssetPassword</see>
+    /// Builder class for <see cref="UpdateAssetPassword" />. Used to create a complete paramater object.
     /// </summary>
-    public class CreateAssetPasswordBuilder : AssetPasswordBuilder<CreateAssetPassword, CreateAssetPasswordBuilder>
+    public class UpdateAssetPasswordBuilder : AssetPasswordBuilder<UpdateAssetPassword, UpdateAssetPasswordBuilder>
     {
+        private int _id;
+
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateAssetPasswordBuilder" /> class with
-        /// all requred parameters to call the create endpoint api/v1/asset_passwords
+        /// Initializes a new instance of the <see cref="UpdateAssetPasswordBuilder" /> class.
         /// </summary>
+        /// <param name="id">
+        /// The identifier.
+        /// </param>
         /// <param name="companyId">
-        /// The Company to associate the password with
+        /// The company identifier.
         /// </param>
         /// <param name="name">
-        /// The name to give to the password
+        /// The name.
         /// </param>
         /// <param name="password">
-        /// The plaintext value of the password
+        /// The password.
         /// </param>
-        public CreateAssetPasswordBuilder(int companyId, string name, string password) : base(companyId, name, password)
+        public UpdateAssetPasswordBuilder(int id, int companyId, string name, string password) : base(companyId, name, password)
         {
+            _id = id;
         }
 
         /// <summary>
@@ -36,9 +41,9 @@ namespace HuduAPI.Endpoints.Parameters
         /// <returns>
         /// Returns a <see cref="CreateAssetPassword">CreateAssetPassword</see> class
         /// </returns>
-        public override CreateAssetPassword Build()
+        public override UpdateAssetPassword Build()
         {
-            return new CreateAssetPassword(_companyId, _name, _password)
+            return new UpdateAssetPassword(_id, _companyId, _name, _password)
             {
                 PasswordableType = _passwordableType,
                 PasswordableId = _passwordableId,

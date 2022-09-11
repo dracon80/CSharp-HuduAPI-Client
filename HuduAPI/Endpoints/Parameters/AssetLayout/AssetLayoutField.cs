@@ -3,16 +3,16 @@
 namespace HuduAPI.Endpoints.Parameters
 {
     /// <summary>
-    /// Defines the attributes of a new Asset Layout Field to be used when creating a new <see
-    /// cref="CreateAssetLayouts" />. All requried properties are included in the constructor of the
-    /// class. All other properties are optional when making a call to the endpoint api/v1/asset_layouts
+    /// Defines the attributes of an Asset Layout Field. All requried properties are included in the
+    /// constructor of the class. All other properties are optional when making a call to the
+    /// endpoint api/v1/asset_layouts
     /// </summary>
-    public class CreateAssetLayoutField
+    public class AssetLayoutField
     {
         private readonly string _fieldType;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateAssetLayoutField" /> class with the
+        /// Initializes a new instance of the <see cref="AssetLayoutField" /> class with the
         /// requried fields populated ready for posting.
         /// </summary>
         /// <remark>
@@ -25,9 +25,9 @@ namespace HuduAPI.Endpoints.Parameters
         /// <param name="fieldtype">
         /// The type of Field to be created.
         /// </param>
-        public CreateAssetLayoutField(string label, CreateAssetLayoutFieldType fieldtype)
+        public AssetLayoutField(string label, AssetLayoutFieldType fieldtype)
         {
-            this.Label = label;
+            Label = label;
             _fieldType = fieldtype.ToString();
         }
 

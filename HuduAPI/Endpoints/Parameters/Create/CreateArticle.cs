@@ -5,7 +5,7 @@ namespace HuduAPI.Endpoints.Parameters
     /// <summary>
     /// Provides the paramaters used to create a new article when calling the endpoint api/v1/articles
     /// </summary>
-    public class CreateArticle : CUArticle, IParameters
+    public class CreateArticle : Article, IParameters
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="CreateArticle" /> class with the two

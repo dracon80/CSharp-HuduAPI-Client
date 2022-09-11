@@ -31,7 +31,7 @@ namespace HuduAPI.Endpoints.Tests
         public void GetAssetLayouts()
         {
             //Get a list of assetlayouts from the endpoint and confirm that its not empy
-            AssetLayouts results = _endpoint.Get();
+            Records.AssetLayouts results = _endpoint.Get();
             Assert.AreNotEqual(0, results.AssetLayoutList.Count);
         }
 
@@ -41,7 +41,7 @@ namespace HuduAPI.Endpoints.Tests
             //Get a filtered list of assetlayouts from the endpoint and confirm that its not empty
             GetAssetLayouts parameters = new GetAssetLayoutsBuilder().WithName("People").Build();
 
-            AssetLayouts results = _endpoint.Get(parameters);
+            Records.AssetLayouts results = _endpoint.Get(parameters);
             Assert.AreEqual(1, results.AssetLayoutList.Count);
         }
 

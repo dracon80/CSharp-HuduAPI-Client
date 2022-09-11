@@ -5,19 +5,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace HuduAPI.Endpoints.Parameters
+namespace HuduAPI.Endpoints.Parameters.AbstractBases
 {
     /// <summary>
+    /// An abstract builder to help build Article parameters for implementing classes.
     /// </summary>
     /// <typeparam name="TResult">
-    /// The type of the result.
+    /// The type of the paramater to build.
     /// </typeparam>
     /// <typeparam name="TBuilder">
-    /// The type of the builder.
+    /// The type of the builder that is inherting this base class.
     /// </typeparam>
-    public abstract class CUArticleBuilder<TResult, TBuilder>
-        where TResult : CUArticle
-        where TBuilder : CUArticleBuilder<TResult, TBuilder>
+    public abstract class ArticleBuilder<TResult, TBuilder>
+        where TResult : Article
+        where TBuilder : ArticleBuilder<TResult, TBuilder>
     {
         protected int? _companyId;
         protected string _content;
@@ -39,7 +40,7 @@ namespace HuduAPI.Endpoints.Parameters
         /// <param name="content">
         /// The content to be displayed in the article.
         /// </param>
-        internal CUArticleBuilder(string name, string content)
+        internal ArticleBuilder(string name, string content)
         {
             _companyId = default;
             _content = content;
@@ -88,7 +89,7 @@ namespace HuduAPI.Endpoints.Parameters
         /// <returns>
         /// A generic Builder Object for type <typeparamref name="TBuilder" />
         /// </returns>
-/        public TBuilder WithEnableSharing(bool enableSharing)
+        public TBuilder WithEnableSharing(bool enableSharing)
         {
             _enableSharing = enableSharing;
             return _builderInstance;

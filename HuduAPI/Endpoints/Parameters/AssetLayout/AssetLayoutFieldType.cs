@@ -3,7 +3,7 @@
     /// <summary>
     /// The AssetLayout Field Types that can be created
     /// </summary>
-    public enum CreateAssetLayoutFieldType
+    public enum AssetLayoutFieldType
     {
         TEXT,
         RICH_TEXT,

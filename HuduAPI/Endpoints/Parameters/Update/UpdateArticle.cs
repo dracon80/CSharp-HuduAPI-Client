@@ -5,7 +5,7 @@ namespace HuduAPI.Endpoints.Parameters
     /// <summary>
     /// Provides all the properties needed to update an existing article using the hudu api api/v1/articles
     /// </summary>
-    public class UpdateArticle : CUArticle, IParameters
+    public class UpdateArticle : Article, IParameters
     {
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateArticle" /> class with the required

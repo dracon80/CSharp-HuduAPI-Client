@@ -1,9 +1,11 @@
+using HuduAPI.Endpoints.Parameters.AbstractBases;
+
 namespace HuduAPI.Endpoints.Parameters
 {
     /// <summary>
     /// Builder for the class <see cref="UpdateArticle">UpdateArticle</see>
     /// </summary>
-    public class UpdateArticleBuilder : CUArticleBuilder<UpdateArticle, UpdateArticleBuilder>
+    public class UpdateArticleBuilder : ArticleBuilder<UpdateArticle, UpdateArticleBuilder>
     {
         private int _id;
 

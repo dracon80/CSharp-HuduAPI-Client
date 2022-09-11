@@ -1,23 +1,23 @@
 ﻿using Newtonsoft.Json;
 using System.Drawing;
 
-namespace HuduAPI.Endpoints.Parameters
+namespace HuduAPI.Endpoints.Parameters.AbstractBases
 {
     /// <summary>
     /// Defines the properties to be used when creating a new AssetLayout in Hudu using the endpoint api/v1/asset_layouts
     /// </summary>
-    public class CreateAssetLayouts : IParameters
+    public abstract class AssetLayout
     {
-        private readonly Color _color;
-        private readonly Color _iconColor;
+        protected readonly Color _color;
+        protected readonly Color _iconColor;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateAssetLayouts" /> class with the
-        /// required properties filled with the provided paramaters.
+        /// An Abstract class that contains all the common properties for both the Create and Update
+        /// methods on the hudu endpoing api/v1/asset_layouts.
         /// </summary>
         /// <remarks>
         /// All other properties of the class are optional properties that can safely be left blank
-        /// and still be able to create a new Asset_Layout in hudu
+        /// and still be able to call the endpoint
         /// </remarks>
         /// <param name="name">
         /// The name of the new asset_layout.
@@ -34,7 +34,7 @@ namespace HuduAPI.Endpoints.Parameters
         /// <param name="assetLayoutFields">
         /// The asset layout fields.
         /// </param>
-        public CreateAssetLayouts(string name, string icon, Color color, Color iconColor, List<CreateAssetLayoutField> assetLayoutFields)
+        public AssetLayout(string name, string icon, Color color, Color iconColor, List<AssetLayoutField> assetLayoutFields)
         {
             this.Name = name;
             this.Icon = icon;
@@ -59,7 +59,7 @@ namespace HuduAPI.Endpoints.Parameters
         /// A list of fields defined for this asset_layout
         /// </summary>
         [JsonProperty("fields")]
-        public List<CreateAssetLayoutField> Fields { get; }
+        public List<AssetLayoutField> Fields { get; }
 
         /// <summary>
         /// Icon class name, example: “fas fa-home”

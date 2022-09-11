@@ -13,7 +13,7 @@ namespace HuduAPI.Endpoints
     /// </remarks>
     public class AssetLayoutsEndpoint : IEndpoint,
         IEndpointGetMethod<AssetLayout, GetAssetLayout>,
-        IEndpointGetMethod<AssetLayouts, GetAssetLayouts>
+        IEndpointGetMethod<Records.AssetLayouts, GetAssetLayouts>
     {
         /// <summary>
         /// Gets or sets the hudu API key that will be used for all calls to this Endpoint.
@@ -76,7 +76,7 @@ namespace HuduAPI.Endpoints
         /// <exception cref="HuduAPI.Endpoints.Exceptions.RecordNotFoundException">
         /// If the asset_layout is not found than an exception is raised
         /// </exception>
-        public AssetLayouts Get([Optional] GetAssetLayouts parameters)
+        public Records.AssetLayouts Get([Optional] GetAssetLayouts parameters)
         {
             Commands.GetAssetLayouts myCommand = new Commands.GetAssetLayouts(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
             return myCommand.Execute();
