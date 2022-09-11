@@ -77,5 +77,24 @@ namespace HuduAPI.Endpoints.Tests
                      () => myparams = new(id: -3)
                 );
         }
+
+        [TestMethod]
+        public void CreateArticle()
+        {
+            string content = "This is some content";
+            string name = "Test Article";
+
+            CreateArticle myParams = new CreateArticleBuilder(name, content)
+                .WithEnableSharing(true)
+                .WithCompanyId(7)
+                .Build();
+
+            Article result = _endpoint.Create(myParams);
+
+            Assert.AreEqual(7, result.CompanyID);
+            Assert.IsTrue(result.EnableSharing);
+            Assert.AreEqual(name, result.Name);
+            Assert.AreEqual(content, result.Content);
+        }
     }
 }

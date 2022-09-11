@@ -87,5 +87,11 @@ namespace HuduAPI.Endpoints.Receivers
 
             return result;
         }
+
+        public static TResult Create(string url, string apiKey, TParams parameters)
+        {
+            var result = url.WithHeader("x-api-key", apiKey).PostJsonAsync(parameters).ReceiveJson<TResult>().Result;
+            return result;
+        }
     }
 }

@@ -76,5 +76,11 @@ namespace HuduAPI.Endpoints
             Commands.GetArticles myCommand = new Commands.GetArticles(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
             return myCommand.Execute();
         }
+
+        public Article Create(CreateArticle parameters)
+        {
+            Commands.CreateArticle myCommand = new Commands.CreateArticle(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
+            return myCommand.Execute();
+        }
     }
 }
