@@ -1,21 +1,14 @@
 ﻿using HuduAPI.Endpoints.Exceptions;
-using HuduAPI.Endpoints.Parameters;
 using HuduAPI.Endpoints.Receivers;
 using HuduAPI.Records;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HuduAPI.Endpoints.Commands
 {
     internal class GetCompany : ICommand<Company>
     {
+        private readonly string _apiKye;
         private readonly Parameters.ItemById _getParams;
         private readonly string _url;
-        private readonly string _apiKye;
 
         public GetCompany(String huduBaseURL, string huduAPIKey, Parameters.ItemById parameters)
         {

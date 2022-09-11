@@ -1,19 +1,14 @@
 ﻿using HuduAPI.Endpoints.Exceptions;
 using HuduAPI.Endpoints.Receivers;
 using HuduAPI.Records;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace HuduAPI.Endpoints.Commands
 {
     internal class GetArticles : ICommand<Articles>
     {
+        private readonly string _apiKey;
         private readonly Parameters.GetArticles _getParams;
         private readonly string _url;
-        private readonly string _apiKey;
 
         public GetArticles(String huduBaseURL, string huduAPIKey, Parameters.GetArticles parameters)
         {

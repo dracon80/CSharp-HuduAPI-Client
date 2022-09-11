@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace HuduAPI.Endpoints.Commands
+﻿namespace HuduAPI.Endpoints.Commands
 {
     /// <summary>
     /// This interface is used to implement the Command Pattern that is used by all endpoints to
