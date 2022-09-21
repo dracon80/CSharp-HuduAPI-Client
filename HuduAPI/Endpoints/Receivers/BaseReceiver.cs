@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
-using Flurl;
+﻿using Flurl;
 using Flurl.Http;
-using Flurl.Http.Configuration;
 using HuduAPI.Endpoints.Parameters;
 using HuduAPI.Records;
+using System.Runtime.InteropServices;
 
 namespace HuduAPI.Endpoints.Receivers
 {
@@ -27,6 +21,29 @@ namespace HuduAPI.Endpoints.Receivers
         where TParams : IParameters
         where TResult : IRecord
     {
+        /// <summary>
+        /// Makes a call to the Create Method for the supplied URL and returns a result containing
+        /// the created object.
+        /// </summary>
+        /// <param name="url">
+        /// The URL of the API Endpoint to call.
+        /// </param>
+        /// <param name="apiKey">
+        /// The API key to use when making the call.
+        /// </param>
+        /// <param name="parameters">
+        /// The parameters that need to be provided to the end point.
+        /// </param>
+        /// <returns>
+        /// If the call is succesfull then a <typeparamref name="TResult" /> Result Type
+        /// </returns>
+        /// will be returned that contains the values that be been set on the new item created in Hudu.
+        public static TResult Create(string url, string apiKey, TParams parameters)
+        {
+            var result = url.WithHeader("x-api-key", apiKey).PostJsonAsync(parameters).ReceiveJson<TResult>().Result;
+            return result;
+        }
+
         /// <summary>
         /// Calls the API endpoint using the parameters provided to narrow down the results. This
         /// method is used to query endpoints that return a single root object.
@@ -85,12 +102,6 @@ namespace HuduAPI.Endpoints.Receivers
 
             var result = flurl.GetJsonAsync<List<TResult>>().Result;
 
-            return result;
-        }
-
-        public static TResult Create(string url, string apiKey, TParams parameters)
-        {
-            var result = url.WithHeader("x-api-key", apiKey).PostJsonAsync(parameters).ReceiveJson<TResult>().Result;
             return result;
         }
     }
