@@ -104,5 +104,48 @@ namespace HuduAPI.Endpoints.Receivers
 
             return result;
         }
+
+        /// <summary>
+        /// Makes a call to the Update Method for the supplied URL and returns a result containing
+        /// the updated object values.
+        /// </summary>
+        /// <param name="url">
+        /// The URL of the API Endpoint to call.
+        /// </param>
+        /// <param name="apiKey">
+        /// The API key to use when making the call.
+        /// </param>
+        /// <param name="parameters">
+        /// The parameters that need to be provided to the end point.
+        /// </param>
+        /// <returns>
+        /// If the call is succesfull then a <typeparamref name="TResult" /> Result Type will be
+        /// returned that contains the values that be been set on the new item created in Hudu.
+        /// </returns>
+        public static TResult Update(string url, string apiKey, TParams parameters)
+        {
+            var result = url.WithHeader("x-api-key", apiKey).PutJsonAsync(parameters.GetPropertyDictionary()).ReceiveJson<TResult>().Result;
+            return result;
+        }
+
+        /// <summary>
+        /// Makes a call to the Archive/Unarchive Method for the supplied URL and returns a result
+        /// containing the updated object values.
+        /// </summary>
+        /// <param name="url">
+        /// The URL of the API Endpoint to call.
+        /// </param>
+        /// <param name="apiKey">
+        /// The API key to use when making the call.
+        /// </param>
+        /// <returns>
+        /// If the call is succesfull then a <typeparamref name="TResult" /> Result Type will be
+        /// returned that contains the values that be been set on the new item created in Hudu.
+        /// </returns>
+        public static TResult Archive(string url, string apiKey)
+        {
+            var result = url.WithHeader("x-api-key", apiKey).PutAsync().ReceiveJson<TResult>().Result;
+            return result;
+        }
     }
 }

@@ -32,6 +32,7 @@ namespace HuduAPI.Endpoints
         /// The parameters to use when making the call.
         /// </param>
         /// <returns>
+        /// An object of type <typeparamref name="TResult" /> that represents the object in hudu
         /// </returns>
         public TResult Get(TParams parameters);
     }

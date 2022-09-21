@@ -1,4 +1,5 @@
 ﻿using HuduAPI.Endpoints.Parameters.AbstractBases;
+using Newtonsoft.Json;
 
 namespace HuduAPI.Endpoints.Parameters
 {
@@ -31,6 +32,7 @@ namespace HuduAPI.Endpoints.Parameters
         /// <value>
         /// The identifier.
         /// </value>
+        [JsonIgnore]
         public int Id { get; }
     }
 }
