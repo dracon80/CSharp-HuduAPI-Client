@@ -100,9 +100,17 @@
   <div class="markdown level0 remarks"></div>
     <h3 id="classes">Classes
   </h3>
-      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.BaseGet.html">BaseGet</a></h5>
-      <section><p>Abstract base class to implement the common functions of setting and getting the ID of an
-item to search for</p>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.AssetById.html">AssetById</a></h5>
+      <section><p>Provides the paramaters to target a single Asset from the Hudu endpoint. This is needed
+because the Call tot he asset endpoint required additional information such as the company ID.</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.AssetLayoutField.html">AssetLayoutField</a></h5>
+      <section><p>Defines the attributes of an Asset Layout Field. All requried properties are included in the
+constructor of the class. All other properties are optional when making a call to the
+endpoint api/v1/asset_layouts</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.AssetLayoutFieldBuilder.html">AssetLayoutFieldBuilder</a></h5>
+      <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.AssetLayoutField.html">AssetLayoutField</a></p>
 </section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateArticle.html">CreateArticle</a></h5>
       <section><p>Provides the paramaters used to create a new article when calling the endpoint api/v1/articles</p>
@@ -110,18 +118,18 @@ item to search for</p>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateArticleBuilder.html">CreateArticleBuilder</a></h5>
       <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.CreateArticle.html">CreateArticle</a></p>
 </section>
-      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAssetLayoutField.html">CreateAssetLayoutField</a></h5>
-      <section><p>Defines the attributes of a new Asset Layout Field to be used when creating a new <a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAssetLayouts.html">CreateAssetLayouts</a>. All requried properties are included in the constructor of the
-class. All other properties are optional when making a call to the endpoint api/v1/asset_layouts</p>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAsset.html">CreateAsset</a></h5>
+      <section><p>Provides all the properties that can be used to create a new asset using the hudu endpoint api/v1/companies/:company_id/assets</p>
 </section>
-      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAssetLayoutFieldBuilder.html">CreateAssetLayoutFieldBuilder</a></h5>
-      <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAssetLayoutField.html">AssetLayoutField</a></p>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAssetBuilder.html">CreateAssetBuilder</a></h5>
+      <section><p>Builder class to help build a new <a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAsset.html">CreateAsset</a> paramater object.</p>
 </section>
-      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAssetLayouts.html">CreateAssetLayouts</a></h5>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAssetLayout.html">CreateAssetLayout</a></h5>
       <section><p>Defines the properties to be used when creating a new AssetLayout in Hudu using the endpoint api/v1/asset_layouts</p>
 </section>
-      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAssetLayoutsBuilder.html">CreateAssetLayoutsBuilder</a></h5>
-      <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAssetLayouts.html">CreateAssetLayouts</a></p>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAssetLayoutBuilder.html">CreateAssetLayoutBuilder</a></h5>
+      <section><p>This builder allows for easy creation of a new <a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAssetLayout.html">CreateAssetLayout</a> instance
+used when calling api/v1/asset_layouts to create a new asset_layout.</p>
 </section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAssetPassword.html">CreateAssetPassword</a></h5>
       <section><p>Provides all the properties that define a new asset_password to be created in hudu using the
@@ -149,6 +157,18 @@ using the endpoint api/v1/magic_dash</p>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateMagicDashBuilder.html">CreateMagicDashBuilder</a></h5>
       <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.CreateMagicDash.html">CreateMagicDash</a></p>
 </section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateRelation.html">CreateRelation</a></h5>
+      <section><p>Provides all the properties required to create a new relationship using the endpoint api/v1/relations</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateRelationBuilder.html">CreateRelationBuilder</a></h5>
+      <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.CreateRelation.html">CreateRelation</a></p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateWebsite.html">CreateWebsite</a></h5>
+      <section><p>Provides all the properties required to create a new website using the hudu endpoint api/v1/websites</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateWebsiteBuilder.html">CreateWebsiteBuilder</a></h5>
+      <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.CreateWebsite.html">CreateWebsite</a></p>
+</section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetActivityLogs.html">GetActivityLogs</a></h5>
       <section><p>A parameter object for the hudu endpoint api/v1/activity_logs. The values provided to the
 fields or constructor help narrow down the returned results of the get query. All fields
@@ -157,29 +177,17 @@ default to null, which is acceptable by the Hudu API.</p>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html">GetActivityLogsBuilder</a></h5>
       <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.GetActivityLogs.html">GetActivityLogs</a></p>
 </section>
-      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetArticle.html">GetArticle</a></h5>
-      <section><p>Paramaters to Get a single Article from Hudu</p>
-</section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetArticles.html">GetArticles</a></h5>
       <section><p>Paramaters to get articles from the Hudu API endpoint /api/v1/articles</p>
 </section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetArticlesBuilder.html">GetArticlesBuilder</a></h5>
       <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.GetArticles.html">GetArticles</a></p>
 </section>
-      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetAsset.html">GetAsset</a></h5>
-      <section><p>Provides the paramaters to get a single Asset from the Hudu endpoint.</p>
-</section>
-      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetAssetLayout.html">GetAssetLayout</a></h5>
-      <section><p>Paramaters to Get a single asset_layout from Hudu</p>
-</section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetAssetLayouts.html">GetAssetLayouts</a></h5>
       <section><p>Paramaters to get asset_layouts from the Hudu API endpoint /api/v1/asset_layouts</p>
 </section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetAssetLayoutsBuilder.html">GetAssetLayoutsBuilder</a></h5>
       <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.GetAssetLayouts.html">GetAssetLayouts</a></p>
-</section>
-      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetAssetPassword.html">GetAssetPassword</a></h5>
-      <section><p>Get a single AssetPassword from the Hudu API endpoint api/v1/asset_passwords</p>
 </section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetAssetPasswords.html">GetAssetPasswords</a></h5>
       <section><p>Get a list of AssetPasswords from the Hudu API endpoint api/v1/asset_passwords using the
@@ -199,17 +207,11 @@ supplied paramaters to narrow down the results.</p>
 </section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html">GetCompaniesBuilder</a></h5>
       <section></section>
-      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetCompany.html">GetCompany</a></h5>
-      <section><p>Paramaters to Get a single Company from Hudu</p>
-</section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetExpirations.html">GetExpirations</a></h5>
       <section><p>Provides the paramaters to get a list of expirations from the Hudu endpoint api/v1/expirations</p>
 </section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetExpirationsBuilder.html">GetExpirationsBuilder</a></h5>
       <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.GetExpirations.html">GetExpirations</a></p>
-</section>
-      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetFolder.html">GetFolder</a></h5>
-      <section><p>Provides the parameters to get a signle Folder from the Hudu API endpoint api/v1/folders</p>
 </section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetFolders.html">GetFolders</a></h5>
       <section><p>Provides the parameters to get a filtered list of Folders from the Hudu API endpoint api/v1/folders</p>
@@ -223,9 +225,6 @@ supplied paramaters to narrow down the results.</p>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetMagicDashBuilder.html">GetMagicDashBuilder</a></h5>
       <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.GetMagicDash.html">GetMagicDash</a></p>
 </section>
-      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetProcedure.html">GetProcedure</a></h5>
-      <section><p>Provides the paramters to get a single procedure from the hudu endpoint api/v1/procedures</p>
-</section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetProcedures.html">GetProcedures</a></h5>
       <section><p>Provides the paramters to filter the list of procedures returned from the hudu endpoint api/v1/procedures</p>
 </section>
@@ -238,14 +237,60 @@ supplied paramaters to narrow down the results.</p>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetRelationsBuilder.html">GetRelationsBuilder</a></h5>
       <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.GetRelations.html">GetRelations</a></p>
 </section>
-      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetWebsite.html">GetWebsite</a></h5>
-      <section><p>Provides the paramaters to get a single website from the hudu endpoint api/v1/websites</p>
-</section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetWebsites.html">GetWebsites</a></h5>
       <section><p>Provides the parameters to filter the list of Websites returned from the hudu endpoint api/v1/websites</p>
 </section>
       <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.GetWebsitesBuilder.html">GetWebsitesBuilder</a></h5>
       <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.GetWebsites.html">GetWebsites</a></p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.ItemById.html">ItemById</a></h5>
+      <section><p>A basic Parameter for all methods that can be called with a signle id parameter</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateArticle.html">UpdateArticle</a></h5>
+      <section><p>Provides all the properties needed to update an existing article using the hudu api api/v1/articles</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateArticleBuilder.html">UpdateArticleBuilder</a></h5>
+      <section><p>Builder for the class <a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateArticle.html">UpdateArticle</a></p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateAsset.html">UpdateAsset</a></h5>
+      <section><p>Provides all the properties to update an existing Asset in hudu.</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateAssetBuilder.html">UpdateAssetBuilder</a></h5>
+      <section><p>Builder class to help build a new <a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateAsset.html">UpdateAsset</a> paramater object.</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateAssetLayout.html">UpdateAssetLayout</a></h5>
+      <section><p>Provides all the properties required to call the endpoint api/v1/asset_layouts when updating
+an asset_layout</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder.html">UpdateAssetLayoutBuilder</a></h5>
+      <section></section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateAssetPassword.html">UpdateAssetPassword</a></h5>
+      <section><p>Provides all properties required to update an existing asset_password using the
+api/v1/asset_passwords/ endpoint</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateAssetPasswordBuilder.html">UpdateAssetPasswordBuilder</a></h5>
+      <section><p>Builder class for <a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateAssetPassword.html">UpdateAssetPassword</a>. Used to create a complete paramater object.</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateCompany.html">UpdateCompany</a></h5>
+      <section><p>Provides all the properties required to call the hudu endpoint api/v1/companies and update
+an existing company.</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateCompanyBuilder.html">UpdateCompanyBuilder</a></h5>
+      <section><p>A builder class to help build new <a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateCompany.html">UpdateCompany</a> objects with the required
+properties to call the hudu endpoint api/v1/companies</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateFolder.html">UpdateFolder</a></h5>
+      <section><p>Provides all the properties required to update an existing Folder in hudu using the endpoint api/v1/folders</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateFolderBuilder.html">UpdateFolderBuilder</a></h5>
+      <section><p>This is a builder class to help build a new instance of a <a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateFolder.html">UpdateFolder</a> object.</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateWebsite.html">UpdateWebsite</a></h5>
+      <section><p>Provides all the properties requried to update a Website using the hudu api endpoint api/v1/websites</p>
+</section>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.UpdateWebsiteBuilder.html">UpdateWebsiteBuilder</a></h5>
+      <section><p>This is a builder class to help build a new UpdateWebsite with all possible proerties to use
+the hudu endpoint api/v1/websites.</p>
 </section>
     <h3 id="interfaces">Interfaces
   </h3>
@@ -254,7 +299,7 @@ supplied paramaters to narrow down the results.</p>
 </section>
     <h3 id="enums">Enums
   </h3>
-      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.CreateAssetLayoutFieldType.html">CreateAssetLayoutFieldType</a></h5>
+      <h5><a class="xref" href="HuduAPI.Endpoints.Parameters.AssetLayoutFieldType.html">AssetLayoutFieldType</a></h5>
       <section><p>The AssetLayout Field Types that can be created</p>
 </section>
 </article>

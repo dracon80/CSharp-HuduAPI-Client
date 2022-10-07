@@ -102,17 +102,36 @@
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">CreateFolder</span></div>
+    <div class="level1"><a class="xref" href="HuduAPI.Endpoints.Parameters.AbstractBases.Folder.html">Folder</a></div>
+    <div class="level2"><span class="xref">CreateFolder</span></div>
   </div>
   <div class="implements">
     <h5>Implements</h5>
     <div><a class="xref" href="HuduAPI.Endpoints.Parameters.IParameters.html">IParameters</a></div>
   </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="HuduAPI.Endpoints.Parameters.AbstractBases.Folder.html#HuduAPI_Endpoints_Parameters_AbstractBases_Folder_CompanyId">Folder.CompanyId</a>
+    </div>
+    <div>
+      <a class="xref" href="HuduAPI.Endpoints.Parameters.AbstractBases.Folder.html#HuduAPI_Endpoints_Parameters_AbstractBases_Folder_Description">Folder.Description</a>
+    </div>
+    <div>
+      <a class="xref" href="HuduAPI.Endpoints.Parameters.AbstractBases.Folder.html#HuduAPI_Endpoints_Parameters_AbstractBases_Folder_Icon">Folder.Icon</a>
+    </div>
+    <div>
+      <a class="xref" href="HuduAPI.Endpoints.Parameters.AbstractBases.Folder.html#HuduAPI_Endpoints_Parameters_AbstractBases_Folder_Name">Folder.Name</a>
+    </div>
+    <div>
+      <a class="xref" href="HuduAPI.Endpoints.Parameters.AbstractBases.Folder.html#HuduAPI_Endpoints_Parameters_AbstractBases_Folder_ParentFolderId">Folder.ParentFolderId</a>
+    </div>
+  </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="HuduAPI.Endpoints.Parameters.html">HuduAPI.Endpoints.Parameters</a></h6>
   <h6><strong>Assembly</strong>: HuduAPI.dll</h6>
   <h5 id="HuduAPI_Endpoints_Parameters_CreateFolder_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class CreateFolder : IParameters</code></pre>
+    <pre><code class="lang-csharp hljs">public class CreateFolder : Folder, IParameters</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
@@ -121,11 +140,11 @@
     <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/new/master/apiSpec/new?filename=HuduAPI_Endpoints_Parameters_CreateFolder__ctor_System_String_.md&amp;value=---%0Auid%3A%20HuduAPI.Endpoints.Parameters.CreateFolder.%23ctor(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Endpoints/Parameters/CreateFolder.cs/#L16">View Source</a>
+    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Endpoints/Parameters/Create/CreateFolder.cs/#L17">View Source</a>
   </span>
   <a id="HuduAPI_Endpoints_Parameters_CreateFolder__ctor_" data-uid="HuduAPI.Endpoints.Parameters.CreateFolder.#ctor*"></a>
   <h4 id="HuduAPI_Endpoints_Parameters_CreateFolder__ctor_System_String_" data-uid="HuduAPI.Endpoints.Parameters.CreateFolder.#ctor(System.String)">CreateFolder(String)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="HuduAPI.Endpoints.Parameters.CreateFolder.html">CreateFolder</a> class used to create a new folder.</p>
+  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="HuduAPI.Endpoints.Parameters.CreateFolder.html">CreateFolder</a> class with all requried properties.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
@@ -145,7 +164,7 @@
       <tr>
         <td><span class="xref">System.String</span></td>
         <td><span class="parametername">name</span></td>
-        <td><p>The name.</p>
+        <td><p>The name of the folder.</p>
 </td>
       </tr>
     </tbody>
@@ -154,52 +173,18 @@
   </h3>
   <span class="small pull-right mobile-hide">
     <span class="divider">|</span>
-    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/new/master/apiSpec/new?filename=HuduAPI_Endpoints_Parameters_CreateFolder_CompanyId.md&amp;value=---%0Auid%3A%20HuduAPI.Endpoints.Parameters.CreateFolder.CompanyId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/new/master/apiSpec/new?filename=HuduAPI_Endpoints_Parameters_CreateFolder_PayloadType.md&amp;value=---%0Auid%3A%20HuduAPI.Endpoints.Parameters.CreateFolder.PayloadType%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
   </span>
   <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Endpoints/Parameters/CreateFolder.cs/#L24">View Source</a>
+    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Endpoints/Parameters/Create/CreateFolder.cs/#L21">View Source</a>
   </span>
-  <a id="HuduAPI_Endpoints_Parameters_CreateFolder_CompanyId_" data-uid="HuduAPI.Endpoints.Parameters.CreateFolder.CompanyId*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_CreateFolder_CompanyId" data-uid="HuduAPI.Endpoints.Parameters.CreateFolder.CompanyId">CompanyId</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the company identifier to associate this folder with.</p>
-</div>
+  <a id="HuduAPI_Endpoints_Parameters_CreateFolder_PayloadType_" data-uid="HuduAPI.Endpoints.Parameters.CreateFolder.PayloadType*"></a>
+  <h4 id="HuduAPI_Endpoints_Parameters_CreateFolder_PayloadType" data-uid="HuduAPI.Endpoints.Parameters.CreateFolder.PayloadType">PayloadType</h4>
+  <div class="markdown level1 summary"></div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;company_id&quot;)]
-public int? CompanyId { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/new/master/apiSpec/new?filename=HuduAPI_Endpoints_Parameters_CreateFolder_Description.md&amp;value=---%0Auid%3A%20HuduAPI.Endpoints.Parameters.CreateFolder.Description%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Endpoints/Parameters/CreateFolder.cs/#L30">View Source</a>
-  </span>
-  <a id="HuduAPI_Endpoints_Parameters_CreateFolder_Description_" data-uid="HuduAPI.Endpoints.Parameters.CreateFolder.Description*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_CreateFolder_Description" data-uid="HuduAPI.Endpoints.Parameters.CreateFolder.Description">Description</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the description.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;description&quot;)]
-public string Description { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">public string PayloadType { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -212,102 +197,6 @@ public string Description { get; set; }</code></pre>
     <tbody>
       <tr>
         <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/new/master/apiSpec/new?filename=HuduAPI_Endpoints_Parameters_CreateFolder_Icon.md&amp;value=---%0Auid%3A%20HuduAPI.Endpoints.Parameters.CreateFolder.Icon%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Endpoints/Parameters/CreateFolder.cs/#L36">View Source</a>
-  </span>
-  <a id="HuduAPI_Endpoints_Parameters_CreateFolder_Icon_" data-uid="HuduAPI.Endpoints.Parameters.CreateFolder.Icon*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_CreateFolder_Icon" data-uid="HuduAPI.Endpoints.Parameters.CreateFolder.Icon">Icon</h4>
-  <div class="markdown level1 summary"><p>Gets or Sets the Icon class name, example: “fas fa-home”</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;icon&quot;)]
-public string Icon { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/new/master/apiSpec/new?filename=HuduAPI_Endpoints_Parameters_CreateFolder_Name.md&amp;value=---%0Auid%3A%20HuduAPI.Endpoints.Parameters.CreateFolder.Name%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Endpoints/Parameters/CreateFolder.cs/#L42">View Source</a>
-  </span>
-  <a id="HuduAPI_Endpoints_Parameters_CreateFolder_Name_" data-uid="HuduAPI.Endpoints.Parameters.CreateFolder.Name*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_CreateFolder_Name" data-uid="HuduAPI.Endpoints.Parameters.CreateFolder.Name">Name</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the name of the folder.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;name&quot;)]
-public string Name { get; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  <span class="small pull-right mobile-hide">
-    <span class="divider">|</span>
-    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/new/master/apiSpec/new?filename=HuduAPI_Endpoints_Parameters_CreateFolder_ParentFolderId.md&amp;value=---%0Auid%3A%20HuduAPI.Endpoints.Parameters.CreateFolder.ParentFolderId%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
-  </span>
-  <span class="small pull-right mobile-hide">
-    <a href="https://github.com/dracon80/CSharp-HuduAPI-Client/blob/master/HuduAPI/Endpoints/Parameters/CreateFolder.cs/#L48">View Source</a>
-  </span>
-  <a id="HuduAPI_Endpoints_Parameters_CreateFolder_ParentFolderId_" data-uid="HuduAPI.Endpoints.Parameters.CreateFolder.ParentFolderId*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_CreateFolder_ParentFolderId" data-uid="HuduAPI.Endpoints.Parameters.CreateFolder.ParentFolderId">ParentFolderId</h4>
-  <div class="markdown level1 summary"><p>Gets or sets the folder ID to associate this folder with a parent folder.</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;parent_folder_id&quot;)]
-public int? ParentFolderId { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
         <td></td>
       </tr>
     </tbody>
