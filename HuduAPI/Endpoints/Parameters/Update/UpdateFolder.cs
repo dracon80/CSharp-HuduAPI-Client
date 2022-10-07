@@ -32,5 +32,13 @@ namespace HuduAPI.Endpoints.Parameters
         {
             this.Id = id;
         }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "folder";
+            }
+        }
     }
 }

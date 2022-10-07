@@ -84,5 +84,13 @@ namespace HuduAPI.Endpoints.Parameters
         /// The website.
         /// </value>
         public string? Website { get; set; }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "";
+            }
+        }
     }
 }

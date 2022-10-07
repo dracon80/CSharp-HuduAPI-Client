@@ -19,5 +19,13 @@ namespace HuduAPI.Endpoints.Parameters
         /// </summary>
         [JsonProperty("page")]
         public int? Page { get; set; }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "";
+            }
+        }
     }
 }

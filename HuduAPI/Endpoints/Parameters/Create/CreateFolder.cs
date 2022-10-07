@@ -17,5 +17,13 @@ namespace HuduAPI.Endpoints.Parameters
         public CreateFolder(string name) : base(name)
         {
         }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "folder";
+            }
+        }
     }
 }

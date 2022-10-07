@@ -19,5 +19,13 @@ namespace HuduAPI.Endpoints.Parameters
         public CreateWebsite(string name, int companyId) : base(name, companyId)
         {
         }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "website";
+            }
+        }
     }
 }

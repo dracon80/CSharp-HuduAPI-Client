@@ -45,5 +45,13 @@ namespace HuduAPI.Endpoints.Parameters
         /// </summary>
         [JsonProperty("resource_type")]
         public int? ResourceType { get; set; }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "";
+            }
+        }
     }
 }

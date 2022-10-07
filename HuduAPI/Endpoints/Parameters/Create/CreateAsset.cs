@@ -28,5 +28,13 @@ namespace HuduAPI.Endpoints.Parameters
         public CreateAsset(int companyId, int assetLayoutId, string name) : base(companyId, assetLayoutId, name)
         {
         }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "asset";
+            }
+        }
     }
 }

@@ -36,5 +36,13 @@
                 }
             }
         }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "";
+            }
+        }
     }
 }

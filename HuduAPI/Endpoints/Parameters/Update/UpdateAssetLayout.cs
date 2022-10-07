@@ -49,5 +49,13 @@ namespace HuduAPI.Endpoints.Parameters
         /// The identifier.
         /// </value>
         public int Id { get; }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "asset_layout";
+            }
+        }
     }
 }

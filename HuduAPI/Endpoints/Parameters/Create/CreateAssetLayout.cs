@@ -34,5 +34,13 @@ namespace HuduAPI.Endpoints.Parameters
         public CreateAssetLayout(string name, string icon, Color color, Color iconColor, List<AssetLayoutField> assetLayoutFields) : base(name, icon, color, iconColor, assetLayoutFields)
         {
         }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "asset_layout";
+            }
+        }
     }
 }

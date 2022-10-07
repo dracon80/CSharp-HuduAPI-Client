@@ -51,7 +51,8 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         {
             get
             {
-                return ColorTranslator.ToHtml(_color);
+                //Converting to Argb first stops ToHtml() from returning a known colors name instead of HEX.
+                return ColorTranslator.ToHtml(System.Drawing.Color.FromArgb(_color.ToArgb()));
             }
         }
 
@@ -75,7 +76,8 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         {
             get
             {
-                return ColorTranslator.ToHtml(_iconColor);
+                //Converting to Argb first stops ToHtml() from returning a known colors name instead of HEX.
+                return ColorTranslator.ToHtml(System.Drawing.Color.FromArgb(_iconColor.ToArgb()));
             }
         }
 

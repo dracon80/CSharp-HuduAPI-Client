@@ -55,5 +55,13 @@ namespace HuduAPI.Endpoints.Parameters
         /// </summary>
         [JsonProperty("primary_serial")]
         public string? PrimarySerial { get; set; }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "";
+            }
+        }
     }
 }

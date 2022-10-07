@@ -68,5 +68,13 @@ namespace HuduAPI.Endpoints.Parameters
         /// </summary>
         [JsonProperty("toable_type")]
         public string ToableType { get; }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "relation";
+            }
+        }
     }
 }

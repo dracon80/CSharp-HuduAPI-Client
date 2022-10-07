@@ -18,5 +18,13 @@ namespace HuduAPI.Endpoints.Parameters
         public CreateCompany(string name) : base(name)
         {
         }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "company";
+            }
+        }
     }
 }

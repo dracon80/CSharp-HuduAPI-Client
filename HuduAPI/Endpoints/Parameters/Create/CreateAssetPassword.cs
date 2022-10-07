@@ -24,5 +24,13 @@ namespace HuduAPI.Endpoints.Parameters
         public CreateAssetPassword(int companyId, string name, string password) : base(companyId, name, password)
         {
         }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "asset_password";
+            }
+        }
     }
 }

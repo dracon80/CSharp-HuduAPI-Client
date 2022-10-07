@@ -40,5 +40,13 @@ namespace HuduAPI.Endpoints.Parameters
         {
             AssetId = asset_id;
         }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "asset";
+            }
+        }
     }
 }

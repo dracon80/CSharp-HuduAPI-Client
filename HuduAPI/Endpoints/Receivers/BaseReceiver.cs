@@ -1,7 +1,9 @@
 ﻿using Flurl;
 using Flurl.Http;
+using Flurl.Util;
 using HuduAPI.Endpoints.Parameters;
 using HuduAPI.Records;
+using Newtonsoft.Json;
 using System.Runtime.InteropServices;
 
 namespace HuduAPI.Endpoints.Receivers
@@ -40,8 +42,10 @@ namespace HuduAPI.Endpoints.Receivers
         /// will be returned that contains the values that be been set on the new item created in Hudu.
         public static TResult Create(string url, string apiKey, TParams parameters)
         {
-            var result = url.WithHeader("x-api-key", apiKey).PostJsonAsync(parameters).ReceiveJson<TResult>().Result;
-            return result;
+            var result = url.WithHeader("x-api-key", apiKey).PostJsonAsync(parameters.GetPropertyDictionary()).ReceiveJson<TResult>();
+            var param = JsonConvert.SerializeObject(parameters.GetPropertyDictionary());
+
+            return result.Result;
         }
 
         /// <summary>

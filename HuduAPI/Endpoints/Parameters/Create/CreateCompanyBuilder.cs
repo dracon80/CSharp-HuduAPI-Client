@@ -5,7 +5,7 @@ namespace HuduAPI.Endpoints.Parameters
     /// <summary>
     /// Builder for the class <see cref="CreateCompany">CreateCompany</see>
     /// </summary>
-    public class CreateCompanyBuilder : CompanyBuilder<CreateCompany, CreateCompanyBuilder>, IParameters
+    public class CreateCompanyBuilder : CompanyBuilder<CreateCompany, CreateCompanyBuilder>
     {
         /// <summary>
         /// Creates a new instance of the builder object with the required company name.

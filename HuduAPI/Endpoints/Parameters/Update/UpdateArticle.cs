@@ -34,5 +34,13 @@ namespace HuduAPI.Endpoints.Parameters
         /// </value>
         [JsonIgnore]
         public int Id { get; }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "article";
+            }
+        }
     }
 }

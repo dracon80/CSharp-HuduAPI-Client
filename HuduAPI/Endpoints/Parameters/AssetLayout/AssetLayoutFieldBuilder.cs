@@ -13,7 +13,7 @@ namespace HuduAPI.Endpoints.Parameters
         private int? _max;
         private int? _min;
         private string? _options;
-        private int? _position;
+        private int _position = 0;
         private bool _required;
         private bool _showInList;
 
@@ -229,7 +229,7 @@ namespace HuduAPI.Endpoints.Parameters
         /// Returns the <see cref="AssetLayoutFieldBuilder">AssetLayoutFieldBuilder</see> with the
         /// property <paramref name="position">position</paramref> defined
         /// </returns>
-        public AssetLayoutFieldBuilder WithPosition(int? position)
+        public AssetLayoutFieldBuilder WithPosition(int position)
         {
             _position = position;
             return this;

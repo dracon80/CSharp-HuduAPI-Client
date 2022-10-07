@@ -13,7 +13,9 @@ namespace HuduAPI.Endpoints
     /// </remarks>
     public class AssetLayoutsEndpoint : IEndpoint,
         IEndpointGetMethod<AssetLayout, ItemById>,
-        IEndpointGetMethod<Records.AssetLayouts, GetAssetLayouts>
+        IEndpointGetMethod<AssetLayouts, GetAssetLayouts>,
+        IEndpointCreateMethod<AssetLayout, CreateAssetLayout>,
+        IEndpointUpdateMethod<AssetLayout, UpdateAssetLayout>
     {
         /// <summary>
         /// Gets or sets the hudu API key that will be used for all calls to this Endpoint.
@@ -79,6 +81,36 @@ namespace HuduAPI.Endpoints
         public Records.AssetLayouts Get([Optional] GetAssetLayouts parameters)
         {
             Commands.GetAssetLayouts myCommand = new Commands.GetAssetLayouts(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
+            return myCommand.Execute();
+        }
+
+        /// <summary>
+        /// Performs a Create method call on the Hudu API to create a new assetlayout
+        /// </summary>
+        /// <param name="parameters">
+        /// The parameters to use when making the call.
+        /// </param>
+        /// <returns>
+        /// An object of type <see cref="AssetLayout" /> that represents the created object in hudu
+        /// </returns>
+        public AssetLayout Create(CreateAssetLayout parameters)
+        {
+            Commands.CreateAssetLayout myCommand = new Commands.CreateAssetLayout(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
+            return myCommand.Execute();
+        }
+
+        /// <summary>
+        /// Performs an update on the supplied AssetLayout ID using the parameters supplied.
+        /// </summary>
+        /// <param name="parameters">
+        /// The parameters to use when making the call.
+        /// </param>
+        /// <returns>
+        /// An object of type <see cref="AssetLayout" /> that represents the created object in hudu
+        /// </returns>
+        public AssetLayout Update(UpdateAssetLayout parameters)
+        {
+            Commands.UpdateAssetLayout myCommand = new Commands.UpdateAssetLayout(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
             return myCommand.Execute();
         }
     }

@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json;
+using System.Globalization;
 
 namespace HuduAPI.Endpoints.Parameters
 {
@@ -28,7 +29,12 @@ namespace HuduAPI.Endpoints.Parameters
         public AssetLayoutField(string label, AssetLayoutFieldType fieldtype)
         {
             Label = label;
-            _fieldType = fieldtype.ToString();
+
+            //Convert the field type from Caps to TitleCase as expected from Hudu
+            TextInfo textInfo = new CultureInfo("en-AU", false).TextInfo;
+            _fieldType = textInfo.ToTitleCase(fieldtype.ToString().ToLower());
+
+            this.Position = 0;
         }
 
         /// <summary>

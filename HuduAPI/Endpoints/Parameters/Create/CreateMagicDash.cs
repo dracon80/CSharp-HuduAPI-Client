@@ -142,5 +142,13 @@ namespace HuduAPI.Endpoints.Parameters
         /// </summary>
         [JsonProperty("title")]
         public string Title { get; }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "asset";
+            }
+        }
     }
 }

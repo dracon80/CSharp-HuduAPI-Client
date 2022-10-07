@@ -20,5 +20,13 @@ namespace HuduAPI.Endpoints.Parameters
         public CreateArticle(string name, string content) : base(name, content)
         {
         }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "article";
+            }
+        }
     }
 }

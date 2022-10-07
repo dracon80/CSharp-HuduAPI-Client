@@ -86,5 +86,13 @@ namespace HuduAPI.Endpoints.Parameters
         /// </value>
         [JsonProperty("user_id")]
         public int? UserID { get; set; }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "";
+            }
+        }
     }
 }

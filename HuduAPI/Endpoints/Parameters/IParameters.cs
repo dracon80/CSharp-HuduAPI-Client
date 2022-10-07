@@ -7,6 +7,11 @@ namespace HuduAPI.Endpoints.Parameters
     /// </summary>
     public interface IParameters
     {
+        /// <summary>
+        /// Some of the Hudu paramaters need to have a payload wrapper in the Json, some do not.
+        /// This allows an implementing class to define if there should be a wrapper.
+        /// </summary>
+        public string PayloadType { get; }
     }
 
     /// <summary>
@@ -52,13 +57,23 @@ namespace HuduAPI.Endpoints.Parameters
             {
                 var value = property.ValueProvider.GetValue(parameters);
 
-                if (value != null)
+                if (value != null && property.PropertyName != "payload_type")
                 {
                     result.Add(property.PropertyName, value);
                 }
             }
 
-            return result;
+            //if the payloadtype is not "" then there needs to be a wrapper around the payload
+            if (parameters.PayloadType != "")
+            {
+                Dictionary<string, object> wrapper = new Dictionary<string, object>();
+                wrapper.Add(parameters.PayloadType, result);
+                return wrapper;
+            }
+            else
+            {
+                return result;
+            }
         }
     }
 }

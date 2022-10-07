@@ -17,6 +17,8 @@ namespace HuduAPI.Endpoints.Tests
     {
         private IConfiguration _configuration { get; set; }
         private AssetLayoutsEndpoint _endpoint;
+        private int _companyId = 7;
+        private int _existingAssetLayout = 1;
 
         public AssetLayoutsEndpointTests()
         {
@@ -71,6 +73,30 @@ namespace HuduAPI.Endpoints.Tests
             Assert.ThrowsException<ArgumentOutOfRangeException>(
                      () => myparams = new(id: -3)
                 );
+        }
+
+        [TestMethod]
+        public void CreateAssetLayout()
+        {
+            string name = "API Asset";
+            string icon = "fas fa-home";
+            System.Drawing.Color color = System.Drawing.Color.Green;
+            System.Drawing.Color icon_color = System.Drawing.Color.Black;
+
+            List<AssetLayoutField> fields = new List<AssetLayoutField>();
+
+            fields.Add(new AssetLayoutFieldBuilder("Required Asset Field", AssetLayoutFieldType.TEXT)
+                .WithRequired(true)
+                .WithShowInList(true).Build());
+
+            fields.Add(new AssetLayoutFieldBuilder("Required Emails", AssetLayoutFieldType.EMAIL)
+                .WithHint("Put an email address in here").Build());
+
+            CreateAssetLayout myParams = new CreateAssetLayoutBuilder(name: name, icon: icon, color: color, iconColor: icon_color, fields)
+                .WithIncludeComments(false)
+                .WithIncludeFiles(false).Build();
+
+            AssetLayout result = _endpoint.Create(myParams);
         }
     }
 }
