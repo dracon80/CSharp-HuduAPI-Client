@@ -18,7 +18,7 @@ namespace HuduAPI.Endpoints.Commands
 
         public AssetLayout Execute()
         {
-            var result = BaseReceiver<AssetLayoutRoot, Parameters.UpdateAssetLayout>.Create(
+            var result = BaseReceiver<AssetLayoutRoot, Parameters.UpdateAssetLayout>.Update(
                 url: _url,
                 apiKey: _apiKey,
                 parameters: _params

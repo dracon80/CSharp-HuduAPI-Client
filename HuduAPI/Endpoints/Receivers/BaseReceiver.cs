@@ -43,7 +43,6 @@ namespace HuduAPI.Endpoints.Receivers
         public static TResult Create(string url, string apiKey, TParams parameters)
         {
             var result = url.WithHeader("x-api-key", apiKey).PostJsonAsync(parameters.GetPropertyDictionary()).ReceiveJson<TResult>();
-            var param = JsonConvert.SerializeObject(parameters.GetPropertyDictionary());
 
             return result.Result;
         }

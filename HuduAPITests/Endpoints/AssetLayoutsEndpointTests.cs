@@ -97,6 +97,11 @@ namespace HuduAPI.Endpoints.Tests
                 .WithIncludeFiles(false).Build();
 
             AssetLayout result = _endpoint.Create(myParams);
+
+            Assert.IsNotNull(result);
+            Assert.AreEqual(name, result.Name);
+            Assert.AreEqual(icon, result.Icon);
+            Assert.AreEqual(2, result.Fields.Count);
         }
     }
 }
