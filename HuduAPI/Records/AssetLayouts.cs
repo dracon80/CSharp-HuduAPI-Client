@@ -62,34 +62,49 @@ namespace HuduAPI.Records
             Fields = new List<AssetLayoutField>();
         }
 
-        public bool Active { get; set; } = true;
+        [JsonProperty("active")]
+        public bool Active { get; set; }
 
+        [JsonProperty("color")]
         public string Color { get; set; }
 
+        [JsonProperty("created_at")]
         public DateTime? CreatedAt { get; set; }
 
+        [JsonProperty("fields")]
         public IList<AssetLayoutField> Fields { get; set; }
 
+        [JsonProperty("icon")]
         public string Icon { get; set; }
 
+        [JsonProperty("icon_color")]
         public string IconColor { get; set; }
 
+        [JsonProperty("id")]
         public int ID { get; set; }
 
-        public bool IncludeComments { get; set; } = true;
+        [JsonProperty("include_comments")]
+        public bool IncludeComments { get; set; }
 
-        public bool IncludeFiles { get; set; } = true;
+        [JsonProperty("include_files")]
+        public bool IncludeFiles { get; set; }
 
-        public bool IncludePasswords { get; set; } = true;
+        [JsonProperty("include_passwords")]
+        public bool IncludePasswords { get; set; }
 
-        public bool IncludePhotos { get; set; } = true;
+        [JsonProperty("include_photos")]
+        public bool IncludePhotos { get; set; }
 
+        [JsonProperty("name")]
         public string Name { get; set; }
 
+        [JsonProperty("sidebar_folder_id")]
         public int? SidebarFolderID { get; set; }
 
+        [JsonProperty("slug")]
         public string Slug { get; set; }
 
+        [JsonProperty("updated_at")]
         public DateTime? UpdatedAt { get; set; }
 
         /// <summary>
@@ -130,19 +145,19 @@ namespace HuduAPI.Records
                 this.FieldType = field_type;
             }
 
-            public bool Expiration { get; set; } = false;
+            public bool Expiration { get; set; }
             public string FieldType { get; set; }
             public string? Hint { get; set; }
             public int ID { get; set; }
-            public bool IsDestroyed { get; set; } = false;
+            public bool IsDestroyed { get; set; }
             public string Label { get; set; }
             public int? LinkableId { get; set; }
             public int? Max { get; set; }
             public int? Min { get; set; }
             public string? Options { get; set; }
             public int Position { get; set; } = 0;
-            public bool? Required { get; set; } = false;
-            public bool ShowInList { get; set; } = false;
+            public bool? Required { get; set; }
+            public bool ShowInList { get; set; }
         }
     }
 

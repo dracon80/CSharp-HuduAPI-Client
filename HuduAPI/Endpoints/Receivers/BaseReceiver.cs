@@ -42,6 +42,8 @@ namespace HuduAPI.Endpoints.Receivers
         /// will be returned that contains the values that be been set on the new item created in Hudu.
         public static TResult Create(string url, string apiKey, TParams parameters)
         {
+            var json = JsonConvert.SerializeObject(parameters.GetPropertyDictionary());
+
             var result = url.WithHeader("x-api-key", apiKey).PostJsonAsync(parameters.GetPropertyDictionary()).ReceiveJson<TResult>();
 
             return result.Result;
@@ -127,6 +129,7 @@ namespace HuduAPI.Endpoints.Receivers
         /// </returns>
         public static TResult Update(string url, string apiKey, TParams parameters)
         {
+            var json = JsonConvert.SerializeObject(parameters.GetPropertyDictionary());
             var result = url.WithHeader("x-api-key", apiKey).PutJsonAsync(parameters.GetPropertyDictionary()).ReceiveJson<TResult>().Result;
             return result;
         }

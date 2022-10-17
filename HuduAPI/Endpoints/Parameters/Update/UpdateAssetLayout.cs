@@ -1,8 +1,10 @@
 ﻿using HuduAPI.Endpoints.Parameters.AbstractBases;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -35,7 +37,7 @@ namespace HuduAPI.Endpoints.Parameters
         /// Color of the icon.
         /// </param>
         /// <param name="assetLayoutFields">
-        /// The asset layout fields.
+        /// The asset layout fields to be added to the existing layout. Do not provive existing field definitions
         /// </param>
         public UpdateAssetLayout(int id, string name, string icon, Color color, Color iconColor, List<AssetLayoutField> assetLayoutFields) : base(name, icon, color, iconColor, assetLayoutFields)
         {
@@ -48,8 +50,13 @@ namespace HuduAPI.Endpoints.Parameters
         /// <value>
         /// The identifier.
         /// </value>
+        [JsonIgnore]
         public int Id { get; }
 
+        /// <summary>
+        /// Set the Payload wrapper for the json
+        /// </summary>
+        [JsonIgnore]
         public string PayloadType
         {
             get
@@ -57,5 +64,14 @@ namespace HuduAPI.Endpoints.Parameters
                 return "asset_layout";
             }
         }
+
+
+        /// <summary>
+        /// Gets or sets a value indicating whether this <see cref="UpdateAssetLayout"/> is active within hudu.
+        /// </summary>
+        /// <value>
+        ///   <c>true</c> if active; otherwise, <c>false</c>.
+        /// </value>
+        public Boolean Active { get; set; }
     }
 }

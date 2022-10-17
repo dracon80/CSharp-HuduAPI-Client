@@ -13,7 +13,7 @@ namespace HuduAPI.Endpoints.Commands
         {
             _apiKey = huduAPIKey;
             _params = parameters;
-            _url = huduBaseURL + "api/v1/asset_layouts";
+            _url = huduBaseURL + "api/v1/asset_layouts/" + parameters.Id;
         }
 
         public AssetLayout Execute()

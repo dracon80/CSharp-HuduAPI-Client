@@ -13,6 +13,7 @@ namespace HuduAPI.Endpoints.Parameters
     public class UpdateAssetLayoutBuilder : AssetLayoutBuilder<UpdateAssetLayout, UpdateAssetLayoutBuilder>
     {
         protected int _id;
+        protected Boolean _active;
 
         /// <summary>
         /// Initializes a new instance of the <see cref="UpdateAssetLayoutBuilder" /> class.
@@ -55,8 +56,21 @@ namespace HuduAPI.Endpoints.Parameters
                 IncludeComments = _includeComments,
                 IncludeFiles = _includeFiles,
                 IncludePhotos = _includePhotos,
-                PasswordTypes = _passwordTypes
+                PasswordTypes = _passwordTypes,
+                Active = _active
             };
+        }
+
+
+        /// <summary>
+        /// Determines whether the Asset Layout should be marked as active.
+        /// </summary>
+        /// <param name="active">if set to <c>true</c> [active].</param>
+        /// <returns></returns>
+        public UpdateAssetLayoutBuilder IsActive(Boolean active)
+        {
+            _active = active;
+            return this;
         }
     }
 }

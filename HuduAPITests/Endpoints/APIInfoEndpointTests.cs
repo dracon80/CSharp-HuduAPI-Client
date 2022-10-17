@@ -30,7 +30,7 @@ namespace HuduAPI.Endpoints.Tests
         {
             APIInfo result = _endpoint.Get();
 
-            Assert.AreEqual("2.1.5.16", result.Version);
+            Assert.AreEqual("2.1.5.17", result.Version);
         }
     }
 }
