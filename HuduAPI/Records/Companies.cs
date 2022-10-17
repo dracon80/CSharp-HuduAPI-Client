@@ -69,55 +69,79 @@ namespace HuduAPI.Records
         [JsonProperty("address_line_2")]
         public string? AddressLine2 { get; set; }
 
+        [JsonProperty("archived")]
         public bool? Archived { get; set; } = false;
 
+        [JsonProperty("city")]
         public string? City { get; set; }
 
+        [JsonProperty("company_type")]
         public string? CompanyType { get; set; }
 
+        [JsonProperty("country_name")]
         public string? CountryName { get; set; }
 
+        [JsonProperty("created_at")]
         public DateTime? CreatedAt { get; set; }
 
+        [JsonProperty("fax_number")]
         public string? FaxNumber { get; set; }
 
+        [JsonProperty("full_url")]
         public string? FullUrl { get; set; }
 
-        public int? ID { get; set; }
+        [JsonProperty("id")]
+        public int ID { get; set; }
 
         [JsonProperty("id_number")]
         public string? IDNumber { get; set; }
 
+        [JsonProperty("integrations")]
         public IList<Integration>? Integrations { get; set; }
 
+        [JsonProperty("knowledge_base_url")]
         public string? KnowledgeBaseUrl { get; set; }
 
+        [JsonProperty("name")]
         public string? Name { get; set; }
 
+        [JsonProperty("nickname")]
         public string? Nickname { get; set; }
 
+        [JsonProperty("notes")]
         public string? Notes { get; set; }
 
+        [JsonProperty("object_type")]
         public string? ObjectType { get; set; }
 
+        [JsonProperty("parent_company_id")]
         public int? ParentCompanyId { get; set; }
 
+        [JsonProperty("parent_company_name")]
         public string? ParentCompanyName { get; set; }
 
+        [JsonProperty("passwords_url")]
         public string? PasswordsUrl { get; set; }
 
+        [JsonProperty("phone_number")]
         public string? PhoneNumber { get; set; }
 
+        [JsonProperty("slug")]
         public string? Slug { get; set; }
 
+        [JsonProperty("state")]
         public string? State { get; set; }
 
+        [JsonProperty("updated_at")]
         public DateTime? UpdatedAt { get; set; }
 
+        [JsonProperty("url")]
         public string? Url { get; set; }
 
+        [JsonProperty("website")]
         public string? Website { get; set; }
 
+        [JsonProperty("zip")]
         public string? Zip { get; set; }
 
         /// <summary>
@@ -148,15 +172,23 @@ namespace HuduAPI.Records
                 this.Name = name;
             }
 
-            public int? ID { get; set; }
+            [JsonProperty("id")]
+            public int ID { get; set; }
 
-            public string? Identifier { get; set; }
-            public int? IntegratorID { get; set; }
+            [JsonProperty("integrator_id")]
+            public int IntegratorID { get; set; }
 
-            public string? IntegratorName { get; set; }
+            [JsonProperty("integrator_name")]
+            public string IntegratorName { get; set; }
 
-            public string? Name { get; set; }
-            public int? SyncID { get; set; }
+            [JsonProperty("sync_id")]
+            public int SyncId { get; set; }
+
+            [JsonProperty("identifier")]
+            public string Identifier { get; set; }
+
+            [JsonProperty("name")]
+            public string Name { get; set; }
         }
     }
 }

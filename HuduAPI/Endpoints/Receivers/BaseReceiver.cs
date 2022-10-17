@@ -44,9 +44,27 @@ namespace HuduAPI.Endpoints.Receivers
         {
             var json = JsonConvert.SerializeObject(parameters.GetPropertyDictionary());
 
-            var result = url.WithHeader("x-api-key", apiKey).PostJsonAsync(parameters.GetPropertyDictionary()).ReceiveJson<TResult>();
+            try
+            {
+                var result = url.WithHeader("x-api-key", apiKey).PostJsonAsync(parameters.GetPropertyDictionary()).ReceiveJson<TResult>().Result;
+                return result;
+            }
+            catch (Exception ex)
+            {
+                if (ex.InnerException is FlurlHttpException)
+                {
+                    FlurlHttpException inner = (FlurlHttpException)ex.InnerException;
+                    string response = inner.GetResponseStringAsync().Result;
 
-            return result.Result;
+                    throw new FlurlHttpException(inner.Call, response, inner);
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            
         }
 
         /// <summary>

@@ -79,6 +79,10 @@ namespace HuduAPI.Endpoints.Tests
 
             Assert.AreEqual(_companyID, result.ID);
             Assert.AreEqual(_companyName, result.Name);
+            Assert.AreEqual("PARRAMATTA PARK", result.City);
+            Assert.AreEqual("MSP Proactive Client", result.CompanyType);
+            Assert.AreEqual("www.i-solutions.net.au", result.Website);
+
         }
 
         [TestMethod]
@@ -99,6 +103,73 @@ namespace HuduAPI.Endpoints.Tests
             Assert.ThrowsException<ArgumentOutOfRangeException>(
                      () => myparams = new(id: -3)
                 );
+        }
+
+        [TestMethod]
+        public void CreateUpdateDelete_ok()
+        {
+            string name = "New Company";
+            string city = "Test City";
+            string state = "New State";
+            string country = "New Country";
+            string website = "https://www.na.com/";
+            string notes = "Lots of test notes";
+
+            CreateCompany myparam = new CreateCompanyBuilder(name)
+                .WithCity(city)
+                .WithState(state)
+                .WithCountryName(country)
+                .WithWebsite(website)
+                .WithNotes(notes)
+                .Build();
+
+
+            Company result = _endpoint.Create(myparam);
+
+            Assert.AreEqual(name, result.Name);
+            Assert.AreEqual(city, result.City);
+            Assert.AreEqual(state, result.State);
+            Assert.AreEqual(country, result.CountryName);
+            Assert.AreEqual(website, result.Website);
+            Assert.AreEqual(notes, result.Notes);
+
+
+            ItemById item = new ItemById(result.ID);
+
+            //Update the company with new data.
+            name = "Updated Company Name";
+            string company_type = "MSP Proactive Client";
+            string address1 = "Address Line 1";
+            string address2 = "Address Line 2";
+
+            UpdateCompany updateparam = new UpdateCompanyBuilder(result.ID, name)
+                .WithAddressLine1(address1)
+                .WithAddressLine2(address2)
+                .WithCompanyType(company_type)
+                .Build();
+
+            result = _endpoint.Update(updateparam);
+
+            Assert.AreEqual(name, result.Name);
+            Assert.AreEqual(city, result.City);
+            Assert.AreEqual(state, result.State);
+            Assert.AreEqual(country, result.CountryName);
+            Assert.AreEqual(website, result.Website);
+            Assert.AreEqual(notes, result.Notes);
+            Assert.AreEqual(company_type, result.CompanyType);
+            Assert.AreEqual(address1, result.AddressLine1);
+            Assert.AreEqual(address2, result.AddressLine2);
+
+            //Now Archive and Unarchive the Company
+            result = _endpoint.Archive(item, true);
+            Assert.IsTrue(result.Archived);
+
+            result = _endpoint.Archive(item, false);
+            Assert.IsFalse(result.Archived);
+
+
+            //Cleanup and delete the created company
+            _endpoint.Delete(item);
         }
     }
 }
