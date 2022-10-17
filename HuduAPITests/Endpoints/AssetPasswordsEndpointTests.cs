@@ -17,6 +17,8 @@ namespace HuduAPI.Endpoints.Tests
     {
         private IConfiguration _configuration { get; set; }
         private AssetPasswordsEndpoint _endpoint;
+        private int _companyId = 7;
+        private int _existing = 1152;
 
         public AssetPasswordsEndpointTests()
         {
@@ -48,9 +50,12 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod]
         public void GetAssetPassword()
         {
-            Parameters.ItemById parameters = new(1152);
+            Parameters.ItemById parameters = new(_existing);
             AssetPassword result = _endpoint.Get(parameters);
-            Assert.AreEqual(1152, result.ID);
+            Assert.AreEqual(_existing, result.ID);
+            Assert.AreEqual("ncompassReportUser", result.Name);
+            Assert.AreEqual("djf$dk&!f9anvFsdj@sSdfj", result.Password);
+
         }
 
         [TestMethod]
@@ -71,6 +76,57 @@ namespace HuduAPI.Endpoints.Tests
             Assert.ThrowsException<ArgumentOutOfRangeException>(
                      () => myparams = new(id: -3)
                 );
+        }
+
+        [TestMethod]
+        public void CreateUpdateDelete_OK()
+        {
+            string name = "New Asset Password";
+            string pass = "1234";
+            string desc = "This is a test password";
+            string user = "TestUser";
+            string url = "https://mybigtest.com/";
+            string otp = "432567";
+            
+            CreateAssetPassword myparam = new CreateAssetPasswordBuilder(_companyId, name, pass)
+                .WithDescription(desc)
+                .WithInPortal(true)
+                .WithUsername(user)
+                .WithUrl(url).Build();
+
+            AssetPassword result = _endpoint.Create(myparam);
+
+            Assert.IsNotNull(result);
+            Assert.AreEqual(name, result.Name);
+            Assert.AreEqual(pass, result.Password);
+            Assert.AreEqual(desc, result.Description);
+            Assert.AreEqual(user, result.Username);
+
+            name = "Updated New Asset Password";
+
+            //Now try updating it with new values.
+            UpdateAssetPassword update = new UpdateAssetPasswordBuilder(result.ID, _companyId, name, pass)
+                .WithOtpSecret(otp)
+                .WithInPortal(false).Build();
+
+            result = _endpoint.Update(update);
+
+            Assert.IsNotNull(result);
+            Assert.AreEqual(name, result.Name);
+            Assert.AreEqual(pass, result.Password);
+            Assert.AreEqual(desc, result.Description);
+            Assert.AreEqual(user, result.Username);
+            Assert.AreEqual(otp, result.OtpSecret);
+
+            //Now Test Out Archiving
+            ItemById item = new(result.ID);
+            result = _endpoint.Archive(item, true);
+            //No way of confirming this other than manually through the UI
+            result = _endpoint.Archive(item, false);
+            
+
+            //Clean up the test and delete the record
+            _endpoint.Delete(item);
         }
     }
 }

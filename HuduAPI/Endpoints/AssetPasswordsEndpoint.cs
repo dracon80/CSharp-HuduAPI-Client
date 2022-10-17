@@ -13,7 +13,11 @@ namespace HuduAPI.Endpoints
     /// </remarks>
     public class AssetPasswordsEndpoint : IEndpoint,
         IEndpointGetMethod<AssetPassword, ItemById>,
-        IEndpointGetMethod<AssetPasswords, GetAssetPasswords>
+        IEndpointGetMethod<AssetPasswords, GetAssetPasswords>,
+        IEndpointCreateMethod<AssetPassword, CreateAssetPassword>,
+        IEndpointUpdateMethod<AssetPassword, UpdateAssetPassword>,
+        IEndpointDeleteMethod<ItemById>,
+        IEndpointArchiveMethod<AssetPassword,ItemById>
     {
         /// <summary>
         /// Gets or sets the hudu API key that will be used for all calls to this Endpoint.
@@ -80,6 +84,30 @@ namespace HuduAPI.Endpoints
         {
             Commands.GetAssetPasswords myCommand = new Commands.GetAssetPasswords(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
             return myCommand.Execute();
+        }
+
+        public AssetPassword Create(CreateAssetPassword parameters)
+        {
+            Commands.CreateAssetPassword myCommand = new Commands.CreateAssetPassword(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
+            return myCommand.Execute();
+        }
+
+        public AssetPassword Archive(ItemById parameters, bool archive)
+        {
+            Commands.ArchiveAssetPassword myCommand = new Commands.ArchiveAssetPassword(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters, archive: archive);
+            return myCommand.Execute();
+        }
+
+        public AssetPassword Update(UpdateAssetPassword parameters)
+        {
+            Commands.UpdateAssetPassword myCommand = new Commands.UpdateAssetPassword(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
+            return myCommand.Execute();
+        }
+
+        public void Delete(ItemById parameters)
+        {
+            Commands.DeleteAssetPassword myCommand = new Commands.DeleteAssetPassword(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
+            myCommand.Execute();
         }
     }
 }
