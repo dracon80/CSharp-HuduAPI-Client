@@ -6,7 +6,7 @@ namespace HuduAPI.Records
     /// This internal class is used to help read the returned json from the HuduAPI endpoint. As the
     /// data contains a named element, there is a parent wrapper object, which this is.
     /// </summary>
-    internal class FolderRoot
+    internal class FolderRoot : IRecord
     {
         [JsonProperty("folder")]
         public Folder Folder { get; set; }
