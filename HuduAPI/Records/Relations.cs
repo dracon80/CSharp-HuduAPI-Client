@@ -41,25 +41,35 @@ namespace HuduAPI.Records
     /// <summary>
     /// Represents a list of Relation objects that are returned from the Hudu API
     /// </summary>
-    /// <seealso cref="HuduAPI.Records.IRecord" />
+    /// <seealso cref="HuduAPI.Records.IRecord"/>
     public class Relations : IRecord
     {
         [JsonProperty("relations")]
         public IList<Relation> RelationsList { get; set; }
 
         /// <summary>
-        /// Gets the <see cref="System.Nullable{Relation}" /> with the specified identifier.
-        /// Returned null if no relation is found with the supplied ID
+        /// Gets the <see cref="System.Nullable{Relation}"/> with the specified identifier. Returned
+        /// null if no relation is found with the supplied ID
         /// </summary>
-        /// <param name="id">
-        /// The id of the relation to retrieve.
-        /// </param>
-        /// <returns>
-        /// The <see cref="Relation" /> object request by ID.
-        /// </returns>
+        /// <param name="id">The id of the relation to retrieve.</param>
+        /// <returns>The <see cref="Relation"/> object request by ID.</returns>
         public Relation? this[int id]
         {
             get => RelationsList.FirstOrDefault(t => t.ID == id);
         }
+    }
+
+    /// <summary>
+    /// Root Element holder for the returned Json
+    /// </summary>
+    /// <seealso cref="HuduAPI.Records.IRecord"/>
+    internal class RelationRoot : IRecord
+    {
+        /// <summary>
+        /// Gets or sets the relation.
+        /// </summary>
+        /// <value>The relation.</value>
+        [JsonProperty("relation")]
+        public Relation Relation { get; set; }
     }
 }
