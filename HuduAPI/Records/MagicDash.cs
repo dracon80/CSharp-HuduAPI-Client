@@ -5,7 +5,7 @@ namespace HuduAPI.Records
     /// <summary>
     /// Represents a single MagicDash object returned from the hudu API endpoint magic_dash
     /// </summary>
-    /// <seealso cref="HuduAPI.Records.IRecord" />
+    /// <seealso cref="HuduAPI.Records.IRecord"/>
     public class MagicDash : IRecord
     {
         [JsonProperty("company_id")]
@@ -37,5 +37,29 @@ namespace HuduAPI.Records
 
         [JsonProperty("title")]
         public string Title { get; set; }
+    }
+
+    public class MagicDashes : IRecord
+    {
+        public MagicDashes()
+        {
+            this.MagicDashList = new List<MagicDash>();
+        }
+
+        /// <summary>
+        /// Gets the list of Magic Dash items found in Hudu.
+        /// </summary>
+        public IList<MagicDash> MagicDashList { get; internal set; }
+
+        /// <summary>
+        /// Gets the <see cref="System.Nullable{MagicDash}"/> with the specified identifier.
+        /// </summary>
+        /// <value>The <see cref="System.Nullable{MagicDash}"/>.</value>
+        /// <param name="id">The identifier.</param>
+        /// <returns></returns>
+        public MagicDash? this[int id]
+        {
+            get => MagicDashList.FirstOrDefault(t => t.ID == id);
+        }
     }
 }

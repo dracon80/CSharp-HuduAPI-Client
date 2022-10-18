@@ -33,19 +33,24 @@ namespace HuduAPI.Endpoints.Parameters
         /// Build a class of type <see cref="CreateMagicDash">CreateMagicDash</see> with all the
         /// defined values
         /// </summary>
-        /// <returns>
-        /// Returns a <see cref="CreateMagicDash">CreateMagicDash</see> class
-        /// </returns>
+        /// <returns>Returns a <see cref="CreateMagicDash">CreateMagicDash</see> class</returns>
         public CreateMagicDash Build()
         {
-            return new CreateMagicDash(_title, _companyName, _message);
+            return new CreateMagicDash(_title, _companyName, _message)
+            {
+                Content = _content,
+                ContentLink = _contentLink,
+                Icon = _icon,
+                ImageUrl = _imageUrl,
+                Shade = _shade
+            };
         }
 
         /// <summary>
-        /// Set a value of type <typeparamref name="string" /> for the property <paramref name="content">content</paramref>
+        /// Set a value of type <typeparamref name="string"/> for the property <paramref name="content">content</paramref>
         /// </summary>
         /// <param name="content">
-        /// A value of type <typeparamref name="string" /> will the defined for the property
+        /// A value of type <typeparamref name="string"/> will the defined for the property
         /// </param>
         /// <returns>
         /// Returns the <see cref="CreateMagicDashBuilder">CreateMagicDashBuilder</see> with the
@@ -58,10 +63,10 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value of type <typeparamref name="string" /> for the property <paramref name="contentLink">contentLink</paramref>
+        /// Set a value of type <typeparamref name="string"/> for the property <paramref name="contentLink">contentLink</paramref>
         /// </summary>
         /// <param name="contentLink">
-        /// A value of type <typeparamref name="string" /> will the defined for the property
+        /// A value of type <typeparamref name="string"/> will the defined for the property
         /// </param>
         /// <returns>
         /// Returns the <see cref="CreateMagicDashBuilder">CreateMagicDashBuilder</see> with the
@@ -74,10 +79,10 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value of type <typeparamref name="string" /> for the property <paramref name="icon">icon</paramref>
+        /// Set a value of type <typeparamref name="string"/> for the property <paramref name="icon">icon</paramref>
         /// </summary>
         /// <param name="icon">
-        /// A value of type <typeparamref name="string" /> will the defined for the property
+        /// A value of type <typeparamref name="string"/> will the defined for the property
         /// </param>
         /// <returns>
         /// Returns the <see cref="CreateMagicDashBuilder">CreateMagicDashBuilder</see> with the
@@ -90,10 +95,10 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value of type <typeparamref name="string" /> for the property <paramref name="imageUrl">imageUrl</paramref>
+        /// Set a value of type <typeparamref name="string"/> for the property <paramref name="imageUrl">imageUrl</paramref>
         /// </summary>
         /// <param name="imageUrl">
-        /// A value of type <typeparamref name="string" /> will the defined for the property
+        /// A value of type <typeparamref name="string"/> will the defined for the property
         /// </param>
         /// <returns>
         /// Returns the <see cref="CreateMagicDashBuilder">CreateMagicDashBuilder</see> with the
@@ -106,7 +111,7 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value of type <typeparamref name="string" /> for the property <paramref name="shade">shade</paramref>
+        /// Set a value of type <typeparamref name="string"/> for the property <paramref name="shade">shade</paramref>
         /// </summary>
         /// <param name="shade">
         /// Options are to use a null string, success, or danger (not case sensitive). Setting to

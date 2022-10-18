@@ -14,18 +14,12 @@ namespace HuduAPI.Endpoints.Parameters
         private string? _shade;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="CreateMagicDash" /> class with the required
+        /// Initializes a new instance of the <see cref="CreateMagicDash"/> class with the required
         /// properties to create or update an existing magic_dash.
         /// </summary>
-        /// <param name="title">
-        /// The title of the magic_dash.
-        /// </param>
-        /// <param name="company_name">
-        /// Name of the company to associate the magic_dash with.
-        /// </param>
-        /// <param name="message">
-        /// The message to be displayed on the magic_dash.
-        /// </param>
+        /// <param name="title">The title of the magic_dash.</param>
+        /// <param name="company_name">Name of the company to associate the magic_dash with.</param>
+        /// <param name="message">The message to be displayed on the magic_dash.</param>
         public CreateMagicDash(string title, string company_name, string message)
         {
             this.Title = title;
@@ -59,8 +53,8 @@ namespace HuduAPI.Endpoints.Parameters
         /// fas fa-circle
         /// </summary>
         /// <remarks>
-        /// Either fill this in, or image_url. Setting this property will reset <see cref="ImageUrl"
-        /// /> to null.
+        /// Either fill this in, or image_url. Setting this property will reset <see
+        /// cref="ImageUrl"/> to null.
         /// </remarks>
         [JsonProperty("icon")]
         public string? Icon
@@ -68,17 +62,20 @@ namespace HuduAPI.Endpoints.Parameters
             get { return _icon; }
             set
             {
-                _icon = value;
-                _imageUrl = default;
+                if (value != null)
+                {
+                    _icon = value;
+                    _imageUrl = default;
+                }
             }
         }
 
         /// <summary>
         /// Gets or Sets a URL to an image that is ssed in the header of a Magic Dash Item. Either
-        /// fill this in, or <see cref="Icon" />.
+        /// fill this in, or <see cref="Icon"/>.
         /// </summary>
         /// <remarks>
-        /// Either fill this in, or icon. Setting this property will reset <see cref="Icon" /> to null.
+        /// Either fill this in, or icon. Setting this property will reset <see cref="Icon"/> to null.
         /// </remarks>
         [JsonProperty("image_url")]
         public string? ImageUrl
@@ -86,8 +83,11 @@ namespace HuduAPI.Endpoints.Parameters
             get { return _imageUrl; }
             set
             {
-                _imageUrl = value;
-                _icon = default;
+                if (value != null)
+                {
+                    _imageUrl = value;
+                    _icon = default;
+                }
             }
         }
 
@@ -96,6 +96,14 @@ namespace HuduAPI.Endpoints.Parameters
         /// </summary>
         [JsonProperty("message")]
         public string Message { get; }
+
+        public string PayloadType
+        {
+            get
+            {
+                return "";
+            }
+        }
 
         /// <summary>
         /// Use a different color for your Magic Dash Item for different contextual states.
@@ -142,13 +150,5 @@ namespace HuduAPI.Endpoints.Parameters
         /// </summary>
         [JsonProperty("title")]
         public string Title { get; }
-
-        public string PayloadType
-        {
-            get
-            {
-                return "asset";
-            }
-        }
     }
 }
