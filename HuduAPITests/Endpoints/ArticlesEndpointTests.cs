@@ -16,7 +16,7 @@ namespace HuduAPI.Endpoints.Tests
         public ArticlesEndpointTests()
         {
             var builder = new ConfigurationBuilder()
-                .AddUserSecrets<CompanyEndpointTests>();
+                .AddUserSecrets<CompaniesEndpointTests>();
 
             _configuration = builder.Build();
             _endpoint = new ArticlesEndpoint(_configuration["HuduAPIKey"], _configuration["HuduBaseURL"]);

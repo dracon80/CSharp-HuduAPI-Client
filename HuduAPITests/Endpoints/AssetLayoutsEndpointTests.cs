@@ -23,7 +23,7 @@ namespace HuduAPI.Endpoints.Tests
         public AssetLayoutsEndpointTests()
         {
             var builder = new ConfigurationBuilder()
-                .AddUserSecrets<CompanyEndpointTests>();
+                .AddUserSecrets<CompaniesEndpointTests>();
 
             _configuration = builder.Build();
             _endpoint = new AssetLayoutsEndpoint(_configuration["HuduAPIKey"], _configuration["HuduBaseURL"]);

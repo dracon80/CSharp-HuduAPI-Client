@@ -7,22 +7,22 @@ using HuduAPI.Endpoints.Exceptions;
 namespace HuduAPI.Endpoints.Tests
 {
     [TestClass()]
-    public class FolderEndpointTests
+    public class FoldersEndpointTests
     {
         /// <summary>
         /// The company identifier that will be used to run all tests.
         /// </summary>
         private int _companyID = 7;
 
-        private FolderEndpoint _endpoint;
+        private FoldersEndpoint _endpoint;
 
-        public FolderEndpointTests()
+        public FoldersEndpointTests()
         {
             var builder = new ConfigurationBuilder()
-                .AddUserSecrets<FolderEndpointTests>();
+                .AddUserSecrets<FoldersEndpointTests>();
 
             _configuration = builder.Build();
-            _endpoint = new FolderEndpoint(_configuration["HuduAPIKey"], _configuration["HuduBaseURL"]);
+            _endpoint = new FoldersEndpoint(_configuration["HuduAPIKey"], _configuration["HuduBaseURL"]);
         }
 
         private IConfiguration _configuration { get; set; }

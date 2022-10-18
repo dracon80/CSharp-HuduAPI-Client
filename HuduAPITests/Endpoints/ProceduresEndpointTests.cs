@@ -7,22 +7,22 @@ using HuduAPI.Endpoints.Exceptions;
 namespace HuduAPI.Endpoints.Tests
 {
     [TestClass()]
-    public class ProcedureEndpointTests
+    public class ProceduresEndpointTests
     {
         /// <summary>
         /// The company identifier that will be used to run all tests.
         /// </summary>
         private int _companyID = 7;
 
-        private ProcedureEndpoint _endpoint;
+        private ProceduresEndpoint _endpoint;
 
-        public ProcedureEndpointTests()
+        public ProceduresEndpointTests()
         {
             var builder = new ConfigurationBuilder()
-                .AddUserSecrets<ProcedureEndpointTests>();
+                .AddUserSecrets<ProceduresEndpointTests>();
 
             _configuration = builder.Build();
-            _endpoint = new ProcedureEndpoint(_configuration["HuduAPIKey"], _configuration["HuduBaseURL"]);
+            _endpoint = new ProceduresEndpoint(_configuration["HuduAPIKey"], _configuration["HuduBaseURL"]);
         }
 
         private IConfiguration _configuration { get; set; }

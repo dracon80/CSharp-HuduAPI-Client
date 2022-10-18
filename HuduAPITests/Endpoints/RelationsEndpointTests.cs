@@ -7,7 +7,7 @@ using HuduAPI.Endpoints.Exceptions;
 namespace HuduAPI.Endpoints.Tests
 {
     [TestClass()]
-    public class RelationEndpointTests
+    public class RelationsEndpointTests
     {
         /// <summary>
         /// The company identifier that will be used to run all tests.
@@ -16,10 +16,10 @@ namespace HuduAPI.Endpoints.Tests
 
         private RelationEndpoint _endpoint;
 
-        public RelationEndpointTests()
+        public RelationsEndpointTests()
         {
             var builder = new ConfigurationBuilder()
-                .AddUserSecrets<RelationEndpointTests>();
+                .AddUserSecrets<RelationsEndpointTests>();
 
             _configuration = builder.Build();
             _endpoint = new RelationEndpoint(_configuration["HuduAPIKey"], _configuration["HuduBaseURL"]);

@@ -8,17 +8,17 @@ namespace HuduAPI.Endpoints
     /// Provides all the methods required to make calls to the Procedure endpoint of the Hudu API.
     /// </summary>
     /// <seealso cref="HuduAPI.Endpoints.IEndpoint"/>
-    public class ProcedureEndpoint : IEndpoint,
+    public class ProceduresEndpoint : IEndpoint,
         IEndpointGetMethod<Procedure, Parameters.ItemById>,
         IEndpointGetMethod<Procedures, Parameters.GetProcedures>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="ProcedureEndpoint"/> class with the
+        /// Initializes a new instance of the <see cref="ProceduresEndpoint"/> class with the
         /// required API Key and Hudu URL to make all calls.
         /// </summary>
         /// <param name="huduAPIKey">The hudu API key.</param>
         /// <param name="huduBaseURL">The hudu base URL.</param>
-        public ProcedureEndpoint(string huduAPIKey, string huduBaseURL)
+        public ProceduresEndpoint(string huduAPIKey, string huduBaseURL)
         {
             this.HuduAPIKey = huduAPIKey;
             this.HuduBaseURL = huduBaseURL;

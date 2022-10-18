@@ -8,7 +8,7 @@ namespace HuduAPI.Endpoints
     /// Provides all the methods required to make calls to the folder endpoint of the Hudu API.
     /// </summary>
     /// <seealso cref="HuduAPI.Endpoints.IEndpoint"/>
-    public class FolderEndpoint : IEndpoint,
+    public class FoldersEndpoint : IEndpoint,
         IEndpointGetMethod<Folder, Parameters.ItemById>,
         IEndpointGetMethod<Folders, Parameters.GetFolders>,
         IEndpointCreateMethod<Folder, CreateFolder>,
@@ -16,12 +16,12 @@ namespace HuduAPI.Endpoints
         IEndpointDeleteMethod<ItemById>
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="FolderEndpoint"/> class with the required
+        /// Initializes a new instance of the <see cref="FoldersEndpoint"/> class with the required
         /// API Key and Hudu URL to make all calls.
         /// </summary>
         /// <param name="huduAPIKey">The hudu API key.</param>
         /// <param name="huduBaseURL">The hudu base URL.</param>
-        public FolderEndpoint(string huduAPIKey, string huduBaseURL)
+        public FoldersEndpoint(string huduAPIKey, string huduBaseURL)
         {
             this.HuduAPIKey = huduAPIKey;
             this.HuduBaseURL = huduBaseURL;
