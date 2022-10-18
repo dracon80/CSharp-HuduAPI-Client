@@ -14,10 +14,18 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
     public abstract class Asset
     {
         /// <summary>
-        /// Gets the company identifier the asset should be associated with.
+        /// Absrtact constructor to build the shared minimum properties.
         /// </summary>
-        [JsonProperty("company_id")]
-        public int CompanyId { get; private set; }
+        /// <param name="companyId">The company identifier.</param>
+        /// <param name="assetLayoutId">The asset layout identifier.</param>
+        /// <param name="name">The name.</param>
+        public Asset(int companyId, int assetLayoutId, string name)
+        {
+            CustomFields = new AssetCustomField();
+            CompanyId = companyId;
+            AssetLayoutId = assetLayoutId;
+            Name = name;
+        }
 
         /// <summary>
         /// Gets the asset layout identifier this asset is assocatiated with.
@@ -26,16 +34,23 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         public int AssetLayoutId { get; private set; }
 
         /// <summary>
+        /// Gets the company identifier the asset should be associated with.
+        /// </summary>
+        [JsonProperty("company_id")]
+        public int CompanyId { get; private set; }
+
+        /// <summary>
+        /// Gets or sets the custom fields dictionary. The key must be the lable of the asset_type
+        /// field in lowercase.
+        /// </summary>
+        [JsonProperty("custom_fields")]
+        public AssetCustomField CustomFields { get; set; }
+
+        /// <summary>
         /// Gets the name of the asset.
         /// </summary>
         [JsonProperty("name")]
         public string Name { get; private set; }
-
-        /// <summary>
-        /// Gets or sets the primary serial.
-        /// </summary>
-        [JsonProperty("primary_serial")]
-        public string? PrimarySerial { get; set; }
 
         /// <summary>
         /// Gets or sets the primary mail.
@@ -44,42 +59,25 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         public string? PrimaryMail { get; set; }
 
         /// <summary>
-        /// Gets or sets the primary model.
-        /// </summary>
-        [JsonProperty("primary_model")]
-        public string? PrimaryModel { get; set; }
-
-        /// <summary>
         /// Gets or sets the primary manufacturer.
         /// </summary>
         [JsonProperty("primary_manufacturer")]
         public string? PrimaryManufacturer { get; set; }
 
         /// <summary>
-        /// Gets or sets the custom fields dictionary. The key must be the lable of the asset_type
-        /// field in lowercase.
+        /// Gets or sets the primary model.
         /// </summary>
-        [JsonProperty("custom_fields")]
-        public Dictionary<string, string> CustomFields { get; set; }
+        [JsonProperty("primary_model")]
+        public string? PrimaryModel { get; set; }
 
         /// <summary>
-        /// Absrtact constructor to build the shared minimum properties.
+        /// Gets or sets the primary serial.
         /// </summary>
-        /// <param name="companyId">
-        /// The company identifier.
-        /// </param>
-        /// <param name="assetLayoutId">
-        /// The asset layout identifier.
-        /// </param>
-        /// <param name="name">
-        /// The name.
-        /// </param>
-        public Asset(int companyId, int assetLayoutId, string name)
-        {
-            CustomFields = new Dictionary<string, string>();
-            CompanyId = companyId;
-            AssetLayoutId = assetLayoutId;
-            Name = name;
-        }
+        [JsonProperty("primary_serial")]
+        public string? PrimarySerial { get; set; }
+    }
+
+    public class AssetCustomField : Dictionary<String, String>
+    {
     }
 }

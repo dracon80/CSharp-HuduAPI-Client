@@ -13,14 +13,14 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         where TResult : Asset
         where TBuilder : AssetBuilder<TResult, TBuilder>
     {
-        protected int _companyId;
         protected int _assetLayoutId;
+        protected int _companyId;
+        protected AssetCustomField _customFields;
         protected string _name;
-        protected string? _primarySerial;
         protected string? _primaryMail;
-        protected string? _primaryModel;
         protected string? _primaryManufacturer;
-        protected Dictionary<string, string> _customFields;
+        protected string? _primaryModel;
+        protected string? _primarySerial;
 
         /// <summary>
         /// Gets the builder instance of the implmenting class type.
@@ -39,35 +39,30 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
             _primaryMail = default;
             _primaryModel = default;
             _primaryManufacturer = default;
-            _customFields = new Dictionary<string, string>();
+            _customFields = new AssetCustomField();
 
             _builderInstance = (TBuilder)this;
         }
 
+        public abstract TResult Build();
+
         /// <summary>
-        /// Set a value for primarySerial
+        /// Add a new custom_field item to the asset.
         /// </summary>
-        /// <param name="primarySerial">
-        /// The primary serial.
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
-        public TBuilder WithPrimarySerial(string primarySerial)
+        /// <param name="key">The key must match the lable of a field for the destination asset_layout.</param>
+        /// <param name="value">The value to assign to the custom field.</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
+        public TBuilder WithCustomField(string key, string value)
         {
-            _primarySerial = primarySerial;
+            _customFields.Add(key.ToLower(), value);
             return _builderInstance;
         }
 
         /// <summary>
         /// Set a value for primaryMail
         /// </summary>
-        /// <param name="primaryMail">
-        /// The primary mail.
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
+        /// <param name="primaryMail">The primary mail.</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public TBuilder WithPrimaryMail(string primaryMail)
         {
             _primaryMail = primaryMail;
@@ -75,29 +70,10 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         }
 
         /// <summary>
-        /// Set a value for primaryModel
-        /// </summary>
-        /// <param name="primaryModel">
-        /// The primary model.
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
-        public TBuilder WithPrimaryModel(string primaryModel)
-        {
-            _primaryModel = primaryModel;
-            return _builderInstance;
-        }
-
-        /// <summary>
         /// Set a value for primaryManufacturer
         /// </summary>
-        /// <param name="primaryManufacturer">
-        /// The primary manufacturer.
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
+        /// <param name="primaryManufacturer">The primary manufacturer.</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public TBuilder WithPrimaryManufacturer(string primaryManufacturer)
         {
             _primaryManufacturer = primaryManufacturer;
@@ -105,23 +81,25 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         }
 
         /// <summary>
-        /// Add a new custom_field item to the asset.
+        /// Set a value for primaryModel
         /// </summary>
-        /// <param name="key">
-        /// The key must match the lable of a field for the destination asset_layout.
-        /// </param>
-        /// <param name="value">
-        /// The value to assign to the custom field.
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
-        public TBuilder WithCustomField(string key, string value)
+        /// <param name="primaryModel">The primary model.</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
+        public TBuilder WithPrimaryModel(string primaryModel)
         {
-            _customFields.Add(key.ToLower(), value);
+            _primaryModel = primaryModel;
             return _builderInstance;
         }
 
-        public abstract TResult Build();
+        /// <summary>
+        /// Set a value for primarySerial
+        /// </summary>
+        /// <param name="primarySerial">The primary serial.</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
+        public TBuilder WithPrimarySerial(string primarySerial)
+        {
+            _primarySerial = primarySerial;
+            return _builderInstance;
+        }
     }
 }

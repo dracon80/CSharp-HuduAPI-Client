@@ -1,0 +1,132 @@
+﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+using HuduAPI.Records;
+using Microsoft.Extensions.Configuration;
+using HuduAPI.Endpoints.Parameters;
+using HuduAPI.Endpoints.Exceptions;
+
+namespace HuduAPI.Endpoints.Tests
+{
+    [TestClass()]
+    public class AssetsEndpointTests
+    {
+        /// <summary>
+        /// The company identifier that will be used to run all tests.
+        /// </summary>
+        private int _companyID = 7;
+
+        private AssetsEndpoint _endpoint;
+
+        public AssetsEndpointTests()
+        {
+            var builder = new ConfigurationBuilder()
+                .AddUserSecrets<AssetsEndpointTests>();
+
+            _configuration = builder.Build();
+            _endpoint = new AssetsEndpoint(_configuration["HuduAPIKey"], _configuration["HuduBaseURL"]);
+        }
+
+        private IConfiguration _configuration { get; set; }
+
+        [TestMethod]
+        public void CreateUpdateDelete_ok()
+        {
+            int layoutID = 1;
+            string name = "New Test Asset";
+            string serial = "12345";
+            string man = "Test Manufactor";
+            string mail = "na@na.com.au";
+            string model = "Test Model";
+
+            CreateAsset myparams = new CreateAssetBuilder(_companyID, layoutID, name)
+                .WithPrimarySerial(serial)
+                .WithPrimaryManufacturer(man)
+                .WithPrimaryMail(mail)
+                .WithPrimaryModel(model)
+                .WithCustomField("Status", "ACTIVE")
+                .WithCustomField("Email Address", "na@na.com")
+                .WithCustomField("Department", "IT")
+                .Build();
+
+            Asset result = _endpoint.Create(myparams);
+
+            Assert.AreEqual(layoutID, result.AssetLayoutID);
+            Assert.AreEqual(name, result.Name);
+            Assert.AreEqual(serial, result.PrimarySerial);
+            Assert.AreEqual(man, result.PrimaryManufacturer);
+            Assert.AreEqual(mail, result.PrimaryMail);
+            Assert.AreEqual(model, result.PrimaryModel);
+            Assert.AreEqual(_companyID, result.CompanyID);
+
+            AssetById item = new(result.ID, result.CompanyID);
+            _endpoint.Delete(item);
+
+            Assert.Fail("The custom fields isnt formated correctly. Its needs to be converted to an array");
+        }
+
+        [TestMethod()]
+        public void GetAllAssets()
+        {
+            //Get a list of Assets from the endpoint and confirm that its not empy
+            Assets Assets = _endpoint.Get();
+
+            Assert.AreNotEqual(0, Assets.AssetList.Count());
+        }
+
+        [TestMethod()]
+        public void GetAsset()
+        {
+            int assetID = 2134;
+
+            AssetById myparams = new(assetID, _companyID);
+
+            Asset result = _endpoint.Get(myparams);
+
+            Assert.AreEqual(_companyID, result.CompanyID);
+            Assert.AreEqual(assetID, result.ID);
+            Assert.AreEqual(9, result.AssetLayoutID);
+            Assert.AreEqual("Integrated Solutions QLD Pty Ltd", result.CompanyName);
+            Assert.AreEqual(18, result.Fields.Count());
+        }
+
+        [TestMethod()]
+        public void GetFilteredAssets()
+        {
+            GetAssets parameters = new GetAssetsBuilder()
+                .WithCompanyId(_companyID)
+                .WithAssetLayoutId(2)
+                .Build();
+
+            //Get a list of Assets from the endpoint and confirm that its not empy
+            Assets Assets = _endpoint.Get(parameters);
+
+            Assert.AreNotEqual(0, Assets.AssetList.Count());
+
+            foreach (Asset a in Assets.AssetList)
+            {
+                //Check that all returned records are for state QLD
+                Assert.AreEqual(2, a.AssetLayoutID, "Assetlayout should not be present in results");
+                Assert.AreEqual(_companyID, a.CompanyID, "Company Assets should not be present in results");
+            }
+        }
+
+        [TestMethod]
+        public void GetInvalidCompany()
+        {
+            AssetById myparams = new(id: 4856734, companyId: 7);
+
+            Assert.ThrowsException<RecordNotFoundException>(
+                     () => _endpoint.Get(myparams)
+                );
+        }
+
+        [TestMethod]
+        public void GetNegativeCompanyID()
+        {
+            AssetById myparams;
+
+            Assert.ThrowsException<ArgumentOutOfRangeException>(
+                     () => myparams = new(id: -3, companyId: 7)
+                );
+        }
+    }
+}
