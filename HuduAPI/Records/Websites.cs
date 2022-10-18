@@ -5,7 +5,7 @@ namespace HuduAPI.Records
     /// <summary>
     /// Represents a single website object returned from the Hudu API endpoint websites
     /// </summary>
-    public class Website
+    public class Website : IRecord
     {
         [JsonProperty("account_id")]
         public int AccountID { get; set; }
@@ -87,5 +87,23 @@ namespace HuduAPI.Records
 
         [JsonProperty("url")]
         public string Url { get; set; }
+    }
+
+    public class Websites : IRecord
+    {
+        public List<Website> WebsiteList { get; set; }
+    }
+
+    /// <summary>
+    /// Root Element holder for the returned Json
+    /// </summary>
+    /// <seealso cref="HuduAPI.Records.IRecord"/>
+    internal class WebsiteRoot : IRecord
+    {
+        /// <summary>
+        /// Gets or sets the website.
+        /// </summary>
+        [JsonProperty("website")]
+        public Website Website { get; set; }
     }
 }
