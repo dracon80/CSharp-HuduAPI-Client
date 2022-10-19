@@ -24,21 +24,29 @@ namespace HuduAPI.Endpoints.Receivers
         where TResult : IRecord
     {
         /// <summary>
+        /// Makes a call to the Archive/Unarchive Method for the supplied URL and returns a result
+        /// containing the updated object values.
+        /// </summary>
+        /// <param name="url">The URL of the API Endpoint to call.</param>
+        /// <param name="apiKey">The API key to use when making the call.</param>
+        /// <returns>
+        /// If the call is succesfull then a <typeparamref name="TResult"/> Result Type will be
+        /// returned that contains the values that be been set on the new item created in Hudu.
+        /// </returns>
+        public static TResult Archive(string url, string apiKey)
+        {
+            var result = url.WithHeader("x-api-key", apiKey).PutAsync().ReceiveJson<TResult>().Result;
+            return result;
+        }
+
+        /// <summary>
         /// Makes a call to the Create Method for the supplied URL and returns a result containing
         /// the created object.
         /// </summary>
-        /// <param name="url">
-        /// The URL of the API Endpoint to call.
-        /// </param>
-        /// <param name="apiKey">
-        /// The API key to use when making the call.
-        /// </param>
-        /// <param name="parameters">
-        /// The parameters that need to be provided to the end point.
-        /// </param>
-        /// <returns>
-        /// If the call is succesfull then a <typeparamref name="TResult" /> Result Type
-        /// </returns>
+        /// <param name="url">The URL of the API Endpoint to call.</param>
+        /// <param name="apiKey">The API key to use when making the call.</param>
+        /// <param name="parameters">The parameters that need to be provided to the end point.</param>
+        /// <returns>If the call is succesfull then a <typeparamref name="TResult"/> Result Type</returns>
         /// will be returned that contains the values that be been set on the new item created in Hudu.
         public static TResult Create(string url, string apiKey, TParams parameters)
         {
@@ -63,26 +71,16 @@ namespace HuduAPI.Endpoints.Receivers
                     throw;
                 }
             }
-
-            
         }
 
         /// <summary>
         /// Calls the API endpoint using the parameters provided to narrow down the results. This
         /// method is used to query endpoints that return a single root object.
         /// </summary>
-        /// <param name="url">
-        /// The URL of the endpoint to be called.
-        /// </param>
-        /// <param name="apiKey">
-        /// The API key to authenticate with the endpoint.
-        /// </param>
-        /// <param name="parameters">
-        /// The parameters to be used with the endpoint.
-        /// </param>
-        /// <returns>
-        /// Returns the result of the query to the API endpoint
-        /// </returns>
+        /// <param name="url">The URL of the endpoint to be called.</param>
+        /// <param name="apiKey">The API key to authenticate with the endpoint.</param>
+        /// <param name="parameters">The parameters to be used with the endpoint.</param>
+        /// <returns>Returns the result of the query to the API endpoint</returns>
         public static TResult? Get(string url, string apiKey, [Optional] TParams parameters)
         {
             var flurl = url.WithHeader("x-api-key", apiKey);
@@ -102,15 +100,9 @@ namespace HuduAPI.Endpoints.Receivers
         /// Calls the API endpoint using the parameters provided to narrow down the results. This
         /// method is used to query endpoints that return an array of objects.
         /// </summary>
-        /// <param name="url">
-        /// The URL of the endpoint to be called.
-        /// </param>
-        /// <param name="apiKey">
-        /// The API key to authenticate with the endpoint.
-        /// </param>
-        /// <param name="parameters">
-        /// The parameters to be used with the endpoint.
-        /// </param>
+        /// <param name="url">The URL of the endpoint to be called.</param>
+        /// <param name="apiKey">The API key to authenticate with the endpoint.</param>
+        /// <param name="parameters">The parameters to be used with the endpoint.</param>
         /// <returns>
         /// Returns a List of Type TResult with all the returned results from the call to the endpoint
         /// </returns>
@@ -132,44 +124,36 @@ namespace HuduAPI.Endpoints.Receivers
         /// Makes a call to the Update Method for the supplied URL and returns a result containing
         /// the updated object values.
         /// </summary>
-        /// <param name="url">
-        /// The URL of the API Endpoint to call.
-        /// </param>
-        /// <param name="apiKey">
-        /// The API key to use when making the call.
-        /// </param>
-        /// <param name="parameters">
-        /// The parameters that need to be provided to the end point.
-        /// </param>
+        /// <param name="url">The URL of the API Endpoint to call.</param>
+        /// <param name="apiKey">The API key to use when making the call.</param>
+        /// <param name="parameters">The parameters that need to be provided to the end point.</param>
         /// <returns>
-        /// If the call is succesfull then a <typeparamref name="TResult" /> Result Type will be
+        /// If the call is succesfull then a <typeparamref name="TResult"/> Result Type will be
         /// returned that contains the values that be been set on the new item created in Hudu.
         /// </returns>
         public static TResult Update(string url, string apiKey, TParams parameters)
         {
             var json = JsonConvert.SerializeObject(parameters.GetPropertyDictionary());
-            var result = url.WithHeader("x-api-key", apiKey).PutJsonAsync(parameters.GetPropertyDictionary()).ReceiveJson<TResult>().Result;
-            return result;
-        }
 
-        /// <summary>
-        /// Makes a call to the Archive/Unarchive Method for the supplied URL and returns a result
-        /// containing the updated object values.
-        /// </summary>
-        /// <param name="url">
-        /// The URL of the API Endpoint to call.
-        /// </param>
-        /// <param name="apiKey">
-        /// The API key to use when making the call.
-        /// </param>
-        /// <returns>
-        /// If the call is succesfull then a <typeparamref name="TResult" /> Result Type will be
-        /// returned that contains the values that be been set on the new item created in Hudu.
-        /// </returns>
-        public static TResult Archive(string url, string apiKey)
-        {
-            var result = url.WithHeader("x-api-key", apiKey).PutAsync().ReceiveJson<TResult>().Result;
-            return result;
+            try
+            {
+                var result = url.WithHeader("x-api-key", apiKey).PutJsonAsync(parameters.GetPropertyDictionary()).ReceiveJson<TResult>().Result;
+                return result;
+            }
+            catch (Exception ex)
+            {
+                if (ex.InnerException is FlurlHttpException)
+                {
+                    FlurlHttpException inner = (FlurlHttpException)ex.InnerException;
+                    string response = inner.GetResponseStringAsync().Result;
+
+                    throw new FlurlHttpException(inner.Call, response, inner);
+                }
+                else
+                {
+                    throw;
+                }
+            }
         }
     }
 }

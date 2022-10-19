@@ -1,10 +1,6 @@
 ﻿using Newtonsoft.Json;
-using System;
-using System.Collections.Generic;
-using System.Linq;
+using System.ComponentModel;
 using System.Text;
-using System.Text.Json.Nodes;
-using System.Threading.Tasks;
 
 namespace HuduAPI.Endpoints.Parameters.AbstractBases
 {
@@ -31,13 +27,14 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         /// Gets the asset layout identifier this asset is assocatiated with.
         /// </summary>
         [JsonProperty("asset_layout_id")]
-        public int AssetLayoutId { get; private set; }
+        public int AssetLayoutId { get; protected set; }
 
         /// <summary>
         /// Gets the company identifier the asset should be associated with.
         /// </summary>
         [JsonProperty("company_id")]
-        public int CompanyId { get; private set; }
+        [JsonIgnore]
+        public int CompanyId { get; protected set; }
 
         /// <summary>
         /// Gets or sets the custom fields dictionary. The key must be the lable of the asset_type
@@ -50,7 +47,7 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         /// Gets the name of the asset.
         /// </summary>
         [JsonProperty("name")]
-        public string Name { get; private set; }
+        public string Name { get; protected set; }
 
         /// <summary>
         /// Gets or sets the primary mail.
@@ -77,7 +74,45 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         public string? PrimarySerial { get; set; }
     }
 
+    [JsonConverter(typeof(AssetCustomFieldJsonConverter))]
     public class AssetCustomField : Dictionary<String, String>
     {
+        /// <summary>
+        /// Adds the specified key and value to the dictionary.
+        /// </summary>
+        /// <param name="key">The key of the element to add.</param>
+        /// <param name="value">
+        /// The value of the element to add. The value can be <see langword="null"/> for reference types.
+        /// </param>
+        public new void Add(string key, string value)
+        {
+            base.Add(key.ToLower(), value);
+        }
+    }
+
+    public class AssetCustomFieldJsonConverter : JsonConverter<AssetCustomField>
+    {
+        public override AssetCustomField ReadJson(JsonReader reader, Type objectType, AssetCustomField existingValue, bool hasExistingValue, JsonSerializer serializer)
+        {
+            //Not used
+            return new AssetCustomField();
+        }
+
+        public override void WriteJson(JsonWriter writer, AssetCustomField value, JsonSerializer serializer)
+        {
+            //As per the stupid way Hudu have formated the json, do not open or close an object for each value.
+            //Its basically an array with 1 items that includes all the fields
+            writer.WriteStartArray();
+            writer.WriteStartObject();
+
+            foreach (var item in value)
+            {
+                writer.WritePropertyName(item.Key);
+                writer.WriteValue(item.Value);
+            }
+
+            writer.WriteEndObject();
+            writer.WriteEndArray();
+        }
     }
 }

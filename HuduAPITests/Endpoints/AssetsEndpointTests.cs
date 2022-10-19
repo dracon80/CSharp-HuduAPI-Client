@@ -43,7 +43,7 @@ namespace HuduAPI.Endpoints.Tests
                 .WithPrimaryMail(mail)
                 .WithPrimaryModel(model)
                 .WithCustomField("Status", "ACTIVE")
-                .WithCustomField("Email Address", "na@na.com")
+                .WithCustomField("Email_Address", "na@na.com")
                 .WithCustomField("Department", "IT")
                 .Build();
 
@@ -56,11 +56,46 @@ namespace HuduAPI.Endpoints.Tests
             Assert.AreEqual(mail, result.PrimaryMail);
             Assert.AreEqual(model, result.PrimaryModel);
             Assert.AreEqual(_companyID, result.CompanyID);
+            Assert.AreEqual(3, result.Fields.Count(), "Custom fields count doesn't match");
+
+            //Now try updating it with new details.
+            layoutID = 1;
+            name = "Updated Test Asset";
+            serial = "12342342345";
+            man = "Updated Manufactor";
+            mail = "nada@na.com.au";
+            model = "Updated Model";
+
+            UpdateAsset updateparams = new UpdateAssetBuilder(result.ID, _companyID, layoutID, name)
+                .WithPrimarySerial(serial)
+                .WithPrimaryManufacturer(man)
+                .WithPrimaryMail(mail)
+                .WithPrimaryModel(model)
+                .WithCustomField("Status", "INACTIVE")
+                .WithCustomField("Email Address", mail)
+                .WithCustomField("Department", "IT")
+                .WithCustomField("Gender", "Male")
+                .WithCustomField("Title", "Chaos Management")
+                .Build();
+
+            result = _endpoint.Update(updateparams);
+
+            Assert.AreEqual(layoutID, result.AssetLayoutID);
+            Assert.AreEqual(name, result.Name);
+            Assert.AreEqual(serial, result.PrimarySerial);
+            Assert.AreEqual(man, result.PrimaryManufacturer);
+            Assert.AreEqual(mail, result.PrimaryMail);
+            Assert.AreEqual(model, result.PrimaryModel);
+            Assert.AreEqual(_companyID, result.CompanyID);
+            Assert.AreEqual(5, result.Fields.Count(), "Custom fields count doesn't match");
 
             AssetById item = new(result.ID, result.CompanyID);
-            _endpoint.Delete(item);
 
-            Assert.Fail("The custom fields isnt formated correctly. Its needs to be converted to an array");
+            //Archive and Unarchive.
+            result = _endpoint.Archive(item, true);
+            result = _endpoint.Archive(item, false);
+
+            _endpoint.Delete(item);
         }
 
         [TestMethod()]

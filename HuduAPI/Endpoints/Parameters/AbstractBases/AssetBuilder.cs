@@ -54,7 +54,7 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public TBuilder WithCustomField(string key, string value)
         {
-            _customFields.Add(key.ToLower(), value);
+            _customFields.Add(key, value);
             return _builderInstance;
         }
 
