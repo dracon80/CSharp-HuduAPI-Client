@@ -9,3 +9,7 @@ along with well defined [paramater objects](https://dracon80.github.io/CSharp-Hu
 ## Documenation and Tutorials
 A DocFX wwebsite for the Library along with tutorials can be found on the libraries
 [Github Pages](https://dracon80.github.io/CSharp-HuduAPI-Client/index.html) site.
+
+
+## Installation
+The library has been made available as a [nuget package](https://www.nuget.org/packages/Hudu-APIClient). Use what ever method you prefer when installing a nuget package into your project, or use one of the examples shown on the nuget page. 
