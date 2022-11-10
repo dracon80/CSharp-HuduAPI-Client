@@ -15,6 +15,9 @@
     <PackageProjectUrl>https://github.com/dracon80/CSharp-HuduAPI-Client</PackageProjectUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>hudu;hududocs</PackageTags>
+	<FileVersion>$(VersionPrefix)</FileVersion>
+    <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
+	<VersionPrefix>1.0.1</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>
