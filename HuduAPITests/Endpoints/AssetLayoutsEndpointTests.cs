@@ -68,7 +68,7 @@ namespace HuduAPI.Endpoints.Tests
             UpdateAssetLayout updateParams = new UpdateAssetLayoutBuilder(id: result.ID, name: result.Name, icon: icon, color: color, iconColor: icon_color, assetLayoutFields: fields)
                 .WithIncludeComments(true)
                 .WithIncludeFiles(true)
-                .IsActive(true)
+                .WithActive(true)
                 .Build();
 
             result = _endpoint.Update(updateParams);
@@ -130,6 +130,58 @@ namespace HuduAPI.Endpoints.Tests
             Assert.ThrowsException<ArgumentOutOfRangeException>(
                      () => myparams = new(id: -3)
                 );
+        }
+
+        [TestMethod]
+        public void Tutorial_Create()
+        {
+            string name = "Network Device";
+            string icon = "fas fa-network-wired";
+            System.Drawing.Color color = System.Drawing.Color.Green;
+            System.Drawing.Color icon_color = System.Drawing.Color.White;
+
+            List<AssetLayoutField> fields = new List<AssetLayoutField>();
+
+            fields.Add(new AssetLayoutFieldBuilder("IP Address", AssetLayoutFieldType.WEBSITE)
+                .WithRequired(true)
+                .WithShowInList(true)
+                .Build());
+
+            fields.Add(new AssetLayoutFieldBuilder("FQDN", AssetLayoutFieldType.TEXT)
+                .WithHint("Fully Qualified Domain Name of the Host")
+                .Build());
+
+            fields.Add(new AssetLayoutFieldBuilder("Configuration", AssetLayoutFieldType.RICH_TEXT)
+                .WithRequired(true)
+                .WithShowInList(false)
+                .WithHint("Record device configuration details here")
+                .Build());
+
+            CreateAssetLayout myParams = new CreateAssetLayoutBuilder(name: name, icon: icon, color: color, iconColor: icon_color, fields)
+                .WithIncludeFiles(false)
+                .WithIncludePasswords(true)
+                .Build();
+
+            AssetLayout result = _endpoint.Create(myParams);
+        }
+
+        [TestMethod]
+        public void Tutorial_Get()
+        {
+            GetAssetLayouts myparams = new GetAssetLayoutsBuilder()
+            .WithName("Network Device")
+            .Build();
+
+            try
+            {
+                AssetLayout assetlayout = _endpoint.Get(myparams).AssetLayoutList.First<AssetLayout>();
+
+                Assert.IsNotNull(assetlayout);
+            }
+            catch (RecordNotFoundException)
+            {
+                //There were now results returned
+            }
         }
     }
 }

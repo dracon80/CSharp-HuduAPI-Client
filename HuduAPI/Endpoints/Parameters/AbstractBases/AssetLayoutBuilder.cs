@@ -5,50 +5,47 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
     /// <summary>
     /// An abstract builder to help build Article parameters for implementing classes.
     /// </summary>
-    /// <typeparam name="TResult">
-    /// The type of the paramater to build.
-    /// </typeparam>
-    /// <typeparam name="TBuilder">
-    /// The type of the builder that is inherting this base class.
-    /// </typeparam>
+    /// <typeparam name="TResult">The type of the paramater to build.</typeparam>
+    /// <typeparam name="TBuilder">The type of the builder that is inherting this base class.</typeparam>
     public abstract class AssetLayoutBuilder<TResult, TBuilder>
         where TResult : AssetLayout
         where TBuilder : AssetLayoutBuilder<TResult, TBuilder>
     {
+        protected Boolean _active;
+
+        protected Color _color;
+
+        protected List<AssetLayoutField> _fields;
+
+        protected string _icon;
+
+        protected Color _iconColor;
+
+        protected bool _includeComments;
+
+        protected bool _includeFiles;
+
+        protected bool _includePasswords;
+
+        protected bool _includePhotos;
+
+        protected string _name;
+
+        protected string? _passwordTypes;
+
         /// <summary>
         /// Gets the builder instance of the implmenting class type.
         /// </summary>
         private readonly TBuilder _builderInstance = null;
 
-        protected Color _color;
-        protected List<AssetLayoutField> _fields;
-        protected string _icon;
-        protected Color _iconColor;
-        protected bool _includeComments;
-        protected bool _includeFiles;
-        protected bool _includePasswords;
-        protected bool _includePhotos;
-        protected string _name;
-        protected string? _passwordTypes;
-
         /// <summary>
         /// Abstract class with shared methods for building asset_layout parameters
         /// </summary>
-        /// <param name="name">
-        /// The name of the asset_layout.
-        /// </param>
-        /// <param name="icon">
-        /// The icon to be used in the gui.
-        /// </param>
-        /// <param name="color">
-        /// The color of the icon foreground.
-        /// </param>
-        /// <param name="iconColor">
-        /// Color of the icon background.
-        /// </param>
-        /// <param name="assetLayoutFields">
-        /// A list of asset layout fields that define the layout.
-        /// </param>
+        /// <param name="name">The name of the asset_layout.</param>
+        /// <param name="icon">The icon to be used in the gui.</param>
+        /// <param name="color">The color of the icon foreground.</param>
+        /// <param name="iconColor">Color of the icon background.</param>
+        /// <param name="assetLayoutFields">A list of asset layout fields that define the layout.</param>
         internal AssetLayoutBuilder(string name, string icon, Color color, Color iconColor, List<AssetLayoutField> assetLayoutFields)
         {
             _name = name;
@@ -66,23 +63,28 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         }
 
         /// <summary>
-        /// Build a class of type <typeparamref name="TResult" /> with all the defined values
+        /// Build a class of type <typeparamref name="TResult"/> with all the defined values
         /// </summary>
-        /// <returns>
-        /// Returns a <typeparamref name="TResult" /> class
-        /// </returns>
+        /// <returns>Returns a <typeparamref name="TResult"/> class</returns>
         public abstract TResult Build();
+
+        /// <summary>
+        /// Determines whether the Asset Layout should be marked as active.
+        /// </summary>
+        /// <param name="active">if set to <c>true</c> [active].</param>
+        /// <returns></returns>
+        public TBuilder WithActive(Boolean active)
+        {
+            _active = active;
+            return _builderInstance;
+        }
 
         /// <summary>
         /// Adds a new AssetLayoutField to the AssetLayoutFields List that is to be associated with
         /// the asset_layout
         /// </summary>
-        /// <param name="item">
-        /// A single asset_layout field
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
+        /// <param name="item">A single asset_layout field</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public TBuilder WithAssetLayoutFieldsItem(AssetLayoutField item)
         {
             _fields.Add(item);
@@ -92,12 +94,8 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         /// <summary>
         /// Set a value for the color of the icon background
         /// </summary>
-        /// <param name="color">
-        /// The color.
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
+        /// <param name="color">The color.</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public TBuilder WithColor(Color color)
         {
             _color = color;
@@ -107,12 +105,8 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         /// <summary>
         /// Set a list of AssetLayoutFields to be associated with the asset_layout
         /// </summary>
-        /// <param name="fields">
-        /// A List of fields.
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
+        /// <param name="fields">A List of fields.</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public TBuilder WithFields(List<AssetLayoutField> fields)
         {
             _fields = fields;
@@ -122,12 +116,8 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         /// <summary>
         /// Set a value for icon to be associated with the asset_layout
         /// </summary>
-        /// <param name="icon">
-        /// The icon.
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
+        /// <param name="icon">The icon.</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public TBuilder WithIcon(string icon)
         {
             _icon = icon;
@@ -137,12 +127,8 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         /// <summary>
         /// Set a value for iconColor
         /// </summary>
-        /// <param name="iconColor">
-        /// Color of the icon.
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
+        /// <param name="iconColor">Color of the icon.</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public TBuilder WithIconColor(Color iconColor)
         {
             _iconColor = iconColor;
@@ -152,12 +138,8 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         /// <summary>
         /// Set a value for includeComments
         /// </summary>
-        /// <param name="includeComments">
-        /// if set to <c>true</c> [include comments].
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
+        /// <param name="includeComments">if set to <c>true</c> [include comments].</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public TBuilder WithIncludeComments(bool includeComments)
         {
             _includeComments = includeComments;
@@ -167,12 +149,8 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         /// <summary>
         /// Set a value for includeFiles
         /// </summary>
-        /// <param name="includeFiles">
-        /// if set to <c>true</c> [include files].
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
+        /// <param name="includeFiles">if set to <c>true</c> [include files].</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public TBuilder WithIncludeFiles(bool includeFiles)
         {
             _includeFiles = includeFiles;
@@ -182,12 +160,8 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         /// <summary>
         /// Set a value for includePasswords
         /// </summary>
-        /// <param name="includePasswords">
-        /// if set to <c>true</c> [include passwords].
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
+        /// <param name="includePasswords">if set to <c>true</c> [include passwords].</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public TBuilder WithIncludePasswords(bool includePasswords)
         {
             _includePasswords = includePasswords;
@@ -197,12 +171,8 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         /// <summary>
         /// Set a value for includePhotos
         /// </summary>
-        /// <param name="includePhotos">
-        /// if set to <c>true</c> [include photos].
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
+        /// <param name="includePhotos">if set to <c>true</c> [include photos].</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public TBuilder WithIncludePhotos(bool includePhotos)
         {
             _includePhotos = includePhotos;
@@ -212,12 +182,8 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         /// <summary>
         /// Set a value for name
         /// </summary>
-        /// <param name="name">
-        /// The name.
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
+        /// <param name="name">The name.</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public TBuilder WithName(string name)
         {
             _name = name;
@@ -227,12 +193,8 @@ namespace HuduAPI.Endpoints.Parameters.AbstractBases
         /// <summary>
         /// Set a value for passwordTypes
         /// </summary>
-        /// <param name="passwordTypes">
-        /// The password types.
-        /// </param>
-        /// <returns>
-        /// A generic Builder Object for type <typeparamref name="TBuilder" />
-        /// </returns>
+        /// <param name="passwordTypes">The password types.</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public TBuilder WithPasswordTypes(string passwordTypes)
         {
             _passwordTypes = passwordTypes;

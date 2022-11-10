@@ -28,7 +28,7 @@ namespace HuduAPI.Endpoints.Commands
                 _getParams
                 );
 
-            if (result == null)
+            if (result == null || result.AssetLayoutList.Count() == 0)
             {
                 throw new RecordNotFoundException("No AssetLayouts were found that match the parameters");
             }

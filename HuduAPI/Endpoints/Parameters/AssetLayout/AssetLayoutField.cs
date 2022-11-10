@@ -13,26 +13,25 @@ namespace HuduAPI.Endpoints.Parameters
         private readonly string _fieldType;
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="AssetLayoutField" /> class with the
-        /// requried fields populated ready for posting.
+        /// Initializes a new instance of the <see cref="AssetLayoutField"/> class with the requried
+        /// fields populated ready for posting.
         /// </summary>
         /// <remark>
         /// All other properties of the class not included in the constructor are optional
         /// properties that can be left blank
         /// </remark>
-        /// <param name="label">
-        /// Label (used as name) of input.
-        /// </param>
-        /// <param name="fieldtype">
-        /// The type of Field to be created.
-        /// </param>
+        /// <param name="label">Label (used as name) of input.</param>
+        /// <param name="fieldtype">The type of Field to be created.</param>
         public AssetLayoutField(string label, AssetLayoutFieldType fieldtype)
         {
             Label = label;
 
             //Convert the field type from Caps to TitleCase as expected from Hudu
             TextInfo textInfo = new CultureInfo("en-AU", false).TextInfo;
+
+            //Format the AssetFieldType
             _fieldType = textInfo.ToTitleCase(fieldtype.ToString().ToLower());
+            _fieldType = _fieldType.Replace("_", "");
 
             this.Position = 0;
         }
