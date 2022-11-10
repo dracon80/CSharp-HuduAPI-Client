@@ -5,6 +5,16 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageId>Hudu-APIClient</PackageId>
+    <Title>A C# library for the Hudu API</Title>
+    <Authors>Dracon80</Authors>
+    <Company>Integrated Solutions</Company>
+    <Description>A C# library to make accsing the https://www.hudu.com/ API easier to work with</Description>
+    <RepositoryUrl>https://github.com/dracon80/CSharp-HuduAPI-Client</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/dracon80/CSharp-HuduAPI-Client</PackageProjectUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>hudu;hududocs</PackageTags>
   </PropertyGroup>
 
   <ItemGroup>

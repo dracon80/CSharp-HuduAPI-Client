@@ -1,6 +1,7 @@
 ﻿using Flurl;
 using Flurl.Http;
 using Flurl.Util;
+using HuduAPI.Endpoints.Exceptions;
 using HuduAPI.Endpoints.Parameters;
 using HuduAPI.Records;
 using Newtonsoft.Json;
@@ -115,9 +116,21 @@ namespace HuduAPI.Endpoints.Receivers
                 flurl = flurl.SetQueryParams(parameters.GetPropertyDictionary());
             }
 
-            var result = flurl.GetJsonAsync<List<TResult>>().Result;
+            try
+            {
+                var result = flurl.GetJsonAsync<List<TResult>>().Result;
+                return result;
+            }
+            catch (AggregateException ex)
+            {
+                if (ex.InnerException is FlurlParsingException)
+                {
+                    //The returned result was an empty array.
+                    throw new RecordNotFoundException("No records were found matching the search criteria");
+                }
 
-            return result;
+                throw ex;
+            }
         }
 
         /// <summary>

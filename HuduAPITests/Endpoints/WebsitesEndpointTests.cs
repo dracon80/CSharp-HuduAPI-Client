@@ -3,6 +3,7 @@ using HuduAPI.Records;
 using Microsoft.Extensions.Configuration;
 using HuduAPI.Endpoints.Parameters;
 using HuduAPI.Endpoints.Exceptions;
+using Flurl.Http;
 
 namespace HuduAPI.Endpoints.Tests
 {
@@ -122,6 +123,29 @@ namespace HuduAPI.Endpoints.Tests
             Assert.AreEqual(_companyID, Website.CompanyID);
             Assert.AreEqual(WebsiteID, Website.ID);
             Assert.AreEqual(Website.Name, "https://sharepoint.i-solutions.net.au");
+        }
+
+        [TestMethod]
+        public void GetWebsiteByInvalidName()
+        {
+            GetWebsites myparams = new GetWebsitesBuilder()
+                .WithName("https://winscribe.com.au").Build();
+
+            Assert.ThrowsException<RecordNotFoundException>(
+                     () => _endpoint.Get(myparams)
+                );
+        }
+
+        [TestMethod]
+        public void GetWebsiteByName()
+        {
+            GetWebsites myparams = new GetWebsitesBuilder()
+                .WithName("https://isqld.onmicrosoft.com").Build();
+
+            Websites websites = _endpoint.Get(myparams);
+
+            Assert.IsTrue(websites.WebsiteList.Count() > 0);
+            Assert.AreEqual("https://isqld.onmicrosoft.com", websites.WebsiteList[0].Name);
         }
     }
 }
