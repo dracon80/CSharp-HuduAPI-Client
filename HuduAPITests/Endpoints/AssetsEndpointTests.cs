@@ -3,6 +3,7 @@ using HuduAPI.Records;
 using Microsoft.Extensions.Configuration;
 using HuduAPI.Endpoints.Parameters;
 using HuduAPI.Endpoints.Exceptions;
+using System.Formats.Asn1;
 
 namespace HuduAPI.Endpoints.Tests
 {
@@ -26,6 +27,17 @@ namespace HuduAPI.Endpoints.Tests
         }
 
         private IConfiguration _configuration { get; set; }
+
+        [TestMethod]
+        public void ArchiveInvalidID()
+        {
+            int assetID = 1;
+            AssetById myparams = new(assetID, _companyID);
+
+            Assert.ThrowsException<RecordNotFoundException>(
+                () => _endpoint.Archive(myparams, true)
+            );
+        }
 
         [TestMethod]
         public void CreateUpdateDelete_ok()

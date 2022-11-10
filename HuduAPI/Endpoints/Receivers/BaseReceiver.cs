@@ -34,10 +34,28 @@ namespace HuduAPI.Endpoints.Receivers
         /// If the call is succesfull then a <typeparamref name="TResult"/> Result Type will be
         /// returned that contains the values that be been set on the new item created in Hudu.
         /// </returns>
+        /// <exception cref="RecordNotFoundException">
+        /// If the combination of company and asset id is invalid a RecordnotFoundException is thrown
+        /// </exception>
         public static TResult Archive(string url, string apiKey)
         {
-            var result = url.WithHeader("x-api-key", apiKey).PutAsync().ReceiveJson<TResult>().Result;
-            return result;
+            try
+            {
+                var result = url.WithHeader("x-api-key", apiKey).PutAsync().ReceiveJson<TResult>().Result;
+
+                return result;
+            }
+            catch (AggregateException ex)
+            {
+                if (ex.InnerException is FlurlHttpException)
+                {
+                    throw new RecordNotFoundException("The requested Asset and Company combination was not found");
+                }
+                else
+                {
+                    throw ex;
+                }
+            }
         }
 
         /// <summary>
