@@ -348,6 +348,45 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Endpoints.AssetPasswordsEndpoint.AssetPasswordsEndpoint
   nameWithType: AssetPasswordsEndpoint.AssetPasswordsEndpoint
+- uid: HuduAPI.Endpoints.AssetPasswordsEndpoint.Archive(HuduAPI.Endpoints.Parameters.ItemById,System.Boolean)
+  name: Archive(ItemById, Boolean)
+  href: reference/HuduAPI.Endpoints.AssetPasswordsEndpoint.html#HuduAPI_Endpoints_AssetPasswordsEndpoint_Archive_HuduAPI_Endpoints_Parameters_ItemById_System_Boolean_
+  commentId: M:HuduAPI.Endpoints.AssetPasswordsEndpoint.Archive(HuduAPI.Endpoints.Parameters.ItemById,System.Boolean)
+  fullName: HuduAPI.Endpoints.AssetPasswordsEndpoint.Archive(HuduAPI.Endpoints.Parameters.ItemById, System.Boolean)
+  nameWithType: AssetPasswordsEndpoint.Archive(ItemById, Boolean)
+- uid: HuduAPI.Endpoints.AssetPasswordsEndpoint.Archive*
+  name: Archive
+  href: reference/HuduAPI.Endpoints.AssetPasswordsEndpoint.html#HuduAPI_Endpoints_AssetPasswordsEndpoint_Archive_
+  commentId: Overload:HuduAPI.Endpoints.AssetPasswordsEndpoint.Archive
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.AssetPasswordsEndpoint.Archive
+  nameWithType: AssetPasswordsEndpoint.Archive
+- uid: HuduAPI.Endpoints.AssetPasswordsEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateAssetPassword)
+  name: Create(CreateAssetPassword)
+  href: reference/HuduAPI.Endpoints.AssetPasswordsEndpoint.html#HuduAPI_Endpoints_AssetPasswordsEndpoint_Create_HuduAPI_Endpoints_Parameters_CreateAssetPassword_
+  commentId: M:HuduAPI.Endpoints.AssetPasswordsEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateAssetPassword)
+  fullName: HuduAPI.Endpoints.AssetPasswordsEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateAssetPassword)
+  nameWithType: AssetPasswordsEndpoint.Create(CreateAssetPassword)
+- uid: HuduAPI.Endpoints.AssetPasswordsEndpoint.Create*
+  name: Create
+  href: reference/HuduAPI.Endpoints.AssetPasswordsEndpoint.html#HuduAPI_Endpoints_AssetPasswordsEndpoint_Create_
+  commentId: Overload:HuduAPI.Endpoints.AssetPasswordsEndpoint.Create
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.AssetPasswordsEndpoint.Create
+  nameWithType: AssetPasswordsEndpoint.Create
+- uid: HuduAPI.Endpoints.AssetPasswordsEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  name: Delete(ItemById)
+  href: reference/HuduAPI.Endpoints.AssetPasswordsEndpoint.html#HuduAPI_Endpoints_AssetPasswordsEndpoint_Delete_HuduAPI_Endpoints_Parameters_ItemById_
+  commentId: M:HuduAPI.Endpoints.AssetPasswordsEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  fullName: HuduAPI.Endpoints.AssetPasswordsEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  nameWithType: AssetPasswordsEndpoint.Delete(ItemById)
+- uid: HuduAPI.Endpoints.AssetPasswordsEndpoint.Delete*
+  name: Delete
+  href: reference/HuduAPI.Endpoints.AssetPasswordsEndpoint.html#HuduAPI_Endpoints_AssetPasswordsEndpoint_Delete_
+  commentId: Overload:HuduAPI.Endpoints.AssetPasswordsEndpoint.Delete
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.AssetPasswordsEndpoint.Delete
+  nameWithType: AssetPasswordsEndpoint.Delete
 - uid: HuduAPI.Endpoints.AssetPasswordsEndpoint.Get(HuduAPI.Endpoints.Parameters.GetAssetPasswords)
   name: Get(GetAssetPasswords)
   href: reference/HuduAPI.Endpoints.AssetPasswordsEndpoint.html#HuduAPI_Endpoints_AssetPasswordsEndpoint_Get_HuduAPI_Endpoints_Parameters_GetAssetPasswords_
@@ -393,70 +432,251 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Endpoints.AssetPasswordsEndpoint.HuduBaseURL
   nameWithType: AssetPasswordsEndpoint.HuduBaseURL
-- uid: HuduAPI.Endpoints.CompanyEndpoint
-  name: CompanyEndpoint
-  href: reference/HuduAPI.Endpoints.CompanyEndpoint.html
-  commentId: T:HuduAPI.Endpoints.CompanyEndpoint
-  fullName: HuduAPI.Endpoints.CompanyEndpoint
-  nameWithType: CompanyEndpoint
-- uid: HuduAPI.Endpoints.CompanyEndpoint.#ctor(System.String,System.String)
-  name: CompanyEndpoint(String, String)
-  href: reference/HuduAPI.Endpoints.CompanyEndpoint.html#HuduAPI_Endpoints_CompanyEndpoint__ctor_System_String_System_String_
-  commentId: M:HuduAPI.Endpoints.CompanyEndpoint.#ctor(System.String,System.String)
-  fullName: HuduAPI.Endpoints.CompanyEndpoint.CompanyEndpoint(System.String, System.String)
-  nameWithType: CompanyEndpoint.CompanyEndpoint(String, String)
-- uid: HuduAPI.Endpoints.CompanyEndpoint.#ctor*
-  name: CompanyEndpoint
-  href: reference/HuduAPI.Endpoints.CompanyEndpoint.html#HuduAPI_Endpoints_CompanyEndpoint__ctor_
-  commentId: Overload:HuduAPI.Endpoints.CompanyEndpoint.#ctor
+- uid: HuduAPI.Endpoints.AssetPasswordsEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateAssetPassword)
+  name: Update(UpdateAssetPassword)
+  href: reference/HuduAPI.Endpoints.AssetPasswordsEndpoint.html#HuduAPI_Endpoints_AssetPasswordsEndpoint_Update_HuduAPI_Endpoints_Parameters_UpdateAssetPassword_
+  commentId: M:HuduAPI.Endpoints.AssetPasswordsEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateAssetPassword)
+  fullName: HuduAPI.Endpoints.AssetPasswordsEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateAssetPassword)
+  nameWithType: AssetPasswordsEndpoint.Update(UpdateAssetPassword)
+- uid: HuduAPI.Endpoints.AssetPasswordsEndpoint.Update*
+  name: Update
+  href: reference/HuduAPI.Endpoints.AssetPasswordsEndpoint.html#HuduAPI_Endpoints_AssetPasswordsEndpoint_Update_
+  commentId: Overload:HuduAPI.Endpoints.AssetPasswordsEndpoint.Update
   isSpec: "True"
-  fullName: HuduAPI.Endpoints.CompanyEndpoint.CompanyEndpoint
-  nameWithType: CompanyEndpoint.CompanyEndpoint
-- uid: HuduAPI.Endpoints.CompanyEndpoint.Get(HuduAPI.Endpoints.Parameters.GetCompanies)
-  name: Get(GetCompanies)
-  href: reference/HuduAPI.Endpoints.CompanyEndpoint.html#HuduAPI_Endpoints_CompanyEndpoint_Get_HuduAPI_Endpoints_Parameters_GetCompanies_
-  commentId: M:HuduAPI.Endpoints.CompanyEndpoint.Get(HuduAPI.Endpoints.Parameters.GetCompanies)
-  fullName: HuduAPI.Endpoints.CompanyEndpoint.Get(HuduAPI.Endpoints.Parameters.GetCompanies)
-  nameWithType: CompanyEndpoint.Get(GetCompanies)
-- uid: HuduAPI.Endpoints.CompanyEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
-  name: Get(ItemById)
-  href: reference/HuduAPI.Endpoints.CompanyEndpoint.html#HuduAPI_Endpoints_CompanyEndpoint_Get_HuduAPI_Endpoints_Parameters_ItemById_
-  commentId: M:HuduAPI.Endpoints.CompanyEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
-  fullName: HuduAPI.Endpoints.CompanyEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
-  nameWithType: CompanyEndpoint.Get(ItemById)
-- uid: HuduAPI.Endpoints.CompanyEndpoint.Get*
+  fullName: HuduAPI.Endpoints.AssetPasswordsEndpoint.Update
+  nameWithType: AssetPasswordsEndpoint.Update
+- uid: HuduAPI.Endpoints.AssetsEndpoint
+  name: AssetsEndpoint
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html
+  commentId: T:HuduAPI.Endpoints.AssetsEndpoint
+  fullName: HuduAPI.Endpoints.AssetsEndpoint
+  nameWithType: AssetsEndpoint
+- uid: HuduAPI.Endpoints.AssetsEndpoint.#ctor(System.String,System.String)
+  name: AssetsEndpoint(String, String)
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint__ctor_System_String_System_String_
+  commentId: M:HuduAPI.Endpoints.AssetsEndpoint.#ctor(System.String,System.String)
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.AssetsEndpoint(System.String, System.String)
+  nameWithType: AssetsEndpoint.AssetsEndpoint(String, String)
+- uid: HuduAPI.Endpoints.AssetsEndpoint.#ctor*
+  name: AssetsEndpoint
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint__ctor_
+  commentId: Overload:HuduAPI.Endpoints.AssetsEndpoint.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.AssetsEndpoint
+  nameWithType: AssetsEndpoint.AssetsEndpoint
+- uid: HuduAPI.Endpoints.AssetsEndpoint.Archive(HuduAPI.Endpoints.Parameters.AssetById,System.Boolean)
+  name: Archive(AssetById, Boolean)
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_Archive_HuduAPI_Endpoints_Parameters_AssetById_System_Boolean_
+  commentId: M:HuduAPI.Endpoints.AssetsEndpoint.Archive(HuduAPI.Endpoints.Parameters.AssetById,System.Boolean)
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.Archive(HuduAPI.Endpoints.Parameters.AssetById, System.Boolean)
+  nameWithType: AssetsEndpoint.Archive(AssetById, Boolean)
+- uid: HuduAPI.Endpoints.AssetsEndpoint.Archive*
+  name: Archive
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_Archive_
+  commentId: Overload:HuduAPI.Endpoints.AssetsEndpoint.Archive
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.Archive
+  nameWithType: AssetsEndpoint.Archive
+- uid: HuduAPI.Endpoints.AssetsEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateAsset)
+  name: Create(CreateAsset)
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_Create_HuduAPI_Endpoints_Parameters_CreateAsset_
+  commentId: M:HuduAPI.Endpoints.AssetsEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateAsset)
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateAsset)
+  nameWithType: AssetsEndpoint.Create(CreateAsset)
+- uid: HuduAPI.Endpoints.AssetsEndpoint.Create*
+  name: Create
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_Create_
+  commentId: Overload:HuduAPI.Endpoints.AssetsEndpoint.Create
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.Create
+  nameWithType: AssetsEndpoint.Create
+- uid: HuduAPI.Endpoints.AssetsEndpoint.Delete(HuduAPI.Endpoints.Parameters.AssetById)
+  name: Delete(AssetById)
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_Delete_HuduAPI_Endpoints_Parameters_AssetById_
+  commentId: M:HuduAPI.Endpoints.AssetsEndpoint.Delete(HuduAPI.Endpoints.Parameters.AssetById)
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.Delete(HuduAPI.Endpoints.Parameters.AssetById)
+  nameWithType: AssetsEndpoint.Delete(AssetById)
+- uid: HuduAPI.Endpoints.AssetsEndpoint.Delete*
+  name: Delete
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_Delete_
+  commentId: Overload:HuduAPI.Endpoints.AssetsEndpoint.Delete
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.Delete
+  nameWithType: AssetsEndpoint.Delete
+- uid: HuduAPI.Endpoints.AssetsEndpoint.Get(HuduAPI.Endpoints.Parameters.AssetById)
+  name: Get(AssetById)
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_Get_HuduAPI_Endpoints_Parameters_AssetById_
+  commentId: M:HuduAPI.Endpoints.AssetsEndpoint.Get(HuduAPI.Endpoints.Parameters.AssetById)
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.Get(HuduAPI.Endpoints.Parameters.AssetById)
+  nameWithType: AssetsEndpoint.Get(AssetById)
+- uid: HuduAPI.Endpoints.AssetsEndpoint.Get(HuduAPI.Endpoints.Parameters.GetAssets)
+  name: Get(GetAssets)
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_Get_HuduAPI_Endpoints_Parameters_GetAssets_
+  commentId: M:HuduAPI.Endpoints.AssetsEndpoint.Get(HuduAPI.Endpoints.Parameters.GetAssets)
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.Get(HuduAPI.Endpoints.Parameters.GetAssets)
+  nameWithType: AssetsEndpoint.Get(GetAssets)
+- uid: HuduAPI.Endpoints.AssetsEndpoint.Get*
   name: Get
-  href: reference/HuduAPI.Endpoints.CompanyEndpoint.html#HuduAPI_Endpoints_CompanyEndpoint_Get_
-  commentId: Overload:HuduAPI.Endpoints.CompanyEndpoint.Get
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_Get_
+  commentId: Overload:HuduAPI.Endpoints.AssetsEndpoint.Get
   isSpec: "True"
-  fullName: HuduAPI.Endpoints.CompanyEndpoint.Get
-  nameWithType: CompanyEndpoint.Get
-- uid: HuduAPI.Endpoints.CompanyEndpoint.HuduAPIKey
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.Get
+  nameWithType: AssetsEndpoint.Get
+- uid: HuduAPI.Endpoints.AssetsEndpoint.HuduAPIKey
   name: HuduAPIKey
-  href: reference/HuduAPI.Endpoints.CompanyEndpoint.html#HuduAPI_Endpoints_CompanyEndpoint_HuduAPIKey
-  commentId: P:HuduAPI.Endpoints.CompanyEndpoint.HuduAPIKey
-  fullName: HuduAPI.Endpoints.CompanyEndpoint.HuduAPIKey
-  nameWithType: CompanyEndpoint.HuduAPIKey
-- uid: HuduAPI.Endpoints.CompanyEndpoint.HuduAPIKey*
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_HuduAPIKey
+  commentId: P:HuduAPI.Endpoints.AssetsEndpoint.HuduAPIKey
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.HuduAPIKey
+  nameWithType: AssetsEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.AssetsEndpoint.HuduAPIKey*
   name: HuduAPIKey
-  href: reference/HuduAPI.Endpoints.CompanyEndpoint.html#HuduAPI_Endpoints_CompanyEndpoint_HuduAPIKey_
-  commentId: Overload:HuduAPI.Endpoints.CompanyEndpoint.HuduAPIKey
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_HuduAPIKey_
+  commentId: Overload:HuduAPI.Endpoints.AssetsEndpoint.HuduAPIKey
   isSpec: "True"
-  fullName: HuduAPI.Endpoints.CompanyEndpoint.HuduAPIKey
-  nameWithType: CompanyEndpoint.HuduAPIKey
-- uid: HuduAPI.Endpoints.CompanyEndpoint.HuduBaseURL
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.HuduAPIKey
+  nameWithType: AssetsEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.AssetsEndpoint.HuduBaseURL
   name: HuduBaseURL
-  href: reference/HuduAPI.Endpoints.CompanyEndpoint.html#HuduAPI_Endpoints_CompanyEndpoint_HuduBaseURL
-  commentId: P:HuduAPI.Endpoints.CompanyEndpoint.HuduBaseURL
-  fullName: HuduAPI.Endpoints.CompanyEndpoint.HuduBaseURL
-  nameWithType: CompanyEndpoint.HuduBaseURL
-- uid: HuduAPI.Endpoints.CompanyEndpoint.HuduBaseURL*
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_HuduBaseURL
+  commentId: P:HuduAPI.Endpoints.AssetsEndpoint.HuduBaseURL
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.HuduBaseURL
+  nameWithType: AssetsEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.AssetsEndpoint.HuduBaseURL*
   name: HuduBaseURL
-  href: reference/HuduAPI.Endpoints.CompanyEndpoint.html#HuduAPI_Endpoints_CompanyEndpoint_HuduBaseURL_
-  commentId: Overload:HuduAPI.Endpoints.CompanyEndpoint.HuduBaseURL
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_HuduBaseURL_
+  commentId: Overload:HuduAPI.Endpoints.AssetsEndpoint.HuduBaseURL
   isSpec: "True"
-  fullName: HuduAPI.Endpoints.CompanyEndpoint.HuduBaseURL
-  nameWithType: CompanyEndpoint.HuduBaseURL
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.HuduBaseURL
+  nameWithType: AssetsEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.AssetsEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateAsset)
+  name: Update(UpdateAsset)
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_Update_HuduAPI_Endpoints_Parameters_UpdateAsset_
+  commentId: M:HuduAPI.Endpoints.AssetsEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateAsset)
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateAsset)
+  nameWithType: AssetsEndpoint.Update(UpdateAsset)
+- uid: HuduAPI.Endpoints.AssetsEndpoint.Update*
+  name: Update
+  href: reference/HuduAPI.Endpoints.AssetsEndpoint.html#HuduAPI_Endpoints_AssetsEndpoint_Update_
+  commentId: Overload:HuduAPI.Endpoints.AssetsEndpoint.Update
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.AssetsEndpoint.Update
+  nameWithType: AssetsEndpoint.Update
+- uid: HuduAPI.Endpoints.CompaniesEndpoint
+  name: CompaniesEndpoint
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html
+  commentId: T:HuduAPI.Endpoints.CompaniesEndpoint
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint
+  nameWithType: CompaniesEndpoint
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.#ctor(System.String,System.String)
+  name: CompaniesEndpoint(String, String)
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint__ctor_System_String_System_String_
+  commentId: M:HuduAPI.Endpoints.CompaniesEndpoint.#ctor(System.String,System.String)
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.CompaniesEndpoint(System.String, System.String)
+  nameWithType: CompaniesEndpoint.CompaniesEndpoint(String, String)
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.#ctor*
+  name: CompaniesEndpoint
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint__ctor_
+  commentId: Overload:HuduAPI.Endpoints.CompaniesEndpoint.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.CompaniesEndpoint
+  nameWithType: CompaniesEndpoint.CompaniesEndpoint
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.Archive(HuduAPI.Endpoints.Parameters.ItemById,System.Boolean)
+  name: Archive(ItemById, Boolean)
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_Archive_HuduAPI_Endpoints_Parameters_ItemById_System_Boolean_
+  commentId: M:HuduAPI.Endpoints.CompaniesEndpoint.Archive(HuduAPI.Endpoints.Parameters.ItemById,System.Boolean)
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.Archive(HuduAPI.Endpoints.Parameters.ItemById, System.Boolean)
+  nameWithType: CompaniesEndpoint.Archive(ItemById, Boolean)
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.Archive*
+  name: Archive
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_Archive_
+  commentId: Overload:HuduAPI.Endpoints.CompaniesEndpoint.Archive
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.Archive
+  nameWithType: CompaniesEndpoint.Archive
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateCompany)
+  name: Create(CreateCompany)
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_Create_HuduAPI_Endpoints_Parameters_CreateCompany_
+  commentId: M:HuduAPI.Endpoints.CompaniesEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateCompany)
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateCompany)
+  nameWithType: CompaniesEndpoint.Create(CreateCompany)
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.Create*
+  name: Create
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_Create_
+  commentId: Overload:HuduAPI.Endpoints.CompaniesEndpoint.Create
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.Create
+  nameWithType: CompaniesEndpoint.Create
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  name: Delete(ItemById)
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_Delete_HuduAPI_Endpoints_Parameters_ItemById_
+  commentId: M:HuduAPI.Endpoints.CompaniesEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  nameWithType: CompaniesEndpoint.Delete(ItemById)
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.Delete*
+  name: Delete
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_Delete_
+  commentId: Overload:HuduAPI.Endpoints.CompaniesEndpoint.Delete
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.Delete
+  nameWithType: CompaniesEndpoint.Delete
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.Get(HuduAPI.Endpoints.Parameters.GetCompanies)
+  name: Get(GetCompanies)
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_Get_HuduAPI_Endpoints_Parameters_GetCompanies_
+  commentId: M:HuduAPI.Endpoints.CompaniesEndpoint.Get(HuduAPI.Endpoints.Parameters.GetCompanies)
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.Get(HuduAPI.Endpoints.Parameters.GetCompanies)
+  nameWithType: CompaniesEndpoint.Get(GetCompanies)
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
+  name: Get(ItemById)
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_Get_HuduAPI_Endpoints_Parameters_ItemById_
+  commentId: M:HuduAPI.Endpoints.CompaniesEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
+  nameWithType: CompaniesEndpoint.Get(ItemById)
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.Get*
+  name: Get
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_Get_
+  commentId: Overload:HuduAPI.Endpoints.CompaniesEndpoint.Get
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.Get
+  nameWithType: CompaniesEndpoint.Get
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.HuduAPIKey
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_HuduAPIKey
+  commentId: P:HuduAPI.Endpoints.CompaniesEndpoint.HuduAPIKey
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.HuduAPIKey
+  nameWithType: CompaniesEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.HuduAPIKey*
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_HuduAPIKey_
+  commentId: Overload:HuduAPI.Endpoints.CompaniesEndpoint.HuduAPIKey
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.HuduAPIKey
+  nameWithType: CompaniesEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.HuduBaseURL
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_HuduBaseURL
+  commentId: P:HuduAPI.Endpoints.CompaniesEndpoint.HuduBaseURL
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.HuduBaseURL
+  nameWithType: CompaniesEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.HuduBaseURL*
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_HuduBaseURL_
+  commentId: Overload:HuduAPI.Endpoints.CompaniesEndpoint.HuduBaseURL
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.HuduBaseURL
+  nameWithType: CompaniesEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateCompany)
+  name: Update(UpdateCompany)
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_Update_HuduAPI_Endpoints_Parameters_UpdateCompany_
+  commentId: M:HuduAPI.Endpoints.CompaniesEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateCompany)
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateCompany)
+  nameWithType: CompaniesEndpoint.Update(UpdateCompany)
+- uid: HuduAPI.Endpoints.CompaniesEndpoint.Update*
+  name: Update
+  href: reference/HuduAPI.Endpoints.CompaniesEndpoint.html#HuduAPI_Endpoints_CompaniesEndpoint_Update_
+  commentId: Overload:HuduAPI.Endpoints.CompaniesEndpoint.Update
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.CompaniesEndpoint.Update
+  nameWithType: CompaniesEndpoint.Update
 - uid: HuduAPI.Endpoints.Exceptions
   name: HuduAPI.Endpoints.Exceptions
   href: reference/HuduAPI.Endpoints.Exceptions.html
@@ -494,6 +714,193 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Endpoints.Exceptions.RecordNotFoundException.RecordNotFoundException
   nameWithType: RecordNotFoundException.RecordNotFoundException
+- uid: HuduAPI.Endpoints.FoldersEndpoint
+  name: FoldersEndpoint
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html
+  commentId: T:HuduAPI.Endpoints.FoldersEndpoint
+  fullName: HuduAPI.Endpoints.FoldersEndpoint
+  nameWithType: FoldersEndpoint
+- uid: HuduAPI.Endpoints.FoldersEndpoint.#ctor(System.String,System.String)
+  name: FoldersEndpoint(String, String)
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint__ctor_System_String_System_String_
+  commentId: M:HuduAPI.Endpoints.FoldersEndpoint.#ctor(System.String,System.String)
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.FoldersEndpoint(System.String, System.String)
+  nameWithType: FoldersEndpoint.FoldersEndpoint(String, String)
+- uid: HuduAPI.Endpoints.FoldersEndpoint.#ctor*
+  name: FoldersEndpoint
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint__ctor_
+  commentId: Overload:HuduAPI.Endpoints.FoldersEndpoint.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.FoldersEndpoint
+  nameWithType: FoldersEndpoint.FoldersEndpoint
+- uid: HuduAPI.Endpoints.FoldersEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateFolder)
+  name: Create(CreateFolder)
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint_Create_HuduAPI_Endpoints_Parameters_CreateFolder_
+  commentId: M:HuduAPI.Endpoints.FoldersEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateFolder)
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateFolder)
+  nameWithType: FoldersEndpoint.Create(CreateFolder)
+- uid: HuduAPI.Endpoints.FoldersEndpoint.Create*
+  name: Create
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint_Create_
+  commentId: Overload:HuduAPI.Endpoints.FoldersEndpoint.Create
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.Create
+  nameWithType: FoldersEndpoint.Create
+- uid: HuduAPI.Endpoints.FoldersEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  name: Delete(ItemById)
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint_Delete_HuduAPI_Endpoints_Parameters_ItemById_
+  commentId: M:HuduAPI.Endpoints.FoldersEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  nameWithType: FoldersEndpoint.Delete(ItemById)
+- uid: HuduAPI.Endpoints.FoldersEndpoint.Delete*
+  name: Delete
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint_Delete_
+  commentId: Overload:HuduAPI.Endpoints.FoldersEndpoint.Delete
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.Delete
+  nameWithType: FoldersEndpoint.Delete
+- uid: HuduAPI.Endpoints.FoldersEndpoint.Get(HuduAPI.Endpoints.Parameters.GetFolders)
+  name: Get(GetFolders)
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint_Get_HuduAPI_Endpoints_Parameters_GetFolders_
+  commentId: M:HuduAPI.Endpoints.FoldersEndpoint.Get(HuduAPI.Endpoints.Parameters.GetFolders)
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.Get(HuduAPI.Endpoints.Parameters.GetFolders)
+  nameWithType: FoldersEndpoint.Get(GetFolders)
+- uid: HuduAPI.Endpoints.FoldersEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
+  name: Get(ItemById)
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint_Get_HuduAPI_Endpoints_Parameters_ItemById_
+  commentId: M:HuduAPI.Endpoints.FoldersEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
+  nameWithType: FoldersEndpoint.Get(ItemById)
+- uid: HuduAPI.Endpoints.FoldersEndpoint.Get*
+  name: Get
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint_Get_
+  commentId: Overload:HuduAPI.Endpoints.FoldersEndpoint.Get
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.Get
+  nameWithType: FoldersEndpoint.Get
+- uid: HuduAPI.Endpoints.FoldersEndpoint.HuduAPIKey
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint_HuduAPIKey
+  commentId: P:HuduAPI.Endpoints.FoldersEndpoint.HuduAPIKey
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.HuduAPIKey
+  nameWithType: FoldersEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.FoldersEndpoint.HuduAPIKey*
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint_HuduAPIKey_
+  commentId: Overload:HuduAPI.Endpoints.FoldersEndpoint.HuduAPIKey
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.HuduAPIKey
+  nameWithType: FoldersEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.FoldersEndpoint.HuduBaseURL
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint_HuduBaseURL
+  commentId: P:HuduAPI.Endpoints.FoldersEndpoint.HuduBaseURL
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.HuduBaseURL
+  nameWithType: FoldersEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.FoldersEndpoint.HuduBaseURL*
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint_HuduBaseURL_
+  commentId: Overload:HuduAPI.Endpoints.FoldersEndpoint.HuduBaseURL
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.HuduBaseURL
+  nameWithType: FoldersEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.FoldersEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateFolder)
+  name: Update(UpdateFolder)
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint_Update_HuduAPI_Endpoints_Parameters_UpdateFolder_
+  commentId: M:HuduAPI.Endpoints.FoldersEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateFolder)
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateFolder)
+  nameWithType: FoldersEndpoint.Update(UpdateFolder)
+- uid: HuduAPI.Endpoints.FoldersEndpoint.Update*
+  name: Update
+  href: reference/HuduAPI.Endpoints.FoldersEndpoint.html#HuduAPI_Endpoints_FoldersEndpoint_Update_
+  commentId: Overload:HuduAPI.Endpoints.FoldersEndpoint.Update
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.FoldersEndpoint.Update
+  nameWithType: FoldersEndpoint.Update
+- uid: HuduAPI.Endpoints.MagicDashEndpoint
+  name: MagicDashEndpoint
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html
+  commentId: T:HuduAPI.Endpoints.MagicDashEndpoint
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint
+  nameWithType: MagicDashEndpoint
+- uid: HuduAPI.Endpoints.MagicDashEndpoint.#ctor(System.String,System.String)
+  name: MagicDashEndpoint(String, String)
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint__ctor_System_String_System_String_
+  commentId: M:HuduAPI.Endpoints.MagicDashEndpoint.#ctor(System.String,System.String)
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint.MagicDashEndpoint(System.String, System.String)
+  nameWithType: MagicDashEndpoint.MagicDashEndpoint(String, String)
+- uid: HuduAPI.Endpoints.MagicDashEndpoint.#ctor*
+  name: MagicDashEndpoint
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint__ctor_
+  commentId: Overload:HuduAPI.Endpoints.MagicDashEndpoint.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint.MagicDashEndpoint
+  nameWithType: MagicDashEndpoint.MagicDashEndpoint
+- uid: HuduAPI.Endpoints.MagicDashEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateMagicDash)
+  name: Create(CreateMagicDash)
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint_Create_HuduAPI_Endpoints_Parameters_CreateMagicDash_
+  commentId: M:HuduAPI.Endpoints.MagicDashEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateMagicDash)
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateMagicDash)
+  nameWithType: MagicDashEndpoint.Create(CreateMagicDash)
+- uid: HuduAPI.Endpoints.MagicDashEndpoint.Create*
+  name: Create
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint_Create_
+  commentId: Overload:HuduAPI.Endpoints.MagicDashEndpoint.Create
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint.Create
+  nameWithType: MagicDashEndpoint.Create
+- uid: HuduAPI.Endpoints.MagicDashEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  name: Delete(ItemById)
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint_Delete_HuduAPI_Endpoints_Parameters_ItemById_
+  commentId: M:HuduAPI.Endpoints.MagicDashEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  nameWithType: MagicDashEndpoint.Delete(ItemById)
+- uid: HuduAPI.Endpoints.MagicDashEndpoint.Delete*
+  name: Delete
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint_Delete_
+  commentId: Overload:HuduAPI.Endpoints.MagicDashEndpoint.Delete
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint.Delete
+  nameWithType: MagicDashEndpoint.Delete
+- uid: HuduAPI.Endpoints.MagicDashEndpoint.Get(HuduAPI.Endpoints.Parameters.GetMagicDash)
+  name: Get(GetMagicDash)
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint_Get_HuduAPI_Endpoints_Parameters_GetMagicDash_
+  commentId: M:HuduAPI.Endpoints.MagicDashEndpoint.Get(HuduAPI.Endpoints.Parameters.GetMagicDash)
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint.Get(HuduAPI.Endpoints.Parameters.GetMagicDash)
+  nameWithType: MagicDashEndpoint.Get(GetMagicDash)
+- uid: HuduAPI.Endpoints.MagicDashEndpoint.Get*
+  name: Get
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint_Get_
+  commentId: Overload:HuduAPI.Endpoints.MagicDashEndpoint.Get
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint.Get
+  nameWithType: MagicDashEndpoint.Get
+- uid: HuduAPI.Endpoints.MagicDashEndpoint.HuduAPIKey
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint_HuduAPIKey
+  commentId: P:HuduAPI.Endpoints.MagicDashEndpoint.HuduAPIKey
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint.HuduAPIKey
+  nameWithType: MagicDashEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.MagicDashEndpoint.HuduAPIKey*
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint_HuduAPIKey_
+  commentId: Overload:HuduAPI.Endpoints.MagicDashEndpoint.HuduAPIKey
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint.HuduAPIKey
+  nameWithType: MagicDashEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.MagicDashEndpoint.HuduBaseURL
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint_HuduBaseURL
+  commentId: P:HuduAPI.Endpoints.MagicDashEndpoint.HuduBaseURL
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint.HuduBaseURL
+  nameWithType: MagicDashEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.MagicDashEndpoint.HuduBaseURL*
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint_HuduBaseURL_
+  commentId: Overload:HuduAPI.Endpoints.MagicDashEndpoint.HuduBaseURL
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint.HuduBaseURL
+  nameWithType: MagicDashEndpoint.HuduBaseURL
 - uid: HuduAPI.Endpoints.Parameters
   name: HuduAPI.Endpoints.Parameters
   href: reference/HuduAPI.Endpoints.Parameters.html
@@ -1026,6 +1433,57 @@ references:
   fullName.vb: HuduAPI.Endpoints.Parameters.AbstractBases.AssetBuilder(Of TResult, TBuilder).WithPrimarySerial
   nameWithType: AssetBuilder<TResult, TBuilder>.WithPrimarySerial
   nameWithType.vb: AssetBuilder(Of TResult, TBuilder).WithPrimarySerial
+- uid: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField
+  name: AssetCustomField
+  href: reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField.html
+  commentId: T:HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField
+  fullName: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField
+  nameWithType: AssetCustomField
+- uid: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField.Add(System.String,System.String)
+  name: Add(String, String)
+  href: reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField.html#HuduAPI_Endpoints_Parameters_AbstractBases_AssetCustomField_Add_System_String_System_String_
+  commentId: M:HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField.Add(System.String,System.String)
+  fullName: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField.Add(System.String, System.String)
+  nameWithType: AssetCustomField.Add(String, String)
+- uid: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField.Add*
+  name: Add
+  href: reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField.html#HuduAPI_Endpoints_Parameters_AbstractBases_AssetCustomField_Add_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField.Add
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField.Add
+  nameWithType: AssetCustomField.Add
+- uid: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter
+  name: AssetCustomFieldJsonConverter
+  href: reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.html
+  commentId: T:HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter
+  fullName: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter
+  nameWithType: AssetCustomFieldJsonConverter
+- uid: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,Type,HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField,System.Boolean,Newtonsoft.Json.JsonSerializer)
+  name: ReadJson(JsonReader, Type, AssetCustomField, Boolean, JsonSerializer)
+  href: reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.html#HuduAPI_Endpoints_Parameters_AbstractBases_AssetCustomFieldJsonConverter_ReadJson_Newtonsoft_Json_JsonReader_Type_HuduAPI_Endpoints_Parameters_AbstractBases_AssetCustomField_System_Boolean_Newtonsoft_Json_JsonSerializer_
+  commentId: M:HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.ReadJson(Newtonsoft.Json.JsonReader,Type,HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField,System.Boolean,Newtonsoft.Json.JsonSerializer)
+  fullName: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.ReadJson(Newtonsoft.Json.JsonReader, Type, HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField, System.Boolean, Newtonsoft.Json.JsonSerializer)
+  nameWithType: AssetCustomFieldJsonConverter.ReadJson(JsonReader, Type, AssetCustomField, Boolean, JsonSerializer)
+- uid: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.ReadJson*
+  name: ReadJson
+  href: reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.html#HuduAPI_Endpoints_Parameters_AbstractBases_AssetCustomFieldJsonConverter_ReadJson_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.ReadJson
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.ReadJson
+  nameWithType: AssetCustomFieldJsonConverter.ReadJson
+- uid: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField,Newtonsoft.Json.JsonSerializer)
+  name: WriteJson(JsonWriter, AssetCustomField, JsonSerializer)
+  href: reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.html#HuduAPI_Endpoints_Parameters_AbstractBases_AssetCustomFieldJsonConverter_WriteJson_Newtonsoft_Json_JsonWriter_HuduAPI_Endpoints_Parameters_AbstractBases_AssetCustomField_Newtonsoft_Json_JsonSerializer_
+  commentId: M:HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter,HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField,Newtonsoft.Json.JsonSerializer)
+  fullName: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.WriteJson(Newtonsoft.Json.JsonWriter, HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField, Newtonsoft.Json.JsonSerializer)
+  nameWithType: AssetCustomFieldJsonConverter.WriteJson(JsonWriter, AssetCustomField, JsonSerializer)
+- uid: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.WriteJson*
+  name: WriteJson
+  href: reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.html#HuduAPI_Endpoints_Parameters_AbstractBases_AssetCustomFieldJsonConverter_WriteJson_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.WriteJson
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.WriteJson
+  nameWithType: AssetCustomFieldJsonConverter.WriteJson
 - uid: HuduAPI.Endpoints.Parameters.AbstractBases.AssetLayout
   name: AssetLayout
   href: reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetLayout.html
@@ -6913,6 +7371,19 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Endpoints.Parameters.UpdateAssetLayout.UpdateAssetLayout
   nameWithType: UpdateAssetLayout.UpdateAssetLayout
+- uid: HuduAPI.Endpoints.Parameters.UpdateAssetLayout.Active
+  name: Active
+  href: reference/HuduAPI.Endpoints.Parameters.UpdateAssetLayout.html#HuduAPI_Endpoints_Parameters_UpdateAssetLayout_Active
+  commentId: P:HuduAPI.Endpoints.Parameters.UpdateAssetLayout.Active
+  fullName: HuduAPI.Endpoints.Parameters.UpdateAssetLayout.Active
+  nameWithType: UpdateAssetLayout.Active
+- uid: HuduAPI.Endpoints.Parameters.UpdateAssetLayout.Active*
+  name: Active
+  href: reference/HuduAPI.Endpoints.Parameters.UpdateAssetLayout.html#HuduAPI_Endpoints_Parameters_UpdateAssetLayout_Active_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.UpdateAssetLayout.Active
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.UpdateAssetLayout.Active
+  nameWithType: UpdateAssetLayout.Active
 - uid: HuduAPI.Endpoints.Parameters.UpdateAssetLayout.Id
   name: Id
   href: reference/HuduAPI.Endpoints.Parameters.UpdateAssetLayout.html#HuduAPI_Endpoints_Parameters_UpdateAssetLayout_Id
@@ -6961,6 +7432,12 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder.UpdateAssetLayoutBuilder
   nameWithType: UpdateAssetLayoutBuilder.UpdateAssetLayoutBuilder
+- uid: HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder._active
+  name: _active
+  href: reference/HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder.html#HuduAPI_Endpoints_Parameters_UpdateAssetLayoutBuilder__active
+  commentId: F:HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder._active
+  fullName: HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder._active
+  nameWithType: UpdateAssetLayoutBuilder._active
 - uid: HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder._id
   name: _id
   href: reference/HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder.html#HuduAPI_Endpoints_Parameters_UpdateAssetLayoutBuilder__id
@@ -6980,6 +7457,19 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder.Build
   nameWithType: UpdateAssetLayoutBuilder.Build
+- uid: HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder.IsActive(System.Boolean)
+  name: IsActive(Boolean)
+  href: reference/HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder.html#HuduAPI_Endpoints_Parameters_UpdateAssetLayoutBuilder_IsActive_System_Boolean_
+  commentId: M:HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder.IsActive(System.Boolean)
+  fullName: HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder.IsActive(System.Boolean)
+  nameWithType: UpdateAssetLayoutBuilder.IsActive(Boolean)
+- uid: HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder.IsActive*
+  name: IsActive
+  href: reference/HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder.html#HuduAPI_Endpoints_Parameters_UpdateAssetLayoutBuilder_IsActive_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder.IsActive
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder.IsActive
+  nameWithType: UpdateAssetLayoutBuilder.IsActive
 - uid: HuduAPI.Endpoints.Parameters.UpdateAssetPassword
   name: UpdateAssetPassword
   href: reference/HuduAPI.Endpoints.Parameters.UpdateAssetPassword.html
@@ -7294,6 +7784,257 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Endpoints.Parameters.UpdateWebsiteBuilder.Build
   nameWithType: UpdateWebsiteBuilder.Build
+- uid: HuduAPI.Endpoints.ProceduresEndpoint
+  name: ProceduresEndpoint
+  href: reference/HuduAPI.Endpoints.ProceduresEndpoint.html
+  commentId: T:HuduAPI.Endpoints.ProceduresEndpoint
+  fullName: HuduAPI.Endpoints.ProceduresEndpoint
+  nameWithType: ProceduresEndpoint
+- uid: HuduAPI.Endpoints.ProceduresEndpoint.#ctor(System.String,System.String)
+  name: ProceduresEndpoint(String, String)
+  href: reference/HuduAPI.Endpoints.ProceduresEndpoint.html#HuduAPI_Endpoints_ProceduresEndpoint__ctor_System_String_System_String_
+  commentId: M:HuduAPI.Endpoints.ProceduresEndpoint.#ctor(System.String,System.String)
+  fullName: HuduAPI.Endpoints.ProceduresEndpoint.ProceduresEndpoint(System.String, System.String)
+  nameWithType: ProceduresEndpoint.ProceduresEndpoint(String, String)
+- uid: HuduAPI.Endpoints.ProceduresEndpoint.#ctor*
+  name: ProceduresEndpoint
+  href: reference/HuduAPI.Endpoints.ProceduresEndpoint.html#HuduAPI_Endpoints_ProceduresEndpoint__ctor_
+  commentId: Overload:HuduAPI.Endpoints.ProceduresEndpoint.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.ProceduresEndpoint.ProceduresEndpoint
+  nameWithType: ProceduresEndpoint.ProceduresEndpoint
+- uid: HuduAPI.Endpoints.ProceduresEndpoint.Get(HuduAPI.Endpoints.Parameters.GetProcedures)
+  name: Get(GetProcedures)
+  href: reference/HuduAPI.Endpoints.ProceduresEndpoint.html#HuduAPI_Endpoints_ProceduresEndpoint_Get_HuduAPI_Endpoints_Parameters_GetProcedures_
+  commentId: M:HuduAPI.Endpoints.ProceduresEndpoint.Get(HuduAPI.Endpoints.Parameters.GetProcedures)
+  fullName: HuduAPI.Endpoints.ProceduresEndpoint.Get(HuduAPI.Endpoints.Parameters.GetProcedures)
+  nameWithType: ProceduresEndpoint.Get(GetProcedures)
+- uid: HuduAPI.Endpoints.ProceduresEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
+  name: Get(ItemById)
+  href: reference/HuduAPI.Endpoints.ProceduresEndpoint.html#HuduAPI_Endpoints_ProceduresEndpoint_Get_HuduAPI_Endpoints_Parameters_ItemById_
+  commentId: M:HuduAPI.Endpoints.ProceduresEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
+  fullName: HuduAPI.Endpoints.ProceduresEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
+  nameWithType: ProceduresEndpoint.Get(ItemById)
+- uid: HuduAPI.Endpoints.ProceduresEndpoint.Get*
+  name: Get
+  href: reference/HuduAPI.Endpoints.ProceduresEndpoint.html#HuduAPI_Endpoints_ProceduresEndpoint_Get_
+  commentId: Overload:HuduAPI.Endpoints.ProceduresEndpoint.Get
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.ProceduresEndpoint.Get
+  nameWithType: ProceduresEndpoint.Get
+- uid: HuduAPI.Endpoints.ProceduresEndpoint.HuduAPIKey
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.ProceduresEndpoint.html#HuduAPI_Endpoints_ProceduresEndpoint_HuduAPIKey
+  commentId: P:HuduAPI.Endpoints.ProceduresEndpoint.HuduAPIKey
+  fullName: HuduAPI.Endpoints.ProceduresEndpoint.HuduAPIKey
+  nameWithType: ProceduresEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.ProceduresEndpoint.HuduAPIKey*
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.ProceduresEndpoint.html#HuduAPI_Endpoints_ProceduresEndpoint_HuduAPIKey_
+  commentId: Overload:HuduAPI.Endpoints.ProceduresEndpoint.HuduAPIKey
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.ProceduresEndpoint.HuduAPIKey
+  nameWithType: ProceduresEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.ProceduresEndpoint.HuduBaseURL
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.ProceduresEndpoint.html#HuduAPI_Endpoints_ProceduresEndpoint_HuduBaseURL
+  commentId: P:HuduAPI.Endpoints.ProceduresEndpoint.HuduBaseURL
+  fullName: HuduAPI.Endpoints.ProceduresEndpoint.HuduBaseURL
+  nameWithType: ProceduresEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.ProceduresEndpoint.HuduBaseURL*
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.ProceduresEndpoint.html#HuduAPI_Endpoints_ProceduresEndpoint_HuduBaseURL_
+  commentId: Overload:HuduAPI.Endpoints.ProceduresEndpoint.HuduBaseURL
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.ProceduresEndpoint.HuduBaseURL
+  nameWithType: ProceduresEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.RelationEndpoint
+  name: RelationEndpoint
+  href: reference/HuduAPI.Endpoints.RelationEndpoint.html
+  commentId: T:HuduAPI.Endpoints.RelationEndpoint
+  fullName: HuduAPI.Endpoints.RelationEndpoint
+  nameWithType: RelationEndpoint
+- uid: HuduAPI.Endpoints.RelationEndpoint.#ctor(System.String,System.String)
+  name: RelationEndpoint(String, String)
+  href: reference/HuduAPI.Endpoints.RelationEndpoint.html#HuduAPI_Endpoints_RelationEndpoint__ctor_System_String_System_String_
+  commentId: M:HuduAPI.Endpoints.RelationEndpoint.#ctor(System.String,System.String)
+  fullName: HuduAPI.Endpoints.RelationEndpoint.RelationEndpoint(System.String, System.String)
+  nameWithType: RelationEndpoint.RelationEndpoint(String, String)
+- uid: HuduAPI.Endpoints.RelationEndpoint.#ctor*
+  name: RelationEndpoint
+  href: reference/HuduAPI.Endpoints.RelationEndpoint.html#HuduAPI_Endpoints_RelationEndpoint__ctor_
+  commentId: Overload:HuduAPI.Endpoints.RelationEndpoint.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.RelationEndpoint.RelationEndpoint
+  nameWithType: RelationEndpoint.RelationEndpoint
+- uid: HuduAPI.Endpoints.RelationEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateRelation)
+  name: Create(CreateRelation)
+  href: reference/HuduAPI.Endpoints.RelationEndpoint.html#HuduAPI_Endpoints_RelationEndpoint_Create_HuduAPI_Endpoints_Parameters_CreateRelation_
+  commentId: M:HuduAPI.Endpoints.RelationEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateRelation)
+  fullName: HuduAPI.Endpoints.RelationEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateRelation)
+  nameWithType: RelationEndpoint.Create(CreateRelation)
+- uid: HuduAPI.Endpoints.RelationEndpoint.Create*
+  name: Create
+  href: reference/HuduAPI.Endpoints.RelationEndpoint.html#HuduAPI_Endpoints_RelationEndpoint_Create_
+  commentId: Overload:HuduAPI.Endpoints.RelationEndpoint.Create
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.RelationEndpoint.Create
+  nameWithType: RelationEndpoint.Create
+- uid: HuduAPI.Endpoints.RelationEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  name: Delete(ItemById)
+  href: reference/HuduAPI.Endpoints.RelationEndpoint.html#HuduAPI_Endpoints_RelationEndpoint_Delete_HuduAPI_Endpoints_Parameters_ItemById_
+  commentId: M:HuduAPI.Endpoints.RelationEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  fullName: HuduAPI.Endpoints.RelationEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  nameWithType: RelationEndpoint.Delete(ItemById)
+- uid: HuduAPI.Endpoints.RelationEndpoint.Delete*
+  name: Delete
+  href: reference/HuduAPI.Endpoints.RelationEndpoint.html#HuduAPI_Endpoints_RelationEndpoint_Delete_
+  commentId: Overload:HuduAPI.Endpoints.RelationEndpoint.Delete
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.RelationEndpoint.Delete
+  nameWithType: RelationEndpoint.Delete
+- uid: HuduAPI.Endpoints.RelationEndpoint.Get(HuduAPI.Endpoints.Parameters.GetRelations)
+  name: Get(GetRelations)
+  href: reference/HuduAPI.Endpoints.RelationEndpoint.html#HuduAPI_Endpoints_RelationEndpoint_Get_HuduAPI_Endpoints_Parameters_GetRelations_
+  commentId: M:HuduAPI.Endpoints.RelationEndpoint.Get(HuduAPI.Endpoints.Parameters.GetRelations)
+  fullName: HuduAPI.Endpoints.RelationEndpoint.Get(HuduAPI.Endpoints.Parameters.GetRelations)
+  nameWithType: RelationEndpoint.Get(GetRelations)
+- uid: HuduAPI.Endpoints.RelationEndpoint.Get*
+  name: Get
+  href: reference/HuduAPI.Endpoints.RelationEndpoint.html#HuduAPI_Endpoints_RelationEndpoint_Get_
+  commentId: Overload:HuduAPI.Endpoints.RelationEndpoint.Get
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.RelationEndpoint.Get
+  nameWithType: RelationEndpoint.Get
+- uid: HuduAPI.Endpoints.RelationEndpoint.HuduAPIKey
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.RelationEndpoint.html#HuduAPI_Endpoints_RelationEndpoint_HuduAPIKey
+  commentId: P:HuduAPI.Endpoints.RelationEndpoint.HuduAPIKey
+  fullName: HuduAPI.Endpoints.RelationEndpoint.HuduAPIKey
+  nameWithType: RelationEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.RelationEndpoint.HuduAPIKey*
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.RelationEndpoint.html#HuduAPI_Endpoints_RelationEndpoint_HuduAPIKey_
+  commentId: Overload:HuduAPI.Endpoints.RelationEndpoint.HuduAPIKey
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.RelationEndpoint.HuduAPIKey
+  nameWithType: RelationEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.RelationEndpoint.HuduBaseURL
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.RelationEndpoint.html#HuduAPI_Endpoints_RelationEndpoint_HuduBaseURL
+  commentId: P:HuduAPI.Endpoints.RelationEndpoint.HuduBaseURL
+  fullName: HuduAPI.Endpoints.RelationEndpoint.HuduBaseURL
+  nameWithType: RelationEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.RelationEndpoint.HuduBaseURL*
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.RelationEndpoint.html#HuduAPI_Endpoints_RelationEndpoint_HuduBaseURL_
+  commentId: Overload:HuduAPI.Endpoints.RelationEndpoint.HuduBaseURL
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.RelationEndpoint.HuduBaseURL
+  nameWithType: RelationEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.WebsitesEndpoint
+  name: WebsitesEndpoint
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html
+  commentId: T:HuduAPI.Endpoints.WebsitesEndpoint
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint
+  nameWithType: WebsitesEndpoint
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.#ctor(System.String,System.String)
+  name: WebsitesEndpoint(String, String)
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint__ctor_System_String_System_String_
+  commentId: M:HuduAPI.Endpoints.WebsitesEndpoint.#ctor(System.String,System.String)
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.WebsitesEndpoint(System.String, System.String)
+  nameWithType: WebsitesEndpoint.WebsitesEndpoint(String, String)
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.#ctor*
+  name: WebsitesEndpoint
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint__ctor_
+  commentId: Overload:HuduAPI.Endpoints.WebsitesEndpoint.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.WebsitesEndpoint
+  nameWithType: WebsitesEndpoint.WebsitesEndpoint
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateWebsite)
+  name: Create(CreateWebsite)
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint_Create_HuduAPI_Endpoints_Parameters_CreateWebsite_
+  commentId: M:HuduAPI.Endpoints.WebsitesEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateWebsite)
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.Create(HuduAPI.Endpoints.Parameters.CreateWebsite)
+  nameWithType: WebsitesEndpoint.Create(CreateWebsite)
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.Create*
+  name: Create
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint_Create_
+  commentId: Overload:HuduAPI.Endpoints.WebsitesEndpoint.Create
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.Create
+  nameWithType: WebsitesEndpoint.Create
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  name: Delete(ItemById)
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint_Delete_HuduAPI_Endpoints_Parameters_ItemById_
+  commentId: M:HuduAPI.Endpoints.WebsitesEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.Delete(HuduAPI.Endpoints.Parameters.ItemById)
+  nameWithType: WebsitesEndpoint.Delete(ItemById)
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.Delete*
+  name: Delete
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint_Delete_
+  commentId: Overload:HuduAPI.Endpoints.WebsitesEndpoint.Delete
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.Delete
+  nameWithType: WebsitesEndpoint.Delete
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.Get(HuduAPI.Endpoints.Parameters.GetWebsites)
+  name: Get(GetWebsites)
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint_Get_HuduAPI_Endpoints_Parameters_GetWebsites_
+  commentId: M:HuduAPI.Endpoints.WebsitesEndpoint.Get(HuduAPI.Endpoints.Parameters.GetWebsites)
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.Get(HuduAPI.Endpoints.Parameters.GetWebsites)
+  nameWithType: WebsitesEndpoint.Get(GetWebsites)
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
+  name: Get(ItemById)
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint_Get_HuduAPI_Endpoints_Parameters_ItemById_
+  commentId: M:HuduAPI.Endpoints.WebsitesEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.Get(HuduAPI.Endpoints.Parameters.ItemById)
+  nameWithType: WebsitesEndpoint.Get(ItemById)
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.Get*
+  name: Get
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint_Get_
+  commentId: Overload:HuduAPI.Endpoints.WebsitesEndpoint.Get
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.Get
+  nameWithType: WebsitesEndpoint.Get
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.HuduAPIKey
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint_HuduAPIKey
+  commentId: P:HuduAPI.Endpoints.WebsitesEndpoint.HuduAPIKey
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.HuduAPIKey
+  nameWithType: WebsitesEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.HuduAPIKey*
+  name: HuduAPIKey
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint_HuduAPIKey_
+  commentId: Overload:HuduAPI.Endpoints.WebsitesEndpoint.HuduAPIKey
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.HuduAPIKey
+  nameWithType: WebsitesEndpoint.HuduAPIKey
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.HuduBaseURL
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint_HuduBaseURL
+  commentId: P:HuduAPI.Endpoints.WebsitesEndpoint.HuduBaseURL
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.HuduBaseURL
+  nameWithType: WebsitesEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.HuduBaseURL*
+  name: HuduBaseURL
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint_HuduBaseURL_
+  commentId: Overload:HuduAPI.Endpoints.WebsitesEndpoint.HuduBaseURL
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.HuduBaseURL
+  nameWithType: WebsitesEndpoint.HuduBaseURL
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateWebsite)
+  name: Update(UpdateWebsite)
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint_Update_HuduAPI_Endpoints_Parameters_UpdateWebsite_
+  commentId: M:HuduAPI.Endpoints.WebsitesEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateWebsite)
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.Update(HuduAPI.Endpoints.Parameters.UpdateWebsite)
+  nameWithType: WebsitesEndpoint.Update(UpdateWebsite)
+- uid: HuduAPI.Endpoints.WebsitesEndpoint.Update*
+  name: Update
+  href: reference/HuduAPI.Endpoints.WebsitesEndpoint.html#HuduAPI_Endpoints_WebsitesEndpoint_Update_
+  commentId: Overload:HuduAPI.Endpoints.WebsitesEndpoint.Update
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.WebsitesEndpoint.Update
+  nameWithType: WebsitesEndpoint.Update
 - uid: HuduAPI.Records
   name: HuduAPI.Records
   href: reference/HuduAPI.Records.html
@@ -9157,19 +9898,19 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Records.Company.Integration.Name
   nameWithType: Company.Integration.Name
-- uid: HuduAPI.Records.Company.Integration.SyncID
-  name: SyncID
-  href: reference/HuduAPI.Records.Company.Integration.html#HuduAPI_Records_Company_Integration_SyncID
-  commentId: P:HuduAPI.Records.Company.Integration.SyncID
-  fullName: HuduAPI.Records.Company.Integration.SyncID
-  nameWithType: Company.Integration.SyncID
-- uid: HuduAPI.Records.Company.Integration.SyncID*
-  name: SyncID
-  href: reference/HuduAPI.Records.Company.Integration.html#HuduAPI_Records_Company_Integration_SyncID_
-  commentId: Overload:HuduAPI.Records.Company.Integration.SyncID
+- uid: HuduAPI.Records.Company.Integration.SyncId
+  name: SyncId
+  href: reference/HuduAPI.Records.Company.Integration.html#HuduAPI_Records_Company_Integration_SyncId
+  commentId: P:HuduAPI.Records.Company.Integration.SyncId
+  fullName: HuduAPI.Records.Company.Integration.SyncId
+  nameWithType: Company.Integration.SyncId
+- uid: HuduAPI.Records.Company.Integration.SyncId*
+  name: SyncId
+  href: reference/HuduAPI.Records.Company.Integration.html#HuduAPI_Records_Company_Integration_SyncId_
+  commentId: Overload:HuduAPI.Records.Company.Integration.SyncId
   isSpec: "True"
-  fullName: HuduAPI.Records.Company.Integration.SyncID
-  nameWithType: Company.Integration.SyncID
+  fullName: HuduAPI.Records.Company.Integration.SyncId
+  nameWithType: Company.Integration.SyncId
 - uid: HuduAPI.Records.Company.Integrations
   name: Integrations
   href: reference/HuduAPI.Records.Company.html#HuduAPI_Records_Company_Integrations
@@ -9898,6 +10639,54 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Records.MagicDash.Title
   nameWithType: MagicDash.Title
+- uid: HuduAPI.Records.MagicDashes
+  name: MagicDashes
+  href: reference/HuduAPI.Records.MagicDashes.html
+  commentId: T:HuduAPI.Records.MagicDashes
+  fullName: HuduAPI.Records.MagicDashes
+  nameWithType: MagicDashes
+- uid: HuduAPI.Records.MagicDashes.#ctor
+  name: MagicDashes()
+  href: reference/HuduAPI.Records.MagicDashes.html#HuduAPI_Records_MagicDashes__ctor
+  commentId: M:HuduAPI.Records.MagicDashes.#ctor
+  fullName: HuduAPI.Records.MagicDashes.MagicDashes()
+  nameWithType: MagicDashes.MagicDashes()
+- uid: HuduAPI.Records.MagicDashes.#ctor*
+  name: MagicDashes
+  href: reference/HuduAPI.Records.MagicDashes.html#HuduAPI_Records_MagicDashes__ctor_
+  commentId: Overload:HuduAPI.Records.MagicDashes.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Records.MagicDashes.MagicDashes
+  nameWithType: MagicDashes.MagicDashes
+- uid: HuduAPI.Records.MagicDashes.Item(System.Int32)
+  name: Item[Int32]
+  href: reference/HuduAPI.Records.MagicDashes.html#HuduAPI_Records_MagicDashes_Item_System_Int32_
+  commentId: P:HuduAPI.Records.MagicDashes.Item(System.Int32)
+  name.vb: Item(Int32)
+  fullName: HuduAPI.Records.MagicDashes.Item[System.Int32]
+  fullName.vb: HuduAPI.Records.MagicDashes.Item(System.Int32)
+  nameWithType: MagicDashes.Item[Int32]
+  nameWithType.vb: MagicDashes.Item(Int32)
+- uid: HuduAPI.Records.MagicDashes.Item*
+  name: Item
+  href: reference/HuduAPI.Records.MagicDashes.html#HuduAPI_Records_MagicDashes_Item_
+  commentId: Overload:HuduAPI.Records.MagicDashes.Item
+  isSpec: "True"
+  fullName: HuduAPI.Records.MagicDashes.Item
+  nameWithType: MagicDashes.Item
+- uid: HuduAPI.Records.MagicDashes.MagicDashList
+  name: MagicDashList
+  href: reference/HuduAPI.Records.MagicDashes.html#HuduAPI_Records_MagicDashes_MagicDashList
+  commentId: P:HuduAPI.Records.MagicDashes.MagicDashList
+  fullName: HuduAPI.Records.MagicDashes.MagicDashList
+  nameWithType: MagicDashes.MagicDashList
+- uid: HuduAPI.Records.MagicDashes.MagicDashList*
+  name: MagicDashList
+  href: reference/HuduAPI.Records.MagicDashes.html#HuduAPI_Records_MagicDashes_MagicDashList_
+  commentId: Overload:HuduAPI.Records.MagicDashes.MagicDashList
+  isSpec: "True"
+  fullName: HuduAPI.Records.MagicDashes.MagicDashList
+  nameWithType: MagicDashes.MagicDashList
 - uid: HuduAPI.Records.Procedure
   name: Procedure
   href: reference/HuduAPI.Records.Procedure.html
@@ -10817,3 +11606,22 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Records.Website.Url
   nameWithType: Website.Url
+- uid: HuduAPI.Records.Websites
+  name: Websites
+  href: reference/HuduAPI.Records.Websites.html
+  commentId: T:HuduAPI.Records.Websites
+  fullName: HuduAPI.Records.Websites
+  nameWithType: Websites
+- uid: HuduAPI.Records.Websites.WebsiteList
+  name: WebsiteList
+  href: reference/HuduAPI.Records.Websites.html#HuduAPI_Records_Websites_WebsiteList
+  commentId: P:HuduAPI.Records.Websites.WebsiteList
+  fullName: HuduAPI.Records.Websites.WebsiteList
+  nameWithType: Websites.WebsiteList
+- uid: HuduAPI.Records.Websites.WebsiteList*
+  name: WebsiteList
+  href: reference/HuduAPI.Records.Websites.html#HuduAPI_Records_Websites_WebsiteList_
+  commentId: Overload:HuduAPI.Records.Websites.WebsiteList
+  isSpec: "True"
+  fullName: HuduAPI.Records.Websites.WebsiteList
+  nameWithType: Websites.WebsiteList

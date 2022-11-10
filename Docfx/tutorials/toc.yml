@@ -1,2 +1,12 @@
 - name: Introduction
   href: intro.md
+- name: Get
+  href: get.md
+- name: Create
+  href: create.md
+- name: Update
+  href: update.md
+- name: Archive
+  href: archive.md
+- name: Delete
+  href: delete.md

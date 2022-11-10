@@ -1,6 +1,6 @@
 {
   "homepages": [],
-  "source_base_path": "C:/Users/NathanDennis/source/repos/Hudu/docfx",
+  "source_base_path": "C:/Users/NathanDennis/source/repos/CSharp-HuduAPI-Client/Docfx",
   "xrefmap": "xrefmap.yml",
   "files": [
     {
@@ -13,12 +13,15 @@
       "is_incremental": false
     },
     {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
       "type": "Conceptual",
       "source_relative_path": "index.md",
       "output": {
         ".html": {
           "relative_path": "index.html",
-          "hash": "N6DU7Jon7JrytN8KDHtK29TxOg6rDkV/o3t0az3LCas="
+          "hash": "3Gkb38aM2fvfJnLvk3MeQwYlhwjsmsp+8T0VbWa5z44="
         }
       },
       "is_incremental": false,
@@ -30,7 +33,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.APIInfoEndpoint.html",
-          "hash": "YvpxZ4Z7aZNg3Jn96MYAtersPgbxEEfNUdBqoHvSfCg="
+          "hash": "CM95y0UeKda0EajZiXuX35P0XHp7sTUYG8AOaZJd/Cc="
         }
       },
       "is_incremental": false,
@@ -42,7 +45,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.ActivityLogsEndpoint.html",
-          "hash": "oQFoHcmqGy68sl3jjDeed8sHZTwASxIJyR2qtfUpvgg="
+          "hash": "5u7Q6lW/JZyJkWCaTZAxhvUqe1Lz5KgZ7HMrwQwXb9E="
         }
       },
       "is_incremental": false,
@@ -54,7 +57,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.ArticlesEndpoint.html",
-          "hash": "ZPPBoQDjvf3+N2b2KK5I+aCk66OTfk2PlkF7+2txMjU="
+          "hash": "l55FD+eG6VK3zAV+6I8uwgdV35pCj7fDqSo1V7Z2hRs="
         }
       },
       "is_incremental": false,
@@ -66,7 +69,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.AssetLayoutsEndpoint.html",
-          "hash": "tyn/lKxvkdCUoRESDbm3p66CPGXf0/I2BnVDXRMoKfg="
+          "hash": "9eff0umSM9KvJLsYzN5YFG9n3DDLlitoDg6z/PovP/Y="
         }
       },
       "is_incremental": false,
@@ -78,7 +81,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.AssetPasswordsEndpoint.html",
-          "hash": "IycVxJX6hZoA6kTI9/iI1nQQpor7+ZTjJVqqkqCjOC0="
+          "hash": "dBO6sE94jAU+qwjX/oJVJA+6rpYkuLv1UYM1X3tZtaA="
         }
       },
       "is_incremental": false,
@@ -86,11 +89,23 @@
     },
     {
       "type": "ManagedReference",
-      "source_relative_path": "reference/HuduAPI.Endpoints.CompanyEndpoint.yml",
+      "source_relative_path": "reference/HuduAPI.Endpoints.AssetsEndpoint.yml",
       "output": {
         ".html": {
-          "relative_path": "reference/HuduAPI.Endpoints.CompanyEndpoint.html",
-          "hash": "lYfFxetZISi4WB9xZAGcDW4bRLj70ORT1DlVGfSYj4g="
+          "relative_path": "reference/HuduAPI.Endpoints.AssetsEndpoint.html",
+          "hash": "0k3F9ILeK62rVzTBoNomKZjwWP8XQNQi2D+2NrvFjEE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.CompaniesEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.CompaniesEndpoint.html",
+          "hash": "cXBbWRcNE87xzq7c6XEIId0iFmoJisY55sHtMz8MY9k="
         }
       },
       "is_incremental": false,
@@ -102,7 +117,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Exceptions.RecordNotFoundException.html",
-          "hash": "ObNXFP6fEaWgYmudQknSqPWTBEF4ydss4SK0hyq80wk="
+          "hash": "0nCIPPBDr7GuA2zo0XpUsuYq5CE4hJGHFMnUffAZrG0="
         }
       },
       "is_incremental": false,
@@ -114,7 +129,31 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Exceptions.html",
-          "hash": "EG0RrTMfbw4BYqBwjY0xbnWIhfqmne6UCEzYlwYH7CQ="
+          "hash": "2YN9k8a1jBwM7WuyfcGkAsXno2SxwSJvt1+bY1H99UI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.FoldersEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.FoldersEndpoint.html",
+          "hash": "/Zs3MJ+2qyDsYssv2oNec7pPDLoCM8otpZIjIEiTh3Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.MagicDashEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.MagicDashEndpoint.html",
+          "hash": "mliWAMbO876nMdF5OKZe0uqvl+RPRufSKZNCcBsaAws="
         }
       },
       "is_incremental": false,
@@ -126,7 +165,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.Article.html",
-          "hash": "AjL1pYPPp0WrxBgse/oyJz3AmGcKu7j66afnIwSDVw4="
+          "hash": "48NSwfztiithtrDMlE71uYlMe6fnRdn9IpCmBSZA1NE="
         }
       },
       "is_incremental": false,
@@ -138,7 +177,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.ArticleBuilder-2.html",
-          "hash": "eBfE/5qFq21nU021D3aHlQDgA2pUMrP+1ju/g1AOeV8="
+          "hash": "wsLNbUquHDwatW9vG/8V3B9J2xDyzVTzGzL7s6qlsL4="
         }
       },
       "is_incremental": false,
@@ -150,7 +189,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.Asset.html",
-          "hash": "Z2nn0/62YgPvGf2HuU4s80BWdsAjMZx601KDEo62+oY="
+          "hash": "i1+KM+s7ANqqSvbA4QiL3XjD1TMdkScYK+RS9dIEunw="
         }
       },
       "is_incremental": false,
@@ -162,7 +201,31 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetBuilder-2.html",
-          "hash": "IC7TCdst8lQQg2nGjZFQwfdZeTUMaeCEYHXGFKO+2Uo="
+          "hash": "gZddr0IKBRkP6QCcXcfbLBu7q5kDvCICGXfyHzvvnLg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomField.html",
+          "hash": "HtEU8ZkEGhDVE1lk0sEn/S4nWOliOkFVN/tpAvwFMIQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetCustomFieldJsonConverter.html",
+          "hash": "uLhy0EVhhabLe663DMj9twEEr8z1kCirJn+ITgak750="
         }
       },
       "is_incremental": false,
@@ -174,7 +237,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetLayout.html",
-          "hash": "5zow1B/htemVso/M83hJm9FitAeLkBokXYKglQKZHsA="
+          "hash": "DLqA//YpXwVo3Xfg5CDD5qp3B2ilN4f1+dpxImXE9BU="
         }
       },
       "is_incremental": false,
@@ -186,7 +249,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetLayoutBuilder-2.html",
-          "hash": "cdftJgbuc15R1HZP0DV5x+Vfrm9I421L1hF5YkvgfSY="
+          "hash": "EvOb3eRPGuUpybD8Tzb27PDjJ8+Kp8oIN278Fts+rxE="
         }
       },
       "is_incremental": false,
@@ -198,7 +261,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetPassword.html",
-          "hash": "PF2UvbVAOtGjU2E5VweLSnUFMO70IlpZaR8WUZepVfM="
+          "hash": "Am8wIf4Qf2/vMZlWxiibS7ZfR9dAmp5bysf+49eTzy8="
         }
       },
       "is_incremental": false,
@@ -210,7 +273,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.AssetPasswordBuilder-2.html",
-          "hash": "eYOYg1zBeqTEQiuOJwkDZXvg3Z0fvOCWKdBChoH4wk8="
+          "hash": "5MnPD0P+aMgg0uwMh2FOrZwqkAWjgNvUlbd8Qf2YB0s="
         }
       },
       "is_incremental": false,
@@ -222,7 +285,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.Company.html",
-          "hash": "EW9mE4O0OFw2MCtjkHFEGzGJk5MS8gjkctnzmSWQJgU="
+          "hash": "0fudyQAvJzISTXlZvrqdBwsNySRZUSdp3ns9M7R8exs="
         }
       },
       "is_incremental": false,
@@ -234,7 +297,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.CompanyBuilder-2.html",
-          "hash": "EfuNyzhBDKTOVADLFN4QZR/jNjMituUZevtCf/Emock="
+          "hash": "pRDowbBB5LmNb6+gb6Y10BhIzIJJe0Npu4sfXI2SjpQ="
         }
       },
       "is_incremental": false,
@@ -246,7 +309,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.Folder.html",
-          "hash": "PpjFAOGQ3X+9ndA9VEp/EIbhgXEOGQZT7rti1Y3MiWo="
+          "hash": "owETIwzAe4MDvGQiB8Y0aN3nPGunfJcJJlX8xAmFQZ8="
         }
       },
       "is_incremental": false,
@@ -258,7 +321,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.FolderBuilder-2.html",
-          "hash": "lHnHNM7hbQ9uwg6HCoYrszdHSYz+zngekkBOQL4/JAc="
+          "hash": "IjgRmk3f8RB6kLaf2xl82Td9ap2s92mD4KhfttsxJ50="
         }
       },
       "is_incremental": false,
@@ -270,7 +333,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.Website.html",
-          "hash": "jW/VzyZRIWzgCWM1rOkuz4AgOgzGYoXx6eG4PNxGi2I="
+          "hash": "Vl9IvvEOyes++4irQUc1vDbxwjHPuNlimjyC9gOxXaQ="
         }
       },
       "is_incremental": false,
@@ -282,7 +345,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.WebsiteBuilder-2.html",
-          "hash": "CFKES3hesS5hT0ukb/DLL+sJvzaM2p6cSFa6825aAmU="
+          "hash": "+8D5+7V3UFrTbuEORkLYPbwPPfK/ng1Ro13Xoh0VoEI="
         }
       },
       "is_incremental": false,
@@ -294,7 +357,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AbstractBases.html",
-          "hash": "wxEg2NmwLEmgF7ztcIhEv660hYx1hYMoNSZreeLRqE0="
+          "hash": "E91Ki4GBMnchF742Lry1Utm8fA7n6qG0Jj5q8ZcM16s="
         }
       },
       "is_incremental": false,
@@ -306,7 +369,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AssetById.html",
-          "hash": "co522lSHInd8qCFgm26dHyQ3BIy95ji/Z+BOkgTHXng="
+          "hash": "/61bB7jBOsUUl4GLG/kx8cpnyBgIv341M4Psw08dMRs="
         }
       },
       "is_incremental": false,
@@ -318,7 +381,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AssetLayoutField.html",
-          "hash": "xixvWmS6UK4Ci3izEpYn9SDk1GaOeJLMwCoFpgLuZ7A="
+          "hash": "uggqmpDaH+PLXmtYf0WUupDB1RNViAVadJtQrCjZkpo="
         }
       },
       "is_incremental": false,
@@ -330,7 +393,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AssetLayoutFieldBuilder.html",
-          "hash": "aKcHwmGPwV7mDJPz5NCjzyWGeuHThLdqgcyBpMgRgOE="
+          "hash": "5LeR+tnXF91ofyRN/UZAP2aFOcupz6V9L64lC4K36M0="
         }
       },
       "is_incremental": false,
@@ -342,7 +405,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.AssetLayoutFieldType.html",
-          "hash": "kSzcg4nANUQLFUxeISbkZw2haeh6xCM4f+SkPECQ6h4="
+          "hash": "V+QqR3/ZEGM4sBVIFoI4w7Jx//8i5CWRk61+6FZg9G4="
         }
       },
       "is_incremental": false,
@@ -354,7 +417,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateArticle.html",
-          "hash": "sQLNYONm5grDd9UaYdmuM3GE40wsNAeopKM0VbNnK2M="
+          "hash": "2jOTCbJzMLUnqwhF0Z4Y3WWmzE1kIbp+auqTMCg3Eos="
         }
       },
       "is_incremental": false,
@@ -366,7 +429,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateArticleBuilder.html",
-          "hash": "k+LlqedfjUSXMfYhU6oD//GaHZ8T1jF7cp9YoYu6E1Q="
+          "hash": "REM/TMF3Pp1wv3cFYc7wC6doKbjpRaX+2Ky+pNiZOvQ="
         }
       },
       "is_incremental": false,
@@ -378,7 +441,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateAsset.html",
-          "hash": "QB2Je0NWtHAqkqpqBrAFban9Z72C+WrDjieXrGrmhLw="
+          "hash": "33oNbHxzIZgkP54mLfy7gGZTjKuvvcfetGb7IH+NRSE="
         }
       },
       "is_incremental": false,
@@ -390,7 +453,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateAssetBuilder.html",
-          "hash": "xv8jMBnrlYPZTe0TWGV/WUk2Nl1JKNciZKuJ6rCrkO8="
+          "hash": "yBXPskrbLKfDHWFM01YihYbXkMt1CdBRZ+FHymZ1nI0="
         }
       },
       "is_incremental": false,
@@ -402,7 +465,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateAssetLayout.html",
-          "hash": "M9I+nWHehhrDDl1/BqeFIaF0fH7p9ulutGv9kSqQIQk="
+          "hash": "qFg1t4vO7r5SUqbqSZgzYFrc0Foql74CG6o2TenWWOQ="
         }
       },
       "is_incremental": false,
@@ -414,7 +477,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateAssetLayoutBuilder.html",
-          "hash": "0RGW6MnkiNPiGY6dxV57xtRFtuy7zUoqi+KoApIWT2c="
+          "hash": "Cp8RjKtyINXQ7rRuNJ3frgkJ80iUBPlhSa3orqQ0rdA="
         }
       },
       "is_incremental": false,
@@ -426,7 +489,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateAssetPassword.html",
-          "hash": "WkvDQVrSb+YwZ6Fssf8P71t7j8miCcmBRXPZD4BO6LE="
+          "hash": "6+Q1M1+eF1q7edStKiFjaNEMOEbManrSykO+JbfsmMw="
         }
       },
       "is_incremental": false,
@@ -438,7 +501,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateAssetPasswordBuilder.html",
-          "hash": "3dKCWJdd5AXvO5AfHr1C4z0ejPw1GVq5yN+PQ8knWfc="
+          "hash": "8V2nPzQr9+o8a0VGv4/4qQIc6n5ggmzsDmw4B5T2fwI="
         }
       },
       "is_incremental": false,
@@ -450,7 +513,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateCompany.html",
-          "hash": "KM4km8BkCKexzRfYHxzWHyqdREd7E0r4cE2I2mMdA8E="
+          "hash": "u/fKyvpnWhJDSz6Sbe9gvL8HTbBIVMTaci9fBqy9Gto="
         }
       },
       "is_incremental": false,
@@ -462,7 +525,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateCompanyBuilder.html",
-          "hash": "RbcsNZ7dsDVT5WBDRVxwMfIASJb+jK/5WwYC2CUXQUQ="
+          "hash": "3Y/mSL84Ey7ajWmJAmsM3hE72MtLAcoHyGwbXp7mmhY="
         }
       },
       "is_incremental": false,
@@ -474,7 +537,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateFolder.html",
-          "hash": "Vh2HxK+7KTpGv8mtd6sPr48UXDQkGepybSAx6YMc2dU="
+          "hash": "+b6mcS933sJXAxh7xxfk7yFCHD20fuIM+v307qHX5SE="
         }
       },
       "is_incremental": false,
@@ -486,7 +549,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateFolderBuilder.html",
-          "hash": "JitT+6Y2HFB9dtvQhTLrgg3Y7s9D/gWRDmd31crKfdk="
+          "hash": "VaNFx1OP5TmmqYkTDwDKsf3GPhh1kSLWSXzp6B+p28A="
         }
       },
       "is_incremental": false,
@@ -498,7 +561,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateMagicDash.html",
-          "hash": "rB6SVFDVMapEpK8YuSqSXSlcYMlSiH+IUxnqDlV4cfo="
+          "hash": "Dg8tQalfQQH4pGa9bup/1Z2ufQixuN1M9InJ8y+vG8c="
         }
       },
       "is_incremental": false,
@@ -510,7 +573,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateMagicDashBuilder.html",
-          "hash": "BwR08wAt+oNvExa91zO+cD7nWlMSJplD5hGXzQspzYU="
+          "hash": "tarvx5X6bePAgZ9CQTqudp6BM73JKDZ8jLtqnyHShhY="
         }
       },
       "is_incremental": false,
@@ -522,7 +585,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateRelation.html",
-          "hash": "EBZ+EUa74MdJs5RAXH9+t8GNy+aWPP/YsJJeTUvmez4="
+          "hash": "u0SsIW26bZcvqCpt7iXxfcrQK5qrc4ygweuLzLRvCOg="
         }
       },
       "is_incremental": false,
@@ -534,7 +597,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateRelationBuilder.html",
-          "hash": "oNJQbxK8mX3az2k9bJQgPyP6A4bL7ivSF3D7tLCLKNs="
+          "hash": "t+Fdyg28zBE0wyXYuQ+Uxu0iKM0xugt0HHLkCju3tWc="
         }
       },
       "is_incremental": false,
@@ -546,7 +609,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateWebsite.html",
-          "hash": "cDkZ4RYsCXjoeAS5gzF7TFg0As9LmND9lhGL5ZH94eM="
+          "hash": "45R4VJMzwLHvZnvFhGzOYO3ZYYX08pAIkwP9fHU6oiE="
         }
       },
       "is_incremental": false,
@@ -558,7 +621,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.CreateWebsiteBuilder.html",
-          "hash": "SgH0YzyOzuuhY+eYIZ+UcE57Z+y/WOjxvvGko9TTbfM="
+          "hash": "tfDM6QrFIt7DwQ7/zwOpoFFuccKLg+gBkZqks8dBj30="
         }
       },
       "is_incremental": false,
@@ -570,7 +633,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetActivityLogs.html",
-          "hash": "9oUD0vQWd1CZ3nNRO/t+7//oPHfXeid/VN+gno4a9jU="
+          "hash": "l/Gx1zv/n4RdDzek3hfscBn0em22k83UUNdSXFh7IHk="
         }
       },
       "is_incremental": false,
@@ -582,7 +645,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetActivityLogsBuilder.html",
-          "hash": "gJnOiqdkcf9lSGO6zyHs7XZylKAZcASVKgL2+/MhzX0="
+          "hash": "HKuJfTin/FUcrtokQPID2OwwRDovW1HlnwIZjMNaF5E="
         }
       },
       "is_incremental": false,
@@ -594,7 +657,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetArticles.html",
-          "hash": "v8ohJ4RwObQIoWHLbt9t5Pfe/vxuaRiPYTKk8lsgdm0="
+          "hash": "s7MiqhNM9cnd59BocII5j8iHmoxOVAyPJoWRAyhsisM="
         }
       },
       "is_incremental": false,
@@ -606,7 +669,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetArticlesBuilder.html",
-          "hash": "KhpLBQoMkNUPr6MaTAEgL4M29/SMSG+Stsfbq8H/Fpo="
+          "hash": "7RcOXe5TnYhUDcVxM+GsCtSvR7En4VC17ABPI6Mf/gY="
         }
       },
       "is_incremental": false,
@@ -618,7 +681,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetAssetLayouts.html",
-          "hash": "HNKZrEx8ZGkCCp0EkaEXkM2SEYKzZx59BJny23j7KtY="
+          "hash": "TpTyHXCzeBYa4/Pj65UlRbE7or7Cadx/pmLbc+IqkiM="
         }
       },
       "is_incremental": false,
@@ -630,7 +693,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetAssetLayoutsBuilder.html",
-          "hash": "wGNZROmzjaF/m2fgTniaeYHKkNLfB+LhuHx5qGZu48Q="
+          "hash": "To34VJfaP74USpSrqNiKR7AunpwQ7tstFCj6/s1JnqQ="
         }
       },
       "is_incremental": false,
@@ -642,7 +705,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetAssetPasswords.html",
-          "hash": "mhgH4ouvQMRFCkMxK9y1EPY2Lh3WnEYm+uzzj+rLBPg="
+          "hash": "xx3eaiM/OKsfQJrZ9D0Coh6Z320xa4/J/Ev+8An6qqg="
         }
       },
       "is_incremental": false,
@@ -654,7 +717,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetAssetPasswordsBuilder.html",
-          "hash": "XzUqDTJ8Zslgfh6aLMiJg6i0DVNGU6qeXEksJzezFEI="
+          "hash": "877gBSydiTlFw1VphYZOyvRaE/ZpMUqfANqm6bcvizM="
         }
       },
       "is_incremental": false,
@@ -666,7 +729,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetAssets.html",
-          "hash": "mdQDnfXQ2xBDqU/0bhYcHrV4xwjzIjxWKpownrZFtR4="
+          "hash": "wkE6/dGu+dsxX+5wQKh1M80hgrPlt56JpDlEJgHdOlA="
         }
       },
       "is_incremental": false,
@@ -678,7 +741,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetAssetsBuilder.html",
-          "hash": "vmqq2T/4H2jnNlIOrN0sb+6aq5mbgjKbHMYnG6zIfZo="
+          "hash": "RR3CMNlH6vc/TaiP0bnxuBKItqD9PVfw3MSccW/x3m4="
         }
       },
       "is_incremental": false,
@@ -690,7 +753,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetCompanies.html",
-          "hash": "0GvMC6niCVS3WLg8EVUnMjtfD/L7oxTv/dbsQjsqGG4="
+          "hash": "6SSNJem6SQMd4bs4eEVuqaALsUHpcPsc8TKpMX7Z+Wo="
         }
       },
       "is_incremental": false,
@@ -702,7 +765,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetCompaniesBuilder.html",
-          "hash": "8zizOqq4hyxZb/pNudjMi7ZXx+fLiTLYhYZFVK2lGB4="
+          "hash": "DE9OCLdAUyrQeHeaDmBS2VQKFDjA63eHX0ow0Iu/CuA="
         }
       },
       "is_incremental": false,
@@ -714,7 +777,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetExpirations.html",
-          "hash": "7lWHX4MWs9njO0a+PUWaZMuZEw2uz4M4MFEKJTS30dg="
+          "hash": "/N44CZdaxcZL+yhmgmLU0BCVJfZTzKlolUd8yIyy9nY="
         }
       },
       "is_incremental": false,
@@ -726,7 +789,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetExpirationsBuilder.html",
-          "hash": "+hKWZNkLoonA+jWzEAO/8UyPuRXQUiZrrvVbXWvbw3Y="
+          "hash": "fWATaMMLaRUBBb/E8tvQz08T4kkrLtEamf7tl2fjZg0="
         }
       },
       "is_incremental": false,
@@ -738,7 +801,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetFolders.html",
-          "hash": "dCM51NZH98OG5s/rzK4H40Qz/DyDmjinqN+Q72M5400="
+          "hash": "IFzo2ycy7VBvl16/0XHyUAITLDaFy8fzzei6kBswmCs="
         }
       },
       "is_incremental": false,
@@ -750,7 +813,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetFoldersBuilder.html",
-          "hash": "eTTELOXeeRIKkc/W8uNDswF/Bd+A6wXlfUMJk78r570="
+          "hash": "0+WEEGIIR56huWII3r6uqj6qkjvvm/opEbsn0deKgjA="
         }
       },
       "is_incremental": false,
@@ -762,7 +825,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetMagicDash.html",
-          "hash": "iFA0p3Nt+s9tgSjMpTHcMb8ZO4DOkRRJRMzbAvetpjw="
+          "hash": "BgjUyRebHdjLbi4W05r07z2U70KrZCI+kI7ol8bTF7A="
         }
       },
       "is_incremental": false,
@@ -774,7 +837,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetMagicDashBuilder.html",
-          "hash": "mwtrHRTGk56VZ1GKNFT1ECTb8iyuhKxzEbiRlqCZRdg="
+          "hash": "vBaa71kyzY7TfnnCAIZ0VNV1zXqB4MLzrZEImfVzHGA="
         }
       },
       "is_incremental": false,
@@ -786,7 +849,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetProcedures.html",
-          "hash": "3vnS9xmGz0EVQKqdHKBhId/HQfViHuzMV21OKSMwlRk="
+          "hash": "M5+yqbfw1LjPGY4xXkMZ7OmbNMbPrgbsqrmf8bjB+UE="
         }
       },
       "is_incremental": false,
@@ -798,7 +861,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetProceduresBuilder.html",
-          "hash": "E88bPLifTYN7WMo/8/qQFr1hZxEY6LbCS9cLFF4Di1E="
+          "hash": "ZO2NptnabkOL4OMvmSGtWcMaFcMRWVZ0/GpcxKwHEpw="
         }
       },
       "is_incremental": false,
@@ -810,7 +873,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetRelations.html",
-          "hash": "TJa2XBMB7Db0L3HJlH0+E+rJKFQUOotzueBIGIdSnlU="
+          "hash": "D9fLGd9Zx8U3KKAfdjcYmdd+OVJcnN4J1qtyTu3H3G8="
         }
       },
       "is_incremental": false,
@@ -822,7 +885,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetRelationsBuilder.html",
-          "hash": "t8cXEoPJSJ2CN3I4Jdn6GlyGZIivAEHg5Y5uihrWTuQ="
+          "hash": "wOgOWBdq8ekugs1qlNwYQ+aX7KKs3NpDUjLvvvj2AUo="
         }
       },
       "is_incremental": false,
@@ -834,7 +897,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetWebsites.html",
-          "hash": "25jNkXIgBLgaknDug7vJNHtLmSlwandQr+Xj0Vfv3Eg="
+          "hash": "GEyKTc0/t947FpFZaYR30SVzZRCNs3I0RGjCSxE9WDw="
         }
       },
       "is_incremental": false,
@@ -846,7 +909,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.GetWebsitesBuilder.html",
-          "hash": "HT9AaqiNJkuVNsBPksLisHdYPobknizJ+wpo0e7z4Ok="
+          "hash": "NzqhV1Mt18DdnmGHD0W0MiyeGw6UuWp4diJgRERT5e4="
         }
       },
       "is_incremental": false,
@@ -858,7 +921,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.IParameters.html",
-          "hash": "qh3hi6kvMcQyrZloKcPXdoMDCJ4FwWSROKsI/k3rnEA="
+          "hash": "hLcYXsamSRtF4qhasw/KM8PxU/BkicF/nOVFLdGvbb0="
         }
       },
       "is_incremental": false,
@@ -870,7 +933,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.ItemById.html",
-          "hash": "10AVwLnXkWCDhbw15s4BL/xnxK5IfIzyaQq2KF/JCMQ="
+          "hash": "kEcq/tW5KoLDjQk/DDiypp4vcHCJHFky2vxnUyNe/1c="
         }
       },
       "is_incremental": false,
@@ -882,7 +945,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.UpdateArticle.html",
-          "hash": "pUl4QiUFkHzIRCN31iur7KrK6GZDo9G9ECbDkWXl+AE="
+          "hash": "FPaKr9DSE/u+8nR/bgsPIWbdVM0RZ8ebil0cyotjRVk="
         }
       },
       "is_incremental": false,
@@ -894,7 +957,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.UpdateArticleBuilder.html",
-          "hash": "UcGu+BCfz77dgOtBk0gOKFJELpzBj4a47ajhJXmBUvs="
+          "hash": "lbBUvmK9lyCw+rJ3k+vMoHklTN+xHJwDzJjFUR9DGsg="
         }
       },
       "is_incremental": false,
@@ -906,7 +969,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.UpdateAsset.html",
-          "hash": "MtcHkjh1mgKJyTLhbVdbDIUHRZ4WUV0Tpl92rc+4iSk="
+          "hash": "IP6HMbaGbl5JgO4rvSR1V4CWQVQX0A1fUTNND9MPrY8="
         }
       },
       "is_incremental": false,
@@ -918,7 +981,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.UpdateAssetBuilder.html",
-          "hash": "1tpi+pya05lRb7527Nsc1fZBrId3dVd2daJlijjiOio="
+          "hash": "kYSz54m2FV/gtvVhX/WW2r+1E3f1uiBrPnJsGssydZU="
         }
       },
       "is_incremental": false,
@@ -930,7 +993,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.UpdateAssetLayout.html",
-          "hash": "XFrbxCuc4SijvkfvQPpH1w1gQtu9taS323F+koh7fdQ="
+          "hash": "WmkEiXRIFCs8dk/PuU/T7pSa1fz5LHwWmcIyeQHvaKE="
         }
       },
       "is_incremental": false,
@@ -942,7 +1005,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.UpdateAssetLayoutBuilder.html",
-          "hash": "nR9c1ekSih0Z6JNwIAIR79VS0mLfNuKxVuk92PukWDg="
+          "hash": "c3xS0dxKBwjyDc+kprn/FHLSJqy0BfoXHYjHzRDpPXQ="
         }
       },
       "is_incremental": false,
@@ -954,7 +1017,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.UpdateAssetPassword.html",
-          "hash": "mtDj678MRDmBYMTzDRERA6jUDnYgO+b2e6IJNDOVG8c="
+          "hash": "g2F43V+0pHJGvhjrbgo0BcVNie55hOcpPGEnC7WaQDU="
         }
       },
       "is_incremental": false,
@@ -966,7 +1029,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.UpdateAssetPasswordBuilder.html",
-          "hash": "l9DNkywaPBCJHeRWb9vH7VfyRpIXgh6hE2tgzAcx6Y8="
+          "hash": "0OGiF5gn1h3Udxv1xRZdrTFrpRntecmbzS4IAOYvGSs="
         }
       },
       "is_incremental": false,
@@ -978,7 +1041,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.UpdateCompany.html",
-          "hash": "ER0LXZJRz0GUyFqF9b6jLSCrfV6mn7L+Zkl4UzTUnts="
+          "hash": "i2o6hrKgOEMagID9CeuF6IFs6Id8STe+3TQFebtkWSM="
         }
       },
       "is_incremental": false,
@@ -990,7 +1053,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.UpdateCompanyBuilder.html",
-          "hash": "P1kwDCFF9MTVtq1xZoRQz5rXxFDDQvSmmQBxaiirekE="
+          "hash": "yhbxmoPne9n5AjAfw8wyCnT8SR0UBHNw9tkOMfZRB+A="
         }
       },
       "is_incremental": false,
@@ -1002,7 +1065,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.UpdateFolder.html",
-          "hash": "tI/4xkmOFhaw17rdnX5QmhkwyQZYmljEhoKYz4NL7gg="
+          "hash": "/yi2kUYlgrFX0cqPby7MwuhUG4PhGtxI1OKcfTMP7JQ="
         }
       },
       "is_incremental": false,
@@ -1014,7 +1077,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.UpdateFolderBuilder.html",
-          "hash": "A5hvmH7F0q/NhoTNwQmjAoPJ1L6dPOn0KGeZK7o5DpM="
+          "hash": "bAmQGYehcoLtvub2sWREOV4Mzy8+QpCTDz5p5mCK7Rk="
         }
       },
       "is_incremental": false,
@@ -1026,7 +1089,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.UpdateWebsite.html",
-          "hash": "DeyMx5ukIOtPdR/nVhFYKtwZJgUhXQoRZmg+OwUI/xI="
+          "hash": "6cjmBQDXjcYO2BDLH8Gk/+kElwFrf9R1wgwCbomp+7s="
         }
       },
       "is_incremental": false,
@@ -1038,7 +1101,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.UpdateWebsiteBuilder.html",
-          "hash": "IldqVa5SE7PxVU7LGnuaeARh35ncs3j7nvv5uu3foNs="
+          "hash": "8oA5xkzUJmf8k2FyqnMFAqWYnV9mhKvtbQeoQMnbDZU="
         }
       },
       "is_incremental": false,
@@ -1050,7 +1113,43 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.Parameters.html",
-          "hash": "iKcQbQ1VoeHVrptoTbmWPCPQtiG5i0TFJt1bG2Xc6zM="
+          "hash": "Ad0JdAQYHtMzAe0VVpaZ/lPwPFskqTCwEeK5SOzWkTU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.ProceduresEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.ProceduresEndpoint.html",
+          "hash": "ktsxTCMLE+3mkoP7mn8o6hI7SstTss1Inzu/JkDHDv4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.RelationEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.RelationEndpoint.html",
+          "hash": "R8vVcK4wxxMZTa3whl2vgC9Hw0i+B12REFxqqAxuGXo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Endpoints.WebsitesEndpoint.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Endpoints.WebsitesEndpoint.html",
+          "hash": "MnWWwqllF1tOe+FnJj0vkmuPn5M3NocoAwi0ZZP18Po="
         }
       },
       "is_incremental": false,
@@ -1062,7 +1161,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Endpoints.html",
-          "hash": "4WfCkw0KP7rGVVIC6Qrt+KJA037JUJ5z1ZWGSPJGWWA="
+          "hash": "Rf9rTs4ChMxSjlo9Fzj/0/n6XCpoPWGUhPhR3bCubqE="
         }
       },
       "is_incremental": false,
@@ -1074,7 +1173,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.APIInfo.html",
-          "hash": "HoAsit5qVOemEjUiv1xSEpRtCuVBj1rHduPkZAX++uE="
+          "hash": "C7djErOevAvTPz7SIH4Fs2ObxbHTS9TA1bawjvvSN/M="
         }
       },
       "is_incremental": false,
@@ -1086,7 +1185,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.ActivityLog.html",
-          "hash": "UNJeaAx68OLv6xbTt4+FNmDvXqf02z4YBUzKBc/iDak="
+          "hash": "k7jDGxSFfhyivBhPMDc/mq8WS5uGNRSv8mYjelcKTvQ="
         }
       },
       "is_incremental": false,
@@ -1098,7 +1197,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.ActivityLogs.html",
-          "hash": "+HcWgltVAZ1yzSzFWXJU/9l97d4AfwDuQTAAXForI7U="
+          "hash": "LF0VhCEklXHcG0zHmBwm4eI6ggJ3Xuv4ps+SGc42P1c="
         }
       },
       "is_incremental": false,
@@ -1110,7 +1209,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Article.html",
-          "hash": "gzyZHeaZdh8CYl0VG1jFzE+E+t2x1dHT++ICxb5zbDk="
+          "hash": "aiGHKLpwHrcb675UqZ+jnrraGaSxSQIsLyfEqF7M34I="
         }
       },
       "is_incremental": false,
@@ -1122,7 +1221,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Articles.html",
-          "hash": "IB3XYGUgcuefRtp1VUYJI6XGfzbG3zeg5/YRnjAA8vA="
+          "hash": "rW/UWDj629vdZUixzgvB1YUtG+5Dzn6XrA+gBeJ3M+0="
         }
       },
       "is_incremental": false,
@@ -1134,7 +1233,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Asset.html",
-          "hash": "VTGcpmgphc03r4OsFzPYrVXFpdFkb/hRtAy2+KMoJos="
+          "hash": "KDHtCAGZtCu1npdhV2gDmqQfxKZ+RvjgXTQE0ZZvcIY="
         }
       },
       "is_incremental": false,
@@ -1146,7 +1245,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.AssetLayout.AssetLayoutField.html",
-          "hash": "y1/Ig8zBo9QOf1isRA0721ecr+7gziAdCq1hvqkGv7U="
+          "hash": "rBak1Cja/Ss3sllL/iWbgtP8U4qvDKjjVQ9LGYCc9aw="
         }
       },
       "is_incremental": false,
@@ -1158,7 +1257,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.AssetLayout.html",
-          "hash": "uUg2P+YzKhf20r3cW6nqMQiNq0CJC9kY1RCNSLb1Sbc="
+          "hash": "uv25Nw1W67DsQqDBPKErBL1Kwhcy2qfYvQc7DT+Yt1k="
         }
       },
       "is_incremental": false,
@@ -1170,7 +1269,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.AssetLayouts.html",
-          "hash": "JWJN5lTIBNZDVupkSpFHooiYr6ejdc+w6rWx9IX8YPc="
+          "hash": "xt7ueVykGczG0X+G5/I2o7jDI8l95LfyK4mSsMK8moE="
         }
       },
       "is_incremental": false,
@@ -1182,7 +1281,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.AssetPassword.html",
-          "hash": "BCZogWdgORl7g/TILXAiVm5D3GOht/8KKuz0I4ThBc4="
+          "hash": "ApM4u3/Ng8oV5EBV9ir9lfs19qz/2ZktuSxrFcbdxD4="
         }
       },
       "is_incremental": false,
@@ -1194,7 +1293,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.AssetPasswords.html",
-          "hash": "Kkn14dr8A9qHT+Ni0jGKMoUBmTrYZeZeHcwwerTPY1I="
+          "hash": "bn1ktjAfGCUOKsy1sn3pfnNiI7Pg9K7HjjN8s/Sg84A="
         }
       },
       "is_incremental": false,
@@ -1206,7 +1305,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Assets.html",
-          "hash": "XMgi0w2Wl5F8aNjo+PQfrHF+wxX/hYwlFnGBmRn/Ddw="
+          "hash": "71W3XC58xTjXHvLH0JsgMTA28iErRBgGsuXv/5Rkagc="
         }
       },
       "is_incremental": false,
@@ -1218,7 +1317,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Companies.html",
-          "hash": "mA7uyCspE5lK3zw481NtWhBYibLji+avw1YjX3liDvY="
+          "hash": "rxuHG/5lsBGFb6KmWlQ8qU+GTQvFerXknTPLCTtuNnc="
         }
       },
       "is_incremental": false,
@@ -1230,7 +1329,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Company.Integration.html",
-          "hash": "lPrJCWgiz0jI5xrCLnK8Y+fimoeKSKDictRoU2gmF2U="
+          "hash": "NoqiEdsuFHIoUSEVChuava4DSncaqMmB1yap7OmIYSw="
         }
       },
       "is_incremental": false,
@@ -1242,7 +1341,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Company.html",
-          "hash": "limxKrZ9dauaY2BVLVjWHdi+4R4PcXv39KcjC0DM8hw="
+          "hash": "BiD8P+DUTSL/7mBSUWgrNJsWtYnbmj2LOcIm7vNx4/U="
         }
       },
       "is_incremental": false,
@@ -1254,7 +1353,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Expiration.html",
-          "hash": "kljD67GzPOsvk9FWDYQB98tDui1xQbZ56QijRwmcPUY="
+          "hash": "5wEfqSHiKOiXUKpNAFuCM5RZKOmRvV8pGWYN6PqtEP0="
         }
       },
       "is_incremental": false,
@@ -1266,7 +1365,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Field.html",
-          "hash": "dX/xWDdCispbap0e0fOK/pg+YxaBPq+1psk6AhgP/G0="
+          "hash": "rM57dY9hQ4UjcOa542k3W/oGgt2wjiji3FBWEtot4Nw="
         }
       },
       "is_incremental": false,
@@ -1278,7 +1377,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Folder.html",
-          "hash": "5+64HbMPr8qsB7FpjNW7hYMf5UWdZv2Kh1l4it27iiU="
+          "hash": "PSIBH1I3+vDV4t3z4vsCSc7FfLNuE8il0EORLP7hb1k="
         }
       },
       "is_incremental": false,
@@ -1290,7 +1389,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Folders.html",
-          "hash": "Z18V7Ag6PCQNM8FQxURTSQdnAZ5kmgBMCvYBG3MTBkA="
+          "hash": "A12/S92Jv2HRKRtSa0SKGYppBqIpa1VQeO1MoPqiuuw="
         }
       },
       "is_incremental": false,
@@ -1302,7 +1401,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.IRecord.html",
-          "hash": "9xk0xtZ2lAIQdksk9HrZSk6UHjiBa9a3yU+sS/4Xy2c="
+          "hash": "zeKwTxSEIUaDY0lUXhDghQVMoy/MMybmC+fKLvYNBTc="
         }
       },
       "is_incremental": false,
@@ -1314,7 +1413,19 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.MagicDash.html",
-          "hash": "VsJajuMoeVOJeqHvTCQhJSDQGOUz0tM8sqhySm8UC2w="
+          "hash": "S4n0f4ZGWhC/NJUzapSRoH1sMTX2HOLt8w1zV/CrFF4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.MagicDashes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.MagicDashes.html",
+          "hash": "qW6Zu0IZQ6BXODXA7dM1wvZVmxkcTy1efaeqtgt9kxY="
         }
       },
       "is_incremental": false,
@@ -1326,7 +1437,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Procedure.html",
-          "hash": "UcJ1h6w9Z5wT9giIxRGfRjsA03kFgGXQewq639wsBiQ="
+          "hash": "t7QjkyMgpIdIapCKX7GfxL38NzR3KrcCcCTxFZBH5gc="
         }
       },
       "is_incremental": false,
@@ -1338,7 +1449,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.ProcedureTasksAttribute.html",
-          "hash": "gUOCGOHLiZ9/43YvtdYt1QdtNhFFF9g2GLjTZ8/YOf4="
+          "hash": "QMvs+jSY8Cf2N1xixd34a2V3zZqoUuRensjQfcvVgo4="
         }
       },
       "is_incremental": false,
@@ -1350,7 +1461,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Procedures.html",
-          "hash": "FDW7Iy5n4zU5gKpsnFhHzqONB0QsO7ARIt9iXHsAyyI="
+          "hash": "bJUnw5hsTELBgq7XdLGZgAvFLsow0xzybfWMvm6KZ+E="
         }
       },
       "is_incremental": false,
@@ -1362,7 +1473,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.PublicPhoto.html",
-          "hash": "ZwYfrl/pQI0sv5wzVMWI5bNQ7FueTJFmVdgDAq3FmyY="
+          "hash": "EfPsRzMUTgUaEos/WOdj8wwbre2eWwQ87/alFGJuAJE="
         }
       },
       "is_incremental": false,
@@ -1374,7 +1485,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Relation.html",
-          "hash": "MMvy9RXRyQq0Vd0Eybeu0NVCPtFrWzr0sJ0Bcb0j7tI="
+          "hash": "iD1KJhlZR5YUSh+c+hcuR6ec/yG7EdMaBxPvE7zhOXA="
         }
       },
       "is_incremental": false,
@@ -1386,7 +1497,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Relations.html",
-          "hash": "zEThlrbCqp3HrtvjK4T7jZaQ10naIdi33APqx6Cjz40="
+          "hash": "VF1qKBxRY8wekcVTtCmAC/HoCf0lMmMG/ksgTTpbY8c="
         }
       },
       "is_incremental": false,
@@ -1398,7 +1509,19 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.Website.html",
-          "hash": "qFUaZP6curtrQX5vmtWkDtNaWzth1p2OwGgNwbSF+E0="
+          "hash": "yRpH0RFhgb+USVJlKYFUC7nGl4Is3mlWPmyaG6uPqqk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "reference/HuduAPI.Records.Websites.yml",
+      "output": {
+        ".html": {
+          "relative_path": "reference/HuduAPI.Records.Websites.html",
+          "hash": "BvhVsKjsc6hMeyylt/hRq7xiyuXsgdMyaJIQDPbAudc="
         }
       },
       "is_incremental": false,
@@ -1410,7 +1533,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/HuduAPI.Records.html",
-          "hash": "czuliaYH0YzeF05lg4ETEN22mTXir9VS3FA7/P7m11Q="
+          "hash": "KYlIK1SeOGW7MoWaAQssCzHhggMIVsIiPuIrmPeueSU="
         }
       },
       "is_incremental": false,
@@ -1422,7 +1545,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/index.html",
-          "hash": "XmFh13ipQX7P9q+quGLT631YBtaubOv6VvWdq3kPh8o="
+          "hash": "eVthNQBOTWh+IDqsATTw+D3wLAGlxq/WDilGwvb2L+U="
         }
       },
       "is_incremental": false,
@@ -1434,7 +1557,7 @@
       "output": {
         ".html": {
           "relative_path": "reference/toc.html",
-          "hash": "sflOff00DyiloZwjbBZKHVClUgf/xq80eR+lCjZqvpA="
+          "hash": "c+ym1IF4BCJtF/if5xd7vs8bX0jI4XoejqlqevSfTwE="
         }
       },
       "is_incremental": false,
@@ -1446,7 +1569,7 @@
       "output": {
         ".html": {
           "relative_path": "toc.html",
-          "hash": "p17lQjJlB1W48xIpkbE5Fxt7b09dJfoVs0x7yO2SGLI="
+          "hash": "yoMlFXd7Ac/b/KRGh46TAjmVyomFyDWvDaKp1UNQVPE="
         }
       },
       "is_incremental": false,
@@ -1454,11 +1577,62 @@
     },
     {
       "type": "Conceptual",
+      "source_relative_path": "tutorials/archive.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/archive.html",
+          "hash": "3Qy4zHKIHMJAOQkfe/amm7jo9pfZtypiukz51IixsmU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/create.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/create.html",
+          "hash": "sEpZHrS6x+ZsaAxGnjgKHU74XOfDlmSqq1Kg1yA7hJk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/delete.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/delete.html",
+          "hash": "9TO0UHfYBnQtCR7NQYc6t8TfY5S1c+tZN7h6IN2FAKQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/get.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/get.html",
+          "hash": "irI52qhJr7CL9GIiUUdAWD4I5rTdh1QaIYTB+0jIko8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "log_codes": [
+        "InvalidFileLink"
+      ],
+      "type": "Conceptual",
       "source_relative_path": "tutorials/intro.md",
       "output": {
         ".html": {
           "relative_path": "tutorials/intro.html",
-          "hash": "EFVuIxN9wn9gHzXqNYd3tHBGmpiXYKDODIXm6Mb+8fg="
+          "hash": "2ACksGcMJncGbg++zmaggS5ILp7vtUf96we57ygZvPg="
         }
       },
       "is_incremental": false,
@@ -1470,7 +1644,19 @@
       "output": {
         ".html": {
           "relative_path": "tutorials/toc.html",
-          "hash": "2+R3BVw2DruDdq1j3EyfULXlIy9FeSWVYhWuTS0Yo8c="
+          "hash": "TgxK8NTTdst+zEzqiIrtBMLXOeQ6uABEeu10SY4y6F4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "tutorials/update.md",
+      "output": {
+        ".html": {
+          "relative_path": "tutorials/update.html",
+          "hash": "EXAgfumipQhqiBEHpFt27b/paLbj9GzhPt2Ar53ezKQ="
         }
       },
       "is_incremental": false,
@@ -1489,14 +1675,14 @@
         "ConceptualDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 3,
-          "skipped_file_count": 3
+          "total_file_count": 8,
+          "skipped_file_count": 7
         },
         "ManagedReferenceDocumentProcessor": {
           "can_incremental": true,
           "incrementalPhase": "build",
-          "total_file_count": 116,
-          "skipped_file_count": 81
+          "total_file_count": 126,
+          "skipped_file_count": 126
         },
         "TocDocumentProcessor": {
           "can_incremental": false,
