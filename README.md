@@ -7,7 +7,7 @@ The library provides an [EndPoint](https://dracon80.github.io/CSharp-HuduAPI-Cli
 along with well defined [paramater objects](https://dracon80.github.io/CSharp-HuduAPI-Client/reference/HuduAPI.Endpoints.Parameters.html) and associated builders. You can use the paramater builders to build a set of parameters when calling each endpoint.
 
 ## Documenation and Tutorials
-A DocFX wwebsite for the Library along with tutorials can be found on the libraries
+A DocFX website for the Library along with tutorials can be found on the libraries
 [Github Pages](https://dracon80.github.io/CSharp-HuduAPI-Client/index.html) site.
 
 
