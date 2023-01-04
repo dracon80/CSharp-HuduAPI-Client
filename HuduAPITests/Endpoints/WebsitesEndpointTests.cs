@@ -114,7 +114,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod]
         public void GetWebsite()
         {
-            int WebsiteID = 38;
+            int WebsiteID = 72;
             ItemById myparams = new(id: WebsiteID);
 
             Website Website = _endpoint.Get(myparams);
@@ -122,7 +122,7 @@ namespace HuduAPI.Endpoints.Tests
             Assert.IsNotNull(Website);
             Assert.AreEqual(_companyID, Website.CompanyID);
             Assert.AreEqual(WebsiteID, Website.ID);
-            Assert.AreEqual(Website.Name, "https://sharepoint.i-solutions.net.au");
+            Assert.AreEqual(Website.Name, "https://www.i-solutions.net.au");
         }
 
         [TestMethod]
@@ -140,12 +140,12 @@ namespace HuduAPI.Endpoints.Tests
         public void GetWebsiteByName()
         {
             GetWebsites myparams = new GetWebsitesBuilder()
-                .WithName("https://isqld.onmicrosoft.com").Build();
+                .WithName("https://www.i-solutions.net.au").Build();
 
             Websites websites = _endpoint.Get(myparams);
 
             Assert.IsTrue(websites.WebsiteList.Count() > 0);
-            Assert.AreEqual("https://isqld.onmicrosoft.com", websites.WebsiteList[0].Name);
+            Assert.AreEqual("https://www.i-solutions.net.au", websites.WebsiteList[0].Name);
         }
     }
 }

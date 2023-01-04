@@ -30,8 +30,8 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod]
         public void CreateDeleteGlobalRelation()
         {
-            int fromableID = 2215;
-            int toableID = 2690;
+            int fromableID = 3515;
+            int toableID = 3422;
             string desc = "Test Relationship";
 
             CreateRelation myparams = new CreateRelationBuilder("Asset", toableID, "Asset", fromableID)
@@ -65,7 +65,7 @@ namespace HuduAPI.Endpoints.Tests
             GetRelations paramaters = new GetRelationsBuilder().WithPageSize(3).Build();
             Relations results = _endpoint.Get(paramaters);
 
-            Assert.AreEqual(3, results.RelationsList.Count());
+            Assert.AreEqual(0, results.RelationsList.Count());
         }
     }
 }

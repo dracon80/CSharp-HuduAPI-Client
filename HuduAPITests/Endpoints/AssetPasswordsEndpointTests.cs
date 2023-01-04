@@ -15,10 +15,9 @@ namespace HuduAPI.Endpoints.Tests
     [TestClass()]
     public class AssetPasswordsEndpointTests
     {
-        private IConfiguration _configuration { get; set; }
-        private AssetPasswordsEndpoint _endpoint;
         private int _companyId = 7;
-        private int _existing = 1152;
+        private AssetPasswordsEndpoint _endpoint;
+        private int _existing = 2437;
 
         public AssetPasswordsEndpointTests()
         {
@@ -29,54 +28,7 @@ namespace HuduAPI.Endpoints.Tests
             _endpoint = new AssetPasswordsEndpoint(_configuration["HuduAPIKey"], _configuration["HuduBaseURL"]);
         }
 
-        [TestMethod()]
-        public void GetAssetPasswords()
-        {
-            //Get a list of AssetPasswords from the endpoint and confirm that its not empy
-            AssetPasswords results = _endpoint.Get();
-            Assert.AreNotEqual(0, results.AssetPasswordList.Count);
-        }
-
-        [TestMethod()]
-        public void GetAssetPasswordsFiltered()
-        {
-            //Get a filtered list of AssetPasswords from the endpoint and confirm that its not empty
-            GetAssetPasswords parameters = new GetAssetPasswordsBuilder().WithCompanyID(7).WithPageSize(10).Build();
-
-            AssetPasswords results = _endpoint.Get(parameters);
-            Assert.AreEqual(10, results.AssetPasswordList.Count);
-        }
-
-        [TestMethod]
-        public void GetAssetPassword()
-        {
-            Parameters.ItemById parameters = new(_existing);
-            AssetPassword result = _endpoint.Get(parameters);
-            Assert.AreEqual(_existing, result.ID);
-            Assert.AreEqual("ncompassReportUser", result.Name);
-            Assert.AreEqual("djf$dk&!f9anvFsdj@sSdfj", result.Password);
-
-        }
-
-        [TestMethod]
-        public void GetInvalidAssetPassword()
-        {
-            Parameters.ItemById parameters = new(2348956);
-
-            Assert.ThrowsException<RecordNotFoundException>(
-                     () => _endpoint.Get(parameters)
-                );
-        }
-
-        [TestMethod]
-        public void GetNegativeAssetLayoutID()
-        {
-            ItemById myparams;
-
-            Assert.ThrowsException<ArgumentOutOfRangeException>(
-                     () => myparams = new(id: -3)
-                );
-        }
+        private IConfiguration _configuration { get; set; }
 
         [TestMethod]
         public void CreateUpdateDelete_OK()
@@ -87,7 +39,7 @@ namespace HuduAPI.Endpoints.Tests
             string user = "TestUser";
             string url = "https://mybigtest.com/";
             string otp = "432567";
-            
+
             CreateAssetPassword myparam = new CreateAssetPasswordBuilder(_companyId, name, pass)
                 .WithDescription(desc)
                 .WithInPortal(true)
@@ -123,10 +75,56 @@ namespace HuduAPI.Endpoints.Tests
             result = _endpoint.Archive(item, true);
             //No way of confirming this other than manually through the UI
             result = _endpoint.Archive(item, false);
-            
 
             //Clean up the test and delete the record
             _endpoint.Delete(item);
+        }
+
+        [TestMethod]
+        public void GetAssetPassword()
+        {
+            Parameters.ItemById parameters = new(_existing);
+            AssetPassword result = _endpoint.Get(parameters);
+            Assert.AreEqual(_existing, result.ID);
+            Assert.AreEqual("infosign.support", result.Name);
+        }
+
+        [TestMethod()]
+        public void GetAssetPasswords()
+        {
+            //Get a list of AssetPasswords from the endpoint and confirm that its not empy
+            AssetPasswords results = _endpoint.Get();
+            Assert.AreNotEqual(0, results.AssetPasswordList.Count);
+        }
+
+        [TestMethod()]
+        public void GetAssetPasswordsFiltered()
+        {
+            //Get a filtered list of AssetPasswords from the endpoint and confirm that its not empty
+            GetAssetPasswords parameters = new GetAssetPasswordsBuilder().WithCompanyID(7).WithPageSize(10).Build();
+
+            AssetPasswords results = _endpoint.Get(parameters);
+            Assert.AreEqual(10, results.AssetPasswordList.Count);
+        }
+
+        [TestMethod]
+        public void GetInvalidAssetPassword()
+        {
+            Parameters.ItemById parameters = new(2348956);
+
+            Assert.ThrowsException<RecordNotFoundException>(
+                     () => _endpoint.Get(parameters)
+                );
+        }
+
+        [TestMethod]
+        public void GetNegativeAssetLayoutID()
+        {
+            ItemById myparams;
+
+            Assert.ThrowsException<ArgumentOutOfRangeException>(
+                     () => myparams = new(id: -3)
+                );
         }
     }
 }

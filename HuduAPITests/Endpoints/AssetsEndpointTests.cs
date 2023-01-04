@@ -122,7 +122,7 @@ namespace HuduAPI.Endpoints.Tests
         [TestMethod()]
         public void GetAsset()
         {
-            int assetID = 2134;
+            int assetID = 3434;
 
             AssetById myparams = new(assetID, _companyID);
 
@@ -130,9 +130,9 @@ namespace HuduAPI.Endpoints.Tests
 
             Assert.AreEqual(_companyID, result.CompanyID);
             Assert.AreEqual(assetID, result.ID);
-            Assert.AreEqual(9, result.AssetLayoutID);
+            Assert.AreEqual(3, result.AssetLayoutID);
             Assert.AreEqual("Integrated Solutions QLD Pty Ltd", result.CompanyName);
-            Assert.AreEqual(18, result.Fields.Count());
+            Assert.AreEqual(8, result.Fields.Count());
         }
 
         [TestMethod()]
