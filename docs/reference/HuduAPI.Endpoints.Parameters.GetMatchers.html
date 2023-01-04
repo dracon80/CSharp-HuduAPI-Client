@@ -5,10 +5,10 @@
     <head>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-      <title>Class AssetLayoutField
+      <title>Class GetMatchers
      | HuduAPI </title>
       <meta name="viewport" content="width=device-width">
-      <meta name="title" content="Class AssetLayoutField
+      <meta name="title" content="Class GetMatchers
      | HuduAPI ">
       <meta name="generator" content="docfx 2.59.4.0">
       
@@ -91,40 +91,42 @@
                           </div>
                         </div>
 
-                    <article class="content wrap" id="_content" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField">
+                    <article class="content wrap" id="_content" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers">
   
   
-  <h1 id="HuduAPI_Endpoints_Parameters_AssetLayoutField" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField" class="text-break">Class AssetLayoutField
+  <h1 id="HuduAPI_Endpoints_Parameters_GetMatchers" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers" class="text-break">Class GetMatchers
   </h1>
-  <div class="markdown level0 summary"><p>Defines the attributes of an Asset Layout Field. All requried properties are included in the
-constructor of the class. All other properties are optional when making a call to the
-endpoint api/v1/asset_layouts</p>
+  <div class="markdown level0 summary"><p>Provides the parameters to filter the list of matchers returned from the hudu endpoint api/v1/matchers</p>
 </div>
   <div class="markdown level0 conceptual"></div>
   <div class="inheritance">
     <h5>Inheritance</h5>
     <div class="level0"><span class="xref">System.Object</span></div>
-    <div class="level1"><span class="xref">AssetLayoutField</span></div>
+    <div class="level1"><span class="xref">GetMatchers</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="HuduAPI.Endpoints.Parameters.IParameters.html">IParameters</a></div>
   </div>
   <h6><strong>Namespace</strong>: <a class="xref" href="HuduAPI.Endpoints.Parameters.html">HuduAPI.Endpoints.Parameters</a></h6>
   <h6><strong>Assembly</strong>: HuduAPI.dll</h6>
-  <h5 id="HuduAPI_Endpoints_Parameters_AssetLayoutField_syntax">Syntax</h5>
+  <h5 id="HuduAPI_Endpoints_Parameters_GetMatchers_syntax">Syntax</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public class AssetLayoutField</code></pre>
+    <pre><code class="lang-csharp hljs">public class GetMatchers : IParameters</code></pre>
   </div>
   <h3 id="constructors">Constructors
   </h3>
   
   
-  <a id="HuduAPI_Endpoints_Parameters_AssetLayoutField__ctor_" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.#ctor*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_AssetLayoutField__ctor_System_String_HuduAPI_Endpoints_Parameters_AssetLayoutFieldType_" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.#ctor(System.String,HuduAPI.Endpoints.Parameters.AssetLayoutFieldType)">AssetLayoutField(String, AssetLayoutFieldType)</h4>
-  <div class="markdown level1 summary"><p>Initializes a new instance of the <a class="xref" href="HuduAPI.Endpoints.Parameters.AssetLayoutField.html">AssetLayoutField</a> class with the requried
-fields populated ready for posting.</p>
+  <a id="HuduAPI_Endpoints_Parameters_GetMatchers__ctor_" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.#ctor*"></a>
+  <h4 id="HuduAPI_Endpoints_Parameters_GetMatchers__ctor_System_Int32_" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.#ctor(System.Int32)">GetMatchers(Int32)</h4>
+  <div class="markdown level1 summary"><p>Inialize a new GetMatchers parameter list with the &quot;integration_id assiged at creation
+as it is required.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">public AssetLayoutField(string label, AssetLayoutFieldType fieldtype)</code></pre>
+    <pre><code class="lang-csharp hljs">public GetMatchers(int integration_id)</code></pre>
   </div>
   <h5 class="parameters">Parameters</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -137,15 +139,9 @@ fields populated ready for posting.</p>
     </thead>
     <tbody>
       <tr>
-        <td><span class="xref">System.String</span></td>
-        <td><span class="parametername">label</span></td>
-        <td><p>Label (used as name) of input.</p>
-</td>
-      </tr>
-      <tr>
-        <td><a class="xref" href="HuduAPI.Endpoints.Parameters.AssetLayoutFieldType.html">AssetLayoutFieldType</a></td>
-        <td><span class="parametername">fieldtype</span></td>
-        <td><p>The type of Field to be created.</p>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">integration_id</span></td>
+        <td><p>The integration identifier.</p>
 </td>
       </tr>
     </tbody>
@@ -154,15 +150,97 @@ fields populated ready for posting.</p>
   </h3>
   
   
-  <a id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Expiration_" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Expiration*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Expiration" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Expiration">Expiration</h4>
-  <div class="markdown level1 summary"><p>Whether to Add to Expiration List in hudu</p>
+  <a id="HuduAPI_Endpoints_Parameters_GetMatchers_CompanyId_" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.CompanyId*"></a>
+  <h4 id="HuduAPI_Endpoints_Parameters_GetMatchers_CompanyId" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.CompanyId">CompanyId</h4>
+  <div class="markdown level1 summary"><p>Filter on company id</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;expiration&quot;)]
-public bool Expiration { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;company_id&quot;)]
+public int CompanyId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HuduAPI_Endpoints_Parameters_GetMatchers_Identifier_" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.Identifier*"></a>
+  <h4 id="HuduAPI_Endpoints_Parameters_GetMatchers_Identifier" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.Identifier">Identifier</h4>
+  <div class="markdown level1 summary"><p>Filter by Identifier in the integration (if sync_id is not set). This is used if the id
+that the integration uses is a string.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;identifier&quot;)]
+public string Identifier { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.String</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HuduAPI_Endpoints_Parameters_GetMatchers_IntegrationId_" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.IntegrationId*"></a>
+  <h4 id="HuduAPI_Endpoints_Parameters_GetMatchers_IntegrationId" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.IntegrationId">IntegrationId</h4>
+  <div class="markdown level1 summary"><p>ID of the integration. Can be found in the URL when editing an integration</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;integration_id&quot;)]
+public int IntegrationId { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HuduAPI_Endpoints_Parameters_GetMatchers_Matched_" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.Matched*"></a>
+  <h4 id="HuduAPI_Endpoints_Parameters_GetMatchers_Matched" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.Matched">Matched</h4>
+  <div class="markdown level1 summary"><p>Filter on whether the company already been matched</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;matched&quot;)]
+public bool Matched { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -181,15 +259,67 @@ public bool Expiration { get; set; }</code></pre>
   </table>
   
   
-  <a id="HuduAPI_Endpoints_Parameters_AssetLayoutField_FieldType_" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.FieldType*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_AssetLayoutField_FieldType" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.FieldType">FieldType</h4>
-  <div class="markdown level1 summary"><p>The type of Field to be created</p>
+  <a id="HuduAPI_Endpoints_Parameters_GetMatchers_Page_" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.Page*"></a>
+  <h4 id="HuduAPI_Endpoints_Parameters_GetMatchers_Page" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.Page">Page</h4>
+  <div class="markdown level1 summary"><p>get current page of results</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;field_type&quot;)]
-public string FieldType { get; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;page&quot;)]
+public int Page { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HuduAPI_Endpoints_Parameters_GetMatchers_PageSize_" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.PageSize*"></a>
+  <h4 id="HuduAPI_Endpoints_Parameters_GetMatchers_PageSize" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.PageSize">PageSize</h4>
+  <div class="markdown level1 summary"><p>Number of results to return</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;page_size&quot;)]
+public int PageSize { get; set; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="HuduAPI_Endpoints_Parameters_GetMatchers_PayloadType_" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.PayloadType*"></a>
+  <h4 id="HuduAPI_Endpoints_Parameters_GetMatchers_PayloadType" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.PayloadType">PayloadType</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string PayloadType { get; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -208,15 +338,16 @@ public string FieldType { get; }</code></pre>
   </table>
   
   
-  <a id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Hint_" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Hint*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Hint" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Hint">Hint</h4>
-  <div class="markdown level1 summary"><p>Hint shown below input box</p>
+  <a id="HuduAPI_Endpoints_Parameters_GetMatchers_SyncId_" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.SyncId*"></a>
+  <h4 id="HuduAPI_Endpoints_Parameters_GetMatchers_SyncId" data-uid="HuduAPI.Endpoints.Parameters.GetMatchers.SyncId">SyncId</h4>
+  <div class="markdown level1 summary"><p>Filter by ID of the record in the integration. This is used if the id that the
+integration uses is an integer.</p>
 </div>
   <div class="markdown level1 conceptual"></div>
   <h5 class="decalaration">Declaration</h5>
   <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;hint&quot;)]
-public string Hint { get; set; }</code></pre>
+    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;sync_id&quot;)]
+public string SyncId { get; set; }</code></pre>
   </div>
   <h5 class="propertyValue">Property Value</h5>
   <table class="table table-bordered table-striped table-condensed">
@@ -233,222 +364,14 @@ public string Hint { get; set; }</code></pre>
       </tr>
     </tbody>
   </table>
-  
-  
-  <a id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Label_" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Label*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Label" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Label">Label</h4>
-  <div class="markdown level1 summary"><p>Label (used as name) of input</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;label&quot;)]
-public string Label { get; }</code></pre>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="HuduAPI.Endpoints.Parameters.IParameters.html">IParameters</a>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="HuduAPI_Endpoints_Parameters_AssetLayoutField_LinkableId_" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.LinkableId*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_AssetLayoutField_LinkableId" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.LinkableId">LinkableId</h4>
-  <div class="markdown level1 summary"><p>ID of Asset Layout to pull values from</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;linkable_id&quot;)]
-public int? LinkableId { get; set; }</code></pre>
+  <h3 id="seealso">See Also</h3>
+  <div class="seealso">
+      <div><a class="xref" href="HuduAPI.Endpoints.Parameters.IParameters.html">IParameters</a></div>
   </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Max_" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Max*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Max" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Max">Max</h4>
-  <div class="markdown level1 summary"><p>Maximum Integer value that can be set on an Number field</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;max&quot;)]
-public int? Max { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Min_" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Min*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Min" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Min">Min</h4>
-  <div class="markdown level1 summary"><p>Minimum Integer value that can be set on an Number field</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;min&quot;)]
-public int? Min { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Options_" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Options*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Options" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Options">Options</h4>
-  <div class="markdown level1 summary"><p>List of options for dropdown, separated with new line characters</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;options&quot;)]
-public string Options { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.String</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Position_" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Position*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Position" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Position">Position</h4>
-  <div class="markdown level1 summary"><p>Leave blank to have auto-filled</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;position&quot;)]
-public int? Position { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Required_" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Required*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_AssetLayoutField_Required" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.Required">Required</h4>
-  <div class="markdown level1 summary"><p>Whether to make this value required on form fills</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;required&quot;)]
-public bool Required { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
-  
-  
-  <a id="HuduAPI_Endpoints_Parameters_AssetLayoutField_ShowInList_" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.ShowInList*"></a>
-  <h4 id="HuduAPI_Endpoints_Parameters_AssetLayoutField_ShowInList" data-uid="HuduAPI.Endpoints.Parameters.AssetLayoutField.ShowInList">ShowInList</h4>
-  <div class="markdown level1 summary"><p>Whether to show this value in list view or not</p>
-</div>
-  <div class="markdown level1 conceptual"></div>
-  <h5 class="decalaration">Declaration</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[JsonProperty(&quot;show_in_list&quot;)]
-public bool ShowInList { get; set; }</code></pre>
-  </div>
-  <h5 class="propertyValue">Property Value</h5>
-  <table class="table table-bordered table-striped table-condensed">
-    <thead>
-      <tr>
-        <th>Type</th>
-        <th>Description</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><span class="xref">System.Boolean</span></td>
-        <td></td>
-      </tr>
-    </tbody>
-  </table>
 </article>
                 </div>
 
