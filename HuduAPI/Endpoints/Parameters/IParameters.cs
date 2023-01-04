@@ -1,4 +1,5 @@
 ﻿using Newtonsoft.Json.Serialization;
+using System.Reflection.Metadata.Ecma335;
 
 namespace HuduAPI.Endpoints.Parameters
 {
@@ -57,10 +58,15 @@ namespace HuduAPI.Endpoints.Parameters
             {
                 var value = property.ValueProvider.GetValue(parameters);
 
-                if (value != null && property.PropertyName != "payload_type")
-                {
-                    result.Add(property.PropertyName, value);
-                }
+                //filter out all the invalid values that could be supplied.
+                if (value == null) continue;
+                if (value is "") continue;
+                if (value is 0) continue;
+
+                //No need to included this as its internal
+                if (property.PropertyName == "payload_type") continue;
+
+                result.Add(property.PropertyName, value);
             }
 
             //if the payloadtype is not "" then there needs to be a wrapper around the payload

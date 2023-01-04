@@ -92,6 +92,9 @@
     <Compile Update="Endpoints\Parameters\Get\GetMagicDashBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
+    <Compile Update="Endpoints\Parameters\Get\GetMatchersBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
     <Compile Update="Endpoints\Parameters\Get\GetProceduresBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
@@ -108,6 +111,9 @@
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
     <Compile Update="Endpoints\Parameters\Update\UpdateArticleBuilder.cs">
+      <IsBuilderFile>True</IsBuilderFile>
+    </Compile>
+    <Compile Update="Endpoints\Parameters\Update\UpdateMatcherBuilder.cs">
       <IsBuilderFile>True</IsBuilderFile>
     </Compile>
   </ItemGroup>
