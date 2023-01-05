@@ -24,7 +24,7 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Filter on company id
+        /// Filter on the integrators company id
         /// </summary>
         [JsonProperty("company_id")]
         public int CompanyId { get; set; }
@@ -43,7 +43,7 @@ namespace HuduAPI.Endpoints.Parameters
         public int IntegrationId { get; set; }
 
         /// <summary>
-        /// Filter on whether the company already been matched
+        /// Filter on whether the company has already been matched
         /// </summary>
         [JsonProperty("matched")]
         public bool Matched { get; set; }

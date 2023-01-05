@@ -47,7 +47,7 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value for companyId
+        /// Filter on the integrators company id
         /// </summary>
         /// <param name="companyId">The company identifier.</param>
         /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
@@ -58,7 +58,8 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value for identifier
+        /// Filter by Identifier in the integration (if sync_id is not set). This is used if the id
+        /// that the integration uses is a string.
         /// </summary>
         /// <param name="identifier">The identifier.</param>
         /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
@@ -69,7 +70,7 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value for matched
+        /// Filter on whether the company has already been matched
         /// </summary>
         /// <param name="matched">if set to <c>true</c> [matched].</param>
         /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
@@ -80,7 +81,7 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value for page
+        /// get current page of results
         /// </summary>
         /// <param name="page">The page.</param>
         /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
@@ -91,7 +92,7 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value for pageSize
+        /// Number of results to return
         /// </summary>
         /// <param name="pageSize">Size of the page.</param>
         /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
@@ -102,7 +103,8 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value for syncId
+        /// Filter by ID of the record in the integration. This is used if the id that the
+        /// integration uses is an integer.
         /// </summary>
         /// <param name="syncId">The synchronize identifier.</param>
         /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>

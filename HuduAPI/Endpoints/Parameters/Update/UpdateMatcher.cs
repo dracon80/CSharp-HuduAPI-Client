@@ -22,7 +22,7 @@ namespace HuduAPI.Endpoints.Parameters
         public int CompanyId { get; set; }
 
         /// <summary>
-        /// Gets the identifier for this folder.
+        /// Gets the identifier for this matcher.
         /// </summary>
         [JsonIgnore]
         public int Id { get; private set; }

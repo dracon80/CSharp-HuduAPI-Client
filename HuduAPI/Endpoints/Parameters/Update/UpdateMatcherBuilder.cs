@@ -53,7 +53,7 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value for companyId
+        /// Gets or sets the hudu company id to make a match for.
         /// </summary>
         /// <param name="companyId">The company identifier.</param>
         /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
@@ -64,7 +64,7 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value for identifier
+        /// Gets the identifier for this matcher.
         /// </summary>
         /// <param name="identifier">The identifier.</param>
         /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
@@ -74,6 +74,11 @@ namespace HuduAPI.Endpoints.Parameters
             return this;
         }
 
+        /// <summary>
+        /// The suggested hudu company that hudu thinks would match
+        /// </summary>
+        /// <param name="potentialCompanyId">The potential company identifier.</param>
+        /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
         public UpdateMatcherBuilder WithPotentialCompanyId(int potentialCompanyId)
         {
             _potentialCompanyId = potentialCompanyId;
@@ -81,7 +86,7 @@ namespace HuduAPI.Endpoints.Parameters
         }
 
         /// <summary>
-        /// Set a value for syncId
+        /// This seems to be the company Identifier in the source data. e.g. Connectwise company ID.
         /// </summary>
         /// <param name="syncId">The synchronize identifier.</param>
         /// <returns>A generic Builder Object for type <typeparamref name="TBuilder"/></returns>
