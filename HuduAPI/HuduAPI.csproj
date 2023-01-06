@@ -17,7 +17,7 @@
     <PackageTags>hudu;hududocs</PackageTags>
 	<FileVersion>$(VersionPrefix)</FileVersion>
     <AssemblyVersion>$(VersionPrefix)</AssemblyVersion>
-	<VersionPrefix>1.0.4</VersionPrefix>
+	<VersionPrefix>1.0.5</VersionPrefix>
   </PropertyGroup>
 
   <ItemGroup>
