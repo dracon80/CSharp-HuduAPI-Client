@@ -49,13 +49,13 @@ namespace HuduAPI.Records
         public string ObjectType { get; set; }
 
         [JsonProperty("primary_mail")]
-        public object PrimaryMail { get; set; }
+        public string PrimaryMail { get; set; }
 
         [JsonProperty("primary_manufacturer")]
-        public object PrimaryManufacturer { get; set; }
+        public string PrimaryManufacturer { get; set; }
 
         [JsonProperty("primary_model")]
-        public object PrimaryModel { get; set; }
+        public string PrimaryModel { get; set; }
 
         [JsonProperty("primary_serial")]
         public string PrimarySerial { get; set; }
@@ -128,6 +128,6 @@ namespace HuduAPI.Records
         public int Position { get; set; }
 
         [JsonProperty("value")]
-        public object Value { get; set; }
+        public string Value { get; set; }
     }
 }
