@@ -18,7 +18,7 @@ namespace HuduAPI.Records
         public string Content { get; set; }
 
         [JsonProperty("content_link")]
-        public object ContentLink { get; set; }
+        public string ContentLink { get; set; }
 
         [JsonProperty("icon")]
         public string Icon { get; set; }
@@ -27,7 +27,7 @@ namespace HuduAPI.Records
         public int ID { get; set; }
 
         [JsonProperty("image_url")]
-        public object ImageUrl { get; set; }
+        public string ImageUrl { get; set; }
 
         [JsonProperty("message")]
         public string Message { get; set; }

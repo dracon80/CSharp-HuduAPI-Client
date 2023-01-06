@@ -65,7 +65,7 @@ namespace HuduAPI.Endpoints.Tests
             GetRelations paramaters = new GetRelationsBuilder().WithPageSize(3).Build();
             Relations results = _endpoint.Get(paramaters);
 
-            Assert.AreEqual(0, results.RelationsList.Count());
+            Assert.AreEqual(3, results.RelationsList.Count());
         }
     }
 }

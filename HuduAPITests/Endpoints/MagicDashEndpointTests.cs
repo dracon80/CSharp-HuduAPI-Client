@@ -75,10 +75,10 @@ namespace HuduAPI.Endpoints.Tests
             Assert.AreEqual(shade, result.Shade);
             Assert.AreEqual(content, result.ContentLink);
 
-            ItemById item = new(result.ID);
+            Parameters.DeleteMagicDash magicDash = new Parameters.DeleteMagicDash(result.Title, result.CompanyName);
 
             //Clean Up created MagicDash
-            _endpoint.Delete(item);
+            _endpoint.DeleteNoId(magicDash);
         }
 
         [TestMethod]

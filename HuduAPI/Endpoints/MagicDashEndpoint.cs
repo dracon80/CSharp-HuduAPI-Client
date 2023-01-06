@@ -10,7 +10,7 @@ namespace HuduAPI.Endpoints
     /// <seealso cref="HuduAPI.Endpoints.IEndpoint"/>
     public class MagicDashEndpoint : IEndpoint,
         IEndpointGetMethod<MagicDashes, Parameters.GetMagicDash>,
-        IEndpointCreateMethod<MagicDash, CreateMagicDash>,
+        IEndpointCreateMethod<MagicDash, Parameters.CreateMagicDash>,
         IEndpointDeleteMethod<ItemById>
     {
         /// <summary>
@@ -43,7 +43,7 @@ namespace HuduAPI.Endpoints
         /// </summary>
         /// <param name="parameters">The required MagicDash parameters to use when making the call.</param>
         /// <returns>A MagicDash object that represents the created dash in hudu</returns>
-        public MagicDash Create(CreateMagicDash parameters)
+        public MagicDash Create(Parameters.CreateMagicDash parameters)
         {
             Commands.CreateMagicDash myCommand = new Commands.CreateMagicDash(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
             return myCommand.Execute();
@@ -59,12 +59,18 @@ namespace HuduAPI.Endpoints
             myCommand.Execute();
         }
 
+        public void DeleteNoId(DeleteMagicDash parameters)
+        {
+            Commands.DeleteMagicDashNoID myCommand = new Commands.DeleteMagicDashNoID(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
+            myCommand.Execute();
+        }
+
         /// <summary>
         /// Get a list of MagicDash objects from the Hudu Endpoint
         /// </summary>
         /// <param name="parameters">The parameters to use when making the call.</param>
         /// <returns>A MagicDashs object that contains a list of MagicDashs found in hudu</returns>
-        public MagicDashes Get([Optional] GetMagicDash parameters)
+        public MagicDashes Get([Optional] Parameters.GetMagicDash parameters)
         {
             Commands.GetMagicDash myCommand = new Commands.GetMagicDash(huduBaseURL: HuduBaseURL, huduAPIKey: HuduAPIKey, parameters: parameters);
             return myCommand.Execute();
