@@ -862,6 +862,19 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Endpoints.MagicDashEndpoint.Delete
   nameWithType: MagicDashEndpoint.Delete
+- uid: HuduAPI.Endpoints.MagicDashEndpoint.DeleteNoId(HuduAPI.Endpoints.Parameters.DeleteMagicDash)
+  name: DeleteNoId(DeleteMagicDash)
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint_DeleteNoId_HuduAPI_Endpoints_Parameters_DeleteMagicDash_
+  commentId: M:HuduAPI.Endpoints.MagicDashEndpoint.DeleteNoId(HuduAPI.Endpoints.Parameters.DeleteMagicDash)
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint.DeleteNoId(HuduAPI.Endpoints.Parameters.DeleteMagicDash)
+  nameWithType: MagicDashEndpoint.DeleteNoId(DeleteMagicDash)
+- uid: HuduAPI.Endpoints.MagicDashEndpoint.DeleteNoId*
+  name: DeleteNoId
+  href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint_DeleteNoId_
+  commentId: Overload:HuduAPI.Endpoints.MagicDashEndpoint.DeleteNoId
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.MagicDashEndpoint.DeleteNoId
+  nameWithType: MagicDashEndpoint.DeleteNoId
 - uid: HuduAPI.Endpoints.MagicDashEndpoint.Get(HuduAPI.Endpoints.Parameters.GetMagicDash)
   name: Get(GetMagicDash)
   href: reference/HuduAPI.Endpoints.MagicDashEndpoint.html#HuduAPI_Endpoints_MagicDashEndpoint_Get_HuduAPI_Endpoints_Parameters_GetMagicDash_
@@ -4945,6 +4958,64 @@ references:
   isSpec: "True"
   fullName: HuduAPI.Endpoints.Parameters.CreateWebsiteBuilder.Build
   nameWithType: CreateWebsiteBuilder.Build
+- uid: HuduAPI.Endpoints.Parameters.DeleteMagicDash
+  name: DeleteMagicDash
+  href: reference/HuduAPI.Endpoints.Parameters.DeleteMagicDash.html
+  commentId: T:HuduAPI.Endpoints.Parameters.DeleteMagicDash
+  fullName: HuduAPI.Endpoints.Parameters.DeleteMagicDash
+  nameWithType: DeleteMagicDash
+- uid: HuduAPI.Endpoints.Parameters.DeleteMagicDash.#ctor(System.String,System.String)
+  name: DeleteMagicDash(String, String)
+  href: reference/HuduAPI.Endpoints.Parameters.DeleteMagicDash.html#HuduAPI_Endpoints_Parameters_DeleteMagicDash__ctor_System_String_System_String_
+  commentId: M:HuduAPI.Endpoints.Parameters.DeleteMagicDash.#ctor(System.String,System.String)
+  fullName: HuduAPI.Endpoints.Parameters.DeleteMagicDash.DeleteMagicDash(System.String, System.String)
+  nameWithType: DeleteMagicDash.DeleteMagicDash(String, String)
+- uid: HuduAPI.Endpoints.Parameters.DeleteMagicDash.#ctor*
+  name: DeleteMagicDash
+  href: reference/HuduAPI.Endpoints.Parameters.DeleteMagicDash.html#HuduAPI_Endpoints_Parameters_DeleteMagicDash__ctor_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.DeleteMagicDash.#ctor
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.DeleteMagicDash.DeleteMagicDash
+  nameWithType: DeleteMagicDash.DeleteMagicDash
+- uid: HuduAPI.Endpoints.Parameters.DeleteMagicDash.CompanyName
+  name: CompanyName
+  href: reference/HuduAPI.Endpoints.Parameters.DeleteMagicDash.html#HuduAPI_Endpoints_Parameters_DeleteMagicDash_CompanyName
+  commentId: P:HuduAPI.Endpoints.Parameters.DeleteMagicDash.CompanyName
+  fullName: HuduAPI.Endpoints.Parameters.DeleteMagicDash.CompanyName
+  nameWithType: DeleteMagicDash.CompanyName
+- uid: HuduAPI.Endpoints.Parameters.DeleteMagicDash.CompanyName*
+  name: CompanyName
+  href: reference/HuduAPI.Endpoints.Parameters.DeleteMagicDash.html#HuduAPI_Endpoints_Parameters_DeleteMagicDash_CompanyName_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.DeleteMagicDash.CompanyName
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.DeleteMagicDash.CompanyName
+  nameWithType: DeleteMagicDash.CompanyName
+- uid: HuduAPI.Endpoints.Parameters.DeleteMagicDash.PayloadType
+  name: PayloadType
+  href: reference/HuduAPI.Endpoints.Parameters.DeleteMagicDash.html#HuduAPI_Endpoints_Parameters_DeleteMagicDash_PayloadType
+  commentId: P:HuduAPI.Endpoints.Parameters.DeleteMagicDash.PayloadType
+  fullName: HuduAPI.Endpoints.Parameters.DeleteMagicDash.PayloadType
+  nameWithType: DeleteMagicDash.PayloadType
+- uid: HuduAPI.Endpoints.Parameters.DeleteMagicDash.PayloadType*
+  name: PayloadType
+  href: reference/HuduAPI.Endpoints.Parameters.DeleteMagicDash.html#HuduAPI_Endpoints_Parameters_DeleteMagicDash_PayloadType_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.DeleteMagicDash.PayloadType
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.DeleteMagicDash.PayloadType
+  nameWithType: DeleteMagicDash.PayloadType
+- uid: HuduAPI.Endpoints.Parameters.DeleteMagicDash.Title
+  name: Title
+  href: reference/HuduAPI.Endpoints.Parameters.DeleteMagicDash.html#HuduAPI_Endpoints_Parameters_DeleteMagicDash_Title
+  commentId: P:HuduAPI.Endpoints.Parameters.DeleteMagicDash.Title
+  fullName: HuduAPI.Endpoints.Parameters.DeleteMagicDash.Title
+  nameWithType: DeleteMagicDash.Title
+- uid: HuduAPI.Endpoints.Parameters.DeleteMagicDash.Title*
+  name: Title
+  href: reference/HuduAPI.Endpoints.Parameters.DeleteMagicDash.html#HuduAPI_Endpoints_Parameters_DeleteMagicDash_Title_
+  commentId: Overload:HuduAPI.Endpoints.Parameters.DeleteMagicDash.Title
+  isSpec: "True"
+  fullName: HuduAPI.Endpoints.Parameters.DeleteMagicDash.Title
+  nameWithType: DeleteMagicDash.Title
 - uid: HuduAPI.Endpoints.Parameters.GetActivityLogs
   name: GetActivityLogs
   href: reference/HuduAPI.Endpoints.Parameters.GetActivityLogs.html
