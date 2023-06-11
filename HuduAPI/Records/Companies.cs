@@ -3,21 +3,6 @@
 namespace HuduAPI.Records
 {
     /// <summary>
-    /// This internal class is used to help read the returned json from the HuduAPI endpoint. As the
-    /// data contains a company element, there is a parent wrapper object, which this is.
-    /// </summary>
-    /// <seealso cref="HuduAPI.Records.IRecord" />
-    internal class CompanyRoot : IRecord
-    {
-        public CompanyRoot(Company company)
-        {
-            Company = company;
-        }
-
-        public Company Company { get; set; }
-    }
-
-    /// <summary>
     /// Companies represents the list of companies returned from a call to the Companies Endpoint.
     /// </summary>
     /// <remarks>
@@ -28,12 +13,10 @@ namespace HuduAPI.Records
     public class Companies : IRecord
     {
         /// <summary>
-        /// Initializes a new instance of the <see cref="Companies" /> class with the supplied list
-        /// of <see cref="Company" /> objects.
+        /// Initializes a new instance of the <see cref="Companies"/> class with the supplied list
+        /// of <see cref="Company"/> objects.
         /// </summary>
-        /// <param name="companyList">
-        /// The list of <see cref="Company" /> objects.
-        /// </param>
+        /// <param name="companyList">The list of <see cref="Company"/> objects.</param>
         public Companies(IList<Company> companyList)
         {
             CompanyList = companyList;
@@ -43,15 +26,11 @@ namespace HuduAPI.Records
         public IList<Company> CompanyList { get; set; }
 
         /// <summary>
-        /// Gets the <see cref="System.Nullable{Company}" /> with the a company ID of value index.
-        /// If a company does not existing with this ID, then null is returend.
+        /// Gets the <see cref="System.Nullable{Company}"/> with the a company ID of value index. If
+        /// a company does not existing with this ID, then null is returend.
         /// </summary>
-        /// <param name="id">
-        /// The company ID of the required company
-        /// </param>
-        /// <returns>
-        /// A <see cref="Company" /> with the company id of the value supplied to index.
-        /// </returns>
+        /// <param name="id">The company ID of the required company</param>
+        /// <returns>A <see cref="Company"/> with the company id of the value supplied to index.</returns>
         public Company? this[int id]
         {
             get => CompanyList.FirstOrDefault(c => c.ID == id);
@@ -150,21 +129,13 @@ namespace HuduAPI.Records
         public class Integration
         {
             /// <summary>
-            /// Initializes a new instance of the <see cref="Integration" /> class.
+            /// Initializes a new instance of the <see cref="Integration"/> class.
             /// </summary>
-            /// <param name="id">
-            /// The identifier.
-            /// </param>
-            /// <param name="integratorID">
-            /// The integrator identifier.
-            /// </param>
-            /// <param name="integratorName">
-            /// Name of the integrator.
-            /// </param>
-            /// <param name="name">
-            /// The integration name.
-            /// </param>
-            public Integration(int id, int integratorID, string integratorName, string name)
+            /// <param name="id">The identifier.</param>
+            /// <param name="integratorID">The integrator identifier.</param>
+            /// <param name="integratorName">Name of the integrator.</param>
+            /// <param name="name">The integration name.</param>
+            public Integration(string id, string integratorID, string integratorName, string name)
             {
                 this.ID = id;
                 this.IntegratorID = integratorID;
@@ -173,22 +144,37 @@ namespace HuduAPI.Records
             }
 
             [JsonProperty("id")]
-            public int ID { get; set; }
-
-            [JsonProperty("integrator_id")]
-            public int IntegratorID { get; set; }
-
-            [JsonProperty("integrator_name")]
-            public string IntegratorName { get; set; }
-
-            [JsonProperty("sync_id")]
-            public int SyncId { get; set; }
+            public string ID { get; set; }
 
             [JsonProperty("identifier")]
             public string Identifier { get; set; }
 
+            [JsonProperty("integrator_id")]
+            public string IntegratorID { get; set; }
+
+            [JsonProperty("integrator_name")]
+            public string IntegratorName { get; set; }
+
             [JsonProperty("name")]
             public string Name { get; set; }
+
+            [JsonProperty("sync_id")]
+            public int SyncId { get; set; }
         }
+    }
+
+    /// <summary>
+    /// This internal class is used to help read the returned json from the HuduAPI endpoint. As the
+    /// data contains a company element, there is a parent wrapper object, which this is.
+    /// </summary>
+    /// <seealso cref="HuduAPI.Records.IRecord"/>
+    internal class CompanyRoot : IRecord
+    {
+        public CompanyRoot(Company company)
+        {
+            Company = company;
+        }
+
+        public Company Company { get; set; }
     }
 }
