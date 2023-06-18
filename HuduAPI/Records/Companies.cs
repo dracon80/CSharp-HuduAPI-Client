@@ -135,7 +135,7 @@ namespace HuduAPI.Records
             /// <param name="integratorID">The integrator identifier.</param>
             /// <param name="integratorName">Name of the integrator.</param>
             /// <param name="name">The integration name.</param>
-            public Integration(string id, string integratorID, string integratorName, string name)
+            public Integration(int id, string integratorID, string integratorName, string name)
             {
                 this.ID = id;
                 this.IntegratorID = integratorID;
@@ -144,10 +144,10 @@ namespace HuduAPI.Records
             }
 
             [JsonProperty("id")]
-            public string ID { get; set; }
+            public int ID { get; set; }
 
-            [JsonProperty("identifier")]
-            public string Identifier { get; set; }
+            [JsonProperty("identifier", NullValueHandling = NullValueHandling.Ignore)]
+            public string? Identifier { get; set; }
 
             [JsonProperty("integrator_id")]
             public string IntegratorID { get; set; }
@@ -158,8 +158,8 @@ namespace HuduAPI.Records
             [JsonProperty("name")]
             public string Name { get; set; }
 
-            [JsonProperty("sync_id")]
-            public int SyncId { get; set; }
+            [JsonProperty("sync_id", NullValueHandling = NullValueHandling.Ignore)]
+            public int? SyncId { get; set; }
         }
     }
 
